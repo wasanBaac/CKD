@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="db" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\db.mdf;Integrated Security=True" SettingsObjectName="CKD.Properties.Settings" SettingsPropertyName="dbConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Patient" Member="Patients">
+    <Type Name="Patient">
+      <Column Name="HN" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Number" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="TitleID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BirthDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Disease" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DistrictID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StatusID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.District" Member="Districts">
+    <Type Name="District">
+      <Column Name="DistrictID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DistrictName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PatientStatus" Member="PatientStatus">
+    <Type Name="PatientStatus">
+      <Column Name="StatusID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StatusDesc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Title" Member="Titles">
+    <Type Name="Title">
+      <Column Name="TitleID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TitleName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
