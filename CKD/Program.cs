@@ -21,7 +21,7 @@ namespace CKD
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new startUpForm());
+            Application.Run(new startForm());
         }
     }
 }

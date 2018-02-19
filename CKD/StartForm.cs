@@ -11,10 +11,11 @@ using CKD.Class;
 
 namespace CKD
 {
-    public partial class startUpForm : Form
+    public partial class startForm : Form
     {
         GetData getData = new GetData();
-        public startUpForm()
+        public Form MainForm { get; set; }
+        public startForm()
         {
             InitializeComponent();
             this.Show();
@@ -25,7 +26,7 @@ namespace CKD
             this.getDataPatient();
         }
 
-        private void getDataPatient()
+        public void getDataPatient()
         {
             DataTable dt = new DataTable();
             dt = getData.getHN(txtHN.Text);
@@ -45,7 +46,8 @@ namespace CKD
                 string a = gvPatient.CurrentRow.Cells[1].Value.ToString();
                 PatientDetail pd = new PatientDetail(gvPatient.CurrentRow.Cells[1].Value.ToString());
                 pd.Show();
-                //this.Hide();
+                //Application.Run();
+                this.Hide();
             }
         }
 
@@ -53,8 +55,8 @@ namespace CKD
         {
             PatientDetail pd = new PatientDetail();
             pd.Show();
-            //this.Close();
-            //this.Hide();
+            //Application.Run();
+            this.Hide();
         }
     }
 }

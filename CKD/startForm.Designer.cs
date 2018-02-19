@@ -1,6 +1,6 @@
 ﻿namespace CKD
 {
-    partial class startUpForm
+    partial class startForm
     {
         /// <summary>
         /// Required designer variable.

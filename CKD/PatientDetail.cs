@@ -127,7 +127,8 @@ namespace CKD
             
             MessageBox.Show("บันทึกเสร็จสิ้น");
 
-            this.Close();            
+            startForm start = new startForm();
+            this.Close();      
         }
 
         private bool validInput()
