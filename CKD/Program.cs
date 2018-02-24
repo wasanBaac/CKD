@@ -19,6 +19,7 @@ namespace CKD
             //AppDomain.CurrentDomain.SetData("DataDirectory", path);
 
 
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new startForm());
