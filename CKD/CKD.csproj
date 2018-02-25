@@ -88,6 +88,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClasses.dbml</DependentUpon>
     </Compile>
+    <Compile Include="FormPatientRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPatientRecord.Designer.cs">
+      <DependentUpon>FormPatientRecord.cs</DependentUpon>
+    </Compile>
     <Compile Include="PatientDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,9 @@
     <None Include="DataClasses.dbml.layout">
       <DependentUpon>DataClasses.dbml</DependentUpon>
     </None>
+    <EmbeddedResource Include="FormPatientRecord.resx">
+      <DependentUpon>FormPatientRecord.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PatientDetail.resx">
       <DependentUpon>PatientDetail.cs</DependentUpon>
     </EmbeddedResource>

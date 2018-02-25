@@ -47,7 +47,7 @@ namespace CKD
                 PatientDetail pd = new PatientDetail(gvPatient.CurrentRow.Cells[1].Value.ToString());
                 pd.Show();
                 //Application.Run();
-                this.Hide();
+                //this.Hide();
             }
         }
 
@@ -56,7 +56,7 @@ namespace CKD
             PatientDetail pd = new PatientDetail();
             pd.Show();
             //Application.Run();
-            this.Hide();
+            //this.Hide();
         }
     }
 }
