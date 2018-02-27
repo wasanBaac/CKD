@@ -144,5 +144,16 @@ namespace CKD
 
             return false;
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnAddrecordDetail_Click(object sender, EventArgs e)
+        {
+            FormPatientRecord fpr = new FormPatientRecord();
+            fpr.Show();
+        }
     }
 }

@@ -46,6 +46,12 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.lbltitle = new System.Windows.Forms.Label();
             this.cbTitle = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnAddrecordDetail = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblHN
@@ -53,7 +59,7 @@
             this.lblHN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblHN.AutoSize = true;
             this.lblHN.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblHN.Location = new System.Drawing.Point(45, 159);
+            this.lblHN.Location = new System.Drawing.Point(123, 39);
             this.lblHN.Name = "lblHN";
             this.lblHN.Size = new System.Drawing.Size(44, 26);
             this.lblHN.TabIndex = 4;
@@ -63,7 +69,7 @@
             // 
             this.txtHN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtHN.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtHN.Location = new System.Drawing.Point(108, 156);
+            this.txtHN.Location = new System.Drawing.Point(186, 36);
             this.txtHN.MaxLength = 100;
             this.txtHN.Name = "txtHN";
             this.txtHN.Size = new System.Drawing.Size(246, 32);
@@ -74,7 +80,7 @@
             this.lblNumber.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblNumber.AutoSize = true;
             this.lblNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblNumber.Location = new System.Drawing.Point(379, 156);
+            this.lblNumber.Location = new System.Drawing.Point(450, 39);
             this.lblNumber.Name = "lblNumber";
             this.lblNumber.Size = new System.Drawing.Size(90, 26);
             this.lblNumber.TabIndex = 6;
@@ -84,7 +90,7 @@
             // 
             this.txtNumber.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtNumber.Location = new System.Drawing.Point(513, 153);
+            this.txtNumber.Location = new System.Drawing.Point(546, 39);
             this.txtNumber.MaxLength = 100;
             this.txtNumber.Name = "txtNumber";
             this.txtNumber.Size = new System.Drawing.Size(87, 32);
@@ -95,7 +101,7 @@
             this.lblLastName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLastName.AutoSize = true;
             this.lblLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblLastName.Location = new System.Drawing.Point(708, 228);
+            this.lblLastName.Location = new System.Drawing.Point(703, 105);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(47, 26);
             this.lblLastName.TabIndex = 10;
@@ -105,7 +111,7 @@
             // 
             this.txtLastName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtLastName.Location = new System.Drawing.Point(799, 229);
+            this.txtLastName.Location = new System.Drawing.Point(756, 102);
             this.txtLastName.MaxLength = 100;
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(163, 32);
@@ -116,7 +122,7 @@
             this.lblName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblName.Location = new System.Drawing.Point(407, 229);
+            this.lblName.Location = new System.Drawing.Point(437, 105);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(36, 26);
             this.lblName.TabIndex = 8;
@@ -126,7 +132,7 @@
             // 
             this.txtName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtName.Location = new System.Drawing.Point(459, 229);
+            this.txtName.Location = new System.Drawing.Point(490, 102);
             this.txtName.MaxLength = 100;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(190, 32);
@@ -137,7 +143,7 @@
             this.lblBirthDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblBirthDate.AutoSize = true;
             this.lblBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblBirthDate.Location = new System.Drawing.Point(636, 156);
+            this.lblBirthDate.Location = new System.Drawing.Point(646, 42);
             this.lblBirthDate.Name = "lblBirthDate";
             this.lblBirthDate.Size = new System.Drawing.Size(130, 26);
             this.lblBirthDate.TabIndex = 12;
@@ -147,7 +153,7 @@
             // 
             this.dateBirthDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.dateBirthDate.Location = new System.Drawing.Point(786, 150);
+            this.dateBirthDate.Location = new System.Drawing.Point(782, 36);
             this.dateBirthDate.Name = "dateBirthDate";
             this.dateBirthDate.Size = new System.Drawing.Size(222, 32);
             this.dateBirthDate.TabIndex = 13;
@@ -158,7 +164,7 @@
             this.lblAge.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblAge.AutoSize = true;
             this.lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblAge.Location = new System.Drawing.Point(1036, 156);
+            this.lblAge.Location = new System.Drawing.Point(1010, 39);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(57, 26);
             this.lblAge.TabIndex = 14;
@@ -169,7 +175,7 @@
             this.lblDistrict.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDistrict.AutoSize = true;
             this.lblDistrict.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblDistrict.Location = new System.Drawing.Point(276, 335);
+            this.lblDistrict.Location = new System.Drawing.Point(1085, 39);
             this.lblDistrict.Name = "lblDistrict";
             this.lblDistrict.Size = new System.Drawing.Size(64, 26);
             this.lblDistrict.TabIndex = 15;
@@ -180,7 +186,7 @@
             this.cbDistrict.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbDistrict.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.cbDistrict.FormattingEnabled = true;
-            this.cbDistrict.Location = new System.Drawing.Point(352, 332);
+            this.cbDistrict.Location = new System.Drawing.Point(1161, 36);
             this.cbDistrict.Name = "cbDistrict";
             this.cbDistrict.Size = new System.Drawing.Size(268, 33);
             this.cbDistrict.TabIndex = 16;
@@ -190,7 +196,7 @@
             this.cbStatus.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.cbStatus.FormattingEnabled = true;
-            this.cbStatus.Location = new System.Drawing.Point(726, 332);
+            this.cbStatus.Location = new System.Drawing.Point(1015, 102);
             this.cbStatus.Name = "cbStatus";
             this.cbStatus.Size = new System.Drawing.Size(179, 33);
             this.cbStatus.TabIndex = 18;
@@ -200,7 +206,7 @@
             this.lblStatus.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblStatus.Location = new System.Drawing.Point(651, 335);
+            this.lblStatus.Location = new System.Drawing.Point(940, 105);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(69, 26);
             this.lblStatus.TabIndex = 17;
@@ -209,13 +215,14 @@
             // btnSave
             // 
             this.btnSave.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSave.BackColor = System.Drawing.Color.ForestGreen;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btnSave.Location = new System.Drawing.Point(531, 431);
+            this.btnSave.Location = new System.Drawing.Point(1244, 92);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(157, 63);
+            this.btnSave.Size = new System.Drawing.Size(147, 51);
             this.btnSave.TabIndex = 19;
             this.btnSave.Text = "บันทึก";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // lbltitle
@@ -223,7 +230,7 @@
             this.lbltitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbltitle.AutoSize = true;
             this.lbltitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbltitle.Location = new System.Drawing.Point(53, 235);
+            this.lbltitle.Location = new System.Drawing.Point(105, 102);
             this.lbltitle.Name = "lbltitle";
             this.lbltitle.Size = new System.Drawing.Size(92, 26);
             this.lbltitle.TabIndex = 20;
@@ -234,10 +241,76 @@
             this.cbTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.cbTitle.FormattingEnabled = true;
-            this.cbTitle.Location = new System.Drawing.Point(178, 228);
+            this.cbTitle.Location = new System.Drawing.Point(216, 99);
             this.cbTitle.Name = "cbTitle";
             this.cbTitle.Size = new System.Drawing.Size(162, 33);
             this.cbTitle.TabIndex = 21;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox1.Controls.Add(this.txtHN);
+            this.groupBox1.Controls.Add(this.cbTitle);
+            this.groupBox1.Controls.Add(this.lblHN);
+            this.groupBox1.Controls.Add(this.lbltitle);
+            this.groupBox1.Controls.Add(this.txtNumber);
+            this.groupBox1.Controls.Add(this.btnSave);
+            this.groupBox1.Controls.Add(this.lblNumber);
+            this.groupBox1.Controls.Add(this.cbStatus);
+            this.groupBox1.Controls.Add(this.txtName);
+            this.groupBox1.Controls.Add(this.lblStatus);
+            this.groupBox1.Controls.Add(this.lblName);
+            this.groupBox1.Controls.Add(this.cbDistrict);
+            this.groupBox1.Controls.Add(this.txtLastName);
+            this.groupBox1.Controls.Add(this.lblDistrict);
+            this.groupBox1.Controls.Add(this.lblLastName);
+            this.groupBox1.Controls.Add(this.lblAge);
+            this.groupBox1.Controls.Add(this.lblBirthDate);
+            this.groupBox1.Controls.Add(this.dateBirthDate);
+            this.groupBox1.Location = new System.Drawing.Point(45, 42);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1482, 166);
+            this.groupBox1.TabIndex = 22;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "รายละเอียดคนไข้";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(45, 239);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(1482, 469);
+            this.dataGridView1.TabIndex = 23;
+            // 
+            // btnAddrecordDetail
+            // 
+            this.btnAddrecordDetail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddrecordDetail.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnAddrecordDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnAddrecordDetail.Location = new System.Drawing.Point(1247, 714);
+            this.btnAddrecordDetail.Name = "btnAddrecordDetail";
+            this.btnAddrecordDetail.Size = new System.Drawing.Size(280, 51);
+            this.btnAddrecordDetail.TabIndex = 22;
+            this.btnAddrecordDetail.Text = "เพิ่มบันทึกผู้ป่วยโรคไตเรื้อรัง";
+            this.btnAddrecordDetail.UseVisualStyleBackColor = false;
+            this.btnAddrecordDetail.Click += new System.EventHandler(this.btnAddrecordDetail_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnClose.BackColor = System.Drawing.Color.Maroon;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnClose.Location = new System.Drawing.Point(1070, 714);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(169, 51);
+            this.btnClose.TabIndex = 24;
+            this.btnClose.Text = "ปิด";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // PatientDetail
             // 
@@ -245,31 +318,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.cbTitle);
-            this.Controls.Add(this.lbltitle);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.cbStatus);
-            this.Controls.Add(this.lblStatus);
-            this.Controls.Add(this.cbDistrict);
-            this.Controls.Add(this.lblDistrict);
-            this.Controls.Add(this.lblAge);
-            this.Controls.Add(this.dateBirthDate);
-            this.Controls.Add(this.lblBirthDate);
-            this.Controls.Add(this.lblLastName);
-            this.Controls.Add(this.txtLastName);
-            this.Controls.Add(this.lblName);
-            this.Controls.Add(this.txtName);
-            this.Controls.Add(this.lblNumber);
-            this.Controls.Add(this.txtNumber);
-            this.Controls.Add(this.lblHN);
-            this.Controls.Add(this.txtHN);
+            this.ClientSize = new System.Drawing.Size(1584, 861);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnAddrecordDetail);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.groupBox1);
             this.Name = "PatientDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PatientDetail";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -293,5 +354,9 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label lbltitle;
         private System.Windows.Forms.ComboBox cbTitle;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnAddrecordDetail;
+        private System.Windows.Forms.Button btnClose;
     }
 }
