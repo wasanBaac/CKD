@@ -59,7 +59,7 @@
             this.lblHN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblHN.AutoSize = true;
             this.lblHN.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblHN.Location = new System.Drawing.Point(123, 39);
+            this.lblHN.Location = new System.Drawing.Point(109, 39);
             this.lblHN.Name = "lblHN";
             this.lblHN.Size = new System.Drawing.Size(44, 26);
             this.lblHN.TabIndex = 4;
@@ -69,7 +69,7 @@
             // 
             this.txtHN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtHN.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtHN.Location = new System.Drawing.Point(186, 36);
+            this.txtHN.Location = new System.Drawing.Point(172, 36);
             this.txtHN.MaxLength = 100;
             this.txtHN.Name = "txtHN";
             this.txtHN.Size = new System.Drawing.Size(246, 32);
@@ -80,7 +80,7 @@
             this.lblNumber.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblNumber.AutoSize = true;
             this.lblNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblNumber.Location = new System.Drawing.Point(450, 39);
+            this.lblNumber.Location = new System.Drawing.Point(435, 39);
             this.lblNumber.Name = "lblNumber";
             this.lblNumber.Size = new System.Drawing.Size(90, 26);
             this.lblNumber.TabIndex = 6;
@@ -90,7 +90,7 @@
             // 
             this.txtNumber.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtNumber.Location = new System.Drawing.Point(546, 39);
+            this.txtNumber.Location = new System.Drawing.Point(521, 36);
             this.txtNumber.MaxLength = 100;
             this.txtNumber.Name = "txtNumber";
             this.txtNumber.Size = new System.Drawing.Size(87, 32);
@@ -143,7 +143,7 @@
             this.lblBirthDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblBirthDate.AutoSize = true;
             this.lblBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblBirthDate.Location = new System.Drawing.Point(646, 42);
+            this.lblBirthDate.Location = new System.Drawing.Point(614, 39);
             this.lblBirthDate.Name = "lblBirthDate";
             this.lblBirthDate.Size = new System.Drawing.Size(130, 26);
             this.lblBirthDate.TabIndex = 12;
@@ -153,7 +153,7 @@
             // 
             this.dateBirthDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.dateBirthDate.Location = new System.Drawing.Point(782, 36);
+            this.dateBirthDate.Location = new System.Drawing.Point(750, 37);
             this.dateBirthDate.Name = "dateBirthDate";
             this.dateBirthDate.Size = new System.Drawing.Size(222, 32);
             this.dateBirthDate.TabIndex = 13;
@@ -164,7 +164,7 @@
             this.lblAge.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblAge.AutoSize = true;
             this.lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblAge.Location = new System.Drawing.Point(1010, 39);
+            this.lblAge.Location = new System.Drawing.Point(985, 39);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(57, 26);
             this.lblAge.TabIndex = 14;
@@ -175,7 +175,7 @@
             this.lblDistrict.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDistrict.AutoSize = true;
             this.lblDistrict.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblDistrict.Location = new System.Drawing.Point(1085, 39);
+            this.lblDistrict.Location = new System.Drawing.Point(1109, 39);
             this.lblDistrict.Name = "lblDistrict";
             this.lblDistrict.Size = new System.Drawing.Size(64, 26);
             this.lblDistrict.TabIndex = 15;
@@ -186,7 +186,7 @@
             this.cbDistrict.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbDistrict.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.cbDistrict.FormattingEnabled = true;
-            this.cbDistrict.Location = new System.Drawing.Point(1161, 36);
+            this.cbDistrict.Location = new System.Drawing.Point(1181, 36);
             this.cbDistrict.Name = "cbDistrict";
             this.cbDistrict.Size = new System.Drawing.Size(268, 33);
             this.cbDistrict.TabIndex = 16;
