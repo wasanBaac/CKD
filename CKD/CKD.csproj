@@ -84,6 +84,12 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BarthelIndexForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarthelIndexForm.Designer.cs">
+      <DependentUpon>BarthelIndexForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class\Cal.cs" />
     <Compile Include="Class\GetData.cs" />
     <Compile Include="DataClasses.cs">
@@ -117,6 +123,9 @@
     <None Include="DataClasses.dbml.layout">
       <DependentUpon>DataClasses.dbml</DependentUpon>
     </None>
+    <EmbeddedResource Include="BarthelIndexForm.resx">
+      <DependentUpon>BarthelIndexForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPatientRecord.resx">
       <DependentUpon>FormPatientRecord.cs</DependentUpon>
     </EmbeddedResource>

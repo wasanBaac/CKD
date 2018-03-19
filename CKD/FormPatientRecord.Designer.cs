@@ -127,6 +127,12 @@
             this.radioButton18 = new System.Windows.Forms.RadioButton();
             this.radioButton19 = new System.Windows.Forms.RadioButton();
             this.radioButton20 = new System.Windows.Forms.RadioButton();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -248,7 +254,7 @@
             this.groupBox1.Controls.Add(this.txtWeight);
             this.groupBox1.Controls.Add(this.lblStage);
             this.groupBox1.Controls.Add(this.lblWeight);
-            this.groupBox1.Location = new System.Drawing.Point(122, 77);
+            this.groupBox1.Location = new System.Drawing.Point(5, 11);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1338, 85);
             this.groupBox1.TabIndex = 23;
@@ -262,7 +268,7 @@
             this.groupBox2.Controls.Add(this.cbTreatNeck);
             this.groupBox2.Controls.Add(this.cbTreatBelly);
             this.groupBox2.Controls.Add(this.cbTreatNone);
-            this.groupBox2.Location = new System.Drawing.Point(122, 175);
+            this.groupBox2.Location = new System.Drawing.Point(5, 109);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(667, 73);
             this.groupBox2.TabIndex = 24;
@@ -321,7 +327,7 @@
             this.groupBox3.Controls.Add(this.cbExBite);
             this.groupBox3.Controls.Add(this.cbExRun);
             this.groupBox3.Controls.Add(this.cbExwalk);
-            this.groupBox3.Location = new System.Drawing.Point(795, 175);
+            this.groupBox3.Location = new System.Drawing.Point(678, 109);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(665, 73);
             this.groupBox3.TabIndex = 25;
@@ -388,7 +394,7 @@
             this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox4.Controls.Add(this.cbHealBenefit);
             this.groupBox4.Controls.Add(this.cbHealtEducation);
-            this.groupBox4.Location = new System.Drawing.Point(122, 260);
+            this.groupBox4.Location = new System.Drawing.Point(5, 194);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(665, 74);
             this.groupBox4.TabIndex = 26;
@@ -422,7 +428,7 @@
             this.groupBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox5.Controls.Add(this.cbProgrameEx2);
             this.groupBox5.Controls.Add(this.cbProgrameEx1);
-            this.groupBox5.Location = new System.Drawing.Point(795, 260);
+            this.groupBox5.Location = new System.Drawing.Point(678, 194);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(665, 74);
             this.groupBox5.TabIndex = 27;
@@ -461,7 +467,7 @@
             this.groupBox6.Controls.Add(this.checkBox1);
             this.groupBox6.Controls.Add(this.checkBox3);
             this.groupBox6.Controls.Add(this.checkBox6);
-            this.groupBox6.Location = new System.Drawing.Point(122, 349);
+            this.groupBox6.Location = new System.Drawing.Point(5, 283);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(1338, 74);
             this.groupBox6.TabIndex = 28;
@@ -478,6 +484,7 @@
             this.lnklblBarthelIndex.TabIndex = 6;
             this.lnklblBarthelIndex.TabStop = true;
             this.lnklblBarthelIndex.Text = "Barthel index";
+            this.lnklblBarthelIndex.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnklblBarthelIndex_LinkClicked);
             // 
             // checkBox5
             // 
@@ -555,7 +562,7 @@
             this.gbBed.Controls.Add(this.rdbMinimal);
             this.gbBed.Controls.Add(this.rdbModerate);
             this.gbBed.Controls.Add(this.rdbMaximal);
-            this.gbBed.Location = new System.Drawing.Point(122, 429);
+            this.gbBed.Location = new System.Drawing.Point(5, 363);
             this.gbBed.Name = "gbBed";
             this.gbBed.Size = new System.Drawing.Size(1338, 74);
             this.gbBed.TabIndex = 29;
@@ -654,7 +661,7 @@
             this.gbAmbulate.Controls.Add(this.rdbTripodCane);
             this.gbAmbulate.Controls.Add(this.rdbSingleCane);
             this.gbAmbulate.Controls.Add(this.rdbWheelchair);
-            this.gbAmbulate.Location = new System.Drawing.Point(122, 509);
+            this.gbAmbulate.Location = new System.Drawing.Point(5, 443);
             this.gbAmbulate.Name = "gbAmbulate";
             this.gbAmbulate.Size = new System.Drawing.Size(667, 74);
             this.gbAmbulate.TabIndex = 30;
@@ -729,7 +736,7 @@
             this.gbBalance.Controls.Add(this.rdbFair);
             this.gbBalance.Controls.Add(this.rdbPoor);
             this.gbBalance.Controls.Add(this.rdbZero);
-            this.gbBalance.Location = new System.Drawing.Point(795, 509);
+            this.gbBalance.Location = new System.Drawing.Point(678, 443);
             this.gbBalance.Name = "gbBalance";
             this.gbBalance.Size = new System.Drawing.Size(667, 74);
             this.gbBalance.TabIndex = 31;
@@ -809,7 +816,7 @@
             this.gbMMTRightUE.Controls.Add(this.rdbRUE1P);
             this.gbMMTRightUE.Controls.Add(this.rdbRUE1);
             this.gbMMTRightUE.Controls.Add(this.rdbRUE0);
-            this.gbMMTRightUE.Location = new System.Drawing.Point(795, 589);
+            this.gbMMTRightUE.Location = new System.Drawing.Point(678, 523);
             this.gbMMTRightUE.Name = "gbMMTRightUE";
             this.gbMMTRightUE.Size = new System.Drawing.Size(667, 74);
             this.gbMMTRightUE.TabIndex = 31;
@@ -949,7 +956,7 @@
             this.gbMMTLeftUE.Controls.Add(this.rdbLUE1P);
             this.gbMMTLeftUE.Controls.Add(this.rdbLUE1);
             this.gbMMTLeftUE.Controls.Add(this.rdbLUE0);
-            this.gbMMTLeftUE.Location = new System.Drawing.Point(122, 589);
+            this.gbMMTLeftUE.Location = new System.Drawing.Point(5, 523);
             this.gbMMTLeftUE.Name = "gbMMTLeftUE";
             this.gbMMTLeftUE.Size = new System.Drawing.Size(667, 74);
             this.gbMMTLeftUE.TabIndex = 32;
@@ -1089,7 +1096,7 @@
             this.groupBox7.Controls.Add(this.radioButton8);
             this.groupBox7.Controls.Add(this.radioButton9);
             this.groupBox7.Controls.Add(this.radioButton10);
-            this.groupBox7.Location = new System.Drawing.Point(122, 669);
+            this.groupBox7.Location = new System.Drawing.Point(5, 603);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(667, 74);
             this.groupBox7.TabIndex = 34;
@@ -1229,7 +1236,7 @@
             this.groupBox8.Controls.Add(this.radioButton18);
             this.groupBox8.Controls.Add(this.radioButton19);
             this.groupBox8.Controls.Add(this.radioButton20);
-            this.groupBox8.Location = new System.Drawing.Point(795, 669);
+            this.groupBox8.Location = new System.Drawing.Point(678, 603);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(667, 74);
             this.groupBox8.TabIndex = 33;
@@ -1356,11 +1363,80 @@
             this.radioButton20.Text = "0";
             this.radioButton20.UseVisualStyleBackColor = true;
             // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.textBox1.Location = new System.Drawing.Point(101, 683);
+            this.textBox1.MaxLength = 100;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(360, 32);
+            this.textBox1.TabIndex = 35;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label2.Location = new System.Drawing.Point(29, 686);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 26);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Pain";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label3.Location = new System.Drawing.Point(467, 686);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(82, 26);
+            this.label3.TabIndex = 36;
+            this.label3.Text = "Edema";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.textBox2.Location = new System.Drawing.Point(564, 683);
+            this.textBox2.MaxLength = 100;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(347, 32);
+            this.textBox2.TabIndex = 37;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label4.Location = new System.Drawing.Point(923, 686);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 26);
+            this.label4.TabIndex = 38;
+            this.label4.Text = "อื่นๆ";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.textBox3.Location = new System.Drawing.Point(979, 683);
+            this.textBox3.MaxLength = 100;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(348, 32);
+            this.textBox3.TabIndex = 39;
+            // 
             // FormPatientRecord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1584, 861);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.gbMMTLeftUE);
@@ -1404,6 +1480,7 @@
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1508,5 +1585,11 @@
         private System.Windows.Forms.RadioButton radioButton18;
         private System.Windows.Forms.RadioButton radioButton19;
         private System.Windows.Forms.RadioButton radioButton20;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }

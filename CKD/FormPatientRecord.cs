@@ -12,9 +12,18 @@ namespace CKD
 {
     public partial class FormPatientRecord : Form
     {
+        public static double BarthelIndexValue { get; set; }
         public FormPatientRecord()
         {
             InitializeComponent();
+            lnklblBarthelIndex.Text = BarthelIndexValue.ToString();
+        }
+
+        private void lnklblBarthelIndex_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BarthelIndexForm BIF = new BarthelIndexForm();
+            BIF.ShowDialog();
+            lnklblBarthelIndex.Text = BarthelIndexValue.ToString();
         }
     }
 }
