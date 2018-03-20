@@ -30,45 +30,57 @@
         {
             this.btnSave = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rdb10 = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.rdb12 = new System.Windows.Forms.RadioButton();
             this.rdb11 = new System.Windows.Forms.RadioButton();
-            this.rdb13 = new System.Windows.Forms.RadioButton();
+            this.rdb10 = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.rdb23 = new System.Windows.Forms.RadioButton();
+            this.rdb22 = new System.Windows.Forms.RadioButton();
+            this.rdb21 = new System.Windows.Forms.RadioButton();
+            this.rdb20 = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.rdb31 = new System.Windows.Forms.RadioButton();
+            this.rdb30 = new System.Windows.Forms.RadioButton();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.rdb40 = new System.Windows.Forms.RadioButton();
+            this.rdb42 = new System.Windows.Forms.RadioButton();
+            this.rdb41 = new System.Windows.Forms.RadioButton();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
-            this.radioButton13 = new System.Windows.Forms.RadioButton();
-            this.radioButton14 = new System.Windows.Forms.RadioButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.rdb51 = new System.Windows.Forms.RadioButton();
+            this.rdb50 = new System.Windows.Forms.RadioButton();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.radioButton15 = new System.Windows.Forms.RadioButton();
-            this.radioButton16 = new System.Windows.Forms.RadioButton();
-            this.radioButton17 = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.rdb63 = new System.Windows.Forms.RadioButton();
+            this.rdb62 = new System.Windows.Forms.RadioButton();
+            this.rdb61 = new System.Windows.Forms.RadioButton();
+            this.rdb60 = new System.Windows.Forms.RadioButton();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.radioButton18 = new System.Windows.Forms.RadioButton();
-            this.radioButton19 = new System.Windows.Forms.RadioButton();
-            this.radioButton20 = new System.Windows.Forms.RadioButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.rdb72 = new System.Windows.Forms.RadioButton();
+            this.rdb71 = new System.Windows.Forms.RadioButton();
+            this.rdb70 = new System.Windows.Forms.RadioButton();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.radioButton21 = new System.Windows.Forms.RadioButton();
-            this.radioButton22 = new System.Windows.Forms.RadioButton();
-            this.radioButton23 = new System.Windows.Forms.RadioButton();
+            this.label8 = new System.Windows.Forms.Label();
+            this.rdb82 = new System.Windows.Forms.RadioButton();
+            this.rdb81 = new System.Windows.Forms.RadioButton();
+            this.rdb80 = new System.Windows.Forms.RadioButton();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.radioButton24 = new System.Windows.Forms.RadioButton();
-            this.radioButton25 = new System.Windows.Forms.RadioButton();
-            this.radioButton26 = new System.Windows.Forms.RadioButton();
+            this.label9 = new System.Windows.Forms.Label();
+            this.rdb92 = new System.Windows.Forms.RadioButton();
+            this.rdb91 = new System.Windows.Forms.RadioButton();
+            this.rdb90 = new System.Windows.Forms.RadioButton();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.radioButton27 = new System.Windows.Forms.RadioButton();
-            this.radioButton28 = new System.Windows.Forms.RadioButton();
-            this.radioButton29 = new System.Windows.Forms.RadioButton();
+            this.label10 = new System.Windows.Forms.Label();
+            this.rdb102 = new System.Windows.Forms.RadioButton();
+            this.rdb101 = new System.Windows.Forms.RadioButton();
+            this.rdb100 = new System.Windows.Forms.RadioButton();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.lblTotalDetail = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -86,7 +98,7 @@
             this.btnSave.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSave.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btnSave.Location = new System.Drawing.Point(650, 631);
+            this.btnSave.Location = new System.Drawing.Point(372, 630);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(238, 51);
             this.btnSave.TabIndex = 23;
@@ -96,7 +108,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.rdb13);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.rdb12);
             this.groupBox1.Controls.Add(this.rdb11);
             this.groupBox1.Controls.Add(this.rdb10);
             this.groupBox1.Location = new System.Drawing.Point(57, 52);
@@ -106,16 +119,28 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "1. Feeding(การรับประทานอาหารเมื่อเตรียมสำรับไว้ให้เรียบร้อยต่อหน้า)";
             // 
-            // rdb10
+            // label1
             // 
-            this.rdb10.AutoSize = true;
-            this.rdb10.Location = new System.Drawing.Point(34, 21);
-            this.rdb10.Name = "rdb10";
-            this.rdb10.Size = new System.Drawing.Size(382, 17);
-            this.rdb10.TabIndex = 0;
-            this.rdb10.TabStop = true;
-            this.rdb10.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.rdb10.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label1.ForeColor = System.Drawing.Color.Green;
+            this.label1.Location = new System.Drawing.Point(501, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 51);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "0";
+            // 
+            // rdb12
+            // 
+            this.rdb12.AutoSize = true;
+            this.rdb12.Location = new System.Drawing.Point(34, 64);
+            this.rdb12.Name = "rdb12";
+            this.rdb12.Size = new System.Drawing.Size(333, 17);
+            this.rdb12.TabIndex = 2;
+            this.rdb12.TabStop = true;
+            this.rdb12.Text = "2  =  ตักอาหารและช่วยตัวเองได้ตามปกติเมื่อเตรียมอาหารวางไว้ให้";
+            this.rdb12.UseVisualStyleBackColor = true;
+            this.rdb12.CheckedChanged += new System.EventHandler(this.rdb1_CheckedChanged);
             // 
             // rdb11
             // 
@@ -127,428 +152,604 @@
             this.rdb11.TabStop = true;
             this.rdb11.Text = "1  =  ช่วยใช้ช้อนตักอาหารไว้ให้หรือตัด/หั่นให้เป็นชิ้นเล็กๆไว้ล่วงหน้า";
             this.rdb11.UseVisualStyleBackColor = true;
+            this.rdb11.CheckedChanged += new System.EventHandler(this.rdb1_CheckedChanged);
             // 
-            // rdb13
+            // rdb10
             // 
-            this.rdb13.AutoSize = true;
-            this.rdb13.Location = new System.Drawing.Point(34, 64);
-            this.rdb13.Name = "rdb13";
-            this.rdb13.Size = new System.Drawing.Size(333, 17);
-            this.rdb13.TabIndex = 2;
-            this.rdb13.TabStop = true;
-            this.rdb13.Text = "2  =  ตักอาหารและช่วยตัวเองได้ตามปกติเมื่อเตรียมอาหารวางไว้ให้";
-            this.rdb13.UseVisualStyleBackColor = true;
+            this.rdb10.AutoSize = true;
+            this.rdb10.Location = new System.Drawing.Point(34, 21);
+            this.rdb10.Name = "rdb10";
+            this.rdb10.Size = new System.Drawing.Size(382, 17);
+            this.rdb10.TabIndex = 0;
+            this.rdb10.TabStop = true;
+            this.rdb10.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
+            this.rdb10.UseVisualStyleBackColor = true;
+            this.rdb10.CheckedChanged += new System.EventHandler(this.rdb1_CheckedChanged);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.radioButton3);
-            this.groupBox2.Controls.Add(this.radioButton4);
-            this.groupBox2.Controls.Add(this.radioButton5);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.rdb23);
+            this.groupBox2.Controls.Add(this.rdb22);
+            this.groupBox2.Controls.Add(this.rdb21);
+            this.groupBox2.Controls.Add(this.rdb20);
             this.groupBox2.Location = new System.Drawing.Point(650, 52);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(573, 92);
+            this.groupBox2.Size = new System.Drawing.Size(617, 92);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "2.  Transfer(ลุกจากที่นอนหรือจากเตียงไปยังเก้าอี้)";
             // 
-            // radioButton3
+            // label2
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(34, 64);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(382, 17);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label2.ForeColor = System.Drawing.Color.Green;
+            this.label2.Location = new System.Drawing.Point(565, 23);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 51);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "0";
             // 
-            // radioButton4
+            // rdb23
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(34, 42);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(382, 17);
-            this.radioButton4.TabIndex = 1;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rdb23.AutoSize = true;
+            this.rdb23.Location = new System.Drawing.Point(34, 70);
+            this.rdb23.Name = "rdb23";
+            this.rdb23.Size = new System.Drawing.Size(457, 17);
+            this.rdb23.TabIndex = 3;
+            this.rdb23.TabStop = true;
+            this.rdb23.Text = "3 = สามารถลุกจากที่นอน เตียง หรือเคลื่อนย้ายลงมาเก้าอี้รถเข็นและสามารถล๊อกล้อได้ท" +
+    "ำได้เอง";
+            this.rdb23.UseVisualStyleBackColor = true;
+            this.rdb23.CheckedChanged += new System.EventHandler(this.rdb2_CheckedChanged);
             // 
-            // radioButton5
+            // rdb22
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(34, 21);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(382, 17);
-            this.radioButton5.TabIndex = 0;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rdb22.AutoSize = true;
+            this.rdb22.Location = new System.Drawing.Point(34, 51);
+            this.rdb22.Name = "rdb22";
+            this.rdb22.Size = new System.Drawing.Size(433, 17);
+            this.rdb22.TabIndex = 2;
+            this.rdb22.TabStop = true;
+            this.rdb22.Text = "2 = ต้องการความช่วยเหลือบ้าง เช่น บอกให้ทำตามหรือช่วยพยุงเล็กน้อยหรือต้องมีคนดูแล" +
+    "";
+            this.rdb22.UseVisualStyleBackColor = true;
+            this.rdb22.CheckedChanged += new System.EventHandler(this.rdb2_CheckedChanged);
+            // 
+            // rdb21
+            // 
+            this.rdb21.AutoSize = true;
+            this.rdb21.Location = new System.Drawing.Point(34, 34);
+            this.rdb21.Name = "rdb21";
+            this.rdb21.Size = new System.Drawing.Size(311, 17);
+            this.rdb21.TabIndex = 1;
+            this.rdb21.TabStop = true;
+            this.rdb21.Text = "1 = ต้องการความช่วยเหลือ1-2คน พยุง/ดันขึ้นมา จึงจะนั่งอยู่ได้";
+            this.rdb21.UseVisualStyleBackColor = true;
+            this.rdb21.CheckedChanged += new System.EventHandler(this.rdb2_CheckedChanged);
+            // 
+            // rdb20
+            // 
+            this.rdb20.AutoSize = true;
+            this.rdb20.Location = new System.Drawing.Point(34, 15);
+            this.rdb20.Name = "rdb20";
+            this.rdb20.Size = new System.Drawing.Size(333, 17);
+            this.rdb20.TabIndex = 0;
+            this.rdb20.TabStop = true;
+            this.rdb20.Text = "0 = ไม่สามารถนั่งได้(นั่งแล้วล้ม) หรือต้องใช้คนสองคนช่วยกันยกขึ้น";
+            this.rdb20.UseVisualStyleBackColor = true;
+            this.rdb20.CheckedChanged += new System.EventHandler(this.rdb2_CheckedChanged);
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.radioButton6);
-            this.groupBox3.Controls.Add(this.radioButton7);
-            this.groupBox3.Controls.Add(this.radioButton8);
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.rdb31);
+            this.groupBox3.Controls.Add(this.rdb30);
             this.groupBox3.Location = new System.Drawing.Point(57, 165);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(553, 92);
             this.groupBox3.TabIndex = 27;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "1. Feeding(การรับประทานอาหารเมื่อเตรียมสำรับไว้ให้เรียบร้อยต่อหน้า)";
+            this.groupBox3.Text = "3. Grooming(ล้างหน้า หวีผม แปรงฟัน โกนหนวด ในระยะ 24-48 ชั่งโมงที่ผ่านมา)";
             // 
-            // radioButton6
+            // label3
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(34, 64);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(382, 17);
-            this.radioButton6.TabIndex = 2;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label3.ForeColor = System.Drawing.Color.Green;
+            this.label3.Location = new System.Drawing.Point(501, 25);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 51);
+            this.label3.TabIndex = 34;
+            this.label3.Text = "0";
             // 
-            // radioButton7
+            // rdb31
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(34, 42);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(382, 17);
-            this.radioButton7.TabIndex = 1;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.rdb31.AutoSize = true;
+            this.rdb31.Location = new System.Drawing.Point(34, 59);
+            this.rdb31.Name = "rdb31";
+            this.rdb31.Size = new System.Drawing.Size(474, 17);
+            this.rdb31.TabIndex = 1;
+            this.rdb31.TabStop = true;
+            this.rdb31.Text = "1 = สามารถล้างหน้า แปรงฟัน หวีผม หรือโกนหนวดได้เอง (รวมทั้งทำได้เองถ้าเตรียมอุปกร" +
+    "ณ์ไว้ให้)";
+            this.rdb31.UseVisualStyleBackColor = true;
+            this.rdb31.CheckedChanged += new System.EventHandler(this.rdb3_CheckedChanged);
             // 
-            // radioButton8
+            // rdb30
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(34, 21);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(382, 17);
-            this.radioButton8.TabIndex = 0;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.rdb30.AutoSize = true;
+            this.rdb30.Location = new System.Drawing.Point(34, 31);
+            this.rdb30.Name = "rdb30";
+            this.rdb30.Size = new System.Drawing.Size(433, 17);
+            this.rdb30.TabIndex = 0;
+            this.rdb30.TabStop = true;
+            this.rdb30.Text = "0 = ต้องการความช่วยเหลือ/พึ่งพาบุคคลอื่นในการล้างหน้า แปรงฟัน หวีผม หรือโกนหนวด";
+            this.rdb30.UseVisualStyleBackColor = true;
+            this.rdb30.CheckedChanged += new System.EventHandler(this.rdb3_CheckedChanged);
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.radioButton9);
-            this.groupBox4.Controls.Add(this.radioButton10);
-            this.groupBox4.Controls.Add(this.radioButton11);
+            this.groupBox4.Controls.Add(this.label4);
+            this.groupBox4.Controls.Add(this.rdb40);
+            this.groupBox4.Controls.Add(this.rdb42);
+            this.groupBox4.Controls.Add(this.rdb41);
             this.groupBox4.Location = new System.Drawing.Point(650, 165);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(573, 92);
+            this.groupBox4.Size = new System.Drawing.Size(617, 92);
             this.groupBox4.TabIndex = 26;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "1. Feeding(การรับประทานอาหารเมื่อเตรียมสำรับไว้ให้เรียบร้อยต่อหน้า)";
+            this.groupBox4.Text = "4. Toilet Use(การเข้าห้องน้ำ)";
             // 
-            // radioButton9
+            // label4
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(34, 64);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(382, 17);
-            this.radioButton9.TabIndex = 2;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton9.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label4.ForeColor = System.Drawing.Color.Green;
+            this.label4.Location = new System.Drawing.Point(565, 25);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(46, 51);
+            this.label4.TabIndex = 34;
+            this.label4.Text = "0";
             // 
-            // radioButton10
+            // rdb40
             // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Location = new System.Drawing.Point(34, 42);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(382, 17);
-            this.radioButton10.TabIndex = 1;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton10.UseVisualStyleBackColor = true;
+            this.rdb40.AutoSize = true;
+            this.rdb40.Location = new System.Drawing.Point(34, 19);
+            this.rdb40.Name = "rdb40";
+            this.rdb40.Size = new System.Drawing.Size(550, 18);
+            this.rdb40.TabIndex = 0;
+            this.rdb40.TabStop = true;
+            this.rdb40.Text = "0 = ต้องพึ่งพาเกี่ยวกับการเข้า-ออกห้องสุขา หรือการสอดดึงกระโถนรวมทั้งการถอดใส่เสื" +
+    "้อผ้า การล้างทำความสะอาดหลังขับถ่าย";
+            this.rdb40.UseCompatibleTextRendering = true;
+            this.rdb40.UseVisualStyleBackColor = true;
+            this.rdb40.CheckedChanged += new System.EventHandler(this.rdb4_CheckedChanged);
             // 
-            // radioButton11
+            // rdb42
             // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Location = new System.Drawing.Point(34, 21);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(382, 17);
-            this.radioButton11.TabIndex = 0;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton11.UseVisualStyleBackColor = true;
+            this.rdb42.AutoSize = true;
+            this.rdb42.Location = new System.Drawing.Point(34, 56);
+            this.rdb42.Name = "rdb42";
+            this.rdb42.Size = new System.Drawing.Size(527, 30);
+            this.rdb42.TabIndex = 2;
+            this.rdb42.TabStop = true;
+            this.rdb42.Text = "2 = สามารถเข้า-ออกห้องสุขา หรือการสอดดึงกระโถนรวมทั้งการถอดใส่เสื้อผ้า การล้างทำค" +
+    "วามสะอาดหลังขับถ่าย \n ช่วยเหลือตนเองได้ดี";
+            this.rdb42.UseVisualStyleBackColor = true;
+            this.rdb42.CheckedChanged += new System.EventHandler(this.rdb4_CheckedChanged);
+            // 
+            // rdb41
+            // 
+            this.rdb41.AutoSize = true;
+            this.rdb41.Location = new System.Drawing.Point(34, 38);
+            this.rdb41.Name = "rdb41";
+            this.rdb41.Size = new System.Drawing.Size(259, 17);
+            this.rdb41.TabIndex = 1;
+            this.rdb41.TabStop = true;
+            this.rdb41.Text = "1 = ทำได้บ้าง ต้องการความช่วยเหลือในบางขั้นตอน";
+            this.rdb41.UseVisualStyleBackColor = true;
+            this.rdb41.CheckedChanged += new System.EventHandler(this.rdb4_CheckedChanged);
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.radioButton12);
-            this.groupBox5.Controls.Add(this.radioButton13);
-            this.groupBox5.Controls.Add(this.radioButton14);
+            this.groupBox5.Controls.Add(this.label5);
+            this.groupBox5.Controls.Add(this.rdb51);
+            this.groupBox5.Controls.Add(this.rdb50);
             this.groupBox5.Location = new System.Drawing.Point(57, 276);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(553, 92);
             this.groupBox5.TabIndex = 29;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "1. Feeding(การรับประทานอาหารเมื่อเตรียมสำรับไว้ให้เรียบร้อยต่อหน้า)";
+            this.groupBox5.Text = "5. Bathing(การอาบน้ำ)";
             // 
-            // radioButton12
+            // label5
             // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Location = new System.Drawing.Point(34, 64);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(382, 17);
-            this.radioButton12.TabIndex = 2;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton12.UseVisualStyleBackColor = true;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label5.ForeColor = System.Drawing.Color.Green;
+            this.label5.Location = new System.Drawing.Point(501, 27);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(46, 51);
+            this.label5.TabIndex = 34;
+            this.label5.Text = "0";
             // 
-            // radioButton13
+            // rdb51
             // 
-            this.radioButton13.AutoSize = true;
-            this.radioButton13.Location = new System.Drawing.Point(34, 42);
-            this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(382, 17);
-            this.radioButton13.TabIndex = 1;
-            this.radioButton13.TabStop = true;
-            this.radioButton13.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton13.UseVisualStyleBackColor = true;
+            this.rdb51.AutoSize = true;
+            this.rdb51.Location = new System.Drawing.Point(34, 54);
+            this.rdb51.Name = "rdb51";
+            this.rdb51.Size = new System.Drawing.Size(403, 17);
+            this.rdb51.TabIndex = 1;
+            this.rdb51.TabStop = true;
+            this.rdb51.Text = "1 = สามารถอาบน้ำ ทำความสะอาดได้ ทั้งฟอกสบู่ ตักน้ำราดตัว หรือเช็ดตัวได้ทุกส่วน";
+            this.rdb51.UseVisualStyleBackColor = true;
+            this.rdb51.CheckedChanged += new System.EventHandler(this.rdb5_CheckedChanged);
             // 
-            // radioButton14
+            // rdb50
             // 
-            this.radioButton14.AutoSize = true;
-            this.radioButton14.Location = new System.Drawing.Point(34, 21);
-            this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(382, 17);
-            this.radioButton14.TabIndex = 0;
-            this.radioButton14.TabStop = true;
-            this.radioButton14.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton14.UseVisualStyleBackColor = true;
+            this.rdb50.AutoSize = true;
+            this.rdb50.Location = new System.Drawing.Point(34, 27);
+            this.rdb50.Name = "rdb50";
+            this.rdb50.Size = new System.Drawing.Size(469, 17);
+            this.rdb50.TabIndex = 0;
+            this.rdb50.TabStop = true;
+            this.rdb50.Text = "0 = ไม่สามารถอาบน้ำหรือเช็ดตัว ดูแลความสะอาดของร่างกายได้ ต้องการความช่วยเหลือหรื" +
+    "อทำให้";
+            this.rdb50.UseVisualStyleBackColor = true;
+            this.rdb50.CheckedChanged += new System.EventHandler(this.rdb5_CheckedChanged);
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.radioButton15);
-            this.groupBox6.Controls.Add(this.radioButton16);
-            this.groupBox6.Controls.Add(this.radioButton17);
+            this.groupBox6.Controls.Add(this.label6);
+            this.groupBox6.Controls.Add(this.rdb63);
+            this.groupBox6.Controls.Add(this.rdb62);
+            this.groupBox6.Controls.Add(this.rdb61);
+            this.groupBox6.Controls.Add(this.rdb60);
             this.groupBox6.Location = new System.Drawing.Point(650, 276);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(553, 92);
+            this.groupBox6.Size = new System.Drawing.Size(617, 92);
             this.groupBox6.TabIndex = 28;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "1. Feeding(การรับประทานอาหารเมื่อเตรียมสำรับไว้ให้เรียบร้อยต่อหน้า)";
+            this.groupBox6.Text = "6. Mobility(การเคลื่อนที่ภายในห้องหรือบ้าน)";
             // 
-            // radioButton15
+            // label6
             // 
-            this.radioButton15.AutoSize = true;
-            this.radioButton15.Location = new System.Drawing.Point(34, 64);
-            this.radioButton15.Name = "radioButton15";
-            this.radioButton15.Size = new System.Drawing.Size(382, 17);
-            this.radioButton15.TabIndex = 2;
-            this.radioButton15.TabStop = true;
-            this.radioButton15.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton15.UseVisualStyleBackColor = true;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label6.ForeColor = System.Drawing.Color.Green;
+            this.label6.Location = new System.Drawing.Point(565, 23);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(46, 51);
+            this.label6.TabIndex = 34;
+            this.label6.Text = "0";
             // 
-            // radioButton16
+            // rdb63
             // 
-            this.radioButton16.AutoSize = true;
-            this.radioButton16.Location = new System.Drawing.Point(34, 42);
-            this.radioButton16.Name = "radioButton16";
-            this.radioButton16.Size = new System.Drawing.Size(382, 17);
-            this.radioButton16.TabIndex = 1;
-            this.radioButton16.TabStop = true;
-            this.radioButton16.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton16.UseVisualStyleBackColor = true;
+            this.rdb63.AutoSize = true;
+            this.rdb63.Location = new System.Drawing.Point(34, 69);
+            this.rdb63.Name = "rdb63";
+            this.rdb63.Size = new System.Drawing.Size(359, 17);
+            this.rdb63.TabIndex = 3;
+            this.rdb63.TabStop = true;
+            this.rdb63.Text = "3 = สามารถเดินหรือเคลื่อนที่ได้เอง โดยอาจใช้ไม้เท้า หรือเครื่องพยุงเดิน";
+            this.rdb63.UseVisualStyleBackColor = true;
+            this.rdb63.CheckedChanged += new System.EventHandler(this.rdb6_CheckedChanged);
             // 
-            // radioButton17
+            // rdb62
             // 
-            this.radioButton17.AutoSize = true;
-            this.radioButton17.Location = new System.Drawing.Point(34, 21);
-            this.radioButton17.Name = "radioButton17";
-            this.radioButton17.Size = new System.Drawing.Size(382, 17);
-            this.radioButton17.TabIndex = 0;
-            this.radioButton17.TabStop = true;
-            this.radioButton17.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton17.UseVisualStyleBackColor = true;
+            this.rdb62.AutoSize = true;
+            this.rdb62.Location = new System.Drawing.Point(34, 50);
+            this.rdb62.Name = "rdb62";
+            this.rdb62.Size = new System.Drawing.Size(525, 18);
+            this.rdb62.TabIndex = 2;
+            this.rdb62.TabStop = true;
+            this.rdb62.Text = "2 = สามารถเดินหรือเคลื่อนที่โดยมีคนช่วย เช่น พยุงหรือบอกให้ทำตาม หรือต้องการให้คว" +
+    "ามสนใจดูแลเพื่อความปลอดภัย";
+            this.rdb62.UseCompatibleTextRendering = true;
+            this.rdb62.UseVisualStyleBackColor = true;
+            this.rdb62.CheckedChanged += new System.EventHandler(this.rdb6_CheckedChanged);
+            // 
+            // rdb61
+            // 
+            this.rdb61.AutoSize = true;
+            this.rdb61.Location = new System.Drawing.Point(34, 32);
+            this.rdb61.Name = "rdb61";
+            this.rdb61.Size = new System.Drawing.Size(202, 17);
+            this.rdb61.TabIndex = 1;
+            this.rdb61.TabStop = true;
+            this.rdb61.Text = "1 = สามารถใช้รถเข็น คลาน หรือถัดได้";
+            this.rdb61.UseVisualStyleBackColor = true;
+            this.rdb61.CheckedChanged += new System.EventHandler(this.rdb6_CheckedChanged);
+            // 
+            // rdb60
+            // 
+            this.rdb60.AutoSize = true;
+            this.rdb60.Location = new System.Drawing.Point(34, 15);
+            this.rdb60.Name = "rdb60";
+            this.rdb60.Size = new System.Drawing.Size(165, 17);
+            this.rdb60.TabIndex = 0;
+            this.rdb60.TabStop = true;
+            this.rdb60.Text = "0 = เดิน-เคลื่อนที่ไปไหนไม่ได้";
+            this.rdb60.UseVisualStyleBackColor = true;
+            this.rdb60.CheckedChanged += new System.EventHandler(this.rdb6_CheckedChanged);
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.radioButton18);
-            this.groupBox7.Controls.Add(this.radioButton19);
-            this.groupBox7.Controls.Add(this.radioButton20);
-            this.groupBox7.Location = new System.Drawing.Point(650, 396);
+            this.groupBox7.Controls.Add(this.label7);
+            this.groupBox7.Controls.Add(this.rdb72);
+            this.groupBox7.Controls.Add(this.rdb71);
+            this.groupBox7.Controls.Add(this.rdb70);
+            this.groupBox7.Location = new System.Drawing.Point(57, 400);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(573, 92);
+            this.groupBox7.Size = new System.Drawing.Size(553, 92);
             this.groupBox7.TabIndex = 31;
             this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "1. Feeding(การรับประทานอาหารเมื่อเตรียมสำรับไว้ให้เรียบร้อยต่อหน้า)";
+            this.groupBox7.Text = "7. Stair(การขึ้นลงบันได 1 ขั้น)";
             // 
-            // radioButton18
+            // label7
             // 
-            this.radioButton18.AutoSize = true;
-            this.radioButton18.Location = new System.Drawing.Point(34, 64);
-            this.radioButton18.Name = "radioButton18";
-            this.radioButton18.Size = new System.Drawing.Size(382, 17);
-            this.radioButton18.TabIndex = 2;
-            this.radioButton18.TabStop = true;
-            this.radioButton18.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton18.UseVisualStyleBackColor = true;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label7.ForeColor = System.Drawing.Color.Green;
+            this.label7.Location = new System.Drawing.Point(501, 29);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(46, 51);
+            this.label7.TabIndex = 34;
+            this.label7.Text = "0";
             // 
-            // radioButton19
+            // rdb72
             // 
-            this.radioButton19.AutoSize = true;
-            this.radioButton19.Location = new System.Drawing.Point(34, 42);
-            this.radioButton19.Name = "radioButton19";
-            this.radioButton19.Size = new System.Drawing.Size(382, 17);
-            this.radioButton19.TabIndex = 1;
-            this.radioButton19.TabStop = true;
-            this.radioButton19.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton19.UseVisualStyleBackColor = true;
+            this.rdb72.AutoSize = true;
+            this.rdb72.Location = new System.Drawing.Point(34, 64);
+            this.rdb72.Name = "rdb72";
+            this.rdb72.Size = new System.Drawing.Size(384, 17);
+            this.rdb72.TabIndex = 2;
+            this.rdb72.TabStop = true;
+            this.rdb72.Text = "2 = ขึ้นลงได้เอง(ถ้าต้องใช้อุปกรณ์ช่วยเดิน เช่น walker จะต้องเอาขึ้นลงได้ด้วย)";
+            this.rdb72.UseVisualStyleBackColor = true;
+            this.rdb72.CheckedChanged += new System.EventHandler(this.rdb7_CheckedChanged);
             // 
-            // radioButton20
+            // rdb71
             // 
-            this.radioButton20.AutoSize = true;
-            this.radioButton20.Location = new System.Drawing.Point(34, 21);
-            this.radioButton20.Name = "radioButton20";
-            this.radioButton20.Size = new System.Drawing.Size(382, 17);
-            this.radioButton20.TabIndex = 0;
-            this.radioButton20.TabStop = true;
-            this.radioButton20.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton20.UseVisualStyleBackColor = true;
+            this.rdb71.AutoSize = true;
+            this.rdb71.Location = new System.Drawing.Point(34, 42);
+            this.rdb71.Name = "rdb71";
+            this.rdb71.Size = new System.Drawing.Size(138, 17);
+            this.rdb71.TabIndex = 1;
+            this.rdb71.TabStop = true;
+            this.rdb71.Text = "1 = ต้องการคนช่วยเหลือ";
+            this.rdb71.UseVisualStyleBackColor = true;
+            this.rdb71.CheckedChanged += new System.EventHandler(this.rdb7_CheckedChanged);
+            // 
+            // rdb70
+            // 
+            this.rdb70.AutoSize = true;
+            this.rdb70.Location = new System.Drawing.Point(34, 21);
+            this.rdb70.Name = "rdb70";
+            this.rdb70.Size = new System.Drawing.Size(161, 17);
+            this.rdb70.TabIndex = 0;
+            this.rdb70.TabStop = true;
+            this.rdb70.Text = "0 = ไม่สามารถขึ้น-ลงบันไดได้";
+            this.rdb70.UseVisualStyleBackColor = true;
+            this.rdb70.CheckedChanged += new System.EventHandler(this.rdb7_CheckedChanged);
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.radioButton21);
-            this.groupBox8.Controls.Add(this.radioButton22);
-            this.groupBox8.Controls.Add(this.radioButton23);
-            this.groupBox8.Location = new System.Drawing.Point(57, 396);
+            this.groupBox8.Controls.Add(this.label8);
+            this.groupBox8.Controls.Add(this.rdb82);
+            this.groupBox8.Controls.Add(this.rdb81);
+            this.groupBox8.Controls.Add(this.rdb80);
+            this.groupBox8.Location = new System.Drawing.Point(650, 400);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(553, 92);
+            this.groupBox8.Size = new System.Drawing.Size(617, 92);
             this.groupBox8.TabIndex = 30;
             this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "1. Feeding(การรับประทานอาหารเมื่อเตรียมสำรับไว้ให้เรียบร้อยต่อหน้า)";
+            this.groupBox8.Text = "8. Dressing(การสวมใส่เสื้อผ้า)";
             // 
-            // radioButton21
+            // label8
             // 
-            this.radioButton21.AutoSize = true;
-            this.radioButton21.Location = new System.Drawing.Point(34, 64);
-            this.radioButton21.Name = "radioButton21";
-            this.radioButton21.Size = new System.Drawing.Size(382, 17);
-            this.radioButton21.TabIndex = 2;
-            this.radioButton21.TabStop = true;
-            this.radioButton21.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton21.UseVisualStyleBackColor = true;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label8.ForeColor = System.Drawing.Color.Green;
+            this.label8.Location = new System.Drawing.Point(565, 21);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(46, 51);
+            this.label8.TabIndex = 34;
+            this.label8.Text = "0";
             // 
-            // radioButton22
+            // rdb82
             // 
-            this.radioButton22.AutoSize = true;
-            this.radioButton22.Location = new System.Drawing.Point(34, 42);
-            this.radioButton22.Name = "radioButton22";
-            this.radioButton22.Size = new System.Drawing.Size(382, 17);
-            this.radioButton22.TabIndex = 1;
-            this.radioButton22.TabStop = true;
-            this.radioButton22.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton22.UseVisualStyleBackColor = true;
+            this.rdb82.AutoSize = true;
+            this.rdb82.Location = new System.Drawing.Point(34, 57);
+            this.rdb82.Name = "rdb82";
+            this.rdb82.Size = new System.Drawing.Size(344, 30);
+            this.rdb82.TabIndex = 2;
+            this.rdb82.TabStop = true;
+            this.rdb82.Text = "2 = สามารถแต่งตัวหรือสวมใส่เสื้อผ้าได้เอง \n (รวมทั้งการติดกระดุม รูดซิบ หรือใส่เส" +
+    "ื้อผ้าที่ดัดแปลงให้เหมาะสมก็ได้)";
+            this.rdb82.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.rdb82.UseVisualStyleBackColor = true;
+            this.rdb82.CheckedChanged += new System.EventHandler(this.rdb8_CheckedChanged);
             // 
-            // radioButton23
+            // rdb81
             // 
-            this.radioButton23.AutoSize = true;
-            this.radioButton23.Location = new System.Drawing.Point(34, 21);
-            this.radioButton23.Name = "radioButton23";
-            this.radioButton23.Size = new System.Drawing.Size(382, 17);
-            this.radioButton23.TabIndex = 0;
-            this.radioButton23.TabStop = true;
-            this.radioButton23.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton23.UseVisualStyleBackColor = true;
+            this.rdb81.AutoSize = true;
+            this.rdb81.Location = new System.Drawing.Point(34, 40);
+            this.rdb81.Name = "rdb81";
+            this.rdb81.Size = new System.Drawing.Size(261, 17);
+            this.rdb81.TabIndex = 1;
+            this.rdb81.TabStop = true;
+            this.rdb81.Text = "1 = ช่วยตัวเองได้ราวร้อยละ 50 ที่เหลือต้องมีคนช่วย";
+            this.rdb81.UseVisualStyleBackColor = true;
+            this.rdb81.CheckedChanged += new System.EventHandler(this.rdb8_CheckedChanged);
+            // 
+            // rdb80
+            // 
+            this.rdb80.AutoSize = true;
+            this.rdb80.Location = new System.Drawing.Point(34, 19);
+            this.rdb80.Name = "rdb80";
+            this.rdb80.Size = new System.Drawing.Size(425, 17);
+            this.rdb80.TabIndex = 0;
+            this.rdb80.TabStop = true;
+            this.rdb80.Text = "0 = ไม่สามารถแต่งตัวหรือสวมใส่เสื้อผ้าได้เอง ต้องมีคนสวมใส่ให้ หรือช่วยตัวเองได้น" +
+    "้อย";
+            this.rdb80.UseVisualStyleBackColor = true;
+            this.rdb80.CheckedChanged += new System.EventHandler(this.rdb8_CheckedChanged);
             // 
             // groupBox9
             // 
-            this.groupBox9.Controls.Add(this.radioButton24);
-            this.groupBox9.Controls.Add(this.radioButton25);
-            this.groupBox9.Controls.Add(this.radioButton26);
-            this.groupBox9.Location = new System.Drawing.Point(650, 514);
+            this.groupBox9.Controls.Add(this.label9);
+            this.groupBox9.Controls.Add(this.rdb92);
+            this.groupBox9.Controls.Add(this.rdb91);
+            this.groupBox9.Controls.Add(this.rdb90);
+            this.groupBox9.Location = new System.Drawing.Point(57, 517);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(573, 92);
+            this.groupBox9.Size = new System.Drawing.Size(553, 92);
             this.groupBox9.TabIndex = 33;
             this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "1. Feeding(การรับประทานอาหารเมื่อเตรียมสำรับไว้ให้เรียบร้อยต่อหน้า)";
+            this.groupBox9.Text = "9. Bowels(การกลั้นอุจจาระในระยะ 1 สัปดาห์ที่ผ่านมา)";
             // 
-            // radioButton24
+            // label9
             // 
-            this.radioButton24.AutoSize = true;
-            this.radioButton24.Location = new System.Drawing.Point(34, 64);
-            this.radioButton24.Name = "radioButton24";
-            this.radioButton24.Size = new System.Drawing.Size(382, 17);
-            this.radioButton24.TabIndex = 2;
-            this.radioButton24.TabStop = true;
-            this.radioButton24.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton24.UseVisualStyleBackColor = true;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label9.ForeColor = System.Drawing.Color.Green;
+            this.label9.Location = new System.Drawing.Point(501, 21);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(46, 51);
+            this.label9.TabIndex = 34;
+            this.label9.Text = "0";
             // 
-            // radioButton25
+            // rdb92
             // 
-            this.radioButton25.AutoSize = true;
-            this.radioButton25.Location = new System.Drawing.Point(34, 42);
-            this.radioButton25.Name = "radioButton25";
-            this.radioButton25.Size = new System.Drawing.Size(382, 17);
-            this.radioButton25.TabIndex = 1;
-            this.radioButton25.TabStop = true;
-            this.radioButton25.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton25.UseVisualStyleBackColor = true;
+            this.rdb92.AutoSize = true;
+            this.rdb92.Location = new System.Drawing.Point(34, 64);
+            this.rdb92.Name = "rdb92";
+            this.rdb92.Size = new System.Drawing.Size(290, 17);
+            this.rdb92.TabIndex = 2;
+            this.rdb92.TabStop = true;
+            this.rdb92.Text = "2 = กลั้นได้และ/หรือ ต้องสวนอุจจาระ แต่สามารถทำเองได้";
+            this.rdb92.UseVisualStyleBackColor = true;
+            this.rdb92.CheckedChanged += new System.EventHandler(this.rdb9_CheckedChanged);
             // 
-            // radioButton26
+            // rdb91
             // 
-            this.radioButton26.AutoSize = true;
-            this.radioButton26.Location = new System.Drawing.Point(34, 21);
-            this.radioButton26.Name = "radioButton26";
-            this.radioButton26.Size = new System.Drawing.Size(382, 17);
-            this.radioButton26.TabIndex = 0;
-            this.radioButton26.TabStop = true;
-            this.radioButton26.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton26.UseVisualStyleBackColor = true;
+            this.rdb91.AutoSize = true;
+            this.rdb91.Location = new System.Drawing.Point(34, 42);
+            this.rdb91.Name = "rdb91";
+            this.rdb91.Size = new System.Drawing.Size(294, 17);
+            this.rdb91.TabIndex = 1;
+            this.rdb91.TabStop = true;
+            this.rdb91.Text = "1 = กลั้นได้เป็นส่วนใหญ่ แต่อาจกลั้นไม่ได้สัปดาห์ละ 1 ครั้ง";
+            this.rdb91.UseVisualStyleBackColor = true;
+            this.rdb91.CheckedChanged += new System.EventHandler(this.rdb9_CheckedChanged);
+            // 
+            // rdb90
+            // 
+            this.rdb90.AutoSize = true;
+            this.rdb90.Location = new System.Drawing.Point(34, 21);
+            this.rdb90.Name = "rdb90";
+            this.rdb90.Size = new System.Drawing.Size(402, 17);
+            this.rdb90.TabIndex = 0;
+            this.rdb90.TabStop = true;
+            this.rdb90.Text = "0 = กลั้นไม่ได้ อุจจาระราด กระปิดกระปอย หรือท้องผูก ต้องการสวนอุจจาระอยู่เสมอ";
+            this.rdb90.UseVisualStyleBackColor = true;
+            this.rdb90.CheckedChanged += new System.EventHandler(this.rdb9_CheckedChanged);
             // 
             // groupBox10
             // 
-            this.groupBox10.Controls.Add(this.radioButton27);
-            this.groupBox10.Controls.Add(this.radioButton28);
-            this.groupBox10.Controls.Add(this.radioButton29);
-            this.groupBox10.Location = new System.Drawing.Point(57, 514);
+            this.groupBox10.Controls.Add(this.label10);
+            this.groupBox10.Controls.Add(this.rdb102);
+            this.groupBox10.Controls.Add(this.rdb101);
+            this.groupBox10.Controls.Add(this.rdb100);
+            this.groupBox10.Location = new System.Drawing.Point(650, 517);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(553, 92);
+            this.groupBox10.Size = new System.Drawing.Size(617, 92);
             this.groupBox10.TabIndex = 32;
             this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "1. Feeding(การรับประทานอาหารเมื่อเตรียมสำรับไว้ให้เรียบร้อยต่อหน้า)";
+            this.groupBox10.Text = "10. Bladder(การกลั้นปัสสาวะในระยะ 1 สัปดาห์ที่ผ่านมา)";
             // 
-            // radioButton27
+            // label10
             // 
-            this.radioButton27.AutoSize = true;
-            this.radioButton27.Location = new System.Drawing.Point(34, 64);
-            this.radioButton27.Name = "radioButton27";
-            this.radioButton27.Size = new System.Drawing.Size(382, 17);
-            this.radioButton27.TabIndex = 2;
-            this.radioButton27.TabStop = true;
-            this.radioButton27.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton27.UseVisualStyleBackColor = true;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label10.ForeColor = System.Drawing.Color.Green;
+            this.label10.Location = new System.Drawing.Point(565, 21);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(46, 51);
+            this.label10.TabIndex = 4;
+            this.label10.Text = "0";
             // 
-            // radioButton28
+            // rdb102
             // 
-            this.radioButton28.AutoSize = true;
-            this.radioButton28.Location = new System.Drawing.Point(34, 42);
-            this.radioButton28.Name = "radioButton28";
-            this.radioButton28.Size = new System.Drawing.Size(382, 17);
-            this.radioButton28.TabIndex = 1;
-            this.radioButton28.TabStop = true;
-            this.radioButton28.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton28.UseVisualStyleBackColor = true;
+            this.rdb102.AutoSize = true;
+            this.rdb102.Location = new System.Drawing.Point(34, 65);
+            this.rdb102.Name = "rdb102";
+            this.rdb102.Size = new System.Drawing.Size(415, 17);
+            this.rdb102.TabIndex = 2;
+            this.rdb102.TabStop = true;
+            this.rdb102.Text = "2 = กลั้นได้ ไม่มีปัสสาวะกระปิดกระปอย ในกรณีคาสายสวนปัสสาวะสามารถดูแลได้เอง";
+            this.rdb102.UseVisualStyleBackColor = true;
+            this.rdb102.CheckedChanged += new System.EventHandler(this.rdb10_CheckedChanged);
             // 
-            // radioButton29
+            // rdb101
             // 
-            this.radioButton29.AutoSize = true;
-            this.radioButton29.Location = new System.Drawing.Point(34, 21);
-            this.radioButton29.Name = "radioButton29";
-            this.radioButton29.Size = new System.Drawing.Size(382, 17);
-            this.radioButton29.TabIndex = 0;
-            this.radioButton29.TabStop = true;
-            this.radioButton29.Text = "0  =  ไม่สามารถตักอาหารเข้าปากได้  ต้องมีคนป้อนให้หรือรับอาหารทางสายยาง";
-            this.radioButton29.UseVisualStyleBackColor = true;
+            this.rdb101.AutoSize = true;
+            this.rdb101.Location = new System.Drawing.Point(34, 34);
+            this.rdb101.Name = "rdb101";
+            this.rdb101.Size = new System.Drawing.Size(436, 30);
+            this.rdb101.TabIndex = 1;
+            this.rdb101.TabStop = true;
+            this.rdb101.Text = "1 = กลั้นปัสสาวะไม่ได้ประมาณวันละ 1 ครั้ง และต้องการความช่วยเหลือในการสวนปัสสาวะ " +
+    "\n หรือดูแลเมื่อคาสายสวนปัสสาวะ";
+            this.rdb101.UseVisualStyleBackColor = true;
+            this.rdb101.CheckedChanged += new System.EventHandler(this.rdb10_CheckedChanged);
+            // 
+            // rdb100
+            // 
+            this.rdb100.AutoSize = true;
+            this.rdb100.Location = new System.Drawing.Point(34, 15);
+            this.rdb100.Name = "rdb100";
+            this.rdb100.Size = new System.Drawing.Size(456, 17);
+            this.rdb100.TabIndex = 0;
+            this.rdb100.TabStop = true;
+            this.rdb100.Text = "0 = กลั้นไม่ได้ ปัสสาวะราด กระปิดกระปอย/ต้องสวนปัสสาวะ หรือดูแลเมื่อคาสายสวนปัสสา" +
+    "วะให้";
+            this.rdb100.UseVisualStyleBackColor = true;
+            this.rdb100.CheckedChanged += new System.EventHandler(this.rdb10_CheckedChanged);
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblTotal.ForeColor = System.Drawing.Color.Green;
+            this.lblTotal.Location = new System.Drawing.Point(654, 630);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(46, 51);
+            this.lblTotal.TabIndex = 35;
+            this.lblTotal.Text = "0";
+            // 
+            // lblTotalDetail
+            // 
+            this.lblTotalDetail.AutoSize = true;
+            this.lblTotalDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblTotalDetail.ForeColor = System.Drawing.Color.Green;
+            this.lblTotalDetail.Location = new System.Drawing.Point(740, 637);
+            this.lblTotalDetail.Name = "lblTotalDetail";
+            this.lblTotalDetail.Size = new System.Drawing.Size(348, 31);
+            this.lblTotalDetail.TabIndex = 36;
+            this.lblTotalDetail.Text = "Severe disable / Dependent";
             // 
             // BarthelIndexForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.lblTotalDetail);
+            this.Controls.Add(this.lblTotal);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.groupBox7);
@@ -557,11 +758,11 @@
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSave);
             this.Name = "BarthelIndexForm";
             this.Text = "BarthelIndexForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -583,6 +784,7 @@
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -590,44 +792,56 @@
 
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton rdb13;
+        private System.Windows.Forms.RadioButton rdb12;
         private System.Windows.Forms.RadioButton rdb11;
         private System.Windows.Forms.RadioButton rdb10;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton rdb22;
+        private System.Windows.Forms.RadioButton rdb21;
+        private System.Windows.Forms.RadioButton rdb20;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton rdb31;
+        private System.Windows.Forms.RadioButton rdb30;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton10;
-        private System.Windows.Forms.RadioButton radioButton11;
+        private System.Windows.Forms.RadioButton rdb42;
+        private System.Windows.Forms.RadioButton rdb41;
+        private System.Windows.Forms.RadioButton rdb40;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.RadioButton radioButton12;
-        private System.Windows.Forms.RadioButton radioButton13;
-        private System.Windows.Forms.RadioButton radioButton14;
+        private System.Windows.Forms.RadioButton rdb51;
+        private System.Windows.Forms.RadioButton rdb50;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.RadioButton radioButton15;
-        private System.Windows.Forms.RadioButton radioButton16;
-        private System.Windows.Forms.RadioButton radioButton17;
+        private System.Windows.Forms.RadioButton rdb62;
+        private System.Windows.Forms.RadioButton rdb61;
+        private System.Windows.Forms.RadioButton rdb60;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.RadioButton radioButton18;
-        private System.Windows.Forms.RadioButton radioButton19;
-        private System.Windows.Forms.RadioButton radioButton20;
+        private System.Windows.Forms.RadioButton rdb72;
+        private System.Windows.Forms.RadioButton rdb71;
+        private System.Windows.Forms.RadioButton rdb70;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.RadioButton radioButton21;
-        private System.Windows.Forms.RadioButton radioButton22;
-        private System.Windows.Forms.RadioButton radioButton23;
+        private System.Windows.Forms.RadioButton rdb82;
+        private System.Windows.Forms.RadioButton rdb81;
+        private System.Windows.Forms.RadioButton rdb80;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.RadioButton radioButton24;
-        private System.Windows.Forms.RadioButton radioButton25;
-        private System.Windows.Forms.RadioButton radioButton26;
+        private System.Windows.Forms.RadioButton rdb92;
+        private System.Windows.Forms.RadioButton rdb91;
+        private System.Windows.Forms.RadioButton rdb90;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.RadioButton radioButton27;
-        private System.Windows.Forms.RadioButton radioButton28;
-        private System.Windows.Forms.RadioButton radioButton29;
+        private System.Windows.Forms.RadioButton rdb102;
+        private System.Windows.Forms.RadioButton rdb101;
+        private System.Windows.Forms.RadioButton rdb100;
+        private System.Windows.Forms.RadioButton rdb23;
+        private System.Windows.Forms.RadioButton rdb63;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Label lblTotalDetail;
     }
 }
