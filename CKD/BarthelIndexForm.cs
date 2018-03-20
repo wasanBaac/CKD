@@ -59,7 +59,7 @@ namespace CKD
                 else if (_total <= 19)
                 {
                     lblTotalDetail.Text = "Maximum assistance";
-                    lblTotalDetail.ForeColor = Color.YellowGreen;
+                    lblTotalDetail.ForeColor = Color.Blue;
                 }
                 else
                 {
