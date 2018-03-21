@@ -19,10 +19,21 @@ namespace CKD
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            FormPatientRecord.BarthelIndexValue = 2.5;
-            //FormPatientRecord.
+            FormPatientRecord.BarthelIndexValue = Convert.ToInt16(lblTotal.Text);
+
+            PatientRecordDetail PRD = new PatientRecordDetail();
+            PRD.Feeding = Convert.ToInt16(label1.Text);
+            PRD.Transfer = Convert.ToInt16(label2.Text);
+            PRD.Grooming = Convert.ToInt16(label3.Text);
+            PRD.Toilet__ = Convert.ToInt16(label4.Text);
+            PRD.Bathing = Convert.ToInt16(label5.Text);
+            PRD.Mobility = Convert.ToInt16(label6.Text);
+            PRD.Stair = Convert.ToInt16(label7.Text);
+            PRD.Dressing = Convert.ToInt16(label8.Text);
+            PRD.Bowels = Convert.ToInt16(label9.Text);
+            PRD.Bladder = Convert.ToInt16(label10.Text);
+            FormPatientRecord.barthelRecord = PRD;
             this.Close();
-            
         }
 
         private void setTotal()
@@ -58,12 +69,12 @@ namespace CKD
                 }
                 else if (_total <= 19)
                 {
-                    lblTotalDetail.Text = "Maximum assistance";
+                    lblTotalDetail.Text = "Minimal assistance";
                     lblTotalDetail.ForeColor = Color.Blue;
                 }
                 else
                 {
-                    lblTotalDetail.Text = "Maximum assistance";
+                    lblTotalDetail.Text = "Independent";
                     lblTotalDetail.ForeColor = Color.Green;
                 }
             }

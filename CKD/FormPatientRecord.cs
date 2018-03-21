@@ -12,11 +12,23 @@ namespace CKD
 {
     public partial class FormPatientRecord : Form
     {
-        public static double BarthelIndexValue { get; set; }
+        public static int BarthelIndexValue { get; set; }
+        public static PatientRecordDetail barthelRecord { get; set; }
+
+        private int recordID;
+        private Int32 HN;
+
+        DataClassesDataContext db = new DataClassesDataContext();
         public FormPatientRecord()
         {
             InitializeComponent();
-            lnklblBarthelIndex.Text = BarthelIndexValue.ToString();
+            //lnklblBarthelIndex.Text = BarthelIndexValue.ToString();
+        }
+        public FormPatientRecord(int _recordID,Int32 _HN)
+        {
+            InitializeComponent();
+            recordID = _recordID;
+            HN = _HN;
         }
 
         private void lnklblBarthelIndex_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -24,6 +36,53 @@ namespace CKD
             BarthelIndexForm BIF = new BarthelIndexForm();
             BIF.ShowDialog();
             lnklblBarthelIndex.Text = BarthelIndexValue.ToString();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            PatientRecord patientRecord = (from tb in db.PatientRecords
+                               where tb.recordID == recordID
+                               select tb).SingleOrDefault();
+            if(patientRecord == null)
+            {
+                patientRecord = new PatientRecord();
+                db.PatientRecords.InsertOnSubmit(patientRecord);
+            }
+
+            patientRecord.HN = HN;
+            patientRecord.recordDate = recordDate.Value;
+            patientRecord.eGFRstage = Convert.ToInt16(txteGFR.Text);
+            patientRecord.weight = Convert.ToDecimal(txtWeight.Text);
+            patientRecord.height = Convert.ToDecimal(txtHeight.Text);
+            //การได้รับการรักษา
+            patientRecord.treatNone = cbTreatNone.Checked;
+            patientRecord.treatBelly = cbTreatBelly.Checked;
+            patientRecord.treatNeck = cbTreatNeck.Checked;
+            patientRecord.treatArm = cbTreatArm.Checked;
+            //การออกกำลังกายที่บ้าน
+            patientRecord.exWalk = cbExwalk.Checked;
+            patientRecord.exRun = cbExRun.Checked;
+            patientRecord.exBite = cbExBite.Checked;
+            patientRecord.exProgram = cbExProgram.Checked;
+            patientRecord.exReject = cbExReject.Checked;
+            //สุขศึกษา
+            patientRecord.healtEducation = cbHealtEducation.Checked;
+            patientRecord.healtBenefit = cbHealBenefit.Checked;
+            //โปรแกรมการออกกำลังกาย
+            patientRecord.progeamEx1 = cbProgrameEx1.Checked;
+            patientRecord.programEx2 = cbProgrameEx2.Checked;
+            //การประเมิน
+            patientRecord.estimate1 = cbEstimate1.Checked;
+            patientRecord.estimate2 = cbEstimate2.Checked;
+            patientRecord.estimate3 = cbEstimate3.Checked;
+            patientRecord.estimate4 = cbEstimate4.Checked;
+            patientRecord.estimate5 = cbEstimate5.Checked;
+            patientRecord.estimate6 = cbEstimate6.Checked;
+            //Barthel Index
+            patientRecord.BarthelIndex = BarthelIndexValue;
+            //Bed Mobility
+            //patientRecord.BedMobility = rdbMaximal.Checked;
+            
         }
     }
 }

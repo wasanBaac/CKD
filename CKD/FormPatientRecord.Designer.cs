@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dateBirthDate = new System.Windows.Forms.DateTimePicker();
+            this.recordDate = new System.Windows.Forms.DateTimePicker();
             this.lblDate = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtHN = new System.Windows.Forms.TextBox();
+            this.txteGFR = new System.Windows.Forms.TextBox();
             this.lblStage = new System.Windows.Forms.Label();
             this.lblWeight = new System.Windows.Forms.Label();
             this.txtWeight = new System.Windows.Forms.TextBox();
@@ -57,12 +57,12 @@
             this.cbProgrameEx1 = new System.Windows.Forms.CheckBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.lnklblBarthelIndex = new System.Windows.Forms.LinkLabel();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.cbEstimate6 = new System.Windows.Forms.CheckBox();
+            this.cbEstimate5 = new System.Windows.Forms.CheckBox();
+            this.cbEstimate4 = new System.Windows.Forms.CheckBox();
+            this.cbEstimate3 = new System.Windows.Forms.CheckBox();
+            this.cbEstimate2 = new System.Windows.Forms.CheckBox();
+            this.cbEstimate1 = new System.Windows.Forms.CheckBox();
             this.gbBed = new System.Windows.Forms.GroupBox();
             this.rdbIndependent = new System.Windows.Forms.RadioButton();
             this.rdbSupervision = new System.Windows.Forms.RadioButton();
@@ -133,6 +133,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -148,14 +149,14 @@
             this.groupBox8.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dateBirthDate
+            // recordDate
             // 
-            this.dateBirthDate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.dateBirthDate.Location = new System.Drawing.Point(178, 31);
-            this.dateBirthDate.Name = "dateBirthDate";
-            this.dateBirthDate.Size = new System.Drawing.Size(254, 32);
-            this.dateBirthDate.TabIndex = 14;
+            this.recordDate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.recordDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.recordDate.Location = new System.Drawing.Point(178, 31);
+            this.recordDate.Name = "recordDate";
+            this.recordDate.Size = new System.Drawing.Size(254, 32);
+            this.recordDate.TabIndex = 14;
             // 
             // lblDate
             // 
@@ -179,15 +180,15 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "eGFR /Stage ";
             // 
-            // txtHN
+            // txteGFR
             // 
-            this.txtHN.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtHN.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtHN.Location = new System.Drawing.Point(652, 34);
-            this.txtHN.MaxLength = 100;
-            this.txtHN.Name = "txtHN";
-            this.txtHN.Size = new System.Drawing.Size(50, 32);
-            this.txtHN.TabIndex = 17;
+            this.txteGFR.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txteGFR.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.txteGFR.Location = new System.Drawing.Point(652, 34);
+            this.txteGFR.MaxLength = 100;
+            this.txteGFR.Name = "txteGFR";
+            this.txteGFR.Size = new System.Drawing.Size(50, 32);
+            this.txteGFR.TabIndex = 17;
             // 
             // lblStage
             // 
@@ -245,12 +246,12 @@
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox1.Controls.Add(this.dateBirthDate);
+            this.groupBox1.Controls.Add(this.recordDate);
             this.groupBox1.Controls.Add(this.lblDate);
             this.groupBox1.Controls.Add(this.txtHeight);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.lblHeight);
-            this.groupBox1.Controls.Add(this.txtHN);
+            this.groupBox1.Controls.Add(this.txteGFR);
             this.groupBox1.Controls.Add(this.txtWeight);
             this.groupBox1.Controls.Add(this.lblStage);
             this.groupBox1.Controls.Add(this.lblWeight);
@@ -461,12 +462,12 @@
             // 
             this.groupBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox6.Controls.Add(this.lnklblBarthelIndex);
-            this.groupBox6.Controls.Add(this.checkBox5);
-            this.groupBox6.Controls.Add(this.checkBox4);
-            this.groupBox6.Controls.Add(this.checkBox2);
-            this.groupBox6.Controls.Add(this.checkBox1);
-            this.groupBox6.Controls.Add(this.checkBox3);
-            this.groupBox6.Controls.Add(this.checkBox6);
+            this.groupBox6.Controls.Add(this.cbEstimate6);
+            this.groupBox6.Controls.Add(this.cbEstimate5);
+            this.groupBox6.Controls.Add(this.cbEstimate4);
+            this.groupBox6.Controls.Add(this.cbEstimate3);
+            this.groupBox6.Controls.Add(this.cbEstimate2);
+            this.groupBox6.Controls.Add(this.cbEstimate1);
             this.groupBox6.Location = new System.Drawing.Point(5, 283);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(1338, 74);
@@ -486,71 +487,71 @@
             this.lnklblBarthelIndex.Text = "Barthel index";
             this.lnklblBarthelIndex.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnklblBarthelIndex_LinkClicked);
             // 
-            // checkBox5
+            // cbEstimate6
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.checkBox5.Location = new System.Drawing.Point(1048, 30);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(78, 24);
-            this.checkBox5.TabIndex = 5;
-            this.checkBox5.Text = "6 MWT";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.cbEstimate6.AutoSize = true;
+            this.cbEstimate6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbEstimate6.Location = new System.Drawing.Point(1048, 30);
+            this.cbEstimate6.Name = "cbEstimate6";
+            this.cbEstimate6.Size = new System.Drawing.Size(78, 24);
+            this.cbEstimate6.TabIndex = 5;
+            this.cbEstimate6.Text = "6 MWT";
+            this.cbEstimate6.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // cbEstimate5
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.checkBox4.Location = new System.Drawing.Point(848, 30);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(126, 24);
-            this.checkBox4.TabIndex = 4;
-            this.checkBox4.Text = "มวลกล้ามเนื้อขา";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.cbEstimate5.AutoSize = true;
+            this.cbEstimate5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbEstimate5.Location = new System.Drawing.Point(848, 30);
+            this.cbEstimate5.Name = "cbEstimate5";
+            this.cbEstimate5.Size = new System.Drawing.Size(126, 24);
+            this.cbEstimate5.TabIndex = 4;
+            this.cbEstimate5.Text = "มวลกล้ามเนื้อขา";
+            this.cbEstimate5.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // cbEstimate4
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.checkBox2.Location = new System.Drawing.Point(661, 29);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(137, 24);
-            this.checkBox2.TabIndex = 3;
-            this.checkBox2.Text = "มวลกล้ามเนื้อแขน";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.cbEstimate4.AutoSize = true;
+            this.cbEstimate4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbEstimate4.Location = new System.Drawing.Point(661, 29);
+            this.cbEstimate4.Name = "cbEstimate4";
+            this.cbEstimate4.Size = new System.Drawing.Size(137, 24);
+            this.cbEstimate4.TabIndex = 3;
+            this.cbEstimate4.Text = "มวลกล้ามเนื้อแขน";
+            this.cbEstimate4.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // cbEstimate3
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.checkBox1.Location = new System.Drawing.Point(467, 29);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(143, 24);
-            this.checkBox1.TabIndex = 2;
-            this.checkBox1.Text = "มวลกล้ามเนื้อทั้งตัว";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cbEstimate3.AutoSize = true;
+            this.cbEstimate3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbEstimate3.Location = new System.Drawing.Point(467, 29);
+            this.cbEstimate3.Name = "cbEstimate3";
+            this.cbEstimate3.Size = new System.Drawing.Size(143, 24);
+            this.cbEstimate3.TabIndex = 2;
+            this.cbEstimate3.Text = "มวลกล้ามเนื้อทั้งตัว";
+            this.cbEstimate3.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // cbEstimate2
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.checkBox3.Location = new System.Drawing.Point(275, 29);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(142, 24);
-            this.checkBox3.TabIndex = 1;
-            this.checkBox3.Text = "% ไขมันในร่างกาย";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.cbEstimate2.AutoSize = true;
+            this.cbEstimate2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbEstimate2.Location = new System.Drawing.Point(275, 29);
+            this.cbEstimate2.Name = "cbEstimate2";
+            this.cbEstimate2.Size = new System.Drawing.Size(142, 24);
+            this.cbEstimate2.TabIndex = 1;
+            this.cbEstimate2.Text = "% ไขมันในร่างกาย";
+            this.cbEstimate2.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // cbEstimate1
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.checkBox6.Location = new System.Drawing.Point(61, 29);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(180, 24);
-            this.checkBox6.TabIndex = 0;
-            this.checkBox6.Text = "ดัชนีมวลกล้ามเนื้อ (BMI)";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.cbEstimate1.AutoSize = true;
+            this.cbEstimate1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbEstimate1.Location = new System.Drawing.Point(61, 29);
+            this.cbEstimate1.Name = "cbEstimate1";
+            this.cbEstimate1.Size = new System.Drawing.Size(180, 24);
+            this.cbEstimate1.TabIndex = 0;
+            this.cbEstimate1.Text = "ดัชนีมวลกล้ามเนื้อ (BMI)";
+            this.cbEstimate1.UseVisualStyleBackColor = true;
             // 
             // gbBed
             // 
@@ -816,7 +817,7 @@
             this.gbMMTRightUE.Controls.Add(this.rdbRUE1P);
             this.gbMMTRightUE.Controls.Add(this.rdbRUE1);
             this.gbMMTRightUE.Controls.Add(this.rdbRUE0);
-            this.gbMMTRightUE.Location = new System.Drawing.Point(678, 523);
+            this.gbMMTRightUE.Location = new System.Drawing.Point(678, 518);
             this.gbMMTRightUE.Name = "gbMMTRightUE";
             this.gbMMTRightUE.Size = new System.Drawing.Size(667, 74);
             this.gbMMTRightUE.TabIndex = 31;
@@ -956,7 +957,7 @@
             this.gbMMTLeftUE.Controls.Add(this.rdbLUE1P);
             this.gbMMTLeftUE.Controls.Add(this.rdbLUE1);
             this.gbMMTLeftUE.Controls.Add(this.rdbLUE0);
-            this.gbMMTLeftUE.Location = new System.Drawing.Point(5, 523);
+            this.gbMMTLeftUE.Location = new System.Drawing.Point(5, 518);
             this.gbMMTLeftUE.Name = "gbMMTLeftUE";
             this.gbMMTLeftUE.Size = new System.Drawing.Size(667, 74);
             this.gbMMTLeftUE.TabIndex = 32;
@@ -1096,7 +1097,7 @@
             this.groupBox7.Controls.Add(this.radioButton8);
             this.groupBox7.Controls.Add(this.radioButton9);
             this.groupBox7.Controls.Add(this.radioButton10);
-            this.groupBox7.Location = new System.Drawing.Point(5, 603);
+            this.groupBox7.Location = new System.Drawing.Point(5, 596);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(667, 74);
             this.groupBox7.TabIndex = 34;
@@ -1236,7 +1237,7 @@
             this.groupBox8.Controls.Add(this.radioButton18);
             this.groupBox8.Controls.Add(this.radioButton19);
             this.groupBox8.Controls.Add(this.radioButton20);
-            this.groupBox8.Location = new System.Drawing.Point(678, 603);
+            this.groupBox8.Location = new System.Drawing.Point(678, 596);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(667, 74);
             this.groupBox8.TabIndex = 33;
@@ -1367,10 +1368,10 @@
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.textBox1.Location = new System.Drawing.Point(101, 683);
+            this.textBox1.Location = new System.Drawing.Point(77, 683);
             this.textBox1.MaxLength = 100;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(360, 32);
+            this.textBox1.Size = new System.Drawing.Size(285, 32);
             this.textBox1.TabIndex = 35;
             // 
             // label2
@@ -1378,7 +1379,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label2.Location = new System.Drawing.Point(29, 686);
+            this.label2.Location = new System.Drawing.Point(16, 686);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 26);
             this.label2.TabIndex = 23;
@@ -1389,7 +1390,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label3.Location = new System.Drawing.Point(467, 686);
+            this.label3.Location = new System.Drawing.Point(368, 686);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 26);
             this.label3.TabIndex = 36;
@@ -1399,10 +1400,10 @@
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.textBox2.Location = new System.Drawing.Point(564, 683);
+            this.textBox2.Location = new System.Drawing.Point(456, 683);
             this.textBox2.MaxLength = 100;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(347, 32);
+            this.textBox2.Size = new System.Drawing.Size(300, 32);
             this.textBox2.TabIndex = 37;
             // 
             // label4
@@ -1410,7 +1411,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label4.Location = new System.Drawing.Point(923, 686);
+            this.label4.Location = new System.Drawing.Point(762, 686);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 26);
             this.label4.TabIndex = 38;
@@ -1420,17 +1421,31 @@
             // 
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.textBox3.Location = new System.Drawing.Point(979, 683);
+            this.textBox3.Location = new System.Drawing.Point(814, 683);
             this.textBox3.MaxLength = 100;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(348, 32);
+            this.textBox3.Size = new System.Drawing.Size(261, 32);
             this.textBox3.TabIndex = 39;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSave.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnSave.Location = new System.Drawing.Point(1155, 673);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(190, 51);
+            this.btnSave.TabIndex = 40;
+            this.btnSave.Text = "บันทึก";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // FormPatientRecord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label3);
@@ -1486,10 +1501,10 @@
 
         #endregion
 
-        private System.Windows.Forms.DateTimePicker dateBirthDate;
+        private System.Windows.Forms.DateTimePicker recordDate;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtHN;
+        private System.Windows.Forms.TextBox txteGFR;
         private System.Windows.Forms.Label lblStage;
         private System.Windows.Forms.Label lblWeight;
         private System.Windows.Forms.TextBox txtWeight;
@@ -1515,12 +1530,12 @@
         private System.Windows.Forms.CheckBox cbProgrameEx1;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.LinkLabel lnklblBarthelIndex;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox cbEstimate6;
+        private System.Windows.Forms.CheckBox cbEstimate5;
+        private System.Windows.Forms.CheckBox cbEstimate4;
+        private System.Windows.Forms.CheckBox cbEstimate3;
+        private System.Windows.Forms.CheckBox cbEstimate2;
+        private System.Windows.Forms.CheckBox cbEstimate1;
         private System.Windows.Forms.GroupBox gbBed;
         private System.Windows.Forms.RadioButton rdbModerate;
         private System.Windows.Forms.RadioButton rdbMaximal;
@@ -1591,5 +1606,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button btnSave;
     }
 }

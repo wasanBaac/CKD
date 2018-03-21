@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClasses">
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.5" name="DataClasses">
   <DataContextMoniker Name="/DataClassesDataContext" />
   <nestedChildShapes>
-    <classShape Id="80abf468-5e0d-44ed-a7da-88e090048ff1" absoluteBounds="1.125, 0.5, 2, 2.7324039713541666">
+    <classShape Id="80abf468-5e0d-44ed-a7da-88e090048ff1" isExpanded="false" absoluteBounds="1.125, 0.5, 2, 0.45">
       <DataClassMoniker Name="/DataClassesDataContext/Patient" />
       <nestedChildShapes>
         <elementListCompartment Id="2f211ed9-08cb-448d-8450-e87518f55ad7" absoluteBounds="1.1399999999999997, 0.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
@@ -50,16 +50,16 @@
         <elementListCompartment Id="b8ae21fa-6181-4b74-bfec-ee4dfed3995d" absoluteBounds="4.015, 3.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="0701d7d4-b56f-4de6-836c-54ca9a3bfb80" isExpanded="false" absoluteBounds="1.125, 3.5, 2, 0.45">
+    <classShape Id="0701d7d4-b56f-4de6-836c-54ca9a3bfb80" absoluteBounds="1.125, 1.125, 2, 8.1168440755208326">
       <DataClassMoniker Name="/DataClassesDataContext/PatientRecord" />
       <nestedChildShapes>
-        <elementListCompartment Id="b3e4a3ba-0754-4ea7-9ec6-53b38feda292" absoluteBounds="1.1399999999999997, 3.96, 1.9700000000000002, 7.556844075520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="b3e4a3ba-0754-4ea7-9ec6-53b38feda292" absoluteBounds="1.1399999999999997, 1.585, 1.9700000000000002, 7.556844075520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="827005ae-cc5a-4967-9c77-eebd632588fc" isExpanded="false" absoluteBounds="1.125, 4, 2, 0.45">
+    <classShape Id="827005ae-cc5a-4967-9c77-eebd632588fc" isExpanded="false" absoluteBounds="3.875, 4.625, 2, 0.45">
       <DataClassMoniker Name="/DataClassesDataContext/PatientRecordDetail" />
       <nestedChildShapes>
-        <elementListCompartment Id="11e1d965-a121-48e1-a0ff-d4ef582f7f96" absoluteBounds="1.1400000000000006, 4.46, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="11e1d965-a121-48e1-a0ff-d4ef582f7f96" absoluteBounds="3.8900000000000006, 5.085, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>
