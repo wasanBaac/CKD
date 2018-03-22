@@ -64,25 +64,8 @@
             this.cbEstimate2 = new System.Windows.Forms.CheckBox();
             this.cbEstimate1 = new System.Windows.Forms.CheckBox();
             this.gbBed = new System.Windows.Forms.GroupBox();
-            this.rdbIndependent = new System.Windows.Forms.RadioButton();
-            this.rdbSupervision = new System.Windows.Forms.RadioButton();
-            this.rdbClose = new System.Windows.Forms.RadioButton();
-            this.rdbContact = new System.Windows.Forms.RadioButton();
-            this.rdbMinimal = new System.Windows.Forms.RadioButton();
-            this.rdbModerate = new System.Windows.Forms.RadioButton();
-            this.rdbMaximal = new System.Windows.Forms.RadioButton();
             this.gbAmbulate = new System.Windows.Forms.GroupBox();
-            this.rdbStretcher = new System.Windows.Forms.RadioButton();
-            this.rdbNormalWalking = new System.Windows.Forms.RadioButton();
-            this.rdbTripodCane = new System.Windows.Forms.RadioButton();
-            this.rdbSingleCane = new System.Windows.Forms.RadioButton();
-            this.rdbWheelchair = new System.Windows.Forms.RadioButton();
             this.gbBalance = new System.Windows.Forms.GroupBox();
-            this.rdbNormal = new System.Windows.Forms.RadioButton();
-            this.rdbGood = new System.Windows.Forms.RadioButton();
-            this.rdbFair = new System.Windows.Forms.RadioButton();
-            this.rdbPoor = new System.Windows.Forms.RadioButton();
-            this.rdbZero = new System.Windows.Forms.RadioButton();
             this.gbMMTRightUE = new System.Windows.Forms.GroupBox();
             this.rdbRUE5 = new System.Windows.Forms.RadioButton();
             this.rdbRUE4P = new System.Windows.Forms.RadioButton();
@@ -134,6 +117,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
+            this.cbBedMobility = new System.Windows.Forms.ComboBox();
+            this.cbAmbulateWith = new System.Windows.Forms.ComboBox();
+            this.cbBalance = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -556,253 +542,35 @@
             // gbBed
             // 
             this.gbBed.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gbBed.Controls.Add(this.rdbIndependent);
-            this.gbBed.Controls.Add(this.rdbSupervision);
-            this.gbBed.Controls.Add(this.rdbClose);
-            this.gbBed.Controls.Add(this.rdbContact);
-            this.gbBed.Controls.Add(this.rdbMinimal);
-            this.gbBed.Controls.Add(this.rdbModerate);
-            this.gbBed.Controls.Add(this.rdbMaximal);
-            this.gbBed.Location = new System.Drawing.Point(5, 363);
+            this.gbBed.Controls.Add(this.cbBedMobility);
+            this.gbBed.Location = new System.Drawing.Point(256, 363);
             this.gbBed.Name = "gbBed";
-            this.gbBed.Size = new System.Drawing.Size(1338, 74);
+            this.gbBed.Size = new System.Drawing.Size(325, 74);
             this.gbBed.TabIndex = 29;
             this.gbBed.TabStop = false;
             this.gbBed.Text = "Bed mobility";
             // 
-            // rdbIndependent
-            // 
-            this.rdbIndependent.AutoSize = true;
-            this.rdbIndependent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbIndependent.Location = new System.Drawing.Point(1153, 30);
-            this.rdbIndependent.Name = "rdbIndependent";
-            this.rdbIndependent.Size = new System.Drawing.Size(118, 24);
-            this.rdbIndependent.TabIndex = 9;
-            this.rdbIndependent.TabStop = true;
-            this.rdbIndependent.Text = "Independent";
-            this.rdbIndependent.UseVisualStyleBackColor = true;
-            // 
-            // rdbSupervision
-            // 
-            this.rdbSupervision.AutoSize = true;
-            this.rdbSupervision.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbSupervision.Location = new System.Drawing.Point(1020, 30);
-            this.rdbSupervision.Name = "rdbSupervision";
-            this.rdbSupervision.Size = new System.Drawing.Size(106, 24);
-            this.rdbSupervision.TabIndex = 8;
-            this.rdbSupervision.TabStop = true;
-            this.rdbSupervision.Text = "supervision";
-            this.rdbSupervision.UseVisualStyleBackColor = true;
-            // 
-            // rdbClose
-            // 
-            this.rdbClose.AutoSize = true;
-            this.rdbClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbClose.Location = new System.Drawing.Point(848, 30);
-            this.rdbClose.Name = "rdbClose";
-            this.rdbClose.Size = new System.Drawing.Size(130, 24);
-            this.rdbClose.TabIndex = 7;
-            this.rdbClose.TabStop = true;
-            this.rdbClose.Text = "close guarding";
-            this.rdbClose.UseVisualStyleBackColor = true;
-            // 
-            // rdbContact
-            // 
-            this.rdbContact.AutoSize = true;
-            this.rdbContact.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbContact.Location = new System.Drawing.Point(673, 30);
-            this.rdbContact.Name = "rdbContact";
-            this.rdbContact.Size = new System.Drawing.Size(146, 24);
-            this.rdbContact.TabIndex = 6;
-            this.rdbContact.TabStop = true;
-            this.rdbContact.Text = "contact guarding";
-            this.rdbContact.UseVisualStyleBackColor = true;
-            // 
-            // rdbMinimal
-            // 
-            this.rdbMinimal.AutoSize = true;
-            this.rdbMinimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbMinimal.Location = new System.Drawing.Point(476, 30);
-            this.rdbMinimal.Name = "rdbMinimal";
-            this.rdbMinimal.Size = new System.Drawing.Size(160, 24);
-            this.rdbMinimal.TabIndex = 5;
-            this.rdbMinimal.TabStop = true;
-            this.rdbMinimal.Text = "minimal assistance";
-            this.rdbMinimal.UseVisualStyleBackColor = true;
-            // 
-            // rdbModerate
-            // 
-            this.rdbModerate.AutoSize = true;
-            this.rdbModerate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbModerate.Location = new System.Drawing.Point(257, 30);
-            this.rdbModerate.Name = "rdbModerate";
-            this.rdbModerate.Size = new System.Drawing.Size(175, 24);
-            this.rdbModerate.TabIndex = 4;
-            this.rdbModerate.TabStop = true;
-            this.rdbModerate.Text = "moderate assistance";
-            this.rdbModerate.UseVisualStyleBackColor = true;
-            // 
-            // rdbMaximal
-            // 
-            this.rdbMaximal.AutoSize = true;
-            this.rdbMaximal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbMaximal.Location = new System.Drawing.Point(61, 30);
-            this.rdbMaximal.Name = "rdbMaximal";
-            this.rdbMaximal.Size = new System.Drawing.Size(164, 24);
-            this.rdbMaximal.TabIndex = 3;
-            this.rdbMaximal.TabStop = true;
-            this.rdbMaximal.Text = "maximal assistance";
-            this.rdbMaximal.UseVisualStyleBackColor = true;
-            // 
             // gbAmbulate
             // 
             this.gbAmbulate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gbAmbulate.Controls.Add(this.rdbStretcher);
-            this.gbAmbulate.Controls.Add(this.rdbNormalWalking);
-            this.gbAmbulate.Controls.Add(this.rdbTripodCane);
-            this.gbAmbulate.Controls.Add(this.rdbSingleCane);
-            this.gbAmbulate.Controls.Add(this.rdbWheelchair);
-            this.gbAmbulate.Location = new System.Drawing.Point(5, 443);
+            this.gbAmbulate.Controls.Add(this.cbAmbulateWith);
+            this.gbAmbulate.Location = new System.Drawing.Point(618, 363);
             this.gbAmbulate.Name = "gbAmbulate";
-            this.gbAmbulate.Size = new System.Drawing.Size(667, 74);
+            this.gbAmbulate.Size = new System.Drawing.Size(354, 74);
             this.gbAmbulate.TabIndex = 30;
             this.gbAmbulate.TabStop = false;
             this.gbAmbulate.Text = "Ambulate  with";
             // 
-            // rdbStretcher
-            // 
-            this.rdbStretcher.AutoSize = true;
-            this.rdbStretcher.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbStretcher.Location = new System.Drawing.Point(543, 30);
-            this.rdbStretcher.Name = "rdbStretcher";
-            this.rdbStretcher.Size = new System.Drawing.Size(93, 24);
-            this.rdbStretcher.TabIndex = 7;
-            this.rdbStretcher.TabStop = true;
-            this.rdbStretcher.Text = "Stretcher";
-            this.rdbStretcher.UseVisualStyleBackColor = true;
-            // 
-            // rdbNormalWalking
-            // 
-            this.rdbNormalWalking.AutoSize = true;
-            this.rdbNormalWalking.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbNormalWalking.Location = new System.Drawing.Point(406, 30);
-            this.rdbNormalWalking.Name = "rdbNormalWalking";
-            this.rdbNormalWalking.Size = new System.Drawing.Size(131, 24);
-            this.rdbNormalWalking.TabIndex = 6;
-            this.rdbNormalWalking.TabStop = true;
-            this.rdbNormalWalking.Text = "normal walking";
-            this.rdbNormalWalking.UseVisualStyleBackColor = true;
-            // 
-            // rdbTripodCane
-            // 
-            this.rdbTripodCane.AutoSize = true;
-            this.rdbTripodCane.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbTripodCane.Location = new System.Drawing.Point(281, 30);
-            this.rdbTripodCane.Name = "rdbTripodCane";
-            this.rdbTripodCane.Size = new System.Drawing.Size(106, 24);
-            this.rdbTripodCane.TabIndex = 5;
-            this.rdbTripodCane.TabStop = true;
-            this.rdbTripodCane.Text = "tripod cane";
-            this.rdbTripodCane.UseVisualStyleBackColor = true;
-            // 
-            // rdbSingleCane
-            // 
-            this.rdbSingleCane.AutoSize = true;
-            this.rdbSingleCane.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbSingleCane.Location = new System.Drawing.Point(171, 30);
-            this.rdbSingleCane.Name = "rdbSingleCane";
-            this.rdbSingleCane.Size = new System.Drawing.Size(107, 24);
-            this.rdbSingleCane.TabIndex = 4;
-            this.rdbSingleCane.TabStop = true;
-            this.rdbSingleCane.Text = "single cane";
-            this.rdbSingleCane.UseVisualStyleBackColor = true;
-            // 
-            // rdbWheelchair
-            // 
-            this.rdbWheelchair.AutoSize = true;
-            this.rdbWheelchair.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbWheelchair.Location = new System.Drawing.Point(61, 30);
-            this.rdbWheelchair.Name = "rdbWheelchair";
-            this.rdbWheelchair.Size = new System.Drawing.Size(102, 24);
-            this.rdbWheelchair.TabIndex = 3;
-            this.rdbWheelchair.TabStop = true;
-            this.rdbWheelchair.Text = "wheelchair";
-            this.rdbWheelchair.UseVisualStyleBackColor = true;
-            // 
             // gbBalance
             // 
             this.gbBalance.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gbBalance.Controls.Add(this.rdbNormal);
-            this.gbBalance.Controls.Add(this.rdbGood);
-            this.gbBalance.Controls.Add(this.rdbFair);
-            this.gbBalance.Controls.Add(this.rdbPoor);
-            this.gbBalance.Controls.Add(this.rdbZero);
-            this.gbBalance.Location = new System.Drawing.Point(678, 443);
+            this.gbBalance.Controls.Add(this.cbBalance);
+            this.gbBalance.Location = new System.Drawing.Point(978, 363);
             this.gbBalance.Name = "gbBalance";
-            this.gbBalance.Size = new System.Drawing.Size(667, 74);
+            this.gbBalance.Size = new System.Drawing.Size(365, 74);
             this.gbBalance.TabIndex = 31;
             this.gbBalance.TabStop = false;
             this.gbBalance.Text = "Balance";
-            // 
-            // rdbNormal
-            // 
-            this.rdbNormal.AutoSize = true;
-            this.rdbNormal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbNormal.Location = new System.Drawing.Point(521, 30);
-            this.rdbNormal.Name = "rdbNormal";
-            this.rdbNormal.Size = new System.Drawing.Size(77, 24);
-            this.rdbNormal.TabIndex = 7;
-            this.rdbNormal.TabStop = true;
-            this.rdbNormal.Text = "Normal";
-            this.rdbNormal.UseVisualStyleBackColor = true;
-            // 
-            // rdbGood
-            // 
-            this.rdbGood.AutoSize = true;
-            this.rdbGood.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbGood.Location = new System.Drawing.Point(408, 30);
-            this.rdbGood.Name = "rdbGood";
-            this.rdbGood.Size = new System.Drawing.Size(67, 24);
-            this.rdbGood.TabIndex = 6;
-            this.rdbGood.TabStop = true;
-            this.rdbGood.Text = "Good";
-            this.rdbGood.UseVisualStyleBackColor = true;
-            // 
-            // rdbFair
-            // 
-            this.rdbFair.AutoSize = true;
-            this.rdbFair.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbFair.Location = new System.Drawing.Point(288, 30);
-            this.rdbFair.Name = "rdbFair";
-            this.rdbFair.Size = new System.Drawing.Size(54, 24);
-            this.rdbFair.TabIndex = 5;
-            this.rdbFair.TabStop = true;
-            this.rdbFair.Text = "Fair";
-            this.rdbFair.UseVisualStyleBackColor = true;
-            // 
-            // rdbPoor
-            // 
-            this.rdbPoor.AutoSize = true;
-            this.rdbPoor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbPoor.Location = new System.Drawing.Point(175, 30);
-            this.rdbPoor.Name = "rdbPoor";
-            this.rdbPoor.Size = new System.Drawing.Size(60, 24);
-            this.rdbPoor.TabIndex = 4;
-            this.rdbPoor.TabStop = true;
-            this.rdbPoor.Text = "Poor";
-            this.rdbPoor.UseVisualStyleBackColor = true;
-            // 
-            // rdbZero
-            // 
-            this.rdbZero.AutoSize = true;
-            this.rdbZero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbZero.Location = new System.Drawing.Point(39, 30);
-            this.rdbZero.Name = "rdbZero";
-            this.rdbZero.Size = new System.Drawing.Size(60, 24);
-            this.rdbZero.TabIndex = 3;
-            this.rdbZero.TabStop = true;
-            this.rdbZero.Text = "Zero";
-            this.rdbZero.UseVisualStyleBackColor = true;
             // 
             // gbMMTRightUE
             // 
@@ -1440,6 +1208,33 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // cbBedMobility
+            // 
+            this.cbBedMobility.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbBedMobility.FormattingEnabled = true;
+            this.cbBedMobility.Location = new System.Drawing.Point(46, 25);
+            this.cbBedMobility.Name = "cbBedMobility";
+            this.cbBedMobility.Size = new System.Drawing.Size(237, 33);
+            this.cbBedMobility.TabIndex = 10;
+            // 
+            // cbAmbulateWith
+            // 
+            this.cbAmbulateWith.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbAmbulateWith.FormattingEnabled = true;
+            this.cbAmbulateWith.Location = new System.Drawing.Point(60, 25);
+            this.cbAmbulateWith.Name = "cbAmbulateWith";
+            this.cbAmbulateWith.Size = new System.Drawing.Size(237, 33);
+            this.cbAmbulateWith.TabIndex = 11;
+            // 
+            // cbBalance
+            // 
+            this.cbBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbBalance.FormattingEnabled = true;
+            this.cbBalance.Location = new System.Drawing.Point(72, 25);
+            this.cbBalance.Name = "cbBalance";
+            this.cbBalance.Size = new System.Drawing.Size(237, 33);
+            this.cbBalance.TabIndex = 12;
+            // 
             // FormPatientRecord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1481,11 +1276,8 @@
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.gbBed.ResumeLayout(false);
-            this.gbBed.PerformLayout();
             this.gbAmbulate.ResumeLayout(false);
-            this.gbAmbulate.PerformLayout();
             this.gbBalance.ResumeLayout(false);
-            this.gbBalance.PerformLayout();
             this.gbMMTRightUE.ResumeLayout(false);
             this.gbMMTRightUE.PerformLayout();
             this.gbMMTLeftUE.ResumeLayout(false);
@@ -1537,25 +1329,8 @@
         private System.Windows.Forms.CheckBox cbEstimate2;
         private System.Windows.Forms.CheckBox cbEstimate1;
         private System.Windows.Forms.GroupBox gbBed;
-        private System.Windows.Forms.RadioButton rdbModerate;
-        private System.Windows.Forms.RadioButton rdbMaximal;
         private System.Windows.Forms.GroupBox gbAmbulate;
-        private System.Windows.Forms.RadioButton rdbSingleCane;
-        private System.Windows.Forms.RadioButton rdbWheelchair;
-        private System.Windows.Forms.RadioButton rdbIndependent;
-        private System.Windows.Forms.RadioButton rdbSupervision;
-        private System.Windows.Forms.RadioButton rdbClose;
-        private System.Windows.Forms.RadioButton rdbContact;
-        private System.Windows.Forms.RadioButton rdbMinimal;
-        private System.Windows.Forms.RadioButton rdbStretcher;
-        private System.Windows.Forms.RadioButton rdbNormalWalking;
-        private System.Windows.Forms.RadioButton rdbTripodCane;
         private System.Windows.Forms.GroupBox gbBalance;
-        private System.Windows.Forms.RadioButton rdbNormal;
-        private System.Windows.Forms.RadioButton rdbGood;
-        private System.Windows.Forms.RadioButton rdbFair;
-        private System.Windows.Forms.RadioButton rdbPoor;
-        private System.Windows.Forms.RadioButton rdbZero;
         private System.Windows.Forms.GroupBox gbMMTRightUE;
         private System.Windows.Forms.RadioButton rdbRUE5;
         private System.Windows.Forms.RadioButton rdbRUE4P;
@@ -1607,5 +1382,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.ComboBox cbBedMobility;
+        private System.Windows.Forms.ComboBox cbAmbulateWith;
+        private System.Windows.Forms.ComboBox cbBalance;
     }
 }

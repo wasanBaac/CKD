@@ -22,15 +22,39 @@ namespace CKD
         public FormPatientRecord()
         {
             InitializeComponent();
+            SetData();
             //lnklblBarthelIndex.Text = BarthelIndexValue.ToString();
         }
         public FormPatientRecord(int _recordID,Int32 _HN)
         {
             InitializeComponent();
+            SetData();
             recordID = _recordID;
             HN = _HN;
         }
 
+        private void SetData()
+        {
+            //combobox bedmobility
+            var bed = (from tb in db.refBedMobilities
+                                  select tb);
+            if(bed != null)
+            {
+                cbBedMobility.DataSource = bed;
+                cbBedMobility.ValueMember = "Id";
+                cbBedMobility.DisplayMember = "Detail";
+            }
+
+            //Ambulate with
+            var ambu = (from tb in db.refAmbulates
+                        select tb);
+            if(ambu != null)
+            {
+                cbAmbulateWith.DataSource = ambu;
+                cbAmbulateWith.ValueMember = "Id";
+                cbAmbulateWith.DisplayMember = "Detail";
+            }
+        }
         private void lnklblBarthelIndex_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             BarthelIndexForm BIF = new BarthelIndexForm();
