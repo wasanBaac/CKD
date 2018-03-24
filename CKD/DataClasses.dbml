@@ -56,48 +56,6 @@
       <Column Name="Detail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.PatientRecord" Member="PatientRecords">
-    <Type Name="PatientRecord">
-      <Column Name="recordID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="HN" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="recordDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="eGFRstage" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="weight" Type="System.Decimal" DbType="Decimal(3,1)" CanBeNull="true" />
-      <Column Name="height" Type="System.Decimal" DbType="Decimal(3,1)" CanBeNull="true" />
-      <Column Name="treatNone" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="treatBelly" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="treatNeck" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="treatArm" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="exWalk" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="exRun" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="exBite" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="exProgram" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="exReject" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="healtEducation" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="healtBenefit" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="progeamEx1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="programEx2" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="estimate1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="estimate2" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="estimate3" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="estimate4" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="estimate5" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="estimate6" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="BarthelIndex" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="BedMobility" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Ambulate" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Balance" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="MMTRightUE" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="MMTRightLE" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="MMTLeftUE" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="MMTLeftLE" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Pain" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
-      <Column Name="Edema" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
-      <Column Name="Other" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
-      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.PatientRecordDetail" Member="PatientRecordDetails">
     <Type Name="PatientRecordDetail">
       <Column Name="recordDetailID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -112,6 +70,65 @@
       <Column Name="Dressing" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Bowels" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Bladder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.refTransfer" Member="refTransfers">
+    <Type Name="refTransfer">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Detail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.refGender" Member="refGenders">
+    <Type Name="refGender">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Detail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PatientRecord" Member="PatientRecords">
+    <Type Name="PatientRecord">
+      <Column Name="recordID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HN" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="recordDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="eGFR" Type="System.Decimal" DbType="Decimal(2,2)" CanBeNull="true" />
+      <Column Name="stage" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="weight" Type="System.Decimal" DbType="Decimal(3,1)" CanBeNull="true" />
+      <Column Name="height" Type="System.Decimal" DbType="Decimal(3,1)" CanBeNull="true" />
+      <Column Name="treatNone" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="treatBelly" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="treatNeck" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="treatArm" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="treatImplants" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="exWalk" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="exRun" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="exBite" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="exProgram" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="exReject" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="healtEducation" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="healtBenefit" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="progeamEx1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="programEx2" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="estimate1" Type="System.Decimal" DbType="Decimal(3,2)" CanBeNull="true" />
+      <Column Name="estimate2" Type="System.Decimal" DbType="Decimal(3,2)" CanBeNull="true" />
+      <Column Name="estimate3" Type="System.Decimal" DbType="Decimal(3,2)" CanBeNull="true" />
+      <Column Name="estimate4" Type="System.Decimal" DbType="Decimal(3,2)" CanBeNull="true" />
+      <Column Name="estimate5" Type="System.Decimal" DbType="Decimal(3,2)" CanBeNull="true" />
+      <Column Name="estimate6" Type="System.Decimal" DbType="Decimal(3,2)" CanBeNull="true" />
+      <Column Name="estimate7" Type="System.Decimal" DbType="Decimal(3,2)" CanBeNull="true" />
+      <Column Name="BarthelIndex" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Transfer" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BedMobility" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Balance" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ambulate" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MMTRightUE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MMTRightLE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MMTLeftUE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MMTLeftLE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Tired" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Pain" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Edema" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Other" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
       <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
     </Type>

@@ -18,7 +18,7 @@ namespace CKD
         public startForm()
         {
             InitializeComponent();
-            this.Show();
+            //this.Show();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)

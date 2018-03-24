@@ -41,7 +41,7 @@
             // 
             this.txtHN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtHN.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtHN.Location = new System.Drawing.Point(534, 237);
+            this.txtHN.Location = new System.Drawing.Point(427, 181);
             this.txtHN.MaxLength = 100;
             this.txtHN.Name = "txtHN";
             this.txtHN.Size = new System.Drawing.Size(350, 32);
@@ -51,7 +51,7 @@
             // 
             this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnSearch.Location = new System.Drawing.Point(912, 236);
+            this.btnSearch.Location = new System.Drawing.Point(805, 180);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(100, 39);
             this.btnSearch.TabIndex = 1;
@@ -64,7 +64,7 @@
             this.lblsearch.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblsearch.AutoSize = true;
             this.lblsearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblsearch.Location = new System.Drawing.Point(413, 240);
+            this.lblsearch.Location = new System.Drawing.Point(306, 184);
             this.lblsearch.Name = "lblsearch";
             this.lblsearch.Size = new System.Drawing.Size(115, 26);
             this.lblsearch.TabIndex = 2;
@@ -79,7 +79,7 @@
             this.gvPatient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvPatient.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnView});
-            this.gvPatient.Location = new System.Drawing.Point(335, 339);
+            this.gvPatient.Location = new System.Drawing.Point(228, 283);
             this.gvPatient.Name = "gvPatient";
             this.gvPatient.ReadOnly = true;
             this.gvPatient.Size = new System.Drawing.Size(923, 316);
@@ -99,7 +99,7 @@
             // 
             this.btnNewPatient.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnNewPatient.BackColor = System.Drawing.SystemColors.Info;
-            this.btnNewPatient.Location = new System.Drawing.Point(1029, 236);
+            this.btnNewPatient.Location = new System.Drawing.Point(922, 180);
             this.btnNewPatient.Name = "btnNewPatient";
             this.btnNewPatient.Size = new System.Drawing.Size(82, 39);
             this.btnNewPatient.TabIndex = 5;
@@ -112,7 +112,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1584, 861);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.btnNewPatient);
             this.Controls.Add(this.gvPatient);
             this.Controls.Add(this.lblsearch);

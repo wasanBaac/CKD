@@ -57,69 +57,44 @@
             this.cbProgrameEx1 = new System.Windows.Forms.CheckBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.lnklblBarthelIndex = new System.Windows.Forms.LinkLabel();
-            this.cbEstimate6 = new System.Windows.Forms.CheckBox();
-            this.cbEstimate5 = new System.Windows.Forms.CheckBox();
-            this.cbEstimate4 = new System.Windows.Forms.CheckBox();
-            this.cbEstimate3 = new System.Windows.Forms.CheckBox();
-            this.cbEstimate2 = new System.Windows.Forms.CheckBox();
-            this.cbEstimate1 = new System.Windows.Forms.CheckBox();
             this.gbBed = new System.Windows.Forms.GroupBox();
-            this.gbAmbulate = new System.Windows.Forms.GroupBox();
-            this.gbBalance = new System.Windows.Forms.GroupBox();
-            this.gbMMTRightUE = new System.Windows.Forms.GroupBox();
-            this.rdbRUE5 = new System.Windows.Forms.RadioButton();
-            this.rdbRUE4P = new System.Windows.Forms.RadioButton();
-            this.rdbRUE4 = new System.Windows.Forms.RadioButton();
-            this.rdbRUE3P = new System.Windows.Forms.RadioButton();
-            this.rdbRUE3 = new System.Windows.Forms.RadioButton();
-            this.rdbRUE2P = new System.Windows.Forms.RadioButton();
-            this.rdbRUE2 = new System.Windows.Forms.RadioButton();
-            this.rdbRUE1P = new System.Windows.Forms.RadioButton();
-            this.rdbRUE1 = new System.Windows.Forms.RadioButton();
-            this.rdbRUE0 = new System.Windows.Forms.RadioButton();
-            this.gbMMTLeftUE = new System.Windows.Forms.GroupBox();
-            this.rdbLUE5 = new System.Windows.Forms.RadioButton();
-            this.rdbLUE4P = new System.Windows.Forms.RadioButton();
-            this.rdbLUE4 = new System.Windows.Forms.RadioButton();
-            this.rdbLUE3P = new System.Windows.Forms.RadioButton();
-            this.rdbLUE3 = new System.Windows.Forms.RadioButton();
-            this.rdbLUE2P = new System.Windows.Forms.RadioButton();
-            this.rdbLUE2 = new System.Windows.Forms.RadioButton();
-            this.rdbLUE1P = new System.Windows.Forms.RadioButton();
-            this.rdbLUE1 = new System.Windows.Forms.RadioButton();
-            this.rdbLUE0 = new System.Windows.Forms.RadioButton();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
-            this.radioButton13 = new System.Windows.Forms.RadioButton();
-            this.radioButton14 = new System.Windows.Forms.RadioButton();
-            this.radioButton15 = new System.Windows.Forms.RadioButton();
-            this.radioButton16 = new System.Windows.Forms.RadioButton();
-            this.radioButton17 = new System.Windows.Forms.RadioButton();
-            this.radioButton18 = new System.Windows.Forms.RadioButton();
-            this.radioButton19 = new System.Windows.Forms.RadioButton();
-            this.radioButton20 = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.btnSave = new System.Windows.Forms.Button();
             this.cbBedMobility = new System.Windows.Forms.ComboBox();
+            this.gbAmbulate = new System.Windows.Forms.GroupBox();
             this.cbAmbulateWith = new System.Windows.Forms.ComboBox();
+            this.gbBalance = new System.Windows.Forms.GroupBox();
             this.cbBalance = new System.Windows.Forms.ComboBox();
+            this.gbMMTLUE = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cbMMTRLE = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cbMMTLLE = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cbMMTRUE = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbMMTLUE = new System.Windows.Forms.ComboBox();
+            this.txtPain = new System.Windows.Forms.TextBox();
+            this.txtEdema = new System.Windows.Forms.TextBox();
+            this.txtOther = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.cbtired = new System.Windows.Forms.CheckBox();
+            this.gbTransfer = new System.Windows.Forms.GroupBox();
+            this.cbTransfer = new System.Windows.Forms.ComboBox();
+            this.txtEst1 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtEst2 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtEst3 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtEst4 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtEst5 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtEst6 = new System.Windows.Forms.TextBox();
+            this.txtBarthelIndex = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -129,17 +104,18 @@
             this.gbBed.SuspendLayout();
             this.gbAmbulate.SuspendLayout();
             this.gbBalance.SuspendLayout();
-            this.gbMMTRightUE.SuspendLayout();
-            this.gbMMTLeftUE.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.groupBox8.SuspendLayout();
+            this.gbMMTLUE.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            this.gbTransfer.SuspendLayout();
             this.SuspendLayout();
             // 
             // recordDate
             // 
             this.recordDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.recordDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.recordDate.Location = new System.Drawing.Point(178, 31);
+            this.recordDate.Location = new System.Drawing.Point(84, 34);
             this.recordDate.Name = "recordDate";
             this.recordDate.Size = new System.Drawing.Size(254, 32);
             this.recordDate.TabIndex = 14;
@@ -149,7 +125,7 @@
             this.lblDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblDate.Location = new System.Drawing.Point(91, 34);
+            this.lblDate.Location = new System.Drawing.Point(18, 31);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(50, 26);
             this.lblDate.TabIndex = 15;
@@ -160,7 +136,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label1.Location = new System.Drawing.Point(491, 34);
+            this.label1.Location = new System.Drawing.Point(490, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(145, 26);
             this.label1.TabIndex = 16;
@@ -170,7 +146,7 @@
             // 
             this.txteGFR.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txteGFR.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txteGFR.Location = new System.Drawing.Point(652, 34);
+            this.txteGFR.Location = new System.Drawing.Point(662, 28);
             this.txteGFR.MaxLength = 100;
             this.txteGFR.Name = "txteGFR";
             this.txteGFR.Size = new System.Drawing.Size(50, 32);
@@ -192,7 +168,7 @@
             this.lblWeight.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblWeight.AutoSize = true;
             this.lblWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblWeight.Location = new System.Drawing.Point(843, 34);
+            this.lblWeight.Location = new System.Drawing.Point(828, 31);
             this.lblWeight.Name = "lblWeight";
             this.lblWeight.Size = new System.Drawing.Size(74, 26);
             this.lblWeight.TabIndex = 19;
@@ -213,7 +189,7 @@
             this.lblHeight.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblHeight.AutoSize = true;
             this.lblHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblHeight.Location = new System.Drawing.Point(1021, 34);
+            this.lblHeight.Location = new System.Drawing.Point(1019, 31);
             this.lblHeight.Name = "lblHeight";
             this.lblHeight.Size = new System.Drawing.Size(70, 26);
             this.lblHeight.TabIndex = 21;
@@ -241,12 +217,11 @@
             this.groupBox1.Controls.Add(this.txtWeight);
             this.groupBox1.Controls.Add(this.lblStage);
             this.groupBox1.Controls.Add(this.lblWeight);
-            this.groupBox1.Location = new System.Drawing.Point(5, 11);
+            this.groupBox1.Location = new System.Drawing.Point(0, 18);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1338, 85);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "ข้อมูลทั่วไป";
             // 
             // groupBox2
             // 
@@ -255,9 +230,11 @@
             this.groupBox2.Controls.Add(this.cbTreatNeck);
             this.groupBox2.Controls.Add(this.cbTreatBelly);
             this.groupBox2.Controls.Add(this.cbTreatNone);
-            this.groupBox2.Location = new System.Drawing.Point(5, 109);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.groupBox2.Location = new System.Drawing.Point(21, 109);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(667, 73);
+            this.groupBox2.Size = new System.Drawing.Size(274, 134);
             this.groupBox2.TabIndex = 24;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "การได้รับการรักษา";
@@ -266,7 +243,7 @@
             // 
             this.cbTreatArm.AutoSize = true;
             this.cbTreatArm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbTreatArm.Location = new System.Drawing.Point(455, 30);
+            this.cbTreatArm.Location = new System.Drawing.Point(23, 109);
             this.cbTreatArm.Name = "cbTreatArm";
             this.cbTreatArm.Size = new System.Drawing.Size(186, 24);
             this.cbTreatArm.TabIndex = 3;
@@ -277,7 +254,7 @@
             // 
             this.cbTreatNeck.AutoSize = true;
             this.cbTreatNeck.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbTreatNeck.Location = new System.Drawing.Point(275, 30);
+            this.cbTreatNeck.Location = new System.Drawing.Point(23, 84);
             this.cbTreatNeck.Name = "cbTreatNeck";
             this.cbTreatNeck.Size = new System.Drawing.Size(176, 24);
             this.cbTreatNeck.TabIndex = 2;
@@ -288,7 +265,7 @@
             // 
             this.cbTreatBelly.AutoSize = true;
             this.cbTreatBelly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbTreatBelly.Location = new System.Drawing.Point(130, 30);
+            this.cbTreatBelly.Location = new System.Drawing.Point(23, 59);
             this.cbTreatBelly.Name = "cbTreatBelly";
             this.cbTreatBelly.Size = new System.Drawing.Size(139, 24);
             this.cbTreatBelly.TabIndex = 1;
@@ -299,7 +276,7 @@
             // 
             this.cbTreatNone.AutoSize = true;
             this.cbTreatNone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbTreatNone.Location = new System.Drawing.Point(16, 30);
+            this.cbTreatNone.Location = new System.Drawing.Point(23, 35);
             this.cbTreatNone.Name = "cbTreatNone";
             this.cbTreatNone.Size = new System.Drawing.Size(108, 24);
             this.cbTreatNone.TabIndex = 0;
@@ -314,18 +291,19 @@
             this.groupBox3.Controls.Add(this.cbExBite);
             this.groupBox3.Controls.Add(this.cbExRun);
             this.groupBox3.Controls.Add(this.cbExwalk);
-            this.groupBox3.Location = new System.Drawing.Point(678, 109);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.groupBox3.Location = new System.Drawing.Point(21, 253);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(665, 73);
+            this.groupBox3.Size = new System.Drawing.Size(248, 151);
             this.groupBox3.TabIndex = 25;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "การออกกำลังกายที่บ้าน";
+            this.groupBox3.Text = "การออกกำลังกาย";
             // 
             // cbExReject
             // 
             this.cbExReject.AutoSize = true;
             this.cbExReject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbExReject.Location = new System.Drawing.Point(541, 30);
+            this.cbExReject.Location = new System.Drawing.Point(23, 130);
             this.cbExReject.Name = "cbExReject";
             this.cbExReject.Size = new System.Drawing.Size(68, 24);
             this.cbExReject.TabIndex = 4;
@@ -336,7 +314,7 @@
             // 
             this.cbExProgram.AutoSize = true;
             this.cbExProgram.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbExProgram.Location = new System.Drawing.Point(375, 30);
+            this.cbExProgram.Location = new System.Drawing.Point(23, 105);
             this.cbExProgram.Name = "cbExProgram";
             this.cbExProgram.Size = new System.Drawing.Size(112, 24);
             this.cbExProgram.TabIndex = 3;
@@ -347,7 +325,7 @@
             // 
             this.cbExBite.AutoSize = true;
             this.cbExBite.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbExBite.Location = new System.Drawing.Point(237, 30);
+            this.cbExBite.Location = new System.Drawing.Point(23, 80);
             this.cbExBite.Name = "cbExBite";
             this.cbExBite.Size = new System.Drawing.Size(94, 24);
             this.cbExBite.TabIndex = 2;
@@ -358,7 +336,7 @@
             // 
             this.cbExRun.AutoSize = true;
             this.cbExRun.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbExRun.Location = new System.Drawing.Point(135, 30);
+            this.cbExRun.Location = new System.Drawing.Point(23, 55);
             this.cbExRun.Name = "cbExRun";
             this.cbExRun.Size = new System.Drawing.Size(42, 24);
             this.cbExRun.TabIndex = 1;
@@ -369,7 +347,7 @@
             // 
             this.cbExwalk.AutoSize = true;
             this.cbExwalk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbExwalk.Location = new System.Drawing.Point(26, 30);
+            this.cbExwalk.Location = new System.Drawing.Point(23, 31);
             this.cbExwalk.Name = "cbExwalk";
             this.cbExwalk.Size = new System.Drawing.Size(52, 24);
             this.cbExwalk.TabIndex = 0;
@@ -381,9 +359,10 @@
             this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox4.Controls.Add(this.cbHealBenefit);
             this.groupBox4.Controls.Add(this.cbHealtEducation);
-            this.groupBox4.Location = new System.Drawing.Point(5, 194);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.groupBox4.Location = new System.Drawing.Point(21, 416);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(665, 74);
+            this.groupBox4.Size = new System.Drawing.Size(248, 86);
             this.groupBox4.TabIndex = 26;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "สุขศึกษา";
@@ -392,7 +371,7 @@
             // 
             this.cbHealBenefit.AutoSize = true;
             this.cbHealBenefit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbHealBenefit.Location = new System.Drawing.Point(359, 30);
+            this.cbHealBenefit.Location = new System.Drawing.Point(23, 56);
             this.cbHealBenefit.Name = "cbHealBenefit";
             this.cbHealBenefit.Size = new System.Drawing.Size(211, 24);
             this.cbHealBenefit.TabIndex = 1;
@@ -403,7 +382,7 @@
             // 
             this.cbHealtEducation.AutoSize = true;
             this.cbHealtEducation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbHealtEducation.Location = new System.Drawing.Point(61, 30);
+            this.cbHealtEducation.Location = new System.Drawing.Point(23, 31);
             this.cbHealtEducation.Name = "cbHealtEducation";
             this.cbHealtEducation.Size = new System.Drawing.Size(219, 24);
             this.cbHealtEducation.TabIndex = 0;
@@ -415,9 +394,10 @@
             this.groupBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox5.Controls.Add(this.cbProgrameEx2);
             this.groupBox5.Controls.Add(this.cbProgrameEx1);
-            this.groupBox5.Location = new System.Drawing.Point(678, 194);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.groupBox5.Location = new System.Drawing.Point(21, 518);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(665, 74);
+            this.groupBox5.Size = new System.Drawing.Size(274, 82);
             this.groupBox5.TabIndex = 27;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "โปรแกรมการออกกำลังกาย";
@@ -426,7 +406,7 @@
             // 
             this.cbProgrameEx2.AutoSize = true;
             this.cbProgrameEx2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbProgrameEx2.Location = new System.Drawing.Point(359, 30);
+            this.cbProgrameEx2.Location = new System.Drawing.Point(23, 56);
             this.cbProgrameEx2.Name = "cbProgrameEx2";
             this.cbProgrameEx2.Size = new System.Drawing.Size(216, 24);
             this.cbProgrameEx2.TabIndex = 1;
@@ -437,7 +417,7 @@
             // 
             this.cbProgrameEx1.AutoSize = true;
             this.cbProgrameEx1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbProgrameEx1.Location = new System.Drawing.Point(79, 30);
+            this.cbProgrameEx1.Location = new System.Drawing.Point(23, 31);
             this.cbProgrameEx1.Name = "cbProgrameEx1";
             this.cbProgrameEx1.Size = new System.Drawing.Size(164, 24);
             this.cbProgrameEx1.TabIndex = 0;
@@ -447,16 +427,24 @@
             // groupBox6
             // 
             this.groupBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox6.Controls.Add(this.txtBarthelIndex);
             this.groupBox6.Controls.Add(this.lnklblBarthelIndex);
-            this.groupBox6.Controls.Add(this.cbEstimate6);
-            this.groupBox6.Controls.Add(this.cbEstimate5);
-            this.groupBox6.Controls.Add(this.cbEstimate4);
-            this.groupBox6.Controls.Add(this.cbEstimate3);
-            this.groupBox6.Controls.Add(this.cbEstimate2);
-            this.groupBox6.Controls.Add(this.cbEstimate1);
-            this.groupBox6.Location = new System.Drawing.Point(5, 283);
+            this.groupBox6.Controls.Add(this.label11);
+            this.groupBox6.Controls.Add(this.txtEst6);
+            this.groupBox6.Controls.Add(this.label10);
+            this.groupBox6.Controls.Add(this.txtEst5);
+            this.groupBox6.Controls.Add(this.label9);
+            this.groupBox6.Controls.Add(this.txtEst4);
+            this.groupBox6.Controls.Add(this.label8);
+            this.groupBox6.Controls.Add(this.txtEst3);
+            this.groupBox6.Controls.Add(this.label7);
+            this.groupBox6.Controls.Add(this.txtEst2);
+            this.groupBox6.Controls.Add(this.label6);
+            this.groupBox6.Controls.Add(this.txtEst1);
+            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.groupBox6.Location = new System.Drawing.Point(460, 109);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(1338, 74);
+            this.groupBox6.Size = new System.Drawing.Size(269, 241);
             this.groupBox6.TabIndex = 28;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "การประเมิน";
@@ -465,7 +453,7 @@
             // 
             this.lnklblBarthelIndex.AutoSize = true;
             this.lnklblBarthelIndex.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lnklblBarthelIndex.Location = new System.Drawing.Point(1181, 30);
+            this.lnklblBarthelIndex.Location = new System.Drawing.Point(72, 200);
             this.lnklblBarthelIndex.Name = "lnklblBarthelIndex";
             this.lnklblBarthelIndex.Size = new System.Drawing.Size(101, 20);
             this.lnklblBarthelIndex.TabIndex = 6;
@@ -473,734 +461,200 @@
             this.lnklblBarthelIndex.Text = "Barthel index";
             this.lnklblBarthelIndex.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnklblBarthelIndex_LinkClicked);
             // 
-            // cbEstimate6
-            // 
-            this.cbEstimate6.AutoSize = true;
-            this.cbEstimate6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbEstimate6.Location = new System.Drawing.Point(1048, 30);
-            this.cbEstimate6.Name = "cbEstimate6";
-            this.cbEstimate6.Size = new System.Drawing.Size(78, 24);
-            this.cbEstimate6.TabIndex = 5;
-            this.cbEstimate6.Text = "6 MWT";
-            this.cbEstimate6.UseVisualStyleBackColor = true;
-            // 
-            // cbEstimate5
-            // 
-            this.cbEstimate5.AutoSize = true;
-            this.cbEstimate5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbEstimate5.Location = new System.Drawing.Point(848, 30);
-            this.cbEstimate5.Name = "cbEstimate5";
-            this.cbEstimate5.Size = new System.Drawing.Size(126, 24);
-            this.cbEstimate5.TabIndex = 4;
-            this.cbEstimate5.Text = "มวลกล้ามเนื้อขา";
-            this.cbEstimate5.UseVisualStyleBackColor = true;
-            // 
-            // cbEstimate4
-            // 
-            this.cbEstimate4.AutoSize = true;
-            this.cbEstimate4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbEstimate4.Location = new System.Drawing.Point(661, 29);
-            this.cbEstimate4.Name = "cbEstimate4";
-            this.cbEstimate4.Size = new System.Drawing.Size(137, 24);
-            this.cbEstimate4.TabIndex = 3;
-            this.cbEstimate4.Text = "มวลกล้ามเนื้อแขน";
-            this.cbEstimate4.UseVisualStyleBackColor = true;
-            // 
-            // cbEstimate3
-            // 
-            this.cbEstimate3.AutoSize = true;
-            this.cbEstimate3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbEstimate3.Location = new System.Drawing.Point(467, 29);
-            this.cbEstimate3.Name = "cbEstimate3";
-            this.cbEstimate3.Size = new System.Drawing.Size(143, 24);
-            this.cbEstimate3.TabIndex = 2;
-            this.cbEstimate3.Text = "มวลกล้ามเนื้อทั้งตัว";
-            this.cbEstimate3.UseVisualStyleBackColor = true;
-            // 
-            // cbEstimate2
-            // 
-            this.cbEstimate2.AutoSize = true;
-            this.cbEstimate2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbEstimate2.Location = new System.Drawing.Point(275, 29);
-            this.cbEstimate2.Name = "cbEstimate2";
-            this.cbEstimate2.Size = new System.Drawing.Size(142, 24);
-            this.cbEstimate2.TabIndex = 1;
-            this.cbEstimate2.Text = "% ไขมันในร่างกาย";
-            this.cbEstimate2.UseVisualStyleBackColor = true;
-            // 
-            // cbEstimate1
-            // 
-            this.cbEstimate1.AutoSize = true;
-            this.cbEstimate1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbEstimate1.Location = new System.Drawing.Point(61, 29);
-            this.cbEstimate1.Name = "cbEstimate1";
-            this.cbEstimate1.Size = new System.Drawing.Size(180, 24);
-            this.cbEstimate1.TabIndex = 0;
-            this.cbEstimate1.Text = "ดัชนีมวลกล้ามเนื้อ (BMI)";
-            this.cbEstimate1.UseVisualStyleBackColor = true;
-            // 
             // gbBed
             // 
             this.gbBed.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gbBed.Controls.Add(this.cbBedMobility);
-            this.gbBed.Location = new System.Drawing.Point(256, 363);
+            this.gbBed.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.gbBed.Location = new System.Drawing.Point(460, 438);
             this.gbBed.Name = "gbBed";
-            this.gbBed.Size = new System.Drawing.Size(325, 74);
+            this.gbBed.Size = new System.Drawing.Size(269, 91);
             this.gbBed.TabIndex = 29;
             this.gbBed.TabStop = false;
             this.gbBed.Text = "Bed mobility";
+            // 
+            // cbBedMobility
+            // 
+            this.cbBedMobility.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbBedMobility.FormattingEnabled = true;
+            this.cbBedMobility.Location = new System.Drawing.Point(25, 37);
+            this.cbBedMobility.Name = "cbBedMobility";
+            this.cbBedMobility.Size = new System.Drawing.Size(237, 33);
+            this.cbBedMobility.TabIndex = 10;
             // 
             // gbAmbulate
             // 
             this.gbAmbulate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gbAmbulate.Controls.Add(this.cbAmbulateWith);
-            this.gbAmbulate.Location = new System.Drawing.Point(618, 363);
+            this.gbAmbulate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.gbAmbulate.Location = new System.Drawing.Point(814, 131);
             this.gbAmbulate.Name = "gbAmbulate";
-            this.gbAmbulate.Size = new System.Drawing.Size(354, 74);
+            this.gbAmbulate.Size = new System.Drawing.Size(269, 82);
             this.gbAmbulate.TabIndex = 30;
             this.gbAmbulate.TabStop = false;
-            this.gbAmbulate.Text = "Ambulate  with";
+            this.gbAmbulate.Text = "Ambulate";
+            // 
+            // cbAmbulateWith
+            // 
+            this.cbAmbulateWith.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbAmbulateWith.FormattingEnabled = true;
+            this.cbAmbulateWith.Location = new System.Drawing.Point(26, 38);
+            this.cbAmbulateWith.Name = "cbAmbulateWith";
+            this.cbAmbulateWith.Size = new System.Drawing.Size(237, 33);
+            this.cbAmbulateWith.TabIndex = 11;
             // 
             // gbBalance
             // 
             this.gbBalance.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gbBalance.Controls.Add(this.cbBalance);
-            this.gbBalance.Location = new System.Drawing.Point(978, 363);
+            this.gbBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.gbBalance.Location = new System.Drawing.Point(460, 529);
             this.gbBalance.Name = "gbBalance";
-            this.gbBalance.Size = new System.Drawing.Size(365, 74);
+            this.gbBalance.Size = new System.Drawing.Size(269, 83);
             this.gbBalance.TabIndex = 31;
             this.gbBalance.TabStop = false;
             this.gbBalance.Text = "Balance";
             // 
-            // gbMMTRightUE
-            // 
-            this.gbMMTRightUE.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gbMMTRightUE.Controls.Add(this.rdbRUE5);
-            this.gbMMTRightUE.Controls.Add(this.rdbRUE4P);
-            this.gbMMTRightUE.Controls.Add(this.rdbRUE4);
-            this.gbMMTRightUE.Controls.Add(this.rdbRUE3P);
-            this.gbMMTRightUE.Controls.Add(this.rdbRUE3);
-            this.gbMMTRightUE.Controls.Add(this.rdbRUE2P);
-            this.gbMMTRightUE.Controls.Add(this.rdbRUE2);
-            this.gbMMTRightUE.Controls.Add(this.rdbRUE1P);
-            this.gbMMTRightUE.Controls.Add(this.rdbRUE1);
-            this.gbMMTRightUE.Controls.Add(this.rdbRUE0);
-            this.gbMMTRightUE.Location = new System.Drawing.Point(678, 518);
-            this.gbMMTRightUE.Name = "gbMMTRightUE";
-            this.gbMMTRightUE.Size = new System.Drawing.Size(667, 74);
-            this.gbMMTRightUE.TabIndex = 31;
-            this.gbMMTRightUE.TabStop = false;
-            this.gbMMTRightUE.Text = "MMT Right UE";
-            // 
-            // rdbRUE5
-            // 
-            this.rdbRUE5.AutoSize = true;
-            this.rdbRUE5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbRUE5.Location = new System.Drawing.Point(599, 30);
-            this.rdbRUE5.Name = "rdbRUE5";
-            this.rdbRUE5.Size = new System.Drawing.Size(36, 24);
-            this.rdbRUE5.TabIndex = 12;
-            this.rdbRUE5.TabStop = true;
-            this.rdbRUE5.Text = "5";
-            this.rdbRUE5.UseVisualStyleBackColor = true;
-            // 
-            // rdbRUE4P
-            // 
-            this.rdbRUE4P.AutoSize = true;
-            this.rdbRUE4P.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbRUE4P.Location = new System.Drawing.Point(531, 31);
-            this.rdbRUE4P.Name = "rdbRUE4P";
-            this.rdbRUE4P.Size = new System.Drawing.Size(45, 24);
-            this.rdbRUE4P.TabIndex = 11;
-            this.rdbRUE4P.TabStop = true;
-            this.rdbRUE4P.Text = "4+";
-            this.rdbRUE4P.UseVisualStyleBackColor = true;
-            // 
-            // rdbRUE4
-            // 
-            this.rdbRUE4.AutoSize = true;
-            this.rdbRUE4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbRUE4.Location = new System.Drawing.Point(471, 30);
-            this.rdbRUE4.Name = "rdbRUE4";
-            this.rdbRUE4.Size = new System.Drawing.Size(36, 24);
-            this.rdbRUE4.TabIndex = 10;
-            this.rdbRUE4.TabStop = true;
-            this.rdbRUE4.Text = "4";
-            this.rdbRUE4.UseVisualStyleBackColor = true;
-            // 
-            // rdbRUE3P
-            // 
-            this.rdbRUE3P.AutoSize = true;
-            this.rdbRUE3P.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbRUE3P.Location = new System.Drawing.Point(408, 31);
-            this.rdbRUE3P.Name = "rdbRUE3P";
-            this.rdbRUE3P.Size = new System.Drawing.Size(45, 24);
-            this.rdbRUE3P.TabIndex = 9;
-            this.rdbRUE3P.TabStop = true;
-            this.rdbRUE3P.Text = "3+";
-            this.rdbRUE3P.UseVisualStyleBackColor = true;
-            // 
-            // rdbRUE3
-            // 
-            this.rdbRUE3.AutoSize = true;
-            this.rdbRUE3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbRUE3.Location = new System.Drawing.Point(353, 31);
-            this.rdbRUE3.Name = "rdbRUE3";
-            this.rdbRUE3.Size = new System.Drawing.Size(36, 24);
-            this.rdbRUE3.TabIndex = 8;
-            this.rdbRUE3.TabStop = true;
-            this.rdbRUE3.Text = "3";
-            this.rdbRUE3.UseVisualStyleBackColor = true;
-            // 
-            // rdbRUE2P
-            // 
-            this.rdbRUE2P.AutoSize = true;
-            this.rdbRUE2P.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbRUE2P.Location = new System.Drawing.Point(287, 30);
-            this.rdbRUE2P.Name = "rdbRUE2P";
-            this.rdbRUE2P.Size = new System.Drawing.Size(45, 24);
-            this.rdbRUE2P.TabIndex = 7;
-            this.rdbRUE2P.TabStop = true;
-            this.rdbRUE2P.Text = "2+";
-            this.rdbRUE2P.UseVisualStyleBackColor = true;
-            // 
-            // rdbRUE2
-            // 
-            this.rdbRUE2.AutoSize = true;
-            this.rdbRUE2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbRUE2.Location = new System.Drawing.Point(228, 30);
-            this.rdbRUE2.Name = "rdbRUE2";
-            this.rdbRUE2.Size = new System.Drawing.Size(36, 24);
-            this.rdbRUE2.TabIndex = 6;
-            this.rdbRUE2.TabStop = true;
-            this.rdbRUE2.Text = "2";
-            this.rdbRUE2.UseVisualStyleBackColor = true;
-            // 
-            // rdbRUE1P
-            // 
-            this.rdbRUE1P.AutoSize = true;
-            this.rdbRUE1P.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbRUE1P.Location = new System.Drawing.Point(164, 30);
-            this.rdbRUE1P.Name = "rdbRUE1P";
-            this.rdbRUE1P.Size = new System.Drawing.Size(45, 24);
-            this.rdbRUE1P.TabIndex = 5;
-            this.rdbRUE1P.TabStop = true;
-            this.rdbRUE1P.Text = "1+";
-            this.rdbRUE1P.UseVisualStyleBackColor = true;
-            // 
-            // rdbRUE1
-            // 
-            this.rdbRUE1.AutoSize = true;
-            this.rdbRUE1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbRUE1.Location = new System.Drawing.Point(104, 30);
-            this.rdbRUE1.Name = "rdbRUE1";
-            this.rdbRUE1.Size = new System.Drawing.Size(36, 24);
-            this.rdbRUE1.TabIndex = 4;
-            this.rdbRUE1.TabStop = true;
-            this.rdbRUE1.Text = "1";
-            this.rdbRUE1.UseVisualStyleBackColor = true;
-            // 
-            // rdbRUE0
-            // 
-            this.rdbRUE0.AutoSize = true;
-            this.rdbRUE0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbRUE0.Location = new System.Drawing.Point(44, 30);
-            this.rdbRUE0.Name = "rdbRUE0";
-            this.rdbRUE0.Size = new System.Drawing.Size(36, 24);
-            this.rdbRUE0.TabIndex = 3;
-            this.rdbRUE0.TabStop = true;
-            this.rdbRUE0.Text = "0";
-            this.rdbRUE0.UseVisualStyleBackColor = true;
-            // 
-            // gbMMTLeftUE
-            // 
-            this.gbMMTLeftUE.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gbMMTLeftUE.Controls.Add(this.rdbLUE5);
-            this.gbMMTLeftUE.Controls.Add(this.rdbLUE4P);
-            this.gbMMTLeftUE.Controls.Add(this.rdbLUE4);
-            this.gbMMTLeftUE.Controls.Add(this.rdbLUE3P);
-            this.gbMMTLeftUE.Controls.Add(this.rdbLUE3);
-            this.gbMMTLeftUE.Controls.Add(this.rdbLUE2P);
-            this.gbMMTLeftUE.Controls.Add(this.rdbLUE2);
-            this.gbMMTLeftUE.Controls.Add(this.rdbLUE1P);
-            this.gbMMTLeftUE.Controls.Add(this.rdbLUE1);
-            this.gbMMTLeftUE.Controls.Add(this.rdbLUE0);
-            this.gbMMTLeftUE.Location = new System.Drawing.Point(5, 518);
-            this.gbMMTLeftUE.Name = "gbMMTLeftUE";
-            this.gbMMTLeftUE.Size = new System.Drawing.Size(667, 74);
-            this.gbMMTLeftUE.TabIndex = 32;
-            this.gbMMTLeftUE.TabStop = false;
-            this.gbMMTLeftUE.Text = "MMT Left UE";
-            // 
-            // rdbLUE5
-            // 
-            this.rdbLUE5.AutoSize = true;
-            this.rdbLUE5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbLUE5.Location = new System.Drawing.Point(599, 30);
-            this.rdbLUE5.Name = "rdbLUE5";
-            this.rdbLUE5.Size = new System.Drawing.Size(36, 24);
-            this.rdbLUE5.TabIndex = 12;
-            this.rdbLUE5.TabStop = true;
-            this.rdbLUE5.Text = "5";
-            this.rdbLUE5.UseVisualStyleBackColor = true;
-            // 
-            // rdbLUE4P
-            // 
-            this.rdbLUE4P.AutoSize = true;
-            this.rdbLUE4P.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbLUE4P.Location = new System.Drawing.Point(531, 31);
-            this.rdbLUE4P.Name = "rdbLUE4P";
-            this.rdbLUE4P.Size = new System.Drawing.Size(45, 24);
-            this.rdbLUE4P.TabIndex = 11;
-            this.rdbLUE4P.TabStop = true;
-            this.rdbLUE4P.Text = "4+";
-            this.rdbLUE4P.UseVisualStyleBackColor = true;
-            // 
-            // rdbLUE4
-            // 
-            this.rdbLUE4.AutoSize = true;
-            this.rdbLUE4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbLUE4.Location = new System.Drawing.Point(471, 30);
-            this.rdbLUE4.Name = "rdbLUE4";
-            this.rdbLUE4.Size = new System.Drawing.Size(36, 24);
-            this.rdbLUE4.TabIndex = 10;
-            this.rdbLUE4.TabStop = true;
-            this.rdbLUE4.Text = "4";
-            this.rdbLUE4.UseVisualStyleBackColor = true;
-            // 
-            // rdbLUE3P
-            // 
-            this.rdbLUE3P.AutoSize = true;
-            this.rdbLUE3P.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbLUE3P.Location = new System.Drawing.Point(408, 31);
-            this.rdbLUE3P.Name = "rdbLUE3P";
-            this.rdbLUE3P.Size = new System.Drawing.Size(45, 24);
-            this.rdbLUE3P.TabIndex = 9;
-            this.rdbLUE3P.TabStop = true;
-            this.rdbLUE3P.Text = "3+";
-            this.rdbLUE3P.UseVisualStyleBackColor = true;
-            // 
-            // rdbLUE3
-            // 
-            this.rdbLUE3.AutoSize = true;
-            this.rdbLUE3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbLUE3.Location = new System.Drawing.Point(353, 31);
-            this.rdbLUE3.Name = "rdbLUE3";
-            this.rdbLUE3.Size = new System.Drawing.Size(36, 24);
-            this.rdbLUE3.TabIndex = 8;
-            this.rdbLUE3.TabStop = true;
-            this.rdbLUE3.Text = "3";
-            this.rdbLUE3.UseVisualStyleBackColor = true;
-            // 
-            // rdbLUE2P
-            // 
-            this.rdbLUE2P.AutoSize = true;
-            this.rdbLUE2P.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbLUE2P.Location = new System.Drawing.Point(287, 30);
-            this.rdbLUE2P.Name = "rdbLUE2P";
-            this.rdbLUE2P.Size = new System.Drawing.Size(45, 24);
-            this.rdbLUE2P.TabIndex = 7;
-            this.rdbLUE2P.TabStop = true;
-            this.rdbLUE2P.Text = "2+";
-            this.rdbLUE2P.UseVisualStyleBackColor = true;
-            // 
-            // rdbLUE2
-            // 
-            this.rdbLUE2.AutoSize = true;
-            this.rdbLUE2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbLUE2.Location = new System.Drawing.Point(228, 30);
-            this.rdbLUE2.Name = "rdbLUE2";
-            this.rdbLUE2.Size = new System.Drawing.Size(36, 24);
-            this.rdbLUE2.TabIndex = 6;
-            this.rdbLUE2.TabStop = true;
-            this.rdbLUE2.Text = "2";
-            this.rdbLUE2.UseVisualStyleBackColor = true;
-            // 
-            // rdbLUE1P
-            // 
-            this.rdbLUE1P.AutoSize = true;
-            this.rdbLUE1P.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbLUE1P.Location = new System.Drawing.Point(164, 30);
-            this.rdbLUE1P.Name = "rdbLUE1P";
-            this.rdbLUE1P.Size = new System.Drawing.Size(45, 24);
-            this.rdbLUE1P.TabIndex = 5;
-            this.rdbLUE1P.TabStop = true;
-            this.rdbLUE1P.Text = "1+";
-            this.rdbLUE1P.UseVisualStyleBackColor = true;
-            // 
-            // rdbLUE1
-            // 
-            this.rdbLUE1.AutoSize = true;
-            this.rdbLUE1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbLUE1.Location = new System.Drawing.Point(104, 30);
-            this.rdbLUE1.Name = "rdbLUE1";
-            this.rdbLUE1.Size = new System.Drawing.Size(36, 24);
-            this.rdbLUE1.TabIndex = 4;
-            this.rdbLUE1.TabStop = true;
-            this.rdbLUE1.Text = "1";
-            this.rdbLUE1.UseVisualStyleBackColor = true;
-            // 
-            // rdbLUE0
-            // 
-            this.rdbLUE0.AutoSize = true;
-            this.rdbLUE0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.rdbLUE0.Location = new System.Drawing.Point(44, 30);
-            this.rdbLUE0.Name = "rdbLUE0";
-            this.rdbLUE0.Size = new System.Drawing.Size(36, 24);
-            this.rdbLUE0.TabIndex = 3;
-            this.rdbLUE0.TabStop = true;
-            this.rdbLUE0.Text = "0";
-            this.rdbLUE0.UseVisualStyleBackColor = true;
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox7.Controls.Add(this.radioButton1);
-            this.groupBox7.Controls.Add(this.radioButton2);
-            this.groupBox7.Controls.Add(this.radioButton3);
-            this.groupBox7.Controls.Add(this.radioButton4);
-            this.groupBox7.Controls.Add(this.radioButton5);
-            this.groupBox7.Controls.Add(this.radioButton6);
-            this.groupBox7.Controls.Add(this.radioButton7);
-            this.groupBox7.Controls.Add(this.radioButton8);
-            this.groupBox7.Controls.Add(this.radioButton9);
-            this.groupBox7.Controls.Add(this.radioButton10);
-            this.groupBox7.Location = new System.Drawing.Point(5, 596);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(667, 74);
-            this.groupBox7.TabIndex = 34;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "MMT Left UE";
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton1.Location = new System.Drawing.Point(599, 30);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(36, 24);
-            this.radioButton1.TabIndex = 12;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "5";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton2.Location = new System.Drawing.Point(531, 31);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(45, 24);
-            this.radioButton2.TabIndex = 11;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "4+";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton3.Location = new System.Drawing.Point(471, 30);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(36, 24);
-            this.radioButton3.TabIndex = 10;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "4";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton4.Location = new System.Drawing.Point(408, 31);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(45, 24);
-            this.radioButton4.TabIndex = 9;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "3+";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton5.Location = new System.Drawing.Point(353, 31);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(36, 24);
-            this.radioButton5.TabIndex = 8;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "3";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // radioButton6
-            // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton6.Location = new System.Drawing.Point(287, 30);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(45, 24);
-            this.radioButton6.TabIndex = 7;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "2+";
-            this.radioButton6.UseVisualStyleBackColor = true;
-            // 
-            // radioButton7
-            // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton7.Location = new System.Drawing.Point(228, 30);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(36, 24);
-            this.radioButton7.TabIndex = 6;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "2";
-            this.radioButton7.UseVisualStyleBackColor = true;
-            // 
-            // radioButton8
-            // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton8.Location = new System.Drawing.Point(164, 30);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(45, 24);
-            this.radioButton8.TabIndex = 5;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "1+";
-            this.radioButton8.UseVisualStyleBackColor = true;
-            // 
-            // radioButton9
-            // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton9.Location = new System.Drawing.Point(104, 30);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(36, 24);
-            this.radioButton9.TabIndex = 4;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "1";
-            this.radioButton9.UseVisualStyleBackColor = true;
-            // 
-            // radioButton10
-            // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton10.Location = new System.Drawing.Point(44, 30);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(36, 24);
-            this.radioButton10.TabIndex = 3;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "0";
-            this.radioButton10.UseVisualStyleBackColor = true;
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox8.Controls.Add(this.radioButton11);
-            this.groupBox8.Controls.Add(this.radioButton12);
-            this.groupBox8.Controls.Add(this.radioButton13);
-            this.groupBox8.Controls.Add(this.radioButton14);
-            this.groupBox8.Controls.Add(this.radioButton15);
-            this.groupBox8.Controls.Add(this.radioButton16);
-            this.groupBox8.Controls.Add(this.radioButton17);
-            this.groupBox8.Controls.Add(this.radioButton18);
-            this.groupBox8.Controls.Add(this.radioButton19);
-            this.groupBox8.Controls.Add(this.radioButton20);
-            this.groupBox8.Location = new System.Drawing.Point(678, 596);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(667, 74);
-            this.groupBox8.TabIndex = 33;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "MMT Right UE";
-            // 
-            // radioButton11
-            // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton11.Location = new System.Drawing.Point(599, 30);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(36, 24);
-            this.radioButton11.TabIndex = 12;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "5";
-            this.radioButton11.UseVisualStyleBackColor = true;
-            // 
-            // radioButton12
-            // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton12.Location = new System.Drawing.Point(531, 31);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(45, 24);
-            this.radioButton12.TabIndex = 11;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "4+";
-            this.radioButton12.UseVisualStyleBackColor = true;
-            // 
-            // radioButton13
-            // 
-            this.radioButton13.AutoSize = true;
-            this.radioButton13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton13.Location = new System.Drawing.Point(471, 30);
-            this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(36, 24);
-            this.radioButton13.TabIndex = 10;
-            this.radioButton13.TabStop = true;
-            this.radioButton13.Text = "4";
-            this.radioButton13.UseVisualStyleBackColor = true;
-            // 
-            // radioButton14
-            // 
-            this.radioButton14.AutoSize = true;
-            this.radioButton14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton14.Location = new System.Drawing.Point(408, 31);
-            this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(45, 24);
-            this.radioButton14.TabIndex = 9;
-            this.radioButton14.TabStop = true;
-            this.radioButton14.Text = "3+";
-            this.radioButton14.UseVisualStyleBackColor = true;
-            // 
-            // radioButton15
-            // 
-            this.radioButton15.AutoSize = true;
-            this.radioButton15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton15.Location = new System.Drawing.Point(353, 31);
-            this.radioButton15.Name = "radioButton15";
-            this.radioButton15.Size = new System.Drawing.Size(36, 24);
-            this.radioButton15.TabIndex = 8;
-            this.radioButton15.TabStop = true;
-            this.radioButton15.Text = "3";
-            this.radioButton15.UseVisualStyleBackColor = true;
-            // 
-            // radioButton16
-            // 
-            this.radioButton16.AutoSize = true;
-            this.radioButton16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton16.Location = new System.Drawing.Point(287, 30);
-            this.radioButton16.Name = "radioButton16";
-            this.radioButton16.Size = new System.Drawing.Size(45, 24);
-            this.radioButton16.TabIndex = 7;
-            this.radioButton16.TabStop = true;
-            this.radioButton16.Text = "2+";
-            this.radioButton16.UseVisualStyleBackColor = true;
-            // 
-            // radioButton17
-            // 
-            this.radioButton17.AutoSize = true;
-            this.radioButton17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton17.Location = new System.Drawing.Point(228, 30);
-            this.radioButton17.Name = "radioButton17";
-            this.radioButton17.Size = new System.Drawing.Size(36, 24);
-            this.radioButton17.TabIndex = 6;
-            this.radioButton17.TabStop = true;
-            this.radioButton17.Text = "2";
-            this.radioButton17.UseVisualStyleBackColor = true;
-            // 
-            // radioButton18
-            // 
-            this.radioButton18.AutoSize = true;
-            this.radioButton18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton18.Location = new System.Drawing.Point(164, 30);
-            this.radioButton18.Name = "radioButton18";
-            this.radioButton18.Size = new System.Drawing.Size(45, 24);
-            this.radioButton18.TabIndex = 5;
-            this.radioButton18.TabStop = true;
-            this.radioButton18.Text = "1+";
-            this.radioButton18.UseVisualStyleBackColor = true;
-            // 
-            // radioButton19
-            // 
-            this.radioButton19.AutoSize = true;
-            this.radioButton19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton19.Location = new System.Drawing.Point(104, 30);
-            this.radioButton19.Name = "radioButton19";
-            this.radioButton19.Size = new System.Drawing.Size(36, 24);
-            this.radioButton19.TabIndex = 4;
-            this.radioButton19.TabStop = true;
-            this.radioButton19.Text = "1";
-            this.radioButton19.UseVisualStyleBackColor = true;
-            // 
-            // radioButton20
-            // 
-            this.radioButton20.AutoSize = true;
-            this.radioButton20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton20.Location = new System.Drawing.Point(44, 30);
-            this.radioButton20.Name = "radioButton20";
-            this.radioButton20.Size = new System.Drawing.Size(36, 24);
-            this.radioButton20.TabIndex = 3;
-            this.radioButton20.TabStop = true;
-            this.radioButton20.Text = "0";
-            this.radioButton20.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.textBox1.Location = new System.Drawing.Point(77, 683);
-            this.textBox1.MaxLength = 100;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(285, 32);
-            this.textBox1.TabIndex = 35;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label2.Location = new System.Drawing.Point(16, 686);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 26);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Pain";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label3.Location = new System.Drawing.Point(368, 686);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 26);
-            this.label3.TabIndex = 36;
-            this.label3.Text = "Edema";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.textBox2.Location = new System.Drawing.Point(456, 683);
-            this.textBox2.MaxLength = 100;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(300, 32);
-            this.textBox2.TabIndex = 37;
+            // cbBalance
+            // 
+            this.cbBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbBalance.FormattingEnabled = true;
+            this.cbBalance.Location = new System.Drawing.Point(26, 38);
+            this.cbBalance.Name = "cbBalance";
+            this.cbBalance.Size = new System.Drawing.Size(237, 33);
+            this.cbBalance.TabIndex = 12;
+            // 
+            // gbMMTLUE
+            // 
+            this.gbMMTLUE.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gbMMTLUE.Controls.Add(this.label4);
+            this.gbMMTLUE.Controls.Add(this.cbMMTRLE);
+            this.gbMMTLUE.Controls.Add(this.label5);
+            this.gbMMTLUE.Controls.Add(this.cbMMTLLE);
+            this.gbMMTLUE.Controls.Add(this.label3);
+            this.gbMMTLUE.Controls.Add(this.cbMMTRUE);
+            this.gbMMTLUE.Controls.Add(this.label2);
+            this.gbMMTLUE.Controls.Add(this.cbMMTLUE);
+            this.gbMMTLUE.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.gbMMTLUE.Location = new System.Drawing.Point(814, 227);
+            this.gbMMTLUE.Name = "gbMMTLUE";
+            this.gbMMTLUE.Size = new System.Drawing.Size(418, 123);
+            this.gbMMTLUE.TabIndex = 32;
+            this.gbMMTLUE.TabStop = false;
+            this.gbMMTLUE.Text = "MMT";
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label4.Location = new System.Drawing.Point(762, 686);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label4.Location = new System.Drawing.Point(250, 78);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 26);
-            this.label4.TabIndex = 38;
-            this.label4.Text = "อื่นๆ";
+            this.label4.Size = new System.Drawing.Size(74, 24);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Left LE";
             // 
-            // textBox3
+            // cbMMTRLE
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.textBox3.Location = new System.Drawing.Point(814, 683);
-            this.textBox3.MaxLength = 100;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(261, 32);
-            this.textBox3.TabIndex = 39;
+            this.cbMMTRLE.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbMMTRLE.FormattingEnabled = true;
+            this.cbMMTRLE.Location = new System.Drawing.Point(163, 74);
+            this.cbMMTRLE.Name = "cbMMTRLE";
+            this.cbMMTRLE.Size = new System.Drawing.Size(49, 33);
+            this.cbMMTRLE.TabIndex = 15;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label5.Location = new System.Drawing.Point(58, 78);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(89, 24);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Right LE";
+            // 
+            // cbMMTLLE
+            // 
+            this.cbMMTLLE.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbMMTLLE.FormattingEnabled = true;
+            this.cbMMTLLE.Location = new System.Drawing.Point(342, 75);
+            this.cbMMTLLE.Name = "cbMMTLLE";
+            this.cbMMTLLE.Size = new System.Drawing.Size(47, 33);
+            this.cbMMTLLE.TabIndex = 14;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label3.Location = new System.Drawing.Point(247, 35);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(77, 24);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Left UE";
+            // 
+            // cbMMTRUE
+            // 
+            this.cbMMTRUE.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbMMTRUE.FormattingEnabled = true;
+            this.cbMMTRUE.Location = new System.Drawing.Point(163, 31);
+            this.cbMMTRUE.Name = "cbMMTRUE";
+            this.cbMMTRUE.Size = new System.Drawing.Size(49, 33);
+            this.cbMMTRUE.TabIndex = 12;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label2.Location = new System.Drawing.Point(58, 35);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(92, 24);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Right UE";
+            // 
+            // cbMMTLUE
+            // 
+            this.cbMMTLUE.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbMMTLUE.FormattingEnabled = true;
+            this.cbMMTLUE.Location = new System.Drawing.Point(341, 31);
+            this.cbMMTLUE.Name = "cbMMTLUE";
+            this.cbMMTLUE.Size = new System.Drawing.Size(47, 33);
+            this.cbMMTLUE.TabIndex = 11;
+            // 
+            // txtPain
+            // 
+            this.txtPain.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPain.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.txtPain.Location = new System.Drawing.Point(25, 31);
+            this.txtPain.MaxLength = 100;
+            this.txtPain.Name = "txtPain";
+            this.txtPain.Size = new System.Drawing.Size(373, 32);
+            this.txtPain.TabIndex = 35;
+            // 
+            // txtEdema
+            // 
+            this.txtEdema.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEdema.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.txtEdema.Location = new System.Drawing.Point(25, 31);
+            this.txtEdema.MaxLength = 100;
+            this.txtEdema.Name = "txtEdema";
+            this.txtEdema.Size = new System.Drawing.Size(373, 32);
+            this.txtEdema.TabIndex = 37;
+            // 
+            // txtOther
+            // 
+            this.txtOther.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.txtOther.Location = new System.Drawing.Point(24, 63);
+            this.txtOther.MaxLength = 100;
+            this.txtOther.Name = "txtOther";
+            this.txtOther.Size = new System.Drawing.Size(373, 32);
+            this.txtOther.TabIndex = 39;
             // 
             // btnSave
             // 
             this.btnSave.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSave.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btnSave.Location = new System.Drawing.Point(1155, 673);
+            this.btnSave.Location = new System.Drawing.Point(1022, 638);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(190, 51);
             this.btnSave.TabIndex = 40;
@@ -1208,53 +662,207 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // cbBedMobility
+            // groupBox9
             // 
-            this.cbBedMobility.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbBedMobility.FormattingEnabled = true;
-            this.cbBedMobility.Location = new System.Drawing.Point(46, 25);
-            this.cbBedMobility.Name = "cbBedMobility";
-            this.cbBedMobility.Size = new System.Drawing.Size(237, 33);
-            this.cbBedMobility.TabIndex = 10;
+            this.groupBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox9.Controls.Add(this.txtPain);
+            this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.groupBox9.Location = new System.Drawing.Point(814, 357);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(418, 74);
+            this.groupBox9.TabIndex = 32;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Pain";
+            this.groupBox9.Enter += new System.EventHandler(this.groupBox9_Enter);
             // 
-            // cbAmbulateWith
+            // groupBox10
             // 
-            this.cbAmbulateWith.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbAmbulateWith.FormattingEnabled = true;
-            this.cbAmbulateWith.Location = new System.Drawing.Point(60, 25);
-            this.cbAmbulateWith.Name = "cbAmbulateWith";
-            this.cbAmbulateWith.Size = new System.Drawing.Size(237, 33);
-            this.cbAmbulateWith.TabIndex = 11;
+            this.groupBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox10.Controls.Add(this.txtEdema);
+            this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.groupBox10.Location = new System.Drawing.Point(814, 437);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(418, 74);
+            this.groupBox10.TabIndex = 36;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Edema";
             // 
-            // cbBalance
+            // groupBox11
             // 
-            this.cbBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbBalance.FormattingEnabled = true;
-            this.cbBalance.Location = new System.Drawing.Point(72, 25);
-            this.cbBalance.Name = "cbBalance";
-            this.cbBalance.Size = new System.Drawing.Size(237, 33);
-            this.cbBalance.TabIndex = 12;
+            this.groupBox11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox11.Controls.Add(this.cbtired);
+            this.groupBox11.Controls.Add(this.txtOther);
+            this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.groupBox11.Location = new System.Drawing.Point(814, 511);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(418, 121);
+            this.groupBox11.TabIndex = 38;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "อื่นๆ";
+            // 
+            // cbtired
+            // 
+            this.cbtired.AutoSize = true;
+            this.cbtired.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbtired.Location = new System.Drawing.Point(24, 31);
+            this.cbtired.Name = "cbtired";
+            this.cbtired.Size = new System.Drawing.Size(106, 24);
+            this.cbtired.TabIndex = 4;
+            this.cbtired.Text = "หอบ / เหนื่อย";
+            this.cbtired.UseVisualStyleBackColor = true;
+            // 
+            // gbTransfer
+            // 
+            this.gbTransfer.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gbTransfer.Controls.Add(this.cbTransfer);
+            this.gbTransfer.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.gbTransfer.Location = new System.Drawing.Point(460, 353);
+            this.gbTransfer.Name = "gbTransfer";
+            this.gbTransfer.Size = new System.Drawing.Size(269, 86);
+            this.gbTransfer.TabIndex = 30;
+            this.gbTransfer.TabStop = false;
+            this.gbTransfer.Text = "Transfer";
+            // 
+            // cbTransfer
+            // 
+            this.cbTransfer.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbTransfer.FormattingEnabled = true;
+            this.cbTransfer.Location = new System.Drawing.Point(25, 37);
+            this.cbTransfer.Name = "cbTransfer";
+            this.cbTransfer.Size = new System.Drawing.Size(237, 33);
+            this.cbTransfer.TabIndex = 10;
+            // 
+            // txtEst1
+            // 
+            this.txtEst1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.txtEst1.Location = new System.Drawing.Point(25, 29);
+            this.txtEst1.Name = "txtEst1";
+            this.txtEst1.Size = new System.Drawing.Size(41, 26);
+            this.txtEst1.TabIndex = 6;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label6.Location = new System.Drawing.Point(72, 32);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(161, 20);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "ดัชนีมวลกล้ามเนื้อ (BMI)";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label7.Location = new System.Drawing.Point(72, 60);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(123, 20);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "% ไขมันในร่างกาย";
+            // 
+            // txtEst2
+            // 
+            this.txtEst2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.txtEst2.Location = new System.Drawing.Point(25, 57);
+            this.txtEst2.Name = "txtEst2";
+            this.txtEst2.Size = new System.Drawing.Size(41, 26);
+            this.txtEst2.TabIndex = 8;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label8.Location = new System.Drawing.Point(72, 87);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(124, 20);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "มวลกล้ามเนื้อทั้งตัว";
+            // 
+            // txtEst3
+            // 
+            this.txtEst3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.txtEst3.Location = new System.Drawing.Point(25, 85);
+            this.txtEst3.Name = "txtEst3";
+            this.txtEst3.Size = new System.Drawing.Size(41, 26);
+            this.txtEst3.TabIndex = 10;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label9.Location = new System.Drawing.Point(72, 115);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(118, 20);
+            this.label9.TabIndex = 13;
+            this.label9.Text = "มวลกล้ามเนื้อแขน";
+            // 
+            // txtEst4
+            // 
+            this.txtEst4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.txtEst4.Location = new System.Drawing.Point(25, 113);
+            this.txtEst4.Name = "txtEst4";
+            this.txtEst4.Size = new System.Drawing.Size(41, 26);
+            this.txtEst4.TabIndex = 12;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label10.Location = new System.Drawing.Point(72, 143);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(107, 20);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "มวลกล้ามเนื้อขา";
+            // 
+            // txtEst5
+            // 
+            this.txtEst5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.txtEst5.Location = new System.Drawing.Point(25, 141);
+            this.txtEst5.Name = "txtEst5";
+            this.txtEst5.Size = new System.Drawing.Size(41, 26);
+            this.txtEst5.TabIndex = 14;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label11.Location = new System.Drawing.Point(72, 172);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(59, 20);
+            this.label11.TabIndex = 17;
+            this.label11.Text = "6 MWT";
+            // 
+            // txtEst6
+            // 
+            this.txtEst6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.txtEst6.Location = new System.Drawing.Point(25, 169);
+            this.txtEst6.Name = "txtEst6";
+            this.txtEst6.Size = new System.Drawing.Size(41, 26);
+            this.txtEst6.TabIndex = 16;
+            // 
+            // txtBarthelIndex
+            // 
+            this.txtBarthelIndex.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.txtBarthelIndex.Location = new System.Drawing.Point(25, 197);
+            this.txtBarthelIndex.Name = "txtBarthelIndex";
+            this.txtBarthelIndex.Size = new System.Drawing.Size(41, 26);
+            this.txtBarthelIndex.TabIndex = 18;
             // 
             // FormPatientRecord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.gbTransfer);
+            this.Controls.Add(this.groupBox11);
+            this.Controls.Add(this.groupBox10);
+            this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.groupBox7);
-            this.Controls.Add(this.groupBox8);
-            this.Controls.Add(this.gbMMTLeftUE);
-            this.Controls.Add(this.gbMMTRightUE);
+            this.Controls.Add(this.groupBox6);
+            this.Controls.Add(this.gbMMTLUE);
             this.Controls.Add(this.gbBalance);
             this.Controls.Add(this.gbAmbulate);
             this.Controls.Add(this.gbBed);
-            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -1278,16 +886,16 @@
             this.gbBed.ResumeLayout(false);
             this.gbAmbulate.ResumeLayout(false);
             this.gbBalance.ResumeLayout(false);
-            this.gbMMTRightUE.ResumeLayout(false);
-            this.gbMMTRightUE.PerformLayout();
-            this.gbMMTLeftUE.ResumeLayout(false);
-            this.gbMMTLeftUE.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
+            this.gbMMTLUE.ResumeLayout(false);
+            this.gbMMTLUE.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
+            this.gbTransfer.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -1322,68 +930,43 @@
         private System.Windows.Forms.CheckBox cbProgrameEx1;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.LinkLabel lnklblBarthelIndex;
-        private System.Windows.Forms.CheckBox cbEstimate6;
-        private System.Windows.Forms.CheckBox cbEstimate5;
-        private System.Windows.Forms.CheckBox cbEstimate4;
-        private System.Windows.Forms.CheckBox cbEstimate3;
-        private System.Windows.Forms.CheckBox cbEstimate2;
-        private System.Windows.Forms.CheckBox cbEstimate1;
         private System.Windows.Forms.GroupBox gbBed;
         private System.Windows.Forms.GroupBox gbAmbulate;
         private System.Windows.Forms.GroupBox gbBalance;
-        private System.Windows.Forms.GroupBox gbMMTRightUE;
-        private System.Windows.Forms.RadioButton rdbRUE5;
-        private System.Windows.Forms.RadioButton rdbRUE4P;
-        private System.Windows.Forms.RadioButton rdbRUE4;
-        private System.Windows.Forms.RadioButton rdbRUE3P;
-        private System.Windows.Forms.RadioButton rdbRUE3;
-        private System.Windows.Forms.RadioButton rdbRUE2P;
-        private System.Windows.Forms.RadioButton rdbRUE2;
-        private System.Windows.Forms.RadioButton rdbRUE1P;
-        private System.Windows.Forms.RadioButton rdbRUE1;
-        private System.Windows.Forms.RadioButton rdbRUE0;
-        private System.Windows.Forms.GroupBox gbMMTLeftUE;
-        private System.Windows.Forms.RadioButton rdbLUE5;
-        private System.Windows.Forms.RadioButton rdbLUE4P;
-        private System.Windows.Forms.RadioButton rdbLUE4;
-        private System.Windows.Forms.RadioButton rdbLUE3P;
-        private System.Windows.Forms.RadioButton rdbLUE3;
-        private System.Windows.Forms.RadioButton rdbLUE2P;
-        private System.Windows.Forms.RadioButton rdbLUE2;
-        private System.Windows.Forms.RadioButton rdbLUE1P;
-        private System.Windows.Forms.RadioButton rdbLUE1;
-        private System.Windows.Forms.RadioButton rdbLUE0;
-        private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton10;
-        private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.RadioButton radioButton11;
-        private System.Windows.Forms.RadioButton radioButton12;
-        private System.Windows.Forms.RadioButton radioButton13;
-        private System.Windows.Forms.RadioButton radioButton14;
-        private System.Windows.Forms.RadioButton radioButton15;
-        private System.Windows.Forms.RadioButton radioButton16;
-        private System.Windows.Forms.RadioButton radioButton17;
-        private System.Windows.Forms.RadioButton radioButton18;
-        private System.Windows.Forms.RadioButton radioButton19;
-        private System.Windows.Forms.RadioButton radioButton20;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.GroupBox gbMMTLUE;
+        private System.Windows.Forms.TextBox txtPain;
+        private System.Windows.Forms.TextBox txtEdema;
+        private System.Windows.Forms.TextBox txtOther;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ComboBox cbBedMobility;
         private System.Windows.Forms.ComboBox cbAmbulateWith;
         private System.Windows.Forms.ComboBox cbBalance;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.GroupBox gbTransfer;
+        private System.Windows.Forms.ComboBox cbTransfer;
+        private System.Windows.Forms.ComboBox cbMMTRUE;
+        private System.Windows.Forms.ComboBox cbMMTLUE;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cbMMTRLE;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cbMMTLLE;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox cbtired;
+        private System.Windows.Forms.TextBox txtBarthelIndex;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtEst6;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtEst5;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtEst4;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtEst3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtEst2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtEst1;
     }
 }

@@ -10,9 +10,9 @@ namespace CKD.Class
 {
     class GetData
     {
+        DataClassesDataContext db = new DataClassesDataContext();
         public DataTable getHN(string strSearch)
         {
-            DataClassesDataContext db = new DataClassesDataContext();
             DataTable dt = new DataTable();
 
             var patient = from tb in db.Patients
@@ -26,7 +26,6 @@ namespace CKD.Class
 
         public DataTable getDistrict()
         {
-            DataClassesDataContext db = new DataClassesDataContext();
             DataTable dt = new DataTable();
 
             var district = from tb in db.Districts
@@ -37,7 +36,6 @@ namespace CKD.Class
 
         public DataTable getStatus()
         {
-            DataClassesDataContext db = new DataClassesDataContext();
             DataTable dt = new DataTable();
 
             var status = from tb in db.PatientStatus
@@ -49,13 +47,34 @@ namespace CKD.Class
 
         public DataTable getTile()
         {
-            DataClassesDataContext db = new DataClassesDataContext();
             DataTable dt = new DataTable();
 
             var status = from tb in db.Titles
                          select tb;
 
             dt = status.ToDataTable();
+            return dt;
+        }
+
+        public DataTable getGender()
+        {
+            DataTable dt = new DataTable();
+
+            var data = from tb in db.refGenders
+                         select tb;
+
+            dt = data.ToDataTable();
+            return dt;
+        }
+
+        public DataTable getPatientRecordAll()
+        {
+            DataTable dt = new DataTable();
+
+            var data = from tb in db.PatientRecords
+                       select tb;
+
+            dt = data.ToDataTable();
             return dt;
         }
     }

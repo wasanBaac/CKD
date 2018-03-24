@@ -49,6 +49,13 @@ namespace CKD
             cbTitle.ValueMember = "TitleID";
             cbTitle.DisplayMember = "TitleName";
 
+            cbGender.DataSource = getData.getGender();
+            cbGender.ValueMember = "Id";
+            cbGender.DisplayMember = "Detail";
+
+            dateBirthDate.Format = DateTimePickerFormat.Custom;
+            dateBirthDate.CustomFormat = "dd-MM-yyyy";
+
         }
 
         private void setDataEdit(string strHN)
@@ -61,6 +68,7 @@ namespace CKD
 
             txtHN.Text = patient.HN.ToString();
             txtNumber.Text = patient.Number.ToString();
+            cbGender.SelectedValue = patient.Gender;
             cbTitle.SelectedValue = patient.TitleID;
             txtName.Text = patient.Name;
             txtLastName.Text = patient.LastName;
@@ -80,8 +88,15 @@ namespace CKD
             cbDistrict.SelectedValue = patient.DistrictID;
             cbStatus.SelectedValue = patient.StatusID;
             txtHN.Enabled = false;
+
+            getDataPatientRecord();
         }
 
+        private void getDataPatientRecord()
+        {
+            gvPatientRecord.DataSource = getData.getPatientRecordAll();
+        }
+        
         private void btnSave_Click(object sender, EventArgs e)
         {
             if(validInput())
@@ -116,6 +131,7 @@ namespace CKD
 
             patient.HN = Convert.ToInt32(txtHN.Text.Trim());
             patient.Number = Convert.ToInt16(txtNumber.Text.Trim());
+            patient.Gender = cbGender.SelectedValue.ToString();
             patient.TitleID = Convert.ToInt16(cbTitle.SelectedValue);
             patient.Name = txtName.Text.Trim();
             patient.LastName = txtLastName.Text.Trim();
@@ -154,6 +170,20 @@ namespace CKD
         {
             FormPatientRecord fpr = new FormPatientRecord();
             fpr.Show();
+            getDataPatientRecord();
+        }
+
+        private void gvPatientRecord_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (gvPatientRecord.Columns[e.ColumnIndex].Name == "clmBtnEdit")
+            {
+                string a = gvPatientRecord.CurrentRow.Cells[1].Value.ToString();
+
+                FormPatientRecord fpr = new FormPatientRecord(Convert.ToInt16(gvPatientRecord.CurrentRow.Cells[1].Value.ToString()),Convert.ToInt32(txtHN.Text));
+                fpr.Show();
+
+                getDataPatientRecord();
+            }
         }
     }
 }
