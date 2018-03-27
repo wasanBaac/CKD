@@ -88,13 +88,13 @@
   </Table>
   <Table Name="dbo.PatientRecord" Member="PatientRecords">
     <Type Name="PatientRecord">
-      <Column Name="recordID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="recordID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="HN" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
       <Column Name="recordDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="eGFR" Type="System.Decimal" DbType="Decimal(2,2)" CanBeNull="true" />
+      <Column Name="eGFR" Type="System.Decimal" DbType="Decimal(4,2)" CanBeNull="true" />
       <Column Name="stage" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="weight" Type="System.Decimal" DbType="Decimal(3,1)" CanBeNull="true" />
-      <Column Name="height" Type="System.Decimal" DbType="Decimal(3,1)" CanBeNull="true" />
+      <Column Name="weight" Type="System.Decimal" DbType="Decimal(4,1)" CanBeNull="true" />
+      <Column Name="height" Type="System.Decimal" DbType="Decimal(4,1)" CanBeNull="true" />
       <Column Name="treatNone" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Column Name="treatBelly" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Column Name="treatNeck" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
@@ -107,15 +107,14 @@
       <Column Name="exReject" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Column Name="healtEducation" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Column Name="healtBenefit" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="progeamEx1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="programEx1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Column Name="programEx2" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="estimate1" Type="System.Decimal" DbType="Decimal(3,2)" CanBeNull="true" />
-      <Column Name="estimate2" Type="System.Decimal" DbType="Decimal(3,2)" CanBeNull="true" />
-      <Column Name="estimate3" Type="System.Decimal" DbType="Decimal(3,2)" CanBeNull="true" />
-      <Column Name="estimate4" Type="System.Decimal" DbType="Decimal(3,2)" CanBeNull="true" />
-      <Column Name="estimate5" Type="System.Decimal" DbType="Decimal(3,2)" CanBeNull="true" />
-      <Column Name="estimate6" Type="System.Decimal" DbType="Decimal(3,2)" CanBeNull="true" />
-      <Column Name="estimate7" Type="System.Decimal" DbType="Decimal(3,2)" CanBeNull="true" />
+      <Column Name="estimate1" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="estimate2" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="estimate3" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="estimate4" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="estimate5" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="estimate6" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
       <Column Name="BarthelIndex" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Transfer" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="BedMobility" Type="System.Int32" DbType="Int" CanBeNull="true" />

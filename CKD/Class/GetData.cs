@@ -77,5 +77,17 @@ namespace CKD.Class
             dt = data.ToDataTable();
             return dt;
         }
+
+        public DataTable getPatientRecordByHN(Int32 _HN)
+        {
+            DataTable dt = new DataTable();
+
+            var data = from tb in db.PatientRecords
+                       where tb.HN == _HN
+                       select tb;
+
+            dt = data.ToDataTable();
+            return dt;
+        }
     }
 }

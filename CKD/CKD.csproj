@@ -106,6 +106,7 @@
     <Compile Include="FormPatientRecord.Designer.cs">
       <DependentUpon>FormPatientRecord.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\BarthelIndexModel.cs" />
     <Compile Include="PatientDetail.cs">
       <SubType>Form</SubType>
     </Compile>

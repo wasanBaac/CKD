@@ -94,7 +94,7 @@ namespace CKD
 
         private void getDataPatientRecord()
         {
-            gvPatientRecord.DataSource = getData.getPatientRecordAll();
+            gvPatientRecord.DataSource = getData.getPatientRecordByHN(Convert.ToInt32(txtHN.Text));
         }
         
         private void btnSave_Click(object sender, EventArgs e)
@@ -168,8 +168,8 @@ namespace CKD
 
         private void btnAddrecordDetail_Click(object sender, EventArgs e)
         {
-            FormPatientRecord fpr = new FormPatientRecord();
-            fpr.Show();
+            FormPatientRecord fpr = new FormPatientRecord(Convert.ToInt32(txtHN.Text));
+            fpr.ShowDialog();
             getDataPatientRecord();
         }
 
@@ -180,7 +180,7 @@ namespace CKD
                 string a = gvPatientRecord.CurrentRow.Cells[1].Value.ToString();
 
                 FormPatientRecord fpr = new FormPatientRecord(Convert.ToInt16(gvPatientRecord.CurrentRow.Cells[1].Value.ToString()),Convert.ToInt32(txtHN.Text));
-                fpr.Show();
+                fpr.ShowDialog();
 
                 getDataPatientRecord();
             }

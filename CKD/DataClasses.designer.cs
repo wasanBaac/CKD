@@ -1665,7 +1665,7 @@ namespace CKD
 		
 		private System.Nullable<bool> _healtBenefit;
 		
-		private System.Nullable<bool> _progeamEx1;
+		private System.Nullable<bool> _programEx1;
 		
 		private System.Nullable<bool> _programEx2;
 		
@@ -1680,8 +1680,6 @@ namespace CKD
 		private System.Nullable<decimal> _estimate5;
 		
 		private System.Nullable<decimal> _estimate6;
-		
-		private System.Nullable<decimal> _estimate7;
 		
 		private System.Nullable<int> _BarthelIndex;
 		
@@ -1755,8 +1753,8 @@ namespace CKD
     partial void OnhealtEducationChanged();
     partial void OnhealtBenefitChanging(System.Nullable<bool> value);
     partial void OnhealtBenefitChanged();
-    partial void OnprogeamEx1Changing(System.Nullable<bool> value);
-    partial void OnprogeamEx1Changed();
+    partial void OnprogramEx1Changing(System.Nullable<bool> value);
+    partial void OnprogramEx1Changed();
     partial void OnprogramEx2Changing(System.Nullable<bool> value);
     partial void OnprogramEx2Changed();
     partial void Onestimate1Changing(System.Nullable<decimal> value);
@@ -1771,8 +1769,6 @@ namespace CKD
     partial void Onestimate5Changed();
     partial void Onestimate6Changing(System.Nullable<decimal> value);
     partial void Onestimate6Changed();
-    partial void Onestimate7Changing(System.Nullable<decimal> value);
-    partial void Onestimate7Changed();
     partial void OnBarthelIndexChanging(System.Nullable<int> value);
     partial void OnBarthelIndexChanged();
     partial void OnTransferChanging(System.Nullable<int> value);
@@ -1810,7 +1806,7 @@ namespace CKD
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_recordID", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_recordID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
 		public int recordID
 		{
 			get
@@ -1870,7 +1866,7 @@ namespace CKD
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_eGFR", DbType="Decimal(2,2)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_eGFR", DbType="Decimal(4,2)")]
 		public System.Nullable<decimal> eGFR
 		{
 			get
@@ -1910,7 +1906,7 @@ namespace CKD
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_weight", DbType="Decimal(3,1)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_weight", DbType="Decimal(4,1)")]
 		public System.Nullable<decimal> weight
 		{
 			get
@@ -1930,7 +1926,7 @@ namespace CKD
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_height", DbType="Decimal(3,1)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_height", DbType="Decimal(4,1)")]
 		public System.Nullable<decimal> height
 		{
 			get
@@ -2190,22 +2186,22 @@ namespace CKD
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_progeamEx1", DbType="Bit")]
-		public System.Nullable<bool> progeamEx1
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_programEx1", DbType="Bit")]
+		public System.Nullable<bool> programEx1
 		{
 			get
 			{
-				return this._progeamEx1;
+				return this._programEx1;
 			}
 			set
 			{
-				if ((this._progeamEx1 != value))
+				if ((this._programEx1 != value))
 				{
-					this.OnprogeamEx1Changing(value);
+					this.OnprogramEx1Changing(value);
 					this.SendPropertyChanging();
-					this._progeamEx1 = value;
-					this.SendPropertyChanged("progeamEx1");
-					this.OnprogeamEx1Changed();
+					this._programEx1 = value;
+					this.SendPropertyChanged("programEx1");
+					this.OnprogramEx1Changed();
 				}
 			}
 		}
@@ -2230,7 +2226,7 @@ namespace CKD
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estimate1", DbType="Decimal(3,2)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estimate1", DbType="Decimal(5,2)")]
 		public System.Nullable<decimal> estimate1
 		{
 			get
@@ -2250,7 +2246,7 @@ namespace CKD
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estimate2", DbType="Decimal(3,2)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estimate2", DbType="Decimal(5,2)")]
 		public System.Nullable<decimal> estimate2
 		{
 			get
@@ -2270,7 +2266,7 @@ namespace CKD
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estimate3", DbType="Decimal(3,2)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estimate3", DbType="Decimal(5,2)")]
 		public System.Nullable<decimal> estimate3
 		{
 			get
@@ -2290,7 +2286,7 @@ namespace CKD
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estimate4", DbType="Decimal(3,2)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estimate4", DbType="Decimal(5,2)")]
 		public System.Nullable<decimal> estimate4
 		{
 			get
@@ -2310,7 +2306,7 @@ namespace CKD
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estimate5", DbType="Decimal(3,2)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estimate5", DbType="Decimal(5,2)")]
 		public System.Nullable<decimal> estimate5
 		{
 			get
@@ -2330,7 +2326,7 @@ namespace CKD
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estimate6", DbType="Decimal(3,2)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estimate6", DbType="Decimal(5,2)")]
 		public System.Nullable<decimal> estimate6
 		{
 			get
@@ -2346,26 +2342,6 @@ namespace CKD
 					this._estimate6 = value;
 					this.SendPropertyChanged("estimate6");
 					this.Onestimate6Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estimate7", DbType="Decimal(3,2)")]
-		public System.Nullable<decimal> estimate7
-		{
-			get
-			{
-				return this._estimate7;
-			}
-			set
-			{
-				if ((this._estimate7 != value))
-				{
-					this.Onestimate7Changing(value);
-					this.SendPropertyChanging();
-					this._estimate7 = value;
-					this.SendPropertyChanged("estimate7");
-					this.Onestimate7Changed();
 				}
 			}
 		}
