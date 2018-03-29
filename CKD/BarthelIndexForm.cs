@@ -12,9 +12,20 @@ namespace CKD
 {
     public partial class BarthelIndexForm : Form
     {
+        DataClassesDataContext db = new DataClassesDataContext();
+        private int recordID { get; set; }
+        private PatientRecordDetail barthelRecord { get; set; }
         public BarthelIndexForm()
         {
             InitializeComponent();
+        }
+
+        public BarthelIndexForm(int _recordID,PatientRecordDetail _barthelRecord)
+        {
+            InitializeComponent();
+            recordID = _recordID;
+            barthelRecord = _barthelRecord;
+            getData();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -34,6 +45,95 @@ namespace CKD
             PRD.Bladder = Convert.ToInt16(label10.Text);
             FormPatientRecord.barthelRecord = PRD;
             this.Close();
+        }
+
+        private void getData()
+        {
+            PatientRecordDetail PRD = new PatientRecordDetail();
+            if (barthelRecord != null)
+            {
+                PRD = barthelRecord;
+            }
+            else
+            {
+                PRD = (from tb in db.PatientRecordDetails
+                       where tb.recordID == recordID
+                       select tb).SingleOrDefault();
+            }
+            if (PRD != null)
+            {
+                //1.Feeding
+                if (PRD.Feeding == 1)
+                    rdb11.Checked = true;
+                else if (PRD.Feeding == 2)
+                    rdb12.Checked = true;
+                else
+                    rdb10.Checked = true;
+                //2.Transfer
+                if (PRD.Transfer == 1)
+                    rdb21.Checked = true;
+                else if (PRD.Transfer == 2)
+                    rdb22.Checked = true;
+                else if (PRD.Transfer == 3)
+                    rdb23.Checked = true;
+                else
+                    rdb30.Checked = true;
+                //3.Grooming
+                if (PRD.Grooming == 1)
+                    rdb31.Checked = true;
+                else
+                    rdb30.Checked = true;
+                //4.Toilet
+                if (PRD.Toilet__ == 1)
+                    rdb41.Checked = true;
+                else if (PRD.Toilet__ == 2)
+                    rdb42.Checked = true;
+                else
+                    rdb40.Checked = true;
+                //5.Bathing
+                if (PRD.Bathing == 1)
+                    rdb51.Checked = true;
+                else
+                    rdb50.Checked = true;
+                //6.Mobility
+                if (PRD.Mobility == 1)
+                    rdb61.Checked = true;
+                else if (PRD.Mobility == 2)
+                    rdb62.Checked = true;
+                else if (PRD.Mobility == 3)
+                    rdb63.Checked = true;
+                else
+                    rdb60.Checked = true;
+                //7.Stair
+                if (PRD.Stair == 1)
+                    rdb71.Checked = true;
+                else if (PRD.Stair == 2)
+                    rdb72.Checked = true;
+                else
+                    rdb70.Checked = true;
+                //8.Dressing
+                if (PRD.Dressing == 1)
+                    rdb81.Checked = true;
+                else if (PRD.Dressing == 2)
+                    rdb82.Checked = true;
+                else
+                    rdb80.Checked = true;
+                //9.Bowels
+                if (PRD.Bowels == 1)
+                    rdb91.Checked = true;
+                else if (PRD.Bowels == 2)
+                    rdb92.Checked = true;
+                else
+                    rdb90.Checked = true;
+                //10.Bladder
+                if (PRD.Bladder == 1)
+                    rdb101.Checked = true;
+                else if (PRD.Bladder == 2)
+                    rdb102.Checked = true;
+                else
+                    rdb100.Checked = true;
+
+            }
         }
 
         private void setTotal()

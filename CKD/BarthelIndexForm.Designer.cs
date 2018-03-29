@@ -137,7 +137,6 @@
             this.rdb12.Name = "rdb12";
             this.rdb12.Size = new System.Drawing.Size(333, 17);
             this.rdb12.TabIndex = 2;
-            this.rdb12.TabStop = true;
             this.rdb12.Text = "2  =  ตักอาหารและช่วยตัวเองได้ตามปกติเมื่อเตรียมอาหารวางไว้ให้";
             this.rdb12.UseVisualStyleBackColor = true;
             this.rdb12.CheckedChanged += new System.EventHandler(this.rdb1_CheckedChanged);
@@ -149,7 +148,6 @@
             this.rdb11.Name = "rdb11";
             this.rdb11.Size = new System.Drawing.Size(345, 17);
             this.rdb11.TabIndex = 1;
-            this.rdb11.TabStop = true;
             this.rdb11.Text = "1  =  ช่วยใช้ช้อนตักอาหารไว้ให้หรือตัด/หั่นให้เป็นชิ้นเล็กๆไว้ล่วงหน้า";
             this.rdb11.UseVisualStyleBackColor = true;
             this.rdb11.CheckedChanged += new System.EventHandler(this.rdb1_CheckedChanged);
@@ -157,6 +155,7 @@
             // rdb10
             // 
             this.rdb10.AutoSize = true;
+            this.rdb10.Checked = true;
             this.rdb10.Location = new System.Drawing.Point(34, 21);
             this.rdb10.Name = "rdb10";
             this.rdb10.Size = new System.Drawing.Size(382, 17);
@@ -198,7 +197,6 @@
             this.rdb23.Name = "rdb23";
             this.rdb23.Size = new System.Drawing.Size(457, 17);
             this.rdb23.TabIndex = 3;
-            this.rdb23.TabStop = true;
             this.rdb23.Text = "3 = สามารถลุกจากที่นอน เตียง หรือเคลื่อนย้ายลงมาเก้าอี้รถเข็นและสามารถล๊อกล้อได้ท" +
     "ำได้เอง";
             this.rdb23.UseVisualStyleBackColor = true;
@@ -211,7 +209,6 @@
             this.rdb22.Name = "rdb22";
             this.rdb22.Size = new System.Drawing.Size(433, 17);
             this.rdb22.TabIndex = 2;
-            this.rdb22.TabStop = true;
             this.rdb22.Text = "2 = ต้องการความช่วยเหลือบ้าง เช่น บอกให้ทำตามหรือช่วยพยุงเล็กน้อยหรือต้องมีคนดูแล" +
     "";
             this.rdb22.UseVisualStyleBackColor = true;
@@ -224,7 +221,6 @@
             this.rdb21.Name = "rdb21";
             this.rdb21.Size = new System.Drawing.Size(311, 17);
             this.rdb21.TabIndex = 1;
-            this.rdb21.TabStop = true;
             this.rdb21.Text = "1 = ต้องการความช่วยเหลือ1-2คน พยุง/ดันขึ้นมา จึงจะนั่งอยู่ได้";
             this.rdb21.UseVisualStyleBackColor = true;
             this.rdb21.CheckedChanged += new System.EventHandler(this.rdb2_CheckedChanged);
@@ -232,6 +228,7 @@
             // rdb20
             // 
             this.rdb20.AutoSize = true;
+            this.rdb20.Checked = true;
             this.rdb20.Location = new System.Drawing.Point(34, 15);
             this.rdb20.Name = "rdb20";
             this.rdb20.Size = new System.Drawing.Size(333, 17);
@@ -271,7 +268,6 @@
             this.rdb31.Name = "rdb31";
             this.rdb31.Size = new System.Drawing.Size(474, 17);
             this.rdb31.TabIndex = 1;
-            this.rdb31.TabStop = true;
             this.rdb31.Text = "1 = สามารถล้างหน้า แปรงฟัน หวีผม หรือโกนหนวดได้เอง (รวมทั้งทำได้เองถ้าเตรียมอุปกร" +
     "ณ์ไว้ให้)";
             this.rdb31.UseVisualStyleBackColor = true;
@@ -280,6 +276,7 @@
             // rdb30
             // 
             this.rdb30.AutoSize = true;
+            this.rdb30.Checked = true;
             this.rdb30.Location = new System.Drawing.Point(34, 31);
             this.rdb30.Name = "rdb30";
             this.rdb30.Size = new System.Drawing.Size(433, 17);
@@ -316,6 +313,7 @@
             // rdb40
             // 
             this.rdb40.AutoSize = true;
+            this.rdb40.Checked = true;
             this.rdb40.Location = new System.Drawing.Point(34, 19);
             this.rdb40.Name = "rdb40";
             this.rdb40.Size = new System.Drawing.Size(550, 18);
@@ -334,7 +332,6 @@
             this.rdb42.Name = "rdb42";
             this.rdb42.Size = new System.Drawing.Size(527, 30);
             this.rdb42.TabIndex = 2;
-            this.rdb42.TabStop = true;
             this.rdb42.Text = "2 = สามารถเข้า-ออกห้องสุขา หรือการสอดดึงกระโถนรวมทั้งการถอดใส่เสื้อผ้า การล้างทำค" +
     "วามสะอาดหลังขับถ่าย \n ช่วยเหลือตนเองได้ดี";
             this.rdb42.UseVisualStyleBackColor = true;
@@ -347,7 +344,6 @@
             this.rdb41.Name = "rdb41";
             this.rdb41.Size = new System.Drawing.Size(259, 17);
             this.rdb41.TabIndex = 1;
-            this.rdb41.TabStop = true;
             this.rdb41.Text = "1 = ทำได้บ้าง ต้องการความช่วยเหลือในบางขั้นตอน";
             this.rdb41.UseVisualStyleBackColor = true;
             this.rdb41.CheckedChanged += new System.EventHandler(this.rdb4_CheckedChanged);
@@ -382,7 +378,6 @@
             this.rdb51.Name = "rdb51";
             this.rdb51.Size = new System.Drawing.Size(403, 17);
             this.rdb51.TabIndex = 1;
-            this.rdb51.TabStop = true;
             this.rdb51.Text = "1 = สามารถอาบน้ำ ทำความสะอาดได้ ทั้งฟอกสบู่ ตักน้ำราดตัว หรือเช็ดตัวได้ทุกส่วน";
             this.rdb51.UseVisualStyleBackColor = true;
             this.rdb51.CheckedChanged += new System.EventHandler(this.rdb5_CheckedChanged);
@@ -390,6 +385,7 @@
             // rdb50
             // 
             this.rdb50.AutoSize = true;
+            this.rdb50.Checked = true;
             this.rdb50.Location = new System.Drawing.Point(34, 27);
             this.rdb50.Name = "rdb50";
             this.rdb50.Size = new System.Drawing.Size(469, 17);
@@ -432,7 +428,6 @@
             this.rdb63.Name = "rdb63";
             this.rdb63.Size = new System.Drawing.Size(359, 17);
             this.rdb63.TabIndex = 3;
-            this.rdb63.TabStop = true;
             this.rdb63.Text = "3 = สามารถเดินหรือเคลื่อนที่ได้เอง โดยอาจใช้ไม้เท้า หรือเครื่องพยุงเดิน";
             this.rdb63.UseVisualStyleBackColor = true;
             this.rdb63.CheckedChanged += new System.EventHandler(this.rdb6_CheckedChanged);
@@ -444,7 +439,6 @@
             this.rdb62.Name = "rdb62";
             this.rdb62.Size = new System.Drawing.Size(525, 18);
             this.rdb62.TabIndex = 2;
-            this.rdb62.TabStop = true;
             this.rdb62.Text = "2 = สามารถเดินหรือเคลื่อนที่โดยมีคนช่วย เช่น พยุงหรือบอกให้ทำตาม หรือต้องการให้คว" +
     "ามสนใจดูแลเพื่อความปลอดภัย";
             this.rdb62.UseCompatibleTextRendering = true;
@@ -458,7 +452,6 @@
             this.rdb61.Name = "rdb61";
             this.rdb61.Size = new System.Drawing.Size(202, 17);
             this.rdb61.TabIndex = 1;
-            this.rdb61.TabStop = true;
             this.rdb61.Text = "1 = สามารถใช้รถเข็น คลาน หรือถัดได้";
             this.rdb61.UseVisualStyleBackColor = true;
             this.rdb61.CheckedChanged += new System.EventHandler(this.rdb6_CheckedChanged);
@@ -466,6 +459,7 @@
             // rdb60
             // 
             this.rdb60.AutoSize = true;
+            this.rdb60.Checked = true;
             this.rdb60.Location = new System.Drawing.Point(34, 15);
             this.rdb60.Name = "rdb60";
             this.rdb60.Size = new System.Drawing.Size(165, 17);
@@ -506,7 +500,6 @@
             this.rdb72.Name = "rdb72";
             this.rdb72.Size = new System.Drawing.Size(384, 17);
             this.rdb72.TabIndex = 2;
-            this.rdb72.TabStop = true;
             this.rdb72.Text = "2 = ขึ้นลงได้เอง(ถ้าต้องใช้อุปกรณ์ช่วยเดิน เช่น walker จะต้องเอาขึ้นลงได้ด้วย)";
             this.rdb72.UseVisualStyleBackColor = true;
             this.rdb72.CheckedChanged += new System.EventHandler(this.rdb7_CheckedChanged);
@@ -518,7 +511,6 @@
             this.rdb71.Name = "rdb71";
             this.rdb71.Size = new System.Drawing.Size(138, 17);
             this.rdb71.TabIndex = 1;
-            this.rdb71.TabStop = true;
             this.rdb71.Text = "1 = ต้องการคนช่วยเหลือ";
             this.rdb71.UseVisualStyleBackColor = true;
             this.rdb71.CheckedChanged += new System.EventHandler(this.rdb7_CheckedChanged);
@@ -526,6 +518,7 @@
             // rdb70
             // 
             this.rdb70.AutoSize = true;
+            this.rdb70.Checked = true;
             this.rdb70.Location = new System.Drawing.Point(34, 21);
             this.rdb70.Name = "rdb70";
             this.rdb70.Size = new System.Drawing.Size(161, 17);
@@ -566,7 +559,6 @@
             this.rdb82.Name = "rdb82";
             this.rdb82.Size = new System.Drawing.Size(344, 30);
             this.rdb82.TabIndex = 2;
-            this.rdb82.TabStop = true;
             this.rdb82.Text = "2 = สามารถแต่งตัวหรือสวมใส่เสื้อผ้าได้เอง \n (รวมทั้งการติดกระดุม รูดซิบ หรือใส่เส" +
     "ื้อผ้าที่ดัดแปลงให้เหมาะสมก็ได้)";
             this.rdb82.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -580,7 +572,6 @@
             this.rdb81.Name = "rdb81";
             this.rdb81.Size = new System.Drawing.Size(261, 17);
             this.rdb81.TabIndex = 1;
-            this.rdb81.TabStop = true;
             this.rdb81.Text = "1 = ช่วยตัวเองได้ราวร้อยละ 50 ที่เหลือต้องมีคนช่วย";
             this.rdb81.UseVisualStyleBackColor = true;
             this.rdb81.CheckedChanged += new System.EventHandler(this.rdb8_CheckedChanged);
@@ -588,6 +579,7 @@
             // rdb80
             // 
             this.rdb80.AutoSize = true;
+            this.rdb80.Checked = true;
             this.rdb80.Location = new System.Drawing.Point(34, 19);
             this.rdb80.Name = "rdb80";
             this.rdb80.Size = new System.Drawing.Size(425, 17);
@@ -629,7 +621,6 @@
             this.rdb92.Name = "rdb92";
             this.rdb92.Size = new System.Drawing.Size(290, 17);
             this.rdb92.TabIndex = 2;
-            this.rdb92.TabStop = true;
             this.rdb92.Text = "2 = กลั้นได้และ/หรือ ต้องสวนอุจจาระ แต่สามารถทำเองได้";
             this.rdb92.UseVisualStyleBackColor = true;
             this.rdb92.CheckedChanged += new System.EventHandler(this.rdb9_CheckedChanged);
@@ -641,7 +632,6 @@
             this.rdb91.Name = "rdb91";
             this.rdb91.Size = new System.Drawing.Size(294, 17);
             this.rdb91.TabIndex = 1;
-            this.rdb91.TabStop = true;
             this.rdb91.Text = "1 = กลั้นได้เป็นส่วนใหญ่ แต่อาจกลั้นไม่ได้สัปดาห์ละ 1 ครั้ง";
             this.rdb91.UseVisualStyleBackColor = true;
             this.rdb91.CheckedChanged += new System.EventHandler(this.rdb9_CheckedChanged);
@@ -649,6 +639,7 @@
             // rdb90
             // 
             this.rdb90.AutoSize = true;
+            this.rdb90.Checked = true;
             this.rdb90.Location = new System.Drawing.Point(34, 21);
             this.rdb90.Name = "rdb90";
             this.rdb90.Size = new System.Drawing.Size(402, 17);
@@ -689,7 +680,6 @@
             this.rdb102.Name = "rdb102";
             this.rdb102.Size = new System.Drawing.Size(415, 17);
             this.rdb102.TabIndex = 2;
-            this.rdb102.TabStop = true;
             this.rdb102.Text = "2 = กลั้นได้ ไม่มีปัสสาวะกระปิดกระปอย ในกรณีคาสายสวนปัสสาวะสามารถดูแลได้เอง";
             this.rdb102.UseVisualStyleBackColor = true;
             this.rdb102.CheckedChanged += new System.EventHandler(this.rdb10_CheckedChanged);
@@ -701,7 +691,6 @@
             this.rdb101.Name = "rdb101";
             this.rdb101.Size = new System.Drawing.Size(436, 30);
             this.rdb101.TabIndex = 1;
-            this.rdb101.TabStop = true;
             this.rdb101.Text = "1 = กลั้นปัสสาวะไม่ได้ประมาณวันละ 1 ครั้ง และต้องการความช่วยเหลือในการสวนปัสสาวะ " +
     "\n หรือดูแลเมื่อคาสายสวนปัสสาวะ";
             this.rdb101.UseVisualStyleBackColor = true;
@@ -710,6 +699,7 @@
             // rdb100
             // 
             this.rdb100.AutoSize = true;
+            this.rdb100.Checked = true;
             this.rdb100.Location = new System.Drawing.Point(34, 15);
             this.rdb100.Name = "rdb100";
             this.rdb100.Size = new System.Drawing.Size(456, 17);

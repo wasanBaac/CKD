@@ -146,8 +146,8 @@
             // 
             this.txteGFR.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txteGFR.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txteGFR.Location = new System.Drawing.Point(605, 28);
-            this.txteGFR.MaxLength = 100;
+            this.txteGFR.Location = new System.Drawing.Point(586, 28);
+            this.txteGFR.MaxLength = 5;
             this.txteGFR.Name = "txteGFR";
             this.txteGFR.Size = new System.Drawing.Size(107, 32);
             this.txteGFR.TabIndex = 17;
@@ -179,7 +179,7 @@
             this.txtWeight.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.txtWeight.Location = new System.Drawing.Point(923, 31);
-            this.txtWeight.MaxLength = 100;
+            this.txtWeight.MaxLength = 5;
             this.txtWeight.Name = "txtWeight";
             this.txtWeight.Size = new System.Drawing.Size(90, 32);
             this.txtWeight.TabIndex = 20;
@@ -200,7 +200,7 @@
             this.txtHeight.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.txtHeight.Location = new System.Drawing.Point(1107, 31);
-            this.txtHeight.MaxLength = 100;
+            this.txtHeight.MaxLength = 5;
             this.txtHeight.Name = "txtHeight";
             this.txtHeight.Size = new System.Drawing.Size(95, 32);
             this.txtHeight.TabIndex = 22;
@@ -451,6 +451,7 @@
             // 
             // txtBarthelIndex
             // 
+            this.txtBarthelIndex.Enabled = false;
             this.txtBarthelIndex.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.txtBarthelIndex.Location = new System.Drawing.Point(25, 197);
             this.txtBarthelIndex.Name = "txtBarthelIndex";

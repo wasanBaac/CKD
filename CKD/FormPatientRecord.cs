@@ -14,9 +14,8 @@ namespace CKD
     {
         public static int BarthelIndexValue { get; set; }
         public static PatientRecordDetail barthelRecord { get; set; }
-
         private int recordID { get; set; }
-        private Int32 HN;
+        private Int32 HN { get; set; }
 
         DataClassesDataContext db = new DataClassesDataContext();
         public FormPatientRecord(Int32 _HN)
@@ -170,13 +169,58 @@ namespace CKD
         }
         private void lnklblBarthelIndex_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            BarthelIndexForm BIF = new BarthelIndexForm();
+            BarthelIndexForm BIF = new BarthelIndexForm(recordID,barthelRecord);
             BIF.ShowDialog();
             txtBarthelIndex.Text = BarthelIndexValue.ToString();
+        }
+        private bool valid()
+        {
+            decimal dc;
+            if(!decimal.TryParse(txteGFR.Text.Trim(),out dc))
+            {
+                MessageBox.Show("eGFR ไม่ถูกต้อง");
+                txteGFR.Focus();
+                return true;
+            }
+            else if(Convert.ToDecimal(txteGFR.Text.Trim()) >= 100)
+            {
+                MessageBox.Show("eGFRต้องไม่เกิน 99.99");
+                txteGFR.Focus();
+                return true;
+            }
+            else if (!decimal.TryParse(txtWeight.Text.Trim(), out dc))
+            {
+                MessageBox.Show("น้ำหนักไม่ถูกต้อง");
+                txteGFR.Focus();
+                return true;
+            }
+            else if (Convert.ToDecimal(txtWeight.Text.Trim()) >= 999)
+            {
+                MessageBox.Show("eGFRต้องไม่เกิน 999.9");
+                txteGFR.Focus();
+                return true;
+            }
+            else if (!decimal.TryParse(txtHeight.Text.Trim(), out dc))
+            {
+                MessageBox.Show("ส่วนสูงไม่ถูกต้อง");
+                txteGFR.Focus();
+                return true;
+            }
+            else if (Convert.ToDecimal(txtHeight.Text.Trim()) >= 999)
+            {
+                MessageBox.Show("eGFRต้องไม่เกิน 999.9");
+                txteGFR.Focus();
+                return true;
+            }
+            return false;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            if (valid())
+            {
+                return;
+            }
             PatientRecord patientRecord = (from tb in db.PatientRecords
                                where tb.recordID == recordID
                                select tb).SingleOrDefault();
@@ -242,7 +286,6 @@ namespace CKD
 
             db.SubmitChanges();
 
-            int a = patientRecord.recordID;
             PatientRecordDetail barThel = (from tb in db.PatientRecordDetails
                                            where tb.recordID == patientRecord.recordID
             select tb).SingleOrDefault();
@@ -250,11 +293,22 @@ namespace CKD
             {
                 barThel = new PatientRecordDetail();
                 db.PatientRecordDetails.InsertOnSubmit(barThel);
+                barThel.CreateDate = DateTime.Now;
             }
             barThel.recordID = patientRecord.recordID;
             barThel.Feeding = barthelRecord.Feeding;
             barThel.Transfer = barthelRecord.Transfer;
             barThel.Grooming = barthelRecord.Grooming;
+            barThel.Toilet__ = barthelRecord.Toilet__;
+            barThel.Bathing = barthelRecord.Bathing;
+            barThel.Mobility = barthelRecord.Mobility;
+            barThel.Stair = barthelRecord.Stair;
+            barThel.Dressing = barthelRecord.Dressing;
+            barThel.Bowels = barthelRecord.Bowels;
+            barThel.Bladder = barthelRecord.Bladder;
+            barThel.ModifiedDate = DateTime.Now;
+
+            db.SubmitChanges();
             MessageBox.Show("บันทึกเสร็จสิ้น");
             this.Close();
             
