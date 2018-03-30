@@ -196,7 +196,7 @@ namespace CKD
             }
             else if (Convert.ToDecimal(txtWeight.Text.Trim()) >= 999)
             {
-                MessageBox.Show("eGFRต้องไม่เกิน 999.9");
+                MessageBox.Show("น้ำหนักต้องไม่เกิน 999.9");
                 txteGFR.Focus();
                 return true;
             }
@@ -208,7 +208,7 @@ namespace CKD
             }
             else if (Convert.ToDecimal(txtHeight.Text.Trim()) >= 999)
             {
-                MessageBox.Show("eGFRต้องไม่เกิน 999.9");
+                MessageBox.Show("ส่วนสูงต้องไม่เกิน 999.9");
                 txteGFR.Focus();
                 return true;
             }
