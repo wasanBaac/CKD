@@ -748,7 +748,7 @@
             this.txtPain.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPain.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.txtPain.Location = new System.Drawing.Point(25, 31);
-            this.txtPain.MaxLength = 100;
+            this.txtPain.MaxLength = 250;
             this.txtPain.Name = "txtPain";
             this.txtPain.Size = new System.Drawing.Size(373, 32);
             this.txtPain.TabIndex = 35;
@@ -758,7 +758,7 @@
             this.txtEdema.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtEdema.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.txtEdema.Location = new System.Drawing.Point(25, 31);
-            this.txtEdema.MaxLength = 100;
+            this.txtEdema.MaxLength = 250;
             this.txtEdema.Name = "txtEdema";
             this.txtEdema.Size = new System.Drawing.Size(373, 32);
             this.txtEdema.TabIndex = 37;
@@ -768,7 +768,7 @@
             this.txtOther.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.txtOther.Location = new System.Drawing.Point(24, 63);
-            this.txtOther.MaxLength = 100;
+            this.txtOther.MaxLength = 250;
             this.txtOther.Name = "txtOther";
             this.txtOther.Size = new System.Drawing.Size(373, 32);
             this.txtOther.TabIndex = 39;

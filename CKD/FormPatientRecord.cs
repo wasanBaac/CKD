@@ -191,25 +191,102 @@ namespace CKD
             else if (!decimal.TryParse(txtWeight.Text.Trim(), out dc))
             {
                 MessageBox.Show("น้ำหนักไม่ถูกต้อง");
-                txteGFR.Focus();
+                txtWeight.Focus();
                 return true;
             }
-            else if (Convert.ToDecimal(txtWeight.Text.Trim()) >= 999)
+            else if (Convert.ToDecimal(txtWeight.Text.Trim()) >= 1000)
             {
                 MessageBox.Show("น้ำหนักต้องไม่เกิน 999.9");
-                txteGFR.Focus();
+                txtWeight.Focus();
                 return true;
             }
             else if (!decimal.TryParse(txtHeight.Text.Trim(), out dc))
             {
                 MessageBox.Show("ส่วนสูงไม่ถูกต้อง");
-                txteGFR.Focus();
+                txtHeight.Focus();
                 return true;
             }
-            else if (Convert.ToDecimal(txtHeight.Text.Trim()) >= 999)
+            else if (Convert.ToDecimal(txtHeight.Text.Trim()) >= 1000)
             {
                 MessageBox.Show("ส่วนสูงต้องไม่เกิน 999.9");
-                txteGFR.Focus();
+                txtHeight.Focus();
+                return true;
+            }
+            else if(!decimal.TryParse(txtEst1.Text.Trim(), out dc))
+            {
+                MessageBox.Show("ดัชนีมวลกล้ามเนื้อ(BMI)ไม่ถูกต้อง");
+                txtEst1.Focus();
+                return true;
+            }
+            else if (Convert.ToDecimal(txtEst1.Text.Trim()) >= 1000)
+            {
+                MessageBox.Show("ดัชนีมวลกล้ามเนื้อ(BMI)ต้องไม่เกิน 999.99");
+                txtEst1.Focus();
+                return true;
+            }
+
+            else if (!decimal.TryParse(txtEst2.Text.Trim(), out dc))
+            {
+                MessageBox.Show("%ไขมันในร่างกายไม่ถูกต้อง");
+                txtEst2.Focus();
+                return true;
+            }
+            else if (Convert.ToDecimal(txtEst2.Text.Trim()) >= 1000)
+            {
+                MessageBox.Show("%ไขมันในร่างกายต้องไม่เกิน 999.99");
+                txtEst2.Focus();
+                return true;
+            }
+
+            else if (!decimal.TryParse(txtEst3.Text.Trim(), out dc))
+            {
+                MessageBox.Show("มวลกล้ามเนื้อทั้งตัวไม่ถูกต้อง");
+                txtEst3.Focus();
+                return true;
+            }
+            else if (Convert.ToDecimal(txtEst3.Text.Trim()) >= 1000)
+            {
+                MessageBox.Show("มวลกล้ามเนื้อทั้งตัวต้องไม่เกิน 999.99");
+                txtEst3.Focus();
+                return true;
+            }
+
+            else if (!decimal.TryParse(txtEst4.Text.Trim(), out dc))
+            {
+                MessageBox.Show("มวลกล้ามเนื้อแขนไม่ถูกต้อง");
+                txtEst4.Focus();
+                return true;
+            }
+            else if (Convert.ToDecimal(txtEst4.Text.Trim()) >= 1000)
+            {
+                MessageBox.Show("มวลกล้ามเนื้อแขนต้องไม่เกิน 999.99");
+                txtEst4.Focus();
+                return true;
+            }
+
+            else if (!decimal.TryParse(txtEst5.Text.Trim(), out dc))
+            {
+                MessageBox.Show("มวลกล้ามเนื้อขาไม่ถูกต้อง");
+                txtEst5.Focus();
+                return true;
+            }
+            else if (Convert.ToDecimal(txtEst5.Text.Trim()) >= 1000)
+            {
+                MessageBox.Show("มวลกล้ามเนื้อขาต้องไม่เกิน 999.99");
+                txtEst5.Focus();
+                return true;
+            }
+
+            else if (!decimal.TryParse(txtEst6.Text.Trim(), out dc))
+            {
+                MessageBox.Show("6MWTไม่ถูกต้อง");
+                txtEst6.Focus();
+                return true;
+            }
+            else if (Convert.ToDecimal(txtEst6.Text.Trim()) >= 1000)
+            {
+                MessageBox.Show("6MWTต้องไม่เกิน 999.99");
+                txtEst6.Focus();
                 return true;
             }
             return false;
