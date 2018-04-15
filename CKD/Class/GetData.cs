@@ -89,5 +89,16 @@ namespace CKD.Class
             dt = data.ToDataTable();
             return dt;
         }
+
+        public DataTable getDisease()
+        {
+            DataTable dt = new DataTable();
+
+            var data = from tb in db.refDiseases
+                       select tb;
+
+            dt = data.ToDataTable();
+            return dt;
+        }
     }
 }

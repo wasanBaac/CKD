@@ -47,14 +47,14 @@
             this.lbltitle = new System.Windows.Forms.Label();
             this.cbTitle = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.cbGender = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.gvPatientRecord = new System.Windows.Forms.DataGridView();
+            this.clmBtnEdit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnAddrecordDetail = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cbGender = new System.Windows.Forms.ComboBox();
-            this.clmBtnEdit = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnAddDisease = new System.Windows.Forms.Button();
+            this.lblDisease = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvPatientRecord)).BeginInit();
             this.SuspendLayout();
@@ -256,10 +256,10 @@
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.groupBox1.Controls.Add(this.lblDisease);
+            this.groupBox1.Controls.Add(this.btnAddDisease);
             this.groupBox1.Controls.Add(this.cbGender);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtHN);
             this.groupBox1.Controls.Add(this.cbTitle);
             this.groupBox1.Controls.Add(this.lblHN);
@@ -285,26 +285,26 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "รายละเอียดคนไข้";
             // 
-            // comboBox1
+            // cbGender
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(234, 154);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(158, 28);
-            this.comboBox1.TabIndex = 23;
+            this.cbGender.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbGender.FormattingEnabled = true;
+            this.cbGender.Location = new System.Drawing.Point(632, 111);
+            this.cbGender.Name = "cbGender";
+            this.cbGender.Size = new System.Drawing.Size(101, 28);
+            this.cbGender.TabIndex = 25;
             // 
-            // label1
+            // label2
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label1.Location = new System.Drawing.Point(118, 154);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 24);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "โรคประจำตัว";
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label2.Location = new System.Drawing.Point(585, 111);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 24);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "เพศ";
             // 
             // gvPatientRecord
             // 
@@ -320,6 +320,13 @@
             this.gvPatientRecord.Size = new System.Drawing.Size(1315, 469);
             this.gvPatientRecord.TabIndex = 23;
             this.gvPatientRecord.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvPatientRecord_CellContentClick);
+            // 
+            // clmBtnEdit
+            // 
+            this.clmBtnEdit.HeaderText = "";
+            this.clmBtnEdit.Name = "clmBtnEdit";
+            this.clmBtnEdit.ReadOnly = true;
+            this.clmBtnEdit.Text = "View";
             // 
             // btnAddrecordDetail
             // 
@@ -347,33 +354,29 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // label2
+            // btnAddDisease
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label2.Location = new System.Drawing.Point(585, 111);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 24);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "เพศ";
+            this.btnAddDisease.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddDisease.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnAddDisease.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnAddDisease.Location = new System.Drawing.Point(122, 138);
+            this.btnAddDisease.Name = "btnAddDisease";
+            this.btnAddDisease.Size = new System.Drawing.Size(171, 44);
+            this.btnAddDisease.TabIndex = 26;
+            this.btnAddDisease.Text = "เพิ่มโรคประจำตัว";
+            this.btnAddDisease.UseVisualStyleBackColor = false;
+            this.btnAddDisease.Click += new System.EventHandler(this.btnAddDisease_Click);
             // 
-            // cbGender
+            // lblDisease
             // 
-            this.cbGender.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbGender.FormattingEnabled = true;
-            this.cbGender.Location = new System.Drawing.Point(632, 111);
-            this.cbGender.Name = "cbGender";
-            this.cbGender.Size = new System.Drawing.Size(101, 28);
-            this.cbGender.TabIndex = 25;
-            // 
-            // clmBtnEdit
-            // 
-            this.clmBtnEdit.HeaderText = "";
-            this.clmBtnEdit.Name = "clmBtnEdit";
-            this.clmBtnEdit.ReadOnly = true;
-            this.clmBtnEdit.Text = "View";
+            this.lblDisease.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblDisease.AutoSize = true;
+            this.lblDisease.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblDisease.Location = new System.Drawing.Point(299, 149);
+            this.lblDisease.Name = "lblDisease";
+            this.lblDisease.Size = new System.Drawing.Size(17, 24);
+            this.lblDisease.TabIndex = 27;
+            this.lblDisease.Text = "-";
             // 
             // PatientDetail
             // 
@@ -421,10 +424,10 @@
         private System.Windows.Forms.DataGridView gvPatientRecord;
         private System.Windows.Forms.Button btnAddrecordDetail;
         private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbGender;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewButtonColumn clmBtnEdit;
+        private System.Windows.Forms.Label lblDisease;
+        private System.Windows.Forms.Button btnAddDisease;
     }
 }

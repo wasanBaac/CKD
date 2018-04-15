@@ -16,17 +16,24 @@ namespace CKD
     {        
         Cal cal = new Cal();
         GetData getData = new GetData();
+        private string strHN;
+        private List<refDisease> lsDisease = new List<refDisease>();
+        private List<LinkLabel> lsllb = new List<LinkLabel>();
         //new patient
         public PatientDetail()
         {
             InitializeComponent();
             setData();
+            strHN = string.Empty;
+            btnAddrecordDetail.Visible = false;
         }
         //exist patient
         public PatientDetail(string HN)
         {
             InitializeComponent();
             setData();
+            strHN = HN;
+            btnAddrecordDetail.Visible = true;
             setDataEdit(HN);
         }
 
@@ -58,12 +65,12 @@ namespace CKD
 
         }
 
-        private void setDataEdit(string strHN)
+        private void setDataEdit(string _strHN)
         {
             
             DataClassesDataContext db = new DataClassesDataContext();
             Patient patient = (from tb in db.Patients
-                               where tb.HN.ToString() == strHN
+                               where tb.HN.ToString() == _strHN
                                select tb).SingleOrDefault();
 
             txtHN.Text = patient.HN.ToString();
@@ -76,10 +83,6 @@ namespace CKD
             //System.Globalization.CultureInfo cultureinfo = new System.Globalization.CultureInfo("en-US");
 
             CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
-
-            //DateTime dt = DateTime.Parse(date, cultureinfo);
-            //var dutchCulture = CultureInfo.CreateSpecificCulture("th-TH");
-
 
             DateTime dt = Convert.ToDateTime(patient.BirthDate, currentCulture);
 
@@ -142,9 +145,9 @@ namespace CKD
             db.SubmitChanges();
             
             MessageBox.Show("บันทึกเสร็จสิ้น");
-
-            startForm start = new startForm();
-            this.Close();      
+            btnAddrecordDetail.Visible = true;
+            //startForm start = new startForm();
+            //this.Close();      
         }
 
         private bool validInput()
@@ -168,6 +171,7 @@ namespace CKD
 
         private void btnAddrecordDetail_Click(object sender, EventArgs e)
         {
+
             FormPatientRecord fpr = new FormPatientRecord(Convert.ToInt32(txtHN.Text));
             fpr.ShowDialog();
             getDataPatientRecord();
@@ -184,6 +188,28 @@ namespace CKD
 
                 getDataPatientRecord();
             }
+        }
+
+        private void btnAddDisease_Click(object sender, EventArgs e)
+        {
+            FormDisease FD = new FormDisease();
+            FD.ShowDialog();
+            //int cbindex = cbDisease.SelectedIndex;
+            //if (cbindex > -1)
+            //{
+            //    //refDisease ds = new refDisease();
+            //    //ds.Id = Convert.ToInt16(cbDisease.SelectedValue);
+            //    //ds.Detail = cbDisease.SelectedText;
+            //    //lsDisease.Add(ds);
+            //    //cbDisease.Items.RemoveAt(cbindex);
+
+            //    //string strlblDisease = string.Empty;
+            //    //foreach(refDisease rds in lsDisease)
+            //    //{
+            //    //    strlblDisease += rds.Detail + " ";
+            //    //}
+            //    //lblDisease.Text = strlblDisease;
+            //}            
         }
     }
 }

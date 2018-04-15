@@ -100,6 +100,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClasses.dbml</DependentUpon>
     </Compile>
+    <Compile Include="FormDisease.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDisease.Designer.cs">
+      <DependentUpon>FormDisease.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPatientRecord.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </None>
     <EmbeddedResource Include="BarthelIndexForm.resx">
       <DependentUpon>BarthelIndexForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDisease.resx">
+      <DependentUpon>FormDisease.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPatientRecord.resx">
       <DependentUpon>FormPatientRecord.cs</DependentUpon>
