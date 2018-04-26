@@ -79,6 +79,13 @@ namespace CKD
             cbTitle.SelectedValue = patient.TitleID;
             txtName.Text = patient.Name;
             txtLastName.Text = patient.LastName;
+            cbDDM.Checked = patient.DiseaseDM.Value;
+            cbDHT.Checked = patient.DiseaseHT.Value;
+            cbDFat.Checked = patient.DiseaseFat.Value;
+            cbDHeart.Checked = patient.DiseaseHeart.Value;
+            cbDStroke.Checked = patient.DiseaseStroke.Value;
+            cbDOther.Checked = patient.DiseaseOther.Value;
+            cbDReject.Checked = patient.DiseaseReject.Value;
 
             //System.Globalization.CultureInfo cultureinfo = new System.Globalization.CultureInfo("en-US");
 
@@ -141,6 +148,13 @@ namespace CKD
             patient.BirthDate = dateBirthDate.Value;
             patient.DistrictID = Convert.ToInt16(cbDistrict.SelectedValue);
             patient.StatusID = Convert.ToInt16(cbStatus.SelectedValue);
+            patient.DiseaseDM = cbDDM.Checked;
+            patient.DiseaseHT = cbDHT.Checked;
+            patient.DiseaseFat = cbDFat.Checked;
+            patient.DiseaseHeart = cbDHeart.Checked;
+            patient.DiseaseStroke = cbDStroke.Checked;
+            patient.DiseaseOther = cbDOther.Checked;
+            patient.DiseaseReject = cbDReject.Checked;
 
             db.SubmitChanges();
             
@@ -171,8 +185,7 @@ namespace CKD
 
         private void btnAddrecordDetail_Click(object sender, EventArgs e)
         {
-
-            FormPatientRecord fpr = new FormPatientRecord(Convert.ToInt32(txtHN.Text));
+            FormPatientRecord fpr = new FormPatientRecord(Convert.ToInt32(txtHN.Text),cbGender.SelectedValue.ToString());
             fpr.ShowDialog();
             getDataPatientRecord();
         }
@@ -183,33 +196,12 @@ namespace CKD
             {
                 string a = gvPatientRecord.CurrentRow.Cells[1].Value.ToString();
 
-                FormPatientRecord fpr = new FormPatientRecord(Convert.ToInt16(gvPatientRecord.CurrentRow.Cells[1].Value.ToString()),Convert.ToInt32(txtHN.Text));
+                FormPatientRecord fpr = new FormPatientRecord(Convert.ToInt16(gvPatientRecord.CurrentRow.Cells[1].Value.ToString()),Convert.ToInt32(txtHN.Text),cbGender.SelectedValue.ToString());
                 fpr.ShowDialog();
 
                 getDataPatientRecord();
             }
         }
 
-        private void btnAddDisease_Click(object sender, EventArgs e)
-        {
-            FormDisease FD = new FormDisease();
-            FD.ShowDialog();
-            //int cbindex = cbDisease.SelectedIndex;
-            //if (cbindex > -1)
-            //{
-            //    //refDisease ds = new refDisease();
-            //    //ds.Id = Convert.ToInt16(cbDisease.SelectedValue);
-            //    //ds.Detail = cbDisease.SelectedText;
-            //    //lsDisease.Add(ds);
-            //    //cbDisease.Items.RemoveAt(cbindex);
-
-            //    //string strlblDisease = string.Empty;
-            //    //foreach(refDisease rds in lsDisease)
-            //    //{
-            //    //    strlblDisease += rds.Detail + " ";
-            //    //}
-            //    //lblDisease.Text = strlblDisease;
-            //}            
-        }
     }
 }

@@ -53,8 +53,14 @@
             this.clmBtnEdit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnAddrecordDetail = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.btnAddDisease = new System.Windows.Forms.Button();
-            this.lblDisease = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbDDM = new System.Windows.Forms.CheckBox();
+            this.cbDHT = new System.Windows.Forms.CheckBox();
+            this.cbDFat = new System.Windows.Forms.CheckBox();
+            this.cbDHeart = new System.Windows.Forms.CheckBox();
+            this.cbDStroke = new System.Windows.Forms.CheckBox();
+            this.cbDOther = new System.Windows.Forms.CheckBox();
+            this.cbDReject = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvPatientRecord)).BeginInit();
             this.SuspendLayout();
@@ -256,8 +262,14 @@
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.groupBox1.Controls.Add(this.lblDisease);
-            this.groupBox1.Controls.Add(this.btnAddDisease);
+            this.groupBox1.Controls.Add(this.cbDReject);
+            this.groupBox1.Controls.Add(this.cbDOther);
+            this.groupBox1.Controls.Add(this.cbDStroke);
+            this.groupBox1.Controls.Add(this.cbDHeart);
+            this.groupBox1.Controls.Add(this.cbDFat);
+            this.groupBox1.Controls.Add(this.cbDHT);
+            this.groupBox1.Controls.Add(this.cbDDM);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.cbGender);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtHN);
@@ -354,29 +366,93 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // btnAddDisease
+            // label1
             // 
-            this.btnAddDisease.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddDisease.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnAddDisease.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btnAddDisease.Location = new System.Drawing.Point(122, 138);
-            this.btnAddDisease.Name = "btnAddDisease";
-            this.btnAddDisease.Size = new System.Drawing.Size(171, 44);
-            this.btnAddDisease.TabIndex = 26;
-            this.btnAddDisease.Text = "เพิ่มโรคประจำตัว";
-            this.btnAddDisease.UseVisualStyleBackColor = false;
-            this.btnAddDisease.Click += new System.EventHandler(this.btnAddDisease_Click);
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label1.Location = new System.Drawing.Point(118, 151);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 24);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "โรคประจำตัว";
             // 
-            // lblDisease
+            // cbDDM
             // 
-            this.lblDisease.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblDisease.AutoSize = true;
-            this.lblDisease.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblDisease.Location = new System.Drawing.Point(299, 149);
-            this.lblDisease.Name = "lblDisease";
-            this.lblDisease.Size = new System.Drawing.Size(17, 24);
-            this.lblDisease.TabIndex = 27;
-            this.lblDisease.Text = "-";
+            this.cbDDM.AutoSize = true;
+            this.cbDDM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbDDM.Location = new System.Drawing.Point(246, 151);
+            this.cbDDM.Name = "cbDDM";
+            this.cbDDM.Size = new System.Drawing.Size(53, 24);
+            this.cbDDM.TabIndex = 27;
+            this.cbDDM.Text = "DM";
+            this.cbDDM.UseVisualStyleBackColor = true;
+            // 
+            // cbDHT
+            // 
+            this.cbDHT.AutoSize = true;
+            this.cbDHT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbDHT.Location = new System.Drawing.Point(358, 151);
+            this.cbDHT.Name = "cbDHT";
+            this.cbDHT.Size = new System.Drawing.Size(49, 24);
+            this.cbDHT.TabIndex = 28;
+            this.cbDHT.Text = "HT";
+            this.cbDHT.UseVisualStyleBackColor = true;
+            // 
+            // cbDFat
+            // 
+            this.cbDFat.AutoSize = true;
+            this.cbDFat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbDFat.Location = new System.Drawing.Point(470, 151);
+            this.cbDFat.Name = "cbDFat";
+            this.cbDFat.Size = new System.Drawing.Size(63, 24);
+            this.cbDFat.TabIndex = 29;
+            this.cbDFat.Text = "ไขมัน";
+            this.cbDFat.UseVisualStyleBackColor = true;
+            // 
+            // cbDHeart
+            // 
+            this.cbDHeart.AutoSize = true;
+            this.cbDHeart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbDHeart.Location = new System.Drawing.Point(582, 151);
+            this.cbDHeart.Name = "cbDHeart";
+            this.cbDHeart.Size = new System.Drawing.Size(59, 24);
+            this.cbDHeart.TabIndex = 30;
+            this.cbDHeart.Text = "หัวใจ";
+            this.cbDHeart.UseVisualStyleBackColor = true;
+            // 
+            // cbDStroke
+            // 
+            this.cbDStroke.AutoSize = true;
+            this.cbDStroke.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbDStroke.Location = new System.Drawing.Point(694, 151);
+            this.cbDStroke.Name = "cbDStroke";
+            this.cbDStroke.Size = new System.Drawing.Size(75, 24);
+            this.cbDStroke.TabIndex = 31;
+            this.cbDStroke.Text = "Stroke";
+            this.cbDStroke.UseVisualStyleBackColor = true;
+            // 
+            // cbDOther
+            // 
+            this.cbDOther.AutoSize = true;
+            this.cbDOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbDOther.Location = new System.Drawing.Point(806, 151);
+            this.cbDOther.Name = "cbDOther";
+            this.cbDOther.Size = new System.Drawing.Size(55, 24);
+            this.cbDOther.TabIndex = 32;
+            this.cbDOther.Text = "อื่นๆ";
+            this.cbDOther.UseVisualStyleBackColor = true;
+            // 
+            // cbDReject
+            // 
+            this.cbDReject.AutoSize = true;
+            this.cbDReject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbDReject.Location = new System.Drawing.Point(913, 151);
+            this.cbDReject.Name = "cbDReject";
+            this.cbDReject.Size = new System.Drawing.Size(68, 24);
+            this.cbDReject.TabIndex = 33;
+            this.cbDReject.Text = "ปฏิเสธ";
+            this.cbDReject.UseVisualStyleBackColor = true;
             // 
             // PatientDetail
             // 
@@ -427,7 +503,13 @@
         private System.Windows.Forms.ComboBox cbGender;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewButtonColumn clmBtnEdit;
-        private System.Windows.Forms.Label lblDisease;
-        private System.Windows.Forms.Button btnAddDisease;
+        private System.Windows.Forms.CheckBox cbDDM;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox cbDReject;
+        private System.Windows.Forms.CheckBox cbDOther;
+        private System.Windows.Forms.CheckBox cbDStroke;
+        private System.Windows.Forms.CheckBox cbDHeart;
+        private System.Windows.Forms.CheckBox cbDFat;
+        private System.Windows.Forms.CheckBox cbDHT;
     }
 }

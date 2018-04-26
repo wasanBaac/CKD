@@ -16,18 +16,21 @@ namespace CKD
         public static PatientRecordDetail barthelRecord { get; set; }
         private int recordID { get; set; }
         private Int32 HN { get; set; }
+        private string strGender { get; set; }
 
         DataClassesDataContext db = new DataClassesDataContext();
-        public FormPatientRecord(Int32 _HN)
+        public FormPatientRecord(Int32 _HN,string _strGender)
         {
             InitializeComponent();
             HN = _HN;
+            strGender = _strGender;
             setData();
             //lnklblBarthelIndex.Text = BarthelIndexValue.ToString();
         }
-        public FormPatientRecord(int _recordID,Int32 _HN)
+        public FormPatientRecord(int _recordID,Int32 _HN,string _strGender)
         {
             InitializeComponent();
+            strGender = _strGender;
             setData();
             recordID = _recordID;
             HN = _HN;
@@ -186,6 +189,18 @@ namespace CKD
             {
                 MessageBox.Show("eGFRต้องไม่เกิน 99.99");
                 txteGFR.Focus();
+                return true;
+            }
+            else if (!decimal.TryParse(txtCreatinine.Text.Trim(), out dc))
+            {
+                MessageBox.Show("Creatinine ไม่ถูกต้อง");
+                txtWeight.Focus();
+                return true;
+            }
+            else if (Convert.ToDecimal(txtCreatinine.Text.Trim()) >= 1000)
+            {
+                MessageBox.Show("Creatinine ต้องไม่เกิน 99.99");
+                txtWeight.Focus();
                 return true;
             }
             else if (!decimal.TryParse(txtWeight.Text.Trim(), out dc))
@@ -389,6 +404,90 @@ namespace CKD
             MessageBox.Show("บันทึกเสร็จสิ้น");
             this.Close();
             
+        }
+
+        private void txteGFR_TextChanged(object sender, EventArgs e)
+        {
+            decimal dc;
+            if (decimal.TryParse(txteGFR.Text.Trim(), out dc))
+            {
+                if (dc < 15)
+                    lblStage.Text = "5";
+                else if (dc >= 15 && dc <= 30)
+                    lblStage.Text = "4";
+                else if(dc > 30 && dc <= 60)
+                    lblStage.Text = "3";
+                else if (dc > 60 && dc <= 90)
+                    lblStage.Text = "2";
+                else if (dc > 90)
+                    lblStage.Text = "1";
+            }
+        }
+
+        private void txtCreatinine_TextChanged(object sender, EventArgs e)
+        {
+            //ชาย
+            double dc;
+            if (double.TryParse(txtCreatinine.Text.Trim(), out dc))
+            {
+                if (strGender == "1")
+                {
+                    if (dc < 0.7)
+                    {
+                        lblCreatinineCal.Text = "ต่ำ";
+                        lblCreatinine.ForeColor = Color.Red;
+                    }
+                    else if (dc >= 0.7 && dc <= 1.3)
+                    {
+                        lblCreatinineCal.Text = "ปกติ";
+                        lblCreatinine.ForeColor = Color.Green;
+                    }
+                    else
+                    {
+                        lblCreatinineCal.Text = "สูง";
+                        lblCreatinine.ForeColor = Color.Red;
+                    }
+                }
+                //หญิง
+                else if (strGender == "2")
+                {
+                    if (dc < 0.6)
+                    {
+                        lblCreatinineCal.Text = "ต่ำ";
+                        lblCreatinine.ForeColor = Color.Red;
+                    }
+                    else if (dc >= 0.6 && dc <= 1.1)
+                    {
+                        lblCreatinineCal.Text = "ปกติ";
+                        lblCreatinine.ForeColor = Color.Green;
+                    }
+                    else
+                    {
+                        lblCreatinineCal.Text = "สูง";
+                        lblCreatinine.ForeColor = Color.Red;
+                    }
+                }
+            }
+        }
+
+        private void txtWeight_TextChanged(object sender, EventArgs e)
+        {
+            double dbWeight;
+            double dbHeight;
+            if (double.TryParse(txtWeight.Text.Trim(), out dbWeight) && double.TryParse(txtHeight.Text.Trim(), out dbHeight))
+            {
+                double BMIcal = Math.Round(dbWeight / Math.Pow((dbHeight / 100),2),2);
+                txtEst1.Text = BMIcal.ToString();
+            }
+        }
+
+        private void txtEst1_TextChanged(object sender, EventArgs e)
+        {
+            double dbBMI;
+            if (double.TryParse(txtEst1.Text.Trim(), out dbBMI))
+            {
+                //if()
+            }
         }
     }
 }

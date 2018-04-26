@@ -95,6 +95,9 @@
             this.cbtired = new System.Windows.Forms.CheckBox();
             this.gbTransfer = new System.Windows.Forms.GroupBox();
             this.cbbTransfer = new System.Windows.Forms.ComboBox();
+            this.lblCreatinine = new System.Windows.Forms.Label();
+            this.txtCreatinine = new System.Windows.Forms.TextBox();
+            this.lblCreatinineCal = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -115,7 +118,7 @@
             // 
             this.recordDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.recordDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.recordDate.Location = new System.Drawing.Point(84, 34);
+            this.recordDate.Location = new System.Drawing.Point(53, 31);
             this.recordDate.Name = "recordDate";
             this.recordDate.Size = new System.Drawing.Size(254, 32);
             this.recordDate.TabIndex = 14;
@@ -125,7 +128,7 @@
             this.lblDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblDate.Location = new System.Drawing.Point(18, 31);
+            this.lblDate.Location = new System.Drawing.Point(6, 31);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(50, 26);
             this.lblDate.TabIndex = 15;
@@ -136,7 +139,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label1.Location = new System.Drawing.Point(433, 31);
+            this.label1.Location = new System.Drawing.Point(313, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(145, 26);
             this.label1.TabIndex = 16;
@@ -146,20 +149,22 @@
             // 
             this.txteGFR.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txteGFR.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txteGFR.Location = new System.Drawing.Point(586, 28);
+            this.txteGFR.Location = new System.Drawing.Point(460, 31);
             this.txteGFR.MaxLength = 5;
             this.txteGFR.Name = "txteGFR";
-            this.txteGFR.Size = new System.Drawing.Size(107, 32);
+            this.txteGFR.Size = new System.Drawing.Size(81, 32);
             this.txteGFR.TabIndex = 17;
+            this.txteGFR.TextChanged += new System.EventHandler(this.txteGFR_TextChanged);
             // 
             // lblStage
             // 
             this.lblStage.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblStage.AutoSize = true;
-            this.lblStage.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblStage.Location = new System.Drawing.Point(747, 37);
+            this.lblStage.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblStage.ForeColor = System.Drawing.Color.Red;
+            this.lblStage.Location = new System.Drawing.Point(547, 37);
             this.lblStage.Name = "lblStage";
-            this.lblStage.Size = new System.Drawing.Size(19, 26);
+            this.lblStage.Size = new System.Drawing.Size(20, 26);
             this.lblStage.TabIndex = 18;
             this.lblStage.Text = "-";
             // 
@@ -168,7 +173,7 @@
             this.lblWeight.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblWeight.AutoSize = true;
             this.lblWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblWeight.Location = new System.Drawing.Point(828, 31);
+            this.lblWeight.Location = new System.Drawing.Point(859, 34);
             this.lblWeight.Name = "lblWeight";
             this.lblWeight.Size = new System.Drawing.Size(74, 26);
             this.lblWeight.TabIndex = 19;
@@ -178,18 +183,19 @@
             // 
             this.txtWeight.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtWeight.Location = new System.Drawing.Point(923, 31);
+            this.txtWeight.Location = new System.Drawing.Point(977, 31);
             this.txtWeight.MaxLength = 5;
             this.txtWeight.Name = "txtWeight";
             this.txtWeight.Size = new System.Drawing.Size(90, 32);
             this.txtWeight.TabIndex = 20;
+            this.txtWeight.TextChanged += new System.EventHandler(this.txtWeight_TextChanged);
             // 
             // lblHeight
             // 
             this.lblHeight.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblHeight.AutoSize = true;
             this.lblHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblHeight.Location = new System.Drawing.Point(1019, 31);
+            this.lblHeight.Location = new System.Drawing.Point(1108, 34);
             this.lblHeight.Name = "lblHeight";
             this.lblHeight.Size = new System.Drawing.Size(70, 26);
             this.lblHeight.TabIndex = 21;
@@ -199,15 +205,19 @@
             // 
             this.txtHeight.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtHeight.Location = new System.Drawing.Point(1107, 31);
+            this.txtHeight.Location = new System.Drawing.Point(1228, 31);
             this.txtHeight.MaxLength = 5;
             this.txtHeight.Name = "txtHeight";
             this.txtHeight.Size = new System.Drawing.Size(95, 32);
             this.txtHeight.TabIndex = 22;
+            this.txtHeight.TextChanged += new System.EventHandler(this.txtWeight_TextChanged);
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox1.Controls.Add(this.lblCreatinineCal);
+            this.groupBox1.Controls.Add(this.txtCreatinine);
+            this.groupBox1.Controls.Add(this.lblCreatinine);
             this.groupBox1.Controls.Add(this.recordDate);
             this.groupBox1.Controls.Add(this.lblDate);
             this.groupBox1.Controls.Add(this.txtHeight);
@@ -456,7 +466,7 @@
             this.txtBarthelIndex.Location = new System.Drawing.Point(17, 197);
             this.txtBarthelIndex.MaxLength = 6;
             this.txtBarthelIndex.Name = "txtBarthelIndex";
-            this.txtBarthelIndex.Size = new System.Drawing.Size(53, 26);
+            this.txtBarthelIndex.Size = new System.Drawing.Size(64, 26);
             this.txtBarthelIndex.TabIndex = 18;
             // 
             // lnklblBarthelIndex
@@ -487,7 +497,7 @@
             this.txtEst6.Location = new System.Drawing.Point(17, 169);
             this.txtEst6.MaxLength = 6;
             this.txtEst6.Name = "txtEst6";
-            this.txtEst6.Size = new System.Drawing.Size(53, 26);
+            this.txtEst6.Size = new System.Drawing.Size(64, 26);
             this.txtEst6.TabIndex = 16;
             // 
             // label10
@@ -506,7 +516,7 @@
             this.txtEst5.Location = new System.Drawing.Point(17, 141);
             this.txtEst5.MaxLength = 6;
             this.txtEst5.Name = "txtEst5";
-            this.txtEst5.Size = new System.Drawing.Size(53, 26);
+            this.txtEst5.Size = new System.Drawing.Size(64, 26);
             this.txtEst5.TabIndex = 14;
             // 
             // label9
@@ -525,7 +535,7 @@
             this.txtEst4.Location = new System.Drawing.Point(17, 113);
             this.txtEst4.MaxLength = 6;
             this.txtEst4.Name = "txtEst4";
-            this.txtEst4.Size = new System.Drawing.Size(53, 26);
+            this.txtEst4.Size = new System.Drawing.Size(64, 26);
             this.txtEst4.TabIndex = 12;
             // 
             // label8
@@ -544,7 +554,7 @@
             this.txtEst3.Location = new System.Drawing.Point(17, 85);
             this.txtEst3.MaxLength = 6;
             this.txtEst3.Name = "txtEst3";
-            this.txtEst3.Size = new System.Drawing.Size(53, 26);
+            this.txtEst3.Size = new System.Drawing.Size(64, 26);
             this.txtEst3.TabIndex = 10;
             // 
             // label7
@@ -563,7 +573,7 @@
             this.txtEst2.Location = new System.Drawing.Point(17, 57);
             this.txtEst2.MaxLength = 6;
             this.txtEst2.Name = "txtEst2";
-            this.txtEst2.Size = new System.Drawing.Size(53, 26);
+            this.txtEst2.Size = new System.Drawing.Size(64, 26);
             this.txtEst2.TabIndex = 8;
             // 
             // label6
@@ -578,12 +588,14 @@
             // 
             // txtEst1
             // 
+            this.txtEst1.Enabled = false;
             this.txtEst1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.txtEst1.Location = new System.Drawing.Point(17, 29);
             this.txtEst1.MaxLength = 6;
             this.txtEst1.Name = "txtEst1";
-            this.txtEst1.Size = new System.Drawing.Size(53, 26);
+            this.txtEst1.Size = new System.Drawing.Size(64, 26);
             this.txtEst1.TabIndex = 6;
+            this.txtEst1.TextChanged += new System.EventHandler(this.txtEst1_TextChanged);
             // 
             // gbBed
             // 
@@ -855,6 +867,39 @@
             this.cbbTransfer.Size = new System.Drawing.Size(237, 33);
             this.cbbTransfer.TabIndex = 10;
             // 
+            // lblCreatinine
+            // 
+            this.lblCreatinine.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCreatinine.AutoSize = true;
+            this.lblCreatinine.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblCreatinine.Location = new System.Drawing.Point(572, 34);
+            this.lblCreatinine.Name = "lblCreatinine";
+            this.lblCreatinine.Size = new System.Drawing.Size(111, 26);
+            this.lblCreatinine.TabIndex = 23;
+            this.lblCreatinine.Text = "Creatinine";
+            // 
+            // txtCreatinine
+            // 
+            this.txtCreatinine.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCreatinine.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.txtCreatinine.Location = new System.Drawing.Point(689, 31);
+            this.txtCreatinine.MaxLength = 5;
+            this.txtCreatinine.Name = "txtCreatinine";
+            this.txtCreatinine.Size = new System.Drawing.Size(70, 32);
+            this.txtCreatinine.TabIndex = 24;
+            this.txtCreatinine.TextChanged += new System.EventHandler(this.txtCreatinine_TextChanged);
+            // 
+            // lblCreatinineCal
+            // 
+            this.lblCreatinineCal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCreatinineCal.AutoSize = true;
+            this.lblCreatinineCal.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblCreatinineCal.Location = new System.Drawing.Point(792, 34);
+            this.lblCreatinineCal.Name = "lblCreatinineCal";
+            this.lblCreatinineCal.Size = new System.Drawing.Size(20, 26);
+            this.lblCreatinineCal.TabIndex = 25;
+            this.lblCreatinineCal.Text = "-";
+            // 
             // FormPatientRecord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -975,5 +1020,8 @@
         private System.Windows.Forms.TextBox txtEst2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtEst1;
+        private System.Windows.Forms.Label lblCreatinineCal;
+        private System.Windows.Forms.TextBox txtCreatinine;
+        private System.Windows.Forms.Label lblCreatinine;
     }
 }

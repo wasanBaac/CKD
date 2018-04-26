@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="db" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\db.mdf;Integrated Security=True" SettingsObjectName="CKD.Properties.Settings" SettingsPropertyName="dbConnectionString" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.Patient" Member="Patients">
-    <Type Name="Patient">
-      <Column Name="HN" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Number" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Gender" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
-      <Column Name="TitleID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="LastName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="BirthDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="Disease" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="DistrictID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="StatusID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.District" Member="Districts">
     <Type Name="District">
       <Column Name="DistrictID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -86,6 +72,32 @@
       <Column Name="Detail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.refDisease" Member="refDiseases">
+    <Type Name="refDisease">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Detail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Patient" Member="Patients">
+    <Type Name="Patient">
+      <Column Name="HN" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Number" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="TitleID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BirthDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DistrictID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StatusID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DiseaseDM" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DiseaseHT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DiseaseFat" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DiseaseHeart" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DiseaseStroke" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DiseaseOther" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DiseaseReject" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.PatientRecord" Member="PatientRecords">
     <Type Name="PatientRecord">
       <Column Name="recordID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -93,6 +105,7 @@
       <Column Name="recordDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Column Name="eGFR" Type="System.Decimal" DbType="Decimal(4,2)" CanBeNull="true" />
       <Column Name="stage" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Creatinine" Type="System.Decimal" DbType="Decimal(4,2)" CanBeNull="true" />
       <Column Name="weight" Type="System.Decimal" DbType="Decimal(4,1)" CanBeNull="true" />
       <Column Name="height" Type="System.Decimal" DbType="Decimal(4,1)" CanBeNull="true" />
       <Column Name="treatNone" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
@@ -130,12 +143,6 @@
       <Column Name="Other" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
       <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.refDisease" Member="refDiseases">
-    <Type Name="refDisease">
-      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Detail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>
