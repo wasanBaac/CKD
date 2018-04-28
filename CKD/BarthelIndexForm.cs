@@ -31,6 +31,7 @@ namespace CKD
         private void btnSave_Click(object sender, EventArgs e)
         {
             FormPatientRecord.BarthelIndexValue = Convert.ToInt16(lblTotal.Text);
+            FormPatientRecord.BarthelIndexDetail = lblTotalDetail.Text;
 
             PatientRecordDetail PRD = new PatientRecordDetail();
             PRD.Feeding = Convert.ToInt16(label1.Text);

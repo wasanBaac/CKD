@@ -84,6 +84,8 @@ namespace CKD
             cbDFat.Checked = patient.DiseaseFat.Value;
             cbDHeart.Checked = patient.DiseaseHeart.Value;
             cbDStroke.Checked = patient.DiseaseStroke.Value;
+            cbDTB.Checked = patient.DiseaseTB.Value;
+            cbDARV.Checked = patient.DiseaseARV.Value;
             cbDOther.Checked = patient.DiseaseOther.Value;
             cbDReject.Checked = patient.DiseaseReject.Value;
 
@@ -153,6 +155,8 @@ namespace CKD
             patient.DiseaseFat = cbDFat.Checked;
             patient.DiseaseHeart = cbDHeart.Checked;
             patient.DiseaseStroke = cbDStroke.Checked;
+            patient.DiseaseTB = cbDTB.Checked;
+            patient.DiseaseARV = cbDARV.Checked;
             patient.DiseaseOther = cbDOther.Checked;
             patient.DiseaseReject = cbDReject.Checked;
 

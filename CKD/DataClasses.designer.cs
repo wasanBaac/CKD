@@ -63,6 +63,9 @@ namespace CKD
     partial void InsertrefDisease(refDisease instance);
     partial void UpdaterefDisease(refDisease instance);
     partial void DeleterefDisease(refDisease instance);
+    partial void InsertrefBMI(refBMI instance);
+    partial void UpdaterefBMI(refBMI instance);
+    partial void DeleterefBMI(refBMI instance);
     partial void InsertPatient(Patient instance);
     partial void UpdatePatient(Patient instance);
     partial void DeletePatient(Patient instance);
@@ -186,6 +189,14 @@ namespace CKD
 			get
 			{
 				return this.GetTable<refDisease>();
+			}
+		}
+		
+		public System.Data.Linq.Table<refBMI> refBMIs
+		{
+			get
+			{
+				return this.GetTable<refBMI>();
 			}
 		}
 		
@@ -1440,6 +1451,140 @@ namespace CKD
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.refBMI")]
+	public partial class refBMI : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Id;
+		
+		private System.Nullable<decimal> _min;
+		
+		private System.Nullable<decimal> _max;
+		
+		private string _detail;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnminChanging(System.Nullable<decimal> value);
+    partial void OnminChanged();
+    partial void OnmaxChanging(System.Nullable<decimal> value);
+    partial void OnmaxChanged();
+    partial void OndetailChanging(string value);
+    partial void OndetailChanged();
+    #endregion
+		
+		public refBMI()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_min", DbType="Decimal(5,2)")]
+		public System.Nullable<decimal> min
+		{
+			get
+			{
+				return this._min;
+			}
+			set
+			{
+				if ((this._min != value))
+				{
+					this.OnminChanging(value);
+					this.SendPropertyChanging();
+					this._min = value;
+					this.SendPropertyChanged("min");
+					this.OnminChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_max", DbType="Decimal(5,2)")]
+		public System.Nullable<decimal> max
+		{
+			get
+			{
+				return this._max;
+			}
+			set
+			{
+				if ((this._max != value))
+				{
+					this.OnmaxChanging(value);
+					this.SendPropertyChanging();
+					this._max = value;
+					this.SendPropertyChanged("max");
+					this.OnmaxChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_detail", DbType="NVarChar(50)")]
+		public string detail
+		{
+			get
+			{
+				return this._detail;
+			}
+			set
+			{
+				if ((this._detail != value))
+				{
+					this.OndetailChanging(value);
+					this.SendPropertyChanging();
+					this._detail = value;
+					this.SendPropertyChanged("detail");
+					this.OndetailChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Patient")]
 	public partial class Patient : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -1473,6 +1618,10 @@ namespace CKD
 		private System.Nullable<bool> _DiseaseHeart;
 		
 		private System.Nullable<bool> _DiseaseStroke;
+		
+		private System.Nullable<bool> _DiseaseTB;
+		
+		private System.Nullable<bool> _DiseaseARV;
 		
 		private System.Nullable<bool> _DiseaseOther;
 		
@@ -1510,6 +1659,10 @@ namespace CKD
     partial void OnDiseaseHeartChanged();
     partial void OnDiseaseStrokeChanging(System.Nullable<bool> value);
     partial void OnDiseaseStrokeChanged();
+    partial void OnDiseaseTBChanging(System.Nullable<bool> value);
+    partial void OnDiseaseTBChanged();
+    partial void OnDiseaseARVChanging(System.Nullable<bool> value);
+    partial void OnDiseaseARVChanged();
     partial void OnDiseaseOtherChanging(System.Nullable<bool> value);
     partial void OnDiseaseOtherChanged();
     partial void OnDiseaseRejectChanging(System.Nullable<bool> value);
@@ -1801,6 +1954,46 @@ namespace CKD
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiseaseTB", DbType="Bit")]
+		public System.Nullable<bool> DiseaseTB
+		{
+			get
+			{
+				return this._DiseaseTB;
+			}
+			set
+			{
+				if ((this._DiseaseTB != value))
+				{
+					this.OnDiseaseTBChanging(value);
+					this.SendPropertyChanging();
+					this._DiseaseTB = value;
+					this.SendPropertyChanged("DiseaseTB");
+					this.OnDiseaseTBChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiseaseARV", DbType="Bit")]
+		public System.Nullable<bool> DiseaseARV
+		{
+			get
+			{
+				return this._DiseaseARV;
+			}
+			set
+			{
+				if ((this._DiseaseARV != value))
+				{
+					this.OnDiseaseARVChanging(value);
+					this.SendPropertyChanging();
+					this._DiseaseARV = value;
+					this.SendPropertyChanged("DiseaseARV");
+					this.OnDiseaseARVChanged();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiseaseOther", DbType="Bit")]
 		public System.Nullable<bool> DiseaseOther
 		{
@@ -1950,6 +2143,10 @@ namespace CKD
 		
 		private string _Other;
 		
+		private System.Nullable<int> _Knowlege;
+		
+		private System.Nullable<int> _excercise;
+		
 		private System.Nullable<System.DateTime> _CreateDate;
 		
 		private System.Nullable<System.DateTime> _ModifiedDate;
@@ -2040,6 +2237,10 @@ namespace CKD
     partial void OnEdemaChanged();
     partial void OnOtherChanging(string value);
     partial void OnOtherChanged();
+    partial void OnKnowlegeChanging(System.Nullable<int> value);
+    partial void OnKnowlegeChanged();
+    partial void OnexcerciseChanging(System.Nullable<int> value);
+    partial void OnexcerciseChanged();
     partial void OnCreateDateChanging(System.Nullable<System.DateTime> value);
     partial void OnCreateDateChanged();
     partial void OnModifiedDateChanging(System.Nullable<System.DateTime> value);
@@ -2867,6 +3068,46 @@ namespace CKD
 					this._Other = value;
 					this.SendPropertyChanged("Other");
 					this.OnOtherChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Knowlege", DbType="Int")]
+		public System.Nullable<int> Knowlege
+		{
+			get
+			{
+				return this._Knowlege;
+			}
+			set
+			{
+				if ((this._Knowlege != value))
+				{
+					this.OnKnowlegeChanging(value);
+					this.SendPropertyChanging();
+					this._Knowlege = value;
+					this.SendPropertyChanged("Knowlege");
+					this.OnKnowlegeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_excercise", DbType="Int")]
+		public System.Nullable<int> excercise
+		{
+			get
+			{
+				return this._excercise;
+			}
+			set
+			{
+				if ((this._excercise != value))
+				{
+					this.OnexcerciseChanging(value);
+					this.SendPropertyChanging();
+					this._excercise = value;
+					this.SendPropertyChanged("excercise");
+					this.OnexcerciseChanged();
 				}
 			}
 		}

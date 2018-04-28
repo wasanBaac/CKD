@@ -38,6 +38,9 @@
             this.lblHeight = new System.Windows.Forms.Label();
             this.txtHeight = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblCreatinineCal = new System.Windows.Forms.Label();
+            this.txtCreatinine = new System.Windows.Forms.TextBox();
+            this.lblCreatinine = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cbTreatArm = new System.Windows.Forms.CheckBox();
             this.cbTreatNeck = new System.Windows.Forms.CheckBox();
@@ -56,6 +59,7 @@
             this.cbProgrameEx2 = new System.Windows.Forms.CheckBox();
             this.cbProgrameEx1 = new System.Windows.Forms.CheckBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.lblBMI = new System.Windows.Forms.Label();
             this.txtBarthelIndex = new System.Windows.Forms.TextBox();
             this.lnklblBarthelIndex = new System.Windows.Forms.LinkLabel();
             this.label11 = new System.Windows.Forms.Label();
@@ -95,9 +99,15 @@
             this.cbtired = new System.Windows.Forms.CheckBox();
             this.gbTransfer = new System.Windows.Forms.GroupBox();
             this.cbbTransfer = new System.Windows.Forms.ComboBox();
-            this.lblCreatinine = new System.Windows.Forms.Label();
-            this.txtCreatinine = new System.Windows.Forms.TextBox();
-            this.lblCreatinineCal = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.txtKnowlege = new System.Windows.Forms.TextBox();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.txtExcercise = new System.Windows.Forms.TextBox();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.lblBarthelIndex = new System.Windows.Forms.Label();
+            this.lblKnowlege = new System.Windows.Forms.Label();
+            this.lblExercise = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -112,6 +122,9 @@
             this.groupBox10.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.gbTransfer.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox12.SuspendLayout();
             this.SuspendLayout();
             // 
             // recordDate
@@ -233,6 +246,39 @@
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             // 
+            // lblCreatinineCal
+            // 
+            this.lblCreatinineCal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCreatinineCal.AutoSize = true;
+            this.lblCreatinineCal.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblCreatinineCal.Location = new System.Drawing.Point(798, 34);
+            this.lblCreatinineCal.Name = "lblCreatinineCal";
+            this.lblCreatinineCal.Size = new System.Drawing.Size(20, 26);
+            this.lblCreatinineCal.TabIndex = 25;
+            this.lblCreatinineCal.Text = "-";
+            // 
+            // txtCreatinine
+            // 
+            this.txtCreatinine.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCreatinine.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.txtCreatinine.Location = new System.Drawing.Point(706, 31);
+            this.txtCreatinine.MaxLength = 5;
+            this.txtCreatinine.Name = "txtCreatinine";
+            this.txtCreatinine.Size = new System.Drawing.Size(70, 32);
+            this.txtCreatinine.TabIndex = 24;
+            this.txtCreatinine.TextChanged += new System.EventHandler(this.txtCreatinine_TextChanged);
+            // 
+            // lblCreatinine
+            // 
+            this.lblCreatinine.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCreatinine.AutoSize = true;
+            this.lblCreatinine.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblCreatinine.Location = new System.Drawing.Point(589, 34);
+            this.lblCreatinine.Name = "lblCreatinine";
+            this.lblCreatinine.Size = new System.Drawing.Size(111, 26);
+            this.lblCreatinine.TabIndex = 23;
+            this.lblCreatinine.Text = "Creatinine";
+            // 
             // groupBox2
             // 
             this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -244,7 +290,7 @@
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.groupBox2.Location = new System.Drawing.Point(21, 109);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(274, 134);
+            this.groupBox2.Size = new System.Drawing.Size(274, 138);
             this.groupBox2.TabIndex = 24;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "การได้รับการรักษา";
@@ -304,7 +350,7 @@
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.groupBox3.Location = new System.Drawing.Point(21, 253);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(248, 151);
+            this.groupBox3.Size = new System.Drawing.Size(248, 157);
             this.groupBox3.TabIndex = 25;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "การออกกำลังกาย";
@@ -437,6 +483,7 @@
             // groupBox6
             // 
             this.groupBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox6.Controls.Add(this.lblBMI);
             this.groupBox6.Controls.Add(this.txtBarthelIndex);
             this.groupBox6.Controls.Add(this.lnklblBarthelIndex);
             this.groupBox6.Controls.Add(this.label11);
@@ -454,26 +501,36 @@
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.groupBox6.Location = new System.Drawing.Point(460, 109);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(269, 241);
+            this.groupBox6.Size = new System.Drawing.Size(269, 254);
             this.groupBox6.TabIndex = 28;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "การประเมิน";
+            // 
+            // lblBMI
+            // 
+            this.lblBMI.AutoSize = true;
+            this.lblBMI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblBMI.Location = new System.Drawing.Point(89, 52);
+            this.lblBMI.Name = "lblBMI";
+            this.lblBMI.Size = new System.Drawing.Size(0, 20);
+            this.lblBMI.TabIndex = 19;
             // 
             // txtBarthelIndex
             // 
             this.txtBarthelIndex.Enabled = false;
             this.txtBarthelIndex.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtBarthelIndex.Location = new System.Drawing.Point(17, 197);
+            this.txtBarthelIndex.Location = new System.Drawing.Point(17, 217);
             this.txtBarthelIndex.MaxLength = 6;
             this.txtBarthelIndex.Name = "txtBarthelIndex";
             this.txtBarthelIndex.Size = new System.Drawing.Size(64, 26);
             this.txtBarthelIndex.TabIndex = 18;
+            this.txtBarthelIndex.TextChanged += new System.EventHandler(this.txtBarthelIndex_TextChanged);
             // 
             // lnklblBarthelIndex
             // 
             this.lnklblBarthelIndex.AutoSize = true;
             this.lnklblBarthelIndex.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lnklblBarthelIndex.Location = new System.Drawing.Point(88, 200);
+            this.lnklblBarthelIndex.Location = new System.Drawing.Point(88, 220);
             this.lnklblBarthelIndex.Name = "lnklblBarthelIndex";
             this.lnklblBarthelIndex.Size = new System.Drawing.Size(101, 20);
             this.lnklblBarthelIndex.TabIndex = 6;
@@ -485,7 +542,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label11.Location = new System.Drawing.Point(88, 172);
+            this.label11.Location = new System.Drawing.Point(88, 192);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(59, 20);
             this.label11.TabIndex = 17;
@@ -494,7 +551,7 @@
             // txtEst6
             // 
             this.txtEst6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtEst6.Location = new System.Drawing.Point(17, 169);
+            this.txtEst6.Location = new System.Drawing.Point(17, 189);
             this.txtEst6.MaxLength = 6;
             this.txtEst6.Name = "txtEst6";
             this.txtEst6.Size = new System.Drawing.Size(64, 26);
@@ -504,7 +561,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label10.Location = new System.Drawing.Point(88, 143);
+            this.label10.Location = new System.Drawing.Point(88, 163);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(107, 20);
             this.label10.TabIndex = 15;
@@ -513,7 +570,7 @@
             // txtEst5
             // 
             this.txtEst5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtEst5.Location = new System.Drawing.Point(17, 141);
+            this.txtEst5.Location = new System.Drawing.Point(17, 161);
             this.txtEst5.MaxLength = 6;
             this.txtEst5.Name = "txtEst5";
             this.txtEst5.Size = new System.Drawing.Size(64, 26);
@@ -523,7 +580,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label9.Location = new System.Drawing.Point(88, 115);
+            this.label9.Location = new System.Drawing.Point(88, 135);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(118, 20);
             this.label9.TabIndex = 13;
@@ -532,7 +589,7 @@
             // txtEst4
             // 
             this.txtEst4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtEst4.Location = new System.Drawing.Point(17, 113);
+            this.txtEst4.Location = new System.Drawing.Point(17, 133);
             this.txtEst4.MaxLength = 6;
             this.txtEst4.Name = "txtEst4";
             this.txtEst4.Size = new System.Drawing.Size(64, 26);
@@ -542,7 +599,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label8.Location = new System.Drawing.Point(88, 87);
+            this.label8.Location = new System.Drawing.Point(88, 107);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(124, 20);
             this.label8.TabIndex = 11;
@@ -551,7 +608,7 @@
             // txtEst3
             // 
             this.txtEst3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtEst3.Location = new System.Drawing.Point(17, 85);
+            this.txtEst3.Location = new System.Drawing.Point(17, 105);
             this.txtEst3.MaxLength = 6;
             this.txtEst3.Name = "txtEst3";
             this.txtEst3.Size = new System.Drawing.Size(64, 26);
@@ -561,7 +618,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label7.Location = new System.Drawing.Point(88, 60);
+            this.label7.Location = new System.Drawing.Point(88, 80);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(123, 20);
             this.label7.TabIndex = 9;
@@ -570,7 +627,7 @@
             // txtEst2
             // 
             this.txtEst2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtEst2.Location = new System.Drawing.Point(17, 57);
+            this.txtEst2.Location = new System.Drawing.Point(17, 77);
             this.txtEst2.MaxLength = 6;
             this.txtEst2.Name = "txtEst2";
             this.txtEst2.Size = new System.Drawing.Size(64, 26);
@@ -602,7 +659,7 @@
             this.gbBed.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gbBed.Controls.Add(this.cbbBedMobility);
             this.gbBed.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.gbBed.Location = new System.Drawing.Point(460, 438);
+            this.gbBed.Location = new System.Drawing.Point(460, 447);
             this.gbBed.Name = "gbBed";
             this.gbBed.Size = new System.Drawing.Size(269, 91);
             this.gbBed.TabIndex = 29;
@@ -623,7 +680,7 @@
             this.gbAmbulate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gbAmbulate.Controls.Add(this.cbbAmbulateWith);
             this.gbAmbulate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.gbAmbulate.Location = new System.Drawing.Point(814, 131);
+            this.gbAmbulate.Location = new System.Drawing.Point(864, 109);
             this.gbAmbulate.Name = "gbAmbulate";
             this.gbAmbulate.Size = new System.Drawing.Size(269, 82);
             this.gbAmbulate.TabIndex = 30;
@@ -644,7 +701,7 @@
             this.gbBalance.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gbBalance.Controls.Add(this.cbbBalance);
             this.gbBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.gbBalance.Location = new System.Drawing.Point(460, 529);
+            this.gbBalance.Location = new System.Drawing.Point(460, 542);
             this.gbBalance.Name = "gbBalance";
             this.gbBalance.Size = new System.Drawing.Size(269, 83);
             this.gbBalance.TabIndex = 31;
@@ -672,7 +729,7 @@
             this.gbMMTLUE.Controls.Add(this.label2);
             this.gbMMTLUE.Controls.Add(this.cbbMMTLUE);
             this.gbMMTLUE.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.gbMMTLUE.Location = new System.Drawing.Point(814, 227);
+            this.gbMMTLUE.Location = new System.Drawing.Point(864, 201);
             this.gbMMTLUE.Name = "gbMMTLUE";
             this.gbMMTLUE.Size = new System.Drawing.Size(418, 123);
             this.gbMMTLUE.TabIndex = 32;
@@ -788,9 +845,9 @@
             // btnSave
             // 
             this.btnSave.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSave.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnSave.BackColor = System.Drawing.Color.DarkOrange;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btnSave.Location = new System.Drawing.Point(1022, 638);
+            this.btnSave.Location = new System.Drawing.Point(1092, 650);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(190, 51);
             this.btnSave.TabIndex = 40;
@@ -803,7 +860,7 @@
             this.groupBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox9.Controls.Add(this.txtPain);
             this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.groupBox9.Location = new System.Drawing.Point(814, 357);
+            this.groupBox9.Location = new System.Drawing.Point(864, 333);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(418, 74);
             this.groupBox9.TabIndex = 32;
@@ -815,7 +872,7 @@
             this.groupBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox10.Controls.Add(this.txtEdema);
             this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.groupBox10.Location = new System.Drawing.Point(814, 437);
+            this.groupBox10.Location = new System.Drawing.Point(864, 413);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(418, 74);
             this.groupBox10.TabIndex = 36;
@@ -828,7 +885,7 @@
             this.groupBox11.Controls.Add(this.cbtired);
             this.groupBox11.Controls.Add(this.txtOther);
             this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.groupBox11.Location = new System.Drawing.Point(814, 511);
+            this.groupBox11.Location = new System.Drawing.Point(864, 493);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(418, 121);
             this.groupBox11.TabIndex = 38;
@@ -851,7 +908,7 @@
             this.gbTransfer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gbTransfer.Controls.Add(this.cbbTransfer);
             this.gbTransfer.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.gbTransfer.Location = new System.Drawing.Point(460, 353);
+            this.gbTransfer.Location = new System.Drawing.Point(460, 363);
             this.gbTransfer.Name = "gbTransfer";
             this.gbTransfer.Size = new System.Drawing.Size(269, 86);
             this.gbTransfer.TabIndex = 30;
@@ -867,44 +924,119 @@
             this.cbbTransfer.Size = new System.Drawing.Size(237, 33);
             this.cbbTransfer.TabIndex = 10;
             // 
-            // lblCreatinine
+            // label12
             // 
-            this.lblCreatinine.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCreatinine.AutoSize = true;
-            this.lblCreatinine.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblCreatinine.Location = new System.Drawing.Point(572, 34);
-            this.lblCreatinine.Name = "lblCreatinine";
-            this.lblCreatinine.Size = new System.Drawing.Size(111, 26);
-            this.lblCreatinine.TabIndex = 23;
-            this.lblCreatinine.Text = "Creatinine";
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label12.Location = new System.Drawing.Point(16, 651);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(110, 26);
+            this.label12.TabIndex = 41;
+            this.label12.Text = "ประเมินผล";
             // 
-            // txtCreatinine
+            // groupBox7
             // 
-            this.txtCreatinine.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCreatinine.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtCreatinine.Location = new System.Drawing.Point(689, 31);
-            this.txtCreatinine.MaxLength = 5;
-            this.txtCreatinine.Name = "txtCreatinine";
-            this.txtCreatinine.Size = new System.Drawing.Size(70, 32);
-            this.txtCreatinine.TabIndex = 24;
-            this.txtCreatinine.TextChanged += new System.EventHandler(this.txtCreatinine_TextChanged);
+            this.groupBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox7.Controls.Add(this.lblKnowlege);
+            this.groupBox7.Controls.Add(this.txtKnowlege);
+            this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.groupBox7.Location = new System.Drawing.Point(162, 631);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(257, 86);
+            this.groupBox7.TabIndex = 44;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "ความรู้";
             // 
-            // lblCreatinineCal
+            // txtKnowlege
             // 
-            this.lblCreatinineCal.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCreatinineCal.AutoSize = true;
-            this.lblCreatinineCal.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblCreatinineCal.Location = new System.Drawing.Point(792, 34);
-            this.lblCreatinineCal.Name = "lblCreatinineCal";
-            this.lblCreatinineCal.Size = new System.Drawing.Size(20, 26);
-            this.lblCreatinineCal.TabIndex = 25;
-            this.lblCreatinineCal.Text = "-";
+            this.txtKnowlege.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtKnowlege.BackColor = System.Drawing.Color.Aqua;
+            this.txtKnowlege.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.txtKnowlege.Location = new System.Drawing.Point(16, 39);
+            this.txtKnowlege.MaxLength = 250;
+            this.txtKnowlege.Name = "txtKnowlege";
+            this.txtKnowlege.Size = new System.Drawing.Size(61, 32);
+            this.txtKnowlege.TabIndex = 37;
+            this.txtKnowlege.TextChanged += new System.EventHandler(this.txtKnowlege_TextChanged);
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox8.Controls.Add(this.lblExercise);
+            this.groupBox8.Controls.Add(this.txtExcercise);
+            this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.groupBox8.Location = new System.Drawing.Point(457, 631);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(265, 86);
+            this.groupBox8.TabIndex = 45;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "การออกกำลังกาย";
+            // 
+            // txtExcercise
+            // 
+            this.txtExcercise.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtExcercise.BackColor = System.Drawing.Color.Aqua;
+            this.txtExcercise.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.txtExcercise.Location = new System.Drawing.Point(16, 39);
+            this.txtExcercise.MaxLength = 250;
+            this.txtExcercise.Name = "txtExcercise";
+            this.txtExcercise.Size = new System.Drawing.Size(61, 32);
+            this.txtExcercise.TabIndex = 37;
+            this.txtExcercise.TextChanged += new System.EventHandler(this.txtExcercise_TextChanged);
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox12.Controls.Add(this.lblBarthelIndex);
+            this.groupBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.groupBox12.Location = new System.Drawing.Point(760, 631);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(307, 86);
+            this.groupBox12.TabIndex = 46;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "Barthel index";
+            // 
+            // lblBarthelIndex
+            // 
+            this.lblBarthelIndex.AutoSize = true;
+            this.lblBarthelIndex.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblBarthelIndex.Location = new System.Drawing.Point(13, 39);
+            this.lblBarthelIndex.Name = "lblBarthelIndex";
+            this.lblBarthelIndex.Size = new System.Drawing.Size(17, 24);
+            this.lblBarthelIndex.TabIndex = 18;
+            this.lblBarthelIndex.Text = "-";
+            // 
+            // lblKnowlege
+            // 
+            this.lblKnowlege.AutoSize = true;
+            this.lblKnowlege.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblKnowlege.Location = new System.Drawing.Point(94, 45);
+            this.lblKnowlege.Name = "lblKnowlege";
+            this.lblKnowlege.Size = new System.Drawing.Size(17, 24);
+            this.lblKnowlege.TabIndex = 38;
+            this.lblKnowlege.Text = "-";
+            // 
+            // lblExercise
+            // 
+            this.lblExercise.AutoSize = true;
+            this.lblExercise.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblExercise.Location = new System.Drawing.Point(93, 43);
+            this.lblExercise.Name = "lblExercise";
+            this.lblExercise.Size = new System.Drawing.Size(17, 24);
+            this.lblExercise.TabIndex = 39;
+            this.lblExercise.Text = "-";
             // 
             // FormPatientRecord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.groupBox12);
+            this.Controls.Add(this.groupBox8);
+            this.Controls.Add(this.groupBox7);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.gbTransfer);
             this.Controls.Add(this.groupBox11);
             this.Controls.Add(this.groupBox10);
@@ -947,7 +1079,14 @@
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
             this.gbTransfer.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1023,5 +1162,15 @@
         private System.Windows.Forms.Label lblCreatinineCal;
         private System.Windows.Forms.TextBox txtCreatinine;
         private System.Windows.Forms.Label lblCreatinine;
+        private System.Windows.Forms.Label lblBMI;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.TextBox txtKnowlege;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.TextBox txtExcercise;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.Label lblBarthelIndex;
+        private System.Windows.Forms.Label lblKnowlege;
+        private System.Windows.Forms.Label lblExercise;
     }
 }

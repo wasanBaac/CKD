@@ -47,20 +47,22 @@
             this.lbltitle = new System.Windows.Forms.Label();
             this.cbTitle = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbDReject = new System.Windows.Forms.CheckBox();
+            this.cbDOther = new System.Windows.Forms.CheckBox();
+            this.cbDStroke = new System.Windows.Forms.CheckBox();
+            this.cbDHeart = new System.Windows.Forms.CheckBox();
+            this.cbDFat = new System.Windows.Forms.CheckBox();
+            this.cbDHT = new System.Windows.Forms.CheckBox();
+            this.cbDDM = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.cbGender = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.gvPatientRecord = new System.Windows.Forms.DataGridView();
             this.clmBtnEdit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnAddrecordDetail = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cbDDM = new System.Windows.Forms.CheckBox();
-            this.cbDHT = new System.Windows.Forms.CheckBox();
-            this.cbDFat = new System.Windows.Forms.CheckBox();
-            this.cbDHeart = new System.Windows.Forms.CheckBox();
-            this.cbDStroke = new System.Windows.Forms.CheckBox();
-            this.cbDOther = new System.Windows.Forms.CheckBox();
-            this.cbDReject = new System.Windows.Forms.CheckBox();
+            this.cbDTB = new System.Windows.Forms.CheckBox();
+            this.cbDARV = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvPatientRecord)).BeginInit();
             this.SuspendLayout();
@@ -227,9 +229,10 @@
             // btnSave
             // 
             this.btnSave.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSave.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnSave.BackColor = System.Drawing.Color.HotPink;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btnSave.Location = new System.Drawing.Point(1292, 99);
+            this.btnSave.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSave.Location = new System.Drawing.Point(1292, 93);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(105, 46);
             this.btnSave.TabIndex = 19;
@@ -262,6 +265,8 @@
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.groupBox1.Controls.Add(this.cbDARV);
+            this.groupBox1.Controls.Add(this.cbDTB);
             this.groupBox1.Controls.Add(this.cbDReject);
             this.groupBox1.Controls.Add(this.cbDOther);
             this.groupBox1.Controls.Add(this.cbDStroke);
@@ -297,6 +302,94 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "รายละเอียดคนไข้";
             // 
+            // cbDReject
+            // 
+            this.cbDReject.AutoSize = true;
+            this.cbDReject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbDReject.Location = new System.Drawing.Point(883, 150);
+            this.cbDReject.Name = "cbDReject";
+            this.cbDReject.Size = new System.Drawing.Size(73, 24);
+            this.cbDReject.TabIndex = 33;
+            this.cbDReject.Text = "ปฏิเสธ";
+            this.cbDReject.UseVisualStyleBackColor = true;
+            // 
+            // cbDOther
+            // 
+            this.cbDOther.AutoSize = true;
+            this.cbDOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbDOther.Location = new System.Drawing.Point(800, 150);
+            this.cbDOther.Name = "cbDOther";
+            this.cbDOther.Size = new System.Drawing.Size(58, 24);
+            this.cbDOther.TabIndex = 32;
+            this.cbDOther.Text = "อื่นๆ";
+            this.cbDOther.UseVisualStyleBackColor = true;
+            // 
+            // cbDStroke
+            // 
+            this.cbDStroke.AutoSize = true;
+            this.cbDStroke.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbDStroke.Location = new System.Drawing.Point(557, 151);
+            this.cbDStroke.Name = "cbDStroke";
+            this.cbDStroke.Size = new System.Drawing.Size(81, 24);
+            this.cbDStroke.TabIndex = 31;
+            this.cbDStroke.Text = "Stroke";
+            this.cbDStroke.UseVisualStyleBackColor = true;
+            // 
+            // cbDHeart
+            // 
+            this.cbDHeart.AutoSize = true;
+            this.cbDHeart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbDHeart.Location = new System.Drawing.Point(473, 151);
+            this.cbDHeart.Name = "cbDHeart";
+            this.cbDHeart.Size = new System.Drawing.Size(63, 24);
+            this.cbDHeart.TabIndex = 30;
+            this.cbDHeart.Text = "หัวใจ";
+            this.cbDHeart.UseVisualStyleBackColor = true;
+            // 
+            // cbDFat
+            // 
+            this.cbDFat.AutoSize = true;
+            this.cbDFat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbDFat.Location = new System.Drawing.Point(387, 151);
+            this.cbDFat.Name = "cbDFat";
+            this.cbDFat.Size = new System.Drawing.Size(67, 24);
+            this.cbDFat.TabIndex = 29;
+            this.cbDFat.Text = "ไขมัน";
+            this.cbDFat.UseVisualStyleBackColor = true;
+            // 
+            // cbDHT
+            // 
+            this.cbDHT.AutoSize = true;
+            this.cbDHT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbDHT.Location = new System.Drawing.Point(320, 151);
+            this.cbDHT.Name = "cbDHT";
+            this.cbDHT.Size = new System.Drawing.Size(51, 24);
+            this.cbDHT.TabIndex = 28;
+            this.cbDHT.Text = "HT";
+            this.cbDHT.UseVisualStyleBackColor = true;
+            // 
+            // cbDDM
+            // 
+            this.cbDDM.AutoSize = true;
+            this.cbDDM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbDDM.Location = new System.Drawing.Point(246, 152);
+            this.cbDDM.Name = "cbDDM";
+            this.cbDDM.Size = new System.Drawing.Size(55, 24);
+            this.cbDDM.TabIndex = 27;
+            this.cbDDM.Text = "DM";
+            this.cbDDM.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label1.Location = new System.Drawing.Point(118, 151);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 24);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "โรคประจำตัว";
+            // 
             // cbGender
             // 
             this.cbGender.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -323,6 +416,7 @@
             this.gvPatientRecord.AllowUserToAddRows = false;
             this.gvPatientRecord.AllowUserToDeleteRows = false;
             this.gvPatientRecord.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gvPatientRecord.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.gvPatientRecord.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvPatientRecord.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clmBtnEdit});
@@ -335,15 +429,16 @@
             // 
             // clmBtnEdit
             // 
-            this.clmBtnEdit.HeaderText = "";
+            this.clmBtnEdit.HeaderText = " ";
             this.clmBtnEdit.Name = "clmBtnEdit";
             this.clmBtnEdit.ReadOnly = true;
+            this.clmBtnEdit.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.clmBtnEdit.Text = "View";
             // 
             // btnAddrecordDetail
             // 
             this.btnAddrecordDetail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddrecordDetail.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnAddrecordDetail.BackColor = System.Drawing.Color.DarkTurquoise;
             this.btnAddrecordDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.btnAddrecordDetail.Location = new System.Drawing.Point(1144, 657);
             this.btnAddrecordDetail.Name = "btnAddrecordDetail";
@@ -356,7 +451,7 @@
             // btnClose
             // 
             this.btnClose.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnClose.BackColor = System.Drawing.Color.Crimson;
+            this.btnClose.BackColor = System.Drawing.Color.Lime;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.btnClose.Location = new System.Drawing.Point(1025, 657);
             this.btnClose.Name = "btnClose";
@@ -366,93 +461,27 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // label1
+            // cbDTB
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label1.Location = new System.Drawing.Point(118, 151);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 24);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "โรคประจำตัว";
+            this.cbDTB.AutoSize = true;
+            this.cbDTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbDTB.Location = new System.Drawing.Point(652, 151);
+            this.cbDTB.Name = "cbDTB";
+            this.cbDTB.Size = new System.Drawing.Size(50, 24);
+            this.cbDTB.TabIndex = 34;
+            this.cbDTB.Text = "TB";
+            this.cbDTB.UseVisualStyleBackColor = true;
             // 
-            // cbDDM
+            // cbDARV
             // 
-            this.cbDDM.AutoSize = true;
-            this.cbDDM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbDDM.Location = new System.Drawing.Point(246, 151);
-            this.cbDDM.Name = "cbDDM";
-            this.cbDDM.Size = new System.Drawing.Size(53, 24);
-            this.cbDDM.TabIndex = 27;
-            this.cbDDM.Text = "DM";
-            this.cbDDM.UseVisualStyleBackColor = true;
-            // 
-            // cbDHT
-            // 
-            this.cbDHT.AutoSize = true;
-            this.cbDHT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbDHT.Location = new System.Drawing.Point(358, 151);
-            this.cbDHT.Name = "cbDHT";
-            this.cbDHT.Size = new System.Drawing.Size(49, 24);
-            this.cbDHT.TabIndex = 28;
-            this.cbDHT.Text = "HT";
-            this.cbDHT.UseVisualStyleBackColor = true;
-            // 
-            // cbDFat
-            // 
-            this.cbDFat.AutoSize = true;
-            this.cbDFat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbDFat.Location = new System.Drawing.Point(470, 151);
-            this.cbDFat.Name = "cbDFat";
-            this.cbDFat.Size = new System.Drawing.Size(63, 24);
-            this.cbDFat.TabIndex = 29;
-            this.cbDFat.Text = "ไขมัน";
-            this.cbDFat.UseVisualStyleBackColor = true;
-            // 
-            // cbDHeart
-            // 
-            this.cbDHeart.AutoSize = true;
-            this.cbDHeart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbDHeart.Location = new System.Drawing.Point(582, 151);
-            this.cbDHeart.Name = "cbDHeart";
-            this.cbDHeart.Size = new System.Drawing.Size(59, 24);
-            this.cbDHeart.TabIndex = 30;
-            this.cbDHeart.Text = "หัวใจ";
-            this.cbDHeart.UseVisualStyleBackColor = true;
-            // 
-            // cbDStroke
-            // 
-            this.cbDStroke.AutoSize = true;
-            this.cbDStroke.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbDStroke.Location = new System.Drawing.Point(694, 151);
-            this.cbDStroke.Name = "cbDStroke";
-            this.cbDStroke.Size = new System.Drawing.Size(75, 24);
-            this.cbDStroke.TabIndex = 31;
-            this.cbDStroke.Text = "Stroke";
-            this.cbDStroke.UseVisualStyleBackColor = true;
-            // 
-            // cbDOther
-            // 
-            this.cbDOther.AutoSize = true;
-            this.cbDOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbDOther.Location = new System.Drawing.Point(806, 151);
-            this.cbDOther.Name = "cbDOther";
-            this.cbDOther.Size = new System.Drawing.Size(55, 24);
-            this.cbDOther.TabIndex = 32;
-            this.cbDOther.Text = "อื่นๆ";
-            this.cbDOther.UseVisualStyleBackColor = true;
-            // 
-            // cbDReject
-            // 
-            this.cbDReject.AutoSize = true;
-            this.cbDReject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbDReject.Location = new System.Drawing.Point(913, 151);
-            this.cbDReject.Name = "cbDReject";
-            this.cbDReject.Size = new System.Drawing.Size(68, 24);
-            this.cbDReject.TabIndex = 33;
-            this.cbDReject.Text = "ปฏิเสธ";
-            this.cbDReject.UseVisualStyleBackColor = true;
+            this.cbDARV.AutoSize = true;
+            this.cbDARV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbDARV.Location = new System.Drawing.Point(720, 151);
+            this.cbDARV.Name = "cbDARV";
+            this.cbDARV.Size = new System.Drawing.Size(65, 24);
+            this.cbDARV.TabIndex = 35;
+            this.cbDARV.Text = "ARV";
+            this.cbDARV.UseVisualStyleBackColor = true;
             // 
             // PatientDetail
             // 
@@ -502,7 +531,6 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.ComboBox cbGender;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridViewButtonColumn clmBtnEdit;
         private System.Windows.Forms.CheckBox cbDDM;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox cbDReject;
@@ -511,5 +539,8 @@
         private System.Windows.Forms.CheckBox cbDHeart;
         private System.Windows.Forms.CheckBox cbDFat;
         private System.Windows.Forms.CheckBox cbDHT;
+        private System.Windows.Forms.DataGridViewButtonColumn clmBtnEdit;
+        private System.Windows.Forms.CheckBox cbDARV;
+        private System.Windows.Forms.CheckBox cbDTB;
     }
 }

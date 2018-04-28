@@ -34,6 +34,7 @@
             this.gvPatient = new System.Windows.Forms.DataGridView();
             this.btnView = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnNewPatient = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gvPatient)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,10 +51,12 @@
             // btnSearch
             // 
             this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnSearch.Location = new System.Drawing.Point(805, 180);
+            this.btnSearch.BackColor = System.Drawing.Color.Orange;
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnSearch.ForeColor = System.Drawing.Color.Black;
+            this.btnSearch.Location = new System.Drawing.Point(851, 178);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(100, 39);
+            this.btnSearch.Size = new System.Drawing.Size(105, 39);
             this.btnSearch.TabIndex = 1;
             this.btnSearch.Text = "ค้นหา";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -63,26 +66,27 @@
             // 
             this.lblsearch.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblsearch.AutoSize = true;
-            this.lblsearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblsearch.Location = new System.Drawing.Point(306, 184);
+            this.lblsearch.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblsearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblsearch.Location = new System.Drawing.Point(274, 183);
             this.lblsearch.Name = "lblsearch";
-            this.lblsearch.Size = new System.Drawing.Size(115, 26);
+            this.lblsearch.Size = new System.Drawing.Size(147, 29);
             this.lblsearch.TabIndex = 2;
-            this.lblsearch.Text = "HN,ชื่อ,สกุล";
+            this.lblsearch.Text = "HN, ชื่อ, สกุล";
             // 
             // gvPatient
             // 
             this.gvPatient.AllowUserToAddRows = false;
             this.gvPatient.AllowUserToDeleteRows = false;
             this.gvPatient.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gvPatient.BackgroundColor = System.Drawing.SystemColors.ScrollBar;
+            this.gvPatient.BackgroundColor = System.Drawing.Color.PaleGreen;
             this.gvPatient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvPatient.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnView});
-            this.gvPatient.Location = new System.Drawing.Point(228, 283);
+            this.gvPatient.Location = new System.Drawing.Point(216, 261);
             this.gvPatient.Name = "gvPatient";
             this.gvPatient.ReadOnly = true;
-            this.gvPatient.Size = new System.Drawing.Size(923, 316);
+            this.gvPatient.Size = new System.Drawing.Size(935, 399);
             this.gvPatient.TabIndex = 4;
             this.gvPatient.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvPatient_CellContentClick);
             this.gvPatient.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.gvPatient_CellFormatting);
@@ -98,14 +102,28 @@
             // btnNewPatient
             // 
             this.btnNewPatient.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnNewPatient.BackColor = System.Drawing.SystemColors.Info;
-            this.btnNewPatient.Location = new System.Drawing.Point(922, 180);
+            this.btnNewPatient.BackColor = System.Drawing.Color.Turquoise;
+            this.btnNewPatient.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnNewPatient.Location = new System.Drawing.Point(989, 178);
             this.btnNewPatient.Name = "btnNewPatient";
-            this.btnNewPatient.Size = new System.Drawing.Size(82, 39);
+            this.btnNewPatient.Size = new System.Drawing.Size(101, 39);
             this.btnNewPatient.TabIndex = 5;
             this.btnNewPatient.Text = "เพิ่มข้อมูล";
             this.btnNewPatient.UseVisualStyleBackColor = false;
             this.btnNewPatient.Click += new System.EventHandler(this.btnNewPatient_Click);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(270, 80);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(827, 54);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "โปรแกรมบันทึกข้อมูลผู้ป่วยโรคไตวายเรื้อรัง";
             // 
             // startForm
             // 
@@ -113,6 +131,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnNewPatient);
             this.Controls.Add(this.gvPatient);
             this.Controls.Add(this.lblsearch);
@@ -136,6 +155,7 @@
         private System.Windows.Forms.DataGridView gvPatient;
         private System.Windows.Forms.DataGridViewButtonColumn btnView;
         private System.Windows.Forms.Button btnNewPatient;
+        private System.Windows.Forms.Label label1;
     }
 }
 

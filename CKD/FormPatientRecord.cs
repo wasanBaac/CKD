@@ -13,6 +13,7 @@ namespace CKD
     public partial class FormPatientRecord : Form
     {
         public static int BarthelIndexValue { get; set; }
+        public static string BarthelIndexDetail { get; set; }
         public static PatientRecordDetail barthelRecord { get; set; }
         private int recordID { get; set; }
         private Int32 HN { get; set; }
@@ -128,6 +129,7 @@ namespace CKD
             {
                 recordDate.Value = Convert.ToDateTime(ptr.recordDate);
                 txteGFR.Text = ptr.eGFR.ToString();
+                txtCreatinine.Text = ptr.Creatinine.ToString();
                 txtWeight.Text = ptr.weight.ToString();
                 txtHeight.Text = ptr.height.ToString();
                 //การได้รับการรักษา
@@ -168,6 +170,8 @@ namespace CKD
                 txtEdema.Text = ptr.Edema;
                 cbtired.Checked = ptr.Tired.Value;
                 txtOther.Text = ptr.Other;
+                txtKnowlege.Text = ptr.Knowlege.Value.ToString();
+                txtExcercise.Text = ptr.excercise.Value.ToString();
             }
         }
         private void lnklblBarthelIndex_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -179,6 +183,7 @@ namespace CKD
         private bool valid()
         {
             decimal dc;
+            int _int;
             if(!decimal.TryParse(txteGFR.Text.Trim(),out dc))
             {
                 MessageBox.Show("eGFR ไม่ถูกต้อง");
@@ -304,6 +309,24 @@ namespace CKD
                 txtEst6.Focus();
                 return true;
             }
+            else if (!int.TryParse(txtKnowlege.Text.Trim(), out _int))
+            {
+                MessageBox.Show("คะแนนความรู้ ไม่ถูกต้อง");
+                txtKnowlege.Focus();
+                return true;
+            }
+            else if (!int.TryParse(txtExcercise.Text.Trim(), out _int))
+            {
+                MessageBox.Show("คะแนนการออกกำลังกาย ไม่ถูกต้อง");
+                txtExcercise.Focus();
+                return true;
+            }
+            else if (Convert.ToInt16(txtExcercise.Text.Trim()) <0 || Convert.ToInt16(txtExcercise.Text.Trim()) > 7)
+            {
+                MessageBox.Show("คะแนนการออกกำลังกาย ไม่ถูกต้อง");
+                txtExcercise.Focus();
+                return true;
+            }
             return false;
         }
 
@@ -327,6 +350,7 @@ namespace CKD
             patientRecord.HN = HN;
             patientRecord.recordDate = recordDate.Value;
             patientRecord.eGFR = Convert.ToDecimal(txteGFR.Text);
+            patientRecord.Creatinine = Convert.ToDecimal(txtCreatinine.Text);
             patientRecord.weight = Convert.ToDecimal(txtWeight.Text);
             patientRecord.height = Convert.ToDecimal(txtHeight.Text);
             //การได้รับการรักษา
@@ -374,6 +398,9 @@ namespace CKD
             patientRecord.Edema = txtEdema.Text.Trim();
             patientRecord.Other = txtOther.Text.Trim();
 
+            patientRecord.Knowlege = Convert.ToInt16(txtKnowlege.Text);
+            patientRecord.excercise = Convert.ToInt16(txtExcercise.Text);
+
             patientRecord.ModifiedDate = DateTime.Now;            
 
             db.SubmitChanges();
@@ -415,12 +442,14 @@ namespace CKD
                     lblStage.Text = "5";
                 else if (dc >= 15 && dc <= 30)
                     lblStage.Text = "4";
-                else if(dc > 30 && dc <= 60)
+                else if (dc > 30 && dc <= 60)
                     lblStage.Text = "3";
                 else if (dc > 60 && dc <= 90)
                     lblStage.Text = "2";
-                else if (dc > 90)
+                else if (dc > 90 && dc < 100)
                     lblStage.Text = "1";
+                else if (dc >= 100)
+                    lblStage.Text = "0";
             }
         }
 
@@ -432,39 +461,39 @@ namespace CKD
             {
                 if (strGender == "1")
                 {
-                    if (dc < 0.7)
+                    if (dc < 0.72)
                     {
                         lblCreatinineCal.Text = "ต่ำ";
-                        lblCreatinine.ForeColor = Color.Red;
+                        lblCreatinineCal.ForeColor = Color.Red;
                     }
-                    else if (dc >= 0.7 && dc <= 1.3)
+                    else if (dc >= 0.72 && dc <= 1.18)
                     {
                         lblCreatinineCal.Text = "ปกติ";
-                        lblCreatinine.ForeColor = Color.Green;
+                        lblCreatinineCal.ForeColor = Color.Blue;
                     }
                     else
                     {
                         lblCreatinineCal.Text = "สูง";
-                        lblCreatinine.ForeColor = Color.Red;
+                        lblCreatinineCal.ForeColor = Color.Red;
                     }
                 }
                 //หญิง
                 else if (strGender == "2")
                 {
-                    if (dc < 0.6)
+                    if (dc < 0.55)
                     {
                         lblCreatinineCal.Text = "ต่ำ";
-                        lblCreatinine.ForeColor = Color.Red;
+                        lblCreatinineCal.ForeColor = Color.Red;
                     }
-                    else if (dc >= 0.6 && dc <= 1.1)
+                    else if (dc >= 0.55 && dc <= 1.02)
                     {
                         lblCreatinineCal.Text = "ปกติ";
-                        lblCreatinine.ForeColor = Color.Green;
+                        lblCreatinineCal.ForeColor = Color.Blue;
                     }
                     else
                     {
                         lblCreatinineCal.Text = "สูง";
-                        lblCreatinine.ForeColor = Color.Red;
+                        lblCreatinineCal.ForeColor = Color.Red;
                     }
                 }
             }
@@ -478,6 +507,31 @@ namespace CKD
             {
                 double BMIcal = Math.Round(dbWeight / Math.Pow((dbHeight / 100),2),2);
                 txtEst1.Text = BMIcal.ToString();
+                if(BMIcal < 18.5)
+                {
+                    lblBMI.Text = "น้ำหนักตำกว่าเกณฑ์";
+                    lblBMI.ForeColor = Color.Brown;
+                }
+                else if(BMIcal >= 18.5 && BMIcal <= 22.9)
+                {
+                    lblBMI.Text = "สมส่วน";
+                    lblBMI.ForeColor = Color.Green;
+                }
+                else if (BMIcal >= 23 && BMIcal <= 24.9)
+                {
+                    lblBMI.Text = "น้ำหนักเกิน";
+                    lblBMI.ForeColor = Color.Yellow;
+                }
+                else if (BMIcal >= 25 && BMIcal <= 29.9)
+                {
+                    lblBMI.Text = "โรคอ้วน";
+                    lblBMI.ForeColor = Color.Orange;
+                }
+                else if (BMIcal >= 30)
+                {
+                    lblBMI.Text = "โรคอ้วนอันตราย";
+                    lblBMI.ForeColor = Color.Red;
+                }
             }
         }
 
@@ -487,6 +541,41 @@ namespace CKD
             if (double.TryParse(txtEst1.Text.Trim(), out dbBMI))
             {
                 //if()
+            }
+        }
+
+        private void txtBarthelIndex_TextChanged(object sender, EventArgs e)
+        {
+            lblBarthelIndex.Text = BarthelIndexDetail;
+        }
+
+        private void txtKnowlege_TextChanged(object sender, EventArgs e)
+        {
+            int dc;
+            if (int.TryParse(txtKnowlege.Text.Trim(), out dc))
+            {
+                if (dc <= 2)
+                    lblKnowlege.Text = "น้อย";
+                else if (dc >= 3 && dc <= 4)
+                    lblKnowlege.Text = "พอใช้";
+                else if (dc >= 5)
+                    lblKnowlege.Text = "ดีมาก";
+            }
+        }
+
+        private void txtExcercise_TextChanged(object sender, EventArgs e)
+        {
+            int dc;
+            if (int.TryParse(txtExcercise.Text.Trim(), out dc))
+            {
+                if (dc == 0)
+                    lblExercise.Text = "ไม่ออกกำลังกาย";
+                else if (dc >= 1 && dc <= 2)
+                    lblExercise.Text = "ออกกำลังกายบางครั้ง";
+                else if (dc >= 3 && dc <= 6)
+                    lblExercise.Text = "ออกกำลังกายสม่ำเสมอ";
+                else if(dc >= 7)
+                    lblExercise.Text = "ออกกำลังกายทุกวัน";
             }
         }
     }
