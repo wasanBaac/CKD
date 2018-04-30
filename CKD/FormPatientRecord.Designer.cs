@@ -943,7 +943,7 @@
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.groupBox7.Location = new System.Drawing.Point(162, 631);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(257, 86);
+            this.groupBox7.Size = new System.Drawing.Size(199, 86);
             this.groupBox7.TabIndex = 44;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "ความรู้";
@@ -953,7 +953,7 @@
             this.txtKnowlege.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtKnowlege.BackColor = System.Drawing.Color.Aqua;
             this.txtKnowlege.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtKnowlege.Location = new System.Drawing.Point(16, 39);
+            this.txtKnowlege.Location = new System.Drawing.Point(17, 39);
             this.txtKnowlege.MaxLength = 250;
             this.txtKnowlege.Name = "txtKnowlege";
             this.txtKnowlege.Size = new System.Drawing.Size(61, 32);
@@ -966,9 +966,9 @@
             this.groupBox8.Controls.Add(this.lblExercise);
             this.groupBox8.Controls.Add(this.txtExcercise);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.groupBox8.Location = new System.Drawing.Point(457, 631);
+            this.groupBox8.Location = new System.Drawing.Point(413, 631);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(265, 86);
+            this.groupBox8.Size = new System.Drawing.Size(316, 86);
             this.groupBox8.TabIndex = 45;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "การออกกำลังกาย";
@@ -978,7 +978,7 @@
             this.txtExcercise.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtExcercise.BackColor = System.Drawing.Color.Aqua;
             this.txtExcercise.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtExcercise.Location = new System.Drawing.Point(16, 39);
+            this.txtExcercise.Location = new System.Drawing.Point(22, 39);
             this.txtExcercise.MaxLength = 250;
             this.txtExcercise.Name = "txtExcercise";
             this.txtExcercise.Size = new System.Drawing.Size(61, 32);
@@ -1001,6 +1001,7 @@
             // 
             this.lblBarthelIndex.AutoSize = true;
             this.lblBarthelIndex.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblBarthelIndex.ForeColor = System.Drawing.Color.Red;
             this.lblBarthelIndex.Location = new System.Drawing.Point(13, 39);
             this.lblBarthelIndex.Name = "lblBarthelIndex";
             this.lblBarthelIndex.Size = new System.Drawing.Size(17, 24);
@@ -1011,7 +1012,8 @@
             // 
             this.lblKnowlege.AutoSize = true;
             this.lblKnowlege.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblKnowlege.Location = new System.Drawing.Point(94, 45);
+            this.lblKnowlege.ForeColor = System.Drawing.Color.Red;
+            this.lblKnowlege.Location = new System.Drawing.Point(106, 46);
             this.lblKnowlege.Name = "lblKnowlege";
             this.lblKnowlege.Size = new System.Drawing.Size(17, 24);
             this.lblKnowlege.TabIndex = 38;
@@ -1021,7 +1023,8 @@
             // 
             this.lblExercise.AutoSize = true;
             this.lblExercise.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblExercise.Location = new System.Drawing.Point(93, 43);
+            this.lblExercise.ForeColor = System.Drawing.Color.Red;
+            this.lblExercise.Location = new System.Drawing.Point(89, 43);
             this.lblExercise.Name = "lblExercise";
             this.lblExercise.Size = new System.Drawing.Size(17, 24);
             this.lblExercise.TabIndex = 39;

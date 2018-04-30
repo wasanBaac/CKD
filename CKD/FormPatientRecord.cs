@@ -170,8 +170,8 @@ namespace CKD
                 txtEdema.Text = ptr.Edema;
                 cbtired.Checked = ptr.Tired.Value;
                 txtOther.Text = ptr.Other;
-                txtKnowlege.Text = ptr.Knowlege.Value.ToString();
-                txtExcercise.Text = ptr.excercise.Value.ToString();
+                txtKnowlege.Text = ptr.Knowlege.ToString();
+                txtExcercise.Text = ptr.excercise.ToString();
             }
         }
         private void lnklblBarthelIndex_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -184,148 +184,180 @@ namespace CKD
         {
             decimal dc;
             int _int;
-            if(!decimal.TryParse(txteGFR.Text.Trim(),out dc))
+            if (txteGFR.Text.Trim() != string.Empty)
             {
-                MessageBox.Show("eGFR ไม่ถูกต้อง");
-                txteGFR.Focus();
-                return true;
+                if (!decimal.TryParse(txteGFR.Text.Trim(), out dc))
+                {
+                    MessageBox.Show("eGFR ไม่ถูกต้อง");
+                    txteGFR.Focus();
+                    return true;
+                }
+                else if (Convert.ToDecimal(txteGFR.Text.Trim()) >= 100)
+                {
+                    MessageBox.Show("eGFRต้องไม่เกิน 99.99");
+                    txteGFR.Focus();
+                    return true;
+                }
             }
-            else if(Convert.ToDecimal(txteGFR.Text.Trim()) >= 100)
+            else if (txtCreatinine.Text.Trim() != string.Empty)
             {
-                MessageBox.Show("eGFRต้องไม่เกิน 99.99");
-                txteGFR.Focus();
-                return true;
+                if (!decimal.TryParse(txtCreatinine.Text.Trim(), out dc))
+                {
+                    MessageBox.Show("Creatinine ไม่ถูกต้อง");
+                    txtWeight.Focus();
+                    return true;
+                }
+                else if (Convert.ToDecimal(txtCreatinine.Text.Trim()) >= 1000)
+                {
+                    MessageBox.Show("Creatinine ต้องไม่เกิน 99.99");
+                    txtWeight.Focus();
+                    return true;
+                }
             }
-            else if (!decimal.TryParse(txtCreatinine.Text.Trim(), out dc))
+            else if (txtWeight.Text.Trim() != string.Empty)
             {
-                MessageBox.Show("Creatinine ไม่ถูกต้อง");
-                txtWeight.Focus();
-                return true;
+                if (!decimal.TryParse(txtWeight.Text.Trim(), out dc))
+                {
+                    MessageBox.Show("น้ำหนักไม่ถูกต้อง");
+                    txtWeight.Focus();
+                    return true;
+                }
+                else if (Convert.ToDecimal(txtWeight.Text.Trim()) >= 1000)
+                {
+                    MessageBox.Show("น้ำหนักต้องไม่เกิน 999.9");
+                    txtWeight.Focus();
+                    return true;
+                }
             }
-            else if (Convert.ToDecimal(txtCreatinine.Text.Trim()) >= 1000)
+            else if (txtHeight.Text.Trim() != string.Empty)
             {
-                MessageBox.Show("Creatinine ต้องไม่เกิน 99.99");
-                txtWeight.Focus();
-                return true;
+                if (!decimal.TryParse(txtHeight.Text.Trim(), out dc))
+                {
+                    MessageBox.Show("ส่วนสูงไม่ถูกต้อง");
+                    txtHeight.Focus();
+                    return true;
+                }
+                else if (Convert.ToDecimal(txtHeight.Text.Trim()) >= 1000)
+                {
+                    MessageBox.Show("ส่วนสูงต้องไม่เกิน 999.9");
+                    txtHeight.Focus();
+                    return true;
+                }
             }
-            else if (!decimal.TryParse(txtWeight.Text.Trim(), out dc))
+            else if (txtEst1.Text.Trim() != string.Empty)
             {
-                MessageBox.Show("น้ำหนักไม่ถูกต้อง");
-                txtWeight.Focus();
-                return true;
+                if (!decimal.TryParse(txtEst1.Text.Trim(), out dc))
+                {
+                    MessageBox.Show("ดัชนีมวลกล้ามเนื้อ(BMI)ไม่ถูกต้อง");
+                    txtEst1.Focus();
+                    return true;
+                }
+                else if (Convert.ToDecimal(txtEst1.Text.Trim()) >= 1000)
+                {
+                    MessageBox.Show("ดัชนีมวลกล้ามเนื้อ(BMI)ต้องไม่เกิน 999.99");
+                    txtEst1.Focus();
+                    return true;
+                }
             }
-            else if (Convert.ToDecimal(txtWeight.Text.Trim()) >= 1000)
+            else if (txtEst2.Text.Trim() != string.Empty)
             {
-                MessageBox.Show("น้ำหนักต้องไม่เกิน 999.9");
-                txtWeight.Focus();
-                return true;
+                if (!decimal.TryParse(txtEst2.Text.Trim(), out dc))
+                {
+                    MessageBox.Show("%ไขมันในร่างกายไม่ถูกต้อง");
+                    txtEst2.Focus();
+                    return true;
+                }
+                else if (Convert.ToDecimal(txtEst2.Text.Trim()) >= 1000)
+                {
+                    MessageBox.Show("%ไขมันในร่างกายต้องไม่เกิน 999.99");
+                    txtEst2.Focus();
+                    return true;
+                }
             }
-            else if (!decimal.TryParse(txtHeight.Text.Trim(), out dc))
+            else if (txtEst3.Text.Trim() != string.Empty)
             {
-                MessageBox.Show("ส่วนสูงไม่ถูกต้อง");
-                txtHeight.Focus();
-                return true;
+                if (!decimal.TryParse(txtEst3.Text.Trim(), out dc))
+                {
+                    MessageBox.Show("มวลกล้ามเนื้อทั้งตัวไม่ถูกต้อง");
+                    txtEst3.Focus();
+                    return true;
+                }
+                else if (Convert.ToDecimal(txtEst3.Text.Trim()) >= 1000)
+                {
+                    MessageBox.Show("มวลกล้ามเนื้อทั้งตัวต้องไม่เกิน 999.99");
+                    txtEst3.Focus();
+                    return true;
+                }
             }
-            else if (Convert.ToDecimal(txtHeight.Text.Trim()) >= 1000)
+            else if (txtEst4.Text.Trim() != string.Empty)
             {
-                MessageBox.Show("ส่วนสูงต้องไม่เกิน 999.9");
-                txtHeight.Focus();
-                return true;
+                if (!decimal.TryParse(txtEst4.Text.Trim(), out dc))
+                {
+                    MessageBox.Show("มวลกล้ามเนื้อแขนไม่ถูกต้อง");
+                    txtEst4.Focus();
+                    return true;
+                }
+                else if (Convert.ToDecimal(txtEst4.Text.Trim()) >= 1000)
+                {
+                    MessageBox.Show("มวลกล้ามเนื้อแขนต้องไม่เกิน 999.99");
+                    txtEst4.Focus();
+                    return true;
+                }
             }
-            else if(!decimal.TryParse(txtEst1.Text.Trim(), out dc))
+            else if (txtEst5.Text.Trim() != string.Empty)
             {
-                MessageBox.Show("ดัชนีมวลกล้ามเนื้อ(BMI)ไม่ถูกต้อง");
-                txtEst1.Focus();
-                return true;
+                if (!decimal.TryParse(txtEst5.Text.Trim(), out dc))
+                {
+                    MessageBox.Show("มวลกล้ามเนื้อขาไม่ถูกต้อง");
+                    txtEst5.Focus();
+                    return true;
+                }
+                else if (Convert.ToDecimal(txtEst5.Text.Trim()) >= 1000)
+                {
+                    MessageBox.Show("มวลกล้ามเนื้อขาต้องไม่เกิน 999.99");
+                    txtEst5.Focus();
+                    return true;
+                }
             }
-            else if (Convert.ToDecimal(txtEst1.Text.Trim()) >= 1000)
+            else if (txtEst6.Text.Trim() != string.Empty)
             {
-                MessageBox.Show("ดัชนีมวลกล้ามเนื้อ(BMI)ต้องไม่เกิน 999.99");
-                txtEst1.Focus();
-                return true;
+                if (!decimal.TryParse(txtEst6.Text.Trim(), out dc))
+                {
+                    MessageBox.Show("6MWTไม่ถูกต้อง");
+                    txtEst6.Focus();
+                    return true;
+                }
+                else if (Convert.ToDecimal(txtEst6.Text.Trim()) >= 1000)
+                {
+                    MessageBox.Show("6MWTต้องไม่เกิน 999.99");
+                    txtEst6.Focus();
+                    return true;
+                }
             }
+            else if (txtKnowlege.Text.Trim() != string.Empty)
+            {
+                if (!int.TryParse(txtKnowlege.Text.Trim(), out _int))
+                {
+                    MessageBox.Show("คะแนนความรู้ ไม่ถูกต้อง");
+                    txtKnowlege.Focus();
+                    return true;
+                }
+            }
+            else if (txtExcercise.Text.Trim() != string.Empty)
+            {
+                if (!int.TryParse(txtExcercise.Text.Trim(), out _int))
+                {
+                    MessageBox.Show("คะแนนการออกกำลังกาย ไม่ถูกต้อง");
+                    txtExcercise.Focus();
+                    return true;
+                }
 
-            else if (!decimal.TryParse(txtEst2.Text.Trim(), out dc))
-            {
-                MessageBox.Show("%ไขมันในร่างกายไม่ถูกต้อง");
-                txtEst2.Focus();
-                return true;
-            }
-            else if (Convert.ToDecimal(txtEst2.Text.Trim()) >= 1000)
-            {
-                MessageBox.Show("%ไขมันในร่างกายต้องไม่เกิน 999.99");
-                txtEst2.Focus();
-                return true;
-            }
-
-            else if (!decimal.TryParse(txtEst3.Text.Trim(), out dc))
-            {
-                MessageBox.Show("มวลกล้ามเนื้อทั้งตัวไม่ถูกต้อง");
-                txtEst3.Focus();
-                return true;
-            }
-            else if (Convert.ToDecimal(txtEst3.Text.Trim()) >= 1000)
-            {
-                MessageBox.Show("มวลกล้ามเนื้อทั้งตัวต้องไม่เกิน 999.99");
-                txtEst3.Focus();
-                return true;
-            }
-
-            else if (!decimal.TryParse(txtEst4.Text.Trim(), out dc))
-            {
-                MessageBox.Show("มวลกล้ามเนื้อแขนไม่ถูกต้อง");
-                txtEst4.Focus();
-                return true;
-            }
-            else if (Convert.ToDecimal(txtEst4.Text.Trim()) >= 1000)
-            {
-                MessageBox.Show("มวลกล้ามเนื้อแขนต้องไม่เกิน 999.99");
-                txtEst4.Focus();
-                return true;
-            }
-
-            else if (!decimal.TryParse(txtEst5.Text.Trim(), out dc))
-            {
-                MessageBox.Show("มวลกล้ามเนื้อขาไม่ถูกต้อง");
-                txtEst5.Focus();
-                return true;
-            }
-            else if (Convert.ToDecimal(txtEst5.Text.Trim()) >= 1000)
-            {
-                MessageBox.Show("มวลกล้ามเนื้อขาต้องไม่เกิน 999.99");
-                txtEst5.Focus();
-                return true;
-            }
-
-            else if (!decimal.TryParse(txtEst6.Text.Trim(), out dc))
-            {
-                MessageBox.Show("6MWTไม่ถูกต้อง");
-                txtEst6.Focus();
-                return true;
-            }
-            else if (Convert.ToDecimal(txtEst6.Text.Trim()) >= 1000)
-            {
-                MessageBox.Show("6MWTต้องไม่เกิน 999.99");
-                txtEst6.Focus();
-                return true;
-            }
-            else if (!int.TryParse(txtKnowlege.Text.Trim(), out _int))
-            {
-                MessageBox.Show("คะแนนความรู้ ไม่ถูกต้อง");
-                txtKnowlege.Focus();
-                return true;
-            }
-            else if (!int.TryParse(txtExcercise.Text.Trim(), out _int))
-            {
-                MessageBox.Show("คะแนนการออกกำลังกาย ไม่ถูกต้อง");
-                txtExcercise.Focus();
-                return true;
-            }
-            else if (Convert.ToInt16(txtExcercise.Text.Trim()) <0 || Convert.ToInt16(txtExcercise.Text.Trim()) > 7)
-            {
-                MessageBox.Show("คะแนนการออกกำลังกาย ไม่ถูกต้อง");
-                txtExcercise.Focus();
-                return true;
+                else if (Convert.ToInt16(txtExcercise.Text.Trim()) < 0 || Convert.ToInt16(txtExcercise.Text.Trim()) > 7)
+                {
+                    MessageBox.Show("คะแนนการออกกำลังกาย ไม่ถูกต้อง");
+                    txtExcercise.Focus();
+                    return true;
+                }
             }
             return false;
         }
@@ -349,10 +381,14 @@ namespace CKD
 
             patientRecord.HN = HN;
             patientRecord.recordDate = recordDate.Value;
-            patientRecord.eGFR = Convert.ToDecimal(txteGFR.Text);
-            patientRecord.Creatinine = Convert.ToDecimal(txtCreatinine.Text);
-            patientRecord.weight = Convert.ToDecimal(txtWeight.Text);
-            patientRecord.height = Convert.ToDecimal(txtHeight.Text);
+            if(txteGFR.Text.Trim() != string.Empty)
+                patientRecord.eGFR = Convert.ToDecimal(txteGFR.Text);
+            if(txtCreatinine.Text.Trim() != string.Empty)
+                patientRecord.Creatinine = Convert.ToDecimal(txtCreatinine.Text);
+            if(txtWeight.Text.Trim() != string.Empty)
+                patientRecord.weight = Convert.ToDecimal(txtWeight.Text);
+            if(txtHeight.Text.Trim() != string.Empty)
+                patientRecord.height = Convert.ToDecimal(txtHeight.Text);
             //การได้รับการรักษา
             patientRecord.treatNone = cbTreatNone.Checked;
             patientRecord.treatBelly = cbTreatBelly.Checked;
@@ -371,12 +407,18 @@ namespace CKD
             patientRecord.programEx1 = cbProgrameEx1.Checked;
             patientRecord.programEx2 = cbProgrameEx2.Checked;
             //การประเมิน
-            patientRecord.estimate1 = Convert.ToDecimal(txtEst1.Text);
-            patientRecord.estimate2 = Convert.ToDecimal(txtEst2.Text);
-            patientRecord.estimate3 = Convert.ToDecimal(txtEst3.Text);
-            patientRecord.estimate4 = Convert.ToDecimal(txtEst4.Text);
-            patientRecord.estimate5 = Convert.ToDecimal(txtEst5.Text);
-            patientRecord.estimate6 = Convert.ToDecimal(txtEst6.Text);
+            if(txtEst1.Text.Trim() != string.Empty)
+                patientRecord.estimate1 = Convert.ToDecimal(txtEst1.Text);
+            if (txtEst2.Text.Trim() != string.Empty)
+                patientRecord.estimate2 = Convert.ToDecimal(txtEst2.Text);
+            if (txtEst3.Text.Trim() != string.Empty)
+                patientRecord.estimate3 = Convert.ToDecimal(txtEst3.Text);
+            if (txtEst4.Text.Trim() != string.Empty)
+                patientRecord.estimate4 = Convert.ToDecimal(txtEst4.Text);
+            if (txtEst5.Text.Trim() != string.Empty)
+                patientRecord.estimate5 = Convert.ToDecimal(txtEst5.Text);
+            if (txtEst6.Text.Trim() != string.Empty)
+                patientRecord.estimate6 = Convert.ToDecimal(txtEst6.Text);
             //Barthel Index
             patientRecord.BarthelIndex = BarthelIndexValue;
             //Transfer
@@ -398,36 +440,41 @@ namespace CKD
             patientRecord.Edema = txtEdema.Text.Trim();
             patientRecord.Other = txtOther.Text.Trim();
 
-            patientRecord.Knowlege = Convert.ToInt16(txtKnowlege.Text);
-            patientRecord.excercise = Convert.ToInt16(txtExcercise.Text);
+            if (txtKnowlege.Text.Trim() != string.Empty)
+                patientRecord.Knowlege = Convert.ToInt16(txtKnowlege.Text);
+            if (txtExcercise.Text.Trim() != string.Empty)
+                patientRecord.excercise = Convert.ToInt16(txtExcercise.Text);
 
             patientRecord.ModifiedDate = DateTime.Now;            
 
             db.SubmitChanges();
 
-            PatientRecordDetail barThel = (from tb in db.PatientRecordDetails
-                                           where tb.recordID == patientRecord.recordID
-            select tb).SingleOrDefault();
-            if(barThel == null)
+            if (barthelRecord != null)
             {
-                barThel = new PatientRecordDetail();
-                db.PatientRecordDetails.InsertOnSubmit(barThel);
-                barThel.CreateDate = DateTime.Now;
-            }
-            barThel.recordID = patientRecord.recordID;
-            barThel.Feeding = barthelRecord.Feeding;
-            barThel.Transfer = barthelRecord.Transfer;
-            barThel.Grooming = barthelRecord.Grooming;
-            barThel.Toilet__ = barthelRecord.Toilet__;
-            barThel.Bathing = barthelRecord.Bathing;
-            barThel.Mobility = barthelRecord.Mobility;
-            barThel.Stair = barthelRecord.Stair;
-            barThel.Dressing = barthelRecord.Dressing;
-            barThel.Bowels = barthelRecord.Bowels;
-            barThel.Bladder = barthelRecord.Bladder;
-            barThel.ModifiedDate = DateTime.Now;
+                PatientRecordDetail barThel = (from tb in db.PatientRecordDetails
+                                               where tb.recordID == patientRecord.recordID
+                                               select tb).SingleOrDefault();
+                if (barThel == null)
+                {
+                    barThel = new PatientRecordDetail();
+                    db.PatientRecordDetails.InsertOnSubmit(barThel);
+                    barThel.CreateDate = DateTime.Now;
+                }
+                barThel.recordID = patientRecord.recordID;
+                barThel.Feeding = barthelRecord.Feeding;
+                barThel.Transfer = barthelRecord.Transfer;
+                barThel.Grooming = barthelRecord.Grooming;
+                barThel.Toilet__ = barthelRecord.Toilet__;
+                barThel.Bathing = barthelRecord.Bathing;
+                barThel.Mobility = barthelRecord.Mobility;
+                barThel.Stair = barthelRecord.Stair;
+                barThel.Dressing = barthelRecord.Dressing;
+                barThel.Bowels = barthelRecord.Bowels;
+                barThel.Bladder = barthelRecord.Bladder;
+                barThel.ModifiedDate = DateTime.Now;
 
-            db.SubmitChanges();
+                db.SubmitChanges();
+            }
             MessageBox.Show("บันทึกเสร็จสิ้น");
             this.Close();
             

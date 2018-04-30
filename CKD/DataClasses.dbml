@@ -86,28 +86,6 @@
       <Column Name="detail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.Patient" Member="Patients">
-    <Type Name="Patient">
-      <Column Name="HN" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Number" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Gender" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
-      <Column Name="TitleID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="LastName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="BirthDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="DistrictID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="StatusID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="DiseaseDM" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="DiseaseHT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="DiseaseFat" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="DiseaseHeart" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="DiseaseStroke" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="DiseaseTB" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="DiseaseARV" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="DiseaseOther" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="DiseaseReject" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.PatientRecord" Member="PatientRecords">
     <Type Name="PatientRecord">
       <Column Name="recordID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -155,6 +133,29 @@
       <Column Name="excercise" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Patient" Member="Patients">
+    <Type Name="Patient">
+      <Column Name="PatientID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HN" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Number" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="TitleID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BirthDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DistrictID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StatusID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DiseaseDM" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DiseaseHT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DiseaseFat" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DiseaseHeart" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DiseaseStroke" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DiseaseTB" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DiseaseARV" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DiseaseOther" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DiseaseReject" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

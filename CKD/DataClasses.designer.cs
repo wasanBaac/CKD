@@ -66,12 +66,12 @@ namespace CKD
     partial void InsertrefBMI(refBMI instance);
     partial void UpdaterefBMI(refBMI instance);
     partial void DeleterefBMI(refBMI instance);
-    partial void InsertPatient(Patient instance);
-    partial void UpdatePatient(Patient instance);
-    partial void DeletePatient(Patient instance);
     partial void InsertPatientRecord(PatientRecord instance);
     partial void UpdatePatientRecord(PatientRecord instance);
     partial void DeletePatientRecord(PatientRecord instance);
+    partial void InsertPatient(Patient instance);
+    partial void UpdatePatient(Patient instance);
+    partial void DeletePatient(Patient instance);
     #endregion
 		
 		public DataClassesDataContext() : 
@@ -200,19 +200,19 @@ namespace CKD
 			}
 		}
 		
-		public System.Data.Linq.Table<Patient> Patients
-		{
-			get
-			{
-				return this.GetTable<Patient>();
-			}
-		}
-		
 		public System.Data.Linq.Table<PatientRecord> PatientRecords
 		{
 			get
 			{
 				return this.GetTable<PatientRecord>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Patient> Patients
+		{
+			get
+			{
+				return this.GetTable<Patient>();
 			}
 		}
 	}
@@ -1585,476 +1585,6 @@ namespace CKD
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Patient")]
-	public partial class Patient : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private long _HN;
-		
-		private System.Nullable<int> _Number;
-		
-		private string _Gender;
-		
-		private System.Nullable<int> _TitleID;
-		
-		private string _Name;
-		
-		private string _LastName;
-		
-		private System.Nullable<System.DateTime> _BirthDate;
-		
-		private System.Nullable<int> _DistrictID;
-		
-		private System.Nullable<int> _StatusID;
-		
-		private System.Nullable<bool> _DiseaseDM;
-		
-		private System.Nullable<bool> _DiseaseHT;
-		
-		private System.Nullable<bool> _DiseaseFat;
-		
-		private System.Nullable<bool> _DiseaseHeart;
-		
-		private System.Nullable<bool> _DiseaseStroke;
-		
-		private System.Nullable<bool> _DiseaseTB;
-		
-		private System.Nullable<bool> _DiseaseARV;
-		
-		private System.Nullable<bool> _DiseaseOther;
-		
-		private System.Nullable<bool> _DiseaseReject;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnHNChanging(long value);
-    partial void OnHNChanged();
-    partial void OnNumberChanging(System.Nullable<int> value);
-    partial void OnNumberChanged();
-    partial void OnGenderChanging(string value);
-    partial void OnGenderChanged();
-    partial void OnTitleIDChanging(System.Nullable<int> value);
-    partial void OnTitleIDChanged();
-    partial void OnNameChanging(string value);
-    partial void OnNameChanged();
-    partial void OnLastNameChanging(string value);
-    partial void OnLastNameChanged();
-    partial void OnBirthDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnBirthDateChanged();
-    partial void OnDistrictIDChanging(System.Nullable<int> value);
-    partial void OnDistrictIDChanged();
-    partial void OnStatusIDChanging(System.Nullable<int> value);
-    partial void OnStatusIDChanged();
-    partial void OnDiseaseDMChanging(System.Nullable<bool> value);
-    partial void OnDiseaseDMChanged();
-    partial void OnDiseaseHTChanging(System.Nullable<bool> value);
-    partial void OnDiseaseHTChanged();
-    partial void OnDiseaseFatChanging(System.Nullable<bool> value);
-    partial void OnDiseaseFatChanged();
-    partial void OnDiseaseHeartChanging(System.Nullable<bool> value);
-    partial void OnDiseaseHeartChanged();
-    partial void OnDiseaseStrokeChanging(System.Nullable<bool> value);
-    partial void OnDiseaseStrokeChanged();
-    partial void OnDiseaseTBChanging(System.Nullable<bool> value);
-    partial void OnDiseaseTBChanged();
-    partial void OnDiseaseARVChanging(System.Nullable<bool> value);
-    partial void OnDiseaseARVChanged();
-    partial void OnDiseaseOtherChanging(System.Nullable<bool> value);
-    partial void OnDiseaseOtherChanged();
-    partial void OnDiseaseRejectChanging(System.Nullable<bool> value);
-    partial void OnDiseaseRejectChanged();
-    #endregion
-		
-		public Patient()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HN", DbType="BigInt NOT NULL", IsPrimaryKey=true)]
-		public long HN
-		{
-			get
-			{
-				return this._HN;
-			}
-			set
-			{
-				if ((this._HN != value))
-				{
-					this.OnHNChanging(value);
-					this.SendPropertyChanging();
-					this._HN = value;
-					this.SendPropertyChanged("HN");
-					this.OnHNChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Number", DbType="Int")]
-		public System.Nullable<int> Number
-		{
-			get
-			{
-				return this._Number;
-			}
-			set
-			{
-				if ((this._Number != value))
-				{
-					this.OnNumberChanging(value);
-					this.SendPropertyChanging();
-					this._Number = value;
-					this.SendPropertyChanged("Number");
-					this.OnNumberChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Gender", DbType="NVarChar(1)")]
-		public string Gender
-		{
-			get
-			{
-				return this._Gender;
-			}
-			set
-			{
-				if ((this._Gender != value))
-				{
-					this.OnGenderChanging(value);
-					this.SendPropertyChanging();
-					this._Gender = value;
-					this.SendPropertyChanged("Gender");
-					this.OnGenderChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TitleID", DbType="Int")]
-		public System.Nullable<int> TitleID
-		{
-			get
-			{
-				return this._TitleID;
-			}
-			set
-			{
-				if ((this._TitleID != value))
-				{
-					this.OnTitleIDChanging(value);
-					this.SendPropertyChanging();
-					this._TitleID = value;
-					this.SendPropertyChanged("TitleID");
-					this.OnTitleIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Name", DbType="NVarChar(50)")]
-		public string Name
-		{
-			get
-			{
-				return this._Name;
-			}
-			set
-			{
-				if ((this._Name != value))
-				{
-					this.OnNameChanging(value);
-					this.SendPropertyChanging();
-					this._Name = value;
-					this.SendPropertyChanged("Name");
-					this.OnNameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LastName", DbType="NVarChar(50)")]
-		public string LastName
-		{
-			get
-			{
-				return this._LastName;
-			}
-			set
-			{
-				if ((this._LastName != value))
-				{
-					this.OnLastNameChanging(value);
-					this.SendPropertyChanging();
-					this._LastName = value;
-					this.SendPropertyChanged("LastName");
-					this.OnLastNameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BirthDate", DbType="Date")]
-		public System.Nullable<System.DateTime> BirthDate
-		{
-			get
-			{
-				return this._BirthDate;
-			}
-			set
-			{
-				if ((this._BirthDate != value))
-				{
-					this.OnBirthDateChanging(value);
-					this.SendPropertyChanging();
-					this._BirthDate = value;
-					this.SendPropertyChanged("BirthDate");
-					this.OnBirthDateChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DistrictID", DbType="Int")]
-		public System.Nullable<int> DistrictID
-		{
-			get
-			{
-				return this._DistrictID;
-			}
-			set
-			{
-				if ((this._DistrictID != value))
-				{
-					this.OnDistrictIDChanging(value);
-					this.SendPropertyChanging();
-					this._DistrictID = value;
-					this.SendPropertyChanged("DistrictID");
-					this.OnDistrictIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StatusID", DbType="Int")]
-		public System.Nullable<int> StatusID
-		{
-			get
-			{
-				return this._StatusID;
-			}
-			set
-			{
-				if ((this._StatusID != value))
-				{
-					this.OnStatusIDChanging(value);
-					this.SendPropertyChanging();
-					this._StatusID = value;
-					this.SendPropertyChanged("StatusID");
-					this.OnStatusIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiseaseDM", DbType="Bit")]
-		public System.Nullable<bool> DiseaseDM
-		{
-			get
-			{
-				return this._DiseaseDM;
-			}
-			set
-			{
-				if ((this._DiseaseDM != value))
-				{
-					this.OnDiseaseDMChanging(value);
-					this.SendPropertyChanging();
-					this._DiseaseDM = value;
-					this.SendPropertyChanged("DiseaseDM");
-					this.OnDiseaseDMChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiseaseHT", DbType="Bit")]
-		public System.Nullable<bool> DiseaseHT
-		{
-			get
-			{
-				return this._DiseaseHT;
-			}
-			set
-			{
-				if ((this._DiseaseHT != value))
-				{
-					this.OnDiseaseHTChanging(value);
-					this.SendPropertyChanging();
-					this._DiseaseHT = value;
-					this.SendPropertyChanged("DiseaseHT");
-					this.OnDiseaseHTChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiseaseFat", DbType="Bit")]
-		public System.Nullable<bool> DiseaseFat
-		{
-			get
-			{
-				return this._DiseaseFat;
-			}
-			set
-			{
-				if ((this._DiseaseFat != value))
-				{
-					this.OnDiseaseFatChanging(value);
-					this.SendPropertyChanging();
-					this._DiseaseFat = value;
-					this.SendPropertyChanged("DiseaseFat");
-					this.OnDiseaseFatChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiseaseHeart", DbType="Bit")]
-		public System.Nullable<bool> DiseaseHeart
-		{
-			get
-			{
-				return this._DiseaseHeart;
-			}
-			set
-			{
-				if ((this._DiseaseHeart != value))
-				{
-					this.OnDiseaseHeartChanging(value);
-					this.SendPropertyChanging();
-					this._DiseaseHeart = value;
-					this.SendPropertyChanged("DiseaseHeart");
-					this.OnDiseaseHeartChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiseaseStroke", DbType="Bit")]
-		public System.Nullable<bool> DiseaseStroke
-		{
-			get
-			{
-				return this._DiseaseStroke;
-			}
-			set
-			{
-				if ((this._DiseaseStroke != value))
-				{
-					this.OnDiseaseStrokeChanging(value);
-					this.SendPropertyChanging();
-					this._DiseaseStroke = value;
-					this.SendPropertyChanged("DiseaseStroke");
-					this.OnDiseaseStrokeChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiseaseTB", DbType="Bit")]
-		public System.Nullable<bool> DiseaseTB
-		{
-			get
-			{
-				return this._DiseaseTB;
-			}
-			set
-			{
-				if ((this._DiseaseTB != value))
-				{
-					this.OnDiseaseTBChanging(value);
-					this.SendPropertyChanging();
-					this._DiseaseTB = value;
-					this.SendPropertyChanged("DiseaseTB");
-					this.OnDiseaseTBChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiseaseARV", DbType="Bit")]
-		public System.Nullable<bool> DiseaseARV
-		{
-			get
-			{
-				return this._DiseaseARV;
-			}
-			set
-			{
-				if ((this._DiseaseARV != value))
-				{
-					this.OnDiseaseARVChanging(value);
-					this.SendPropertyChanging();
-					this._DiseaseARV = value;
-					this.SendPropertyChanged("DiseaseARV");
-					this.OnDiseaseARVChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiseaseOther", DbType="Bit")]
-		public System.Nullable<bool> DiseaseOther
-		{
-			get
-			{
-				return this._DiseaseOther;
-			}
-			set
-			{
-				if ((this._DiseaseOther != value))
-				{
-					this.OnDiseaseOtherChanging(value);
-					this.SendPropertyChanging();
-					this._DiseaseOther = value;
-					this.SendPropertyChanged("DiseaseOther");
-					this.OnDiseaseOtherChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiseaseReject", DbType="Bit")]
-		public System.Nullable<bool> DiseaseReject
-		{
-			get
-			{
-				return this._DiseaseReject;
-			}
-			set
-			{
-				if ((this._DiseaseReject != value))
-				{
-					this.OnDiseaseRejectChanging(value);
-					this.SendPropertyChanging();
-					this._DiseaseReject = value;
-					this.SendPropertyChanged("DiseaseReject");
-					this.OnDiseaseRejectChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.PatientRecord")]
 	public partial class PatientRecord : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -3148,6 +2678,500 @@ namespace CKD
 					this._ModifiedDate = value;
 					this.SendPropertyChanged("ModifiedDate");
 					this.OnModifiedDateChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Patient")]
+	public partial class Patient : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _PatientID;
+		
+		private long _HN;
+		
+		private System.Nullable<int> _Number;
+		
+		private string _Gender;
+		
+		private System.Nullable<int> _TitleID;
+		
+		private string _Name;
+		
+		private string _LastName;
+		
+		private System.Nullable<System.DateTime> _BirthDate;
+		
+		private System.Nullable<int> _DistrictID;
+		
+		private System.Nullable<int> _StatusID;
+		
+		private System.Nullable<bool> _DiseaseDM;
+		
+		private System.Nullable<bool> _DiseaseHT;
+		
+		private System.Nullable<bool> _DiseaseFat;
+		
+		private System.Nullable<bool> _DiseaseHeart;
+		
+		private System.Nullable<bool> _DiseaseStroke;
+		
+		private System.Nullable<bool> _DiseaseTB;
+		
+		private System.Nullable<bool> _DiseaseARV;
+		
+		private System.Nullable<bool> _DiseaseOther;
+		
+		private System.Nullable<bool> _DiseaseReject;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnPatientIDChanging(int value);
+    partial void OnPatientIDChanged();
+    partial void OnHNChanging(long value);
+    partial void OnHNChanged();
+    partial void OnNumberChanging(System.Nullable<int> value);
+    partial void OnNumberChanged();
+    partial void OnGenderChanging(string value);
+    partial void OnGenderChanged();
+    partial void OnTitleIDChanging(System.Nullable<int> value);
+    partial void OnTitleIDChanged();
+    partial void OnNameChanging(string value);
+    partial void OnNameChanged();
+    partial void OnLastNameChanging(string value);
+    partial void OnLastNameChanged();
+    partial void OnBirthDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnBirthDateChanged();
+    partial void OnDistrictIDChanging(System.Nullable<int> value);
+    partial void OnDistrictIDChanged();
+    partial void OnStatusIDChanging(System.Nullable<int> value);
+    partial void OnStatusIDChanged();
+    partial void OnDiseaseDMChanging(System.Nullable<bool> value);
+    partial void OnDiseaseDMChanged();
+    partial void OnDiseaseHTChanging(System.Nullable<bool> value);
+    partial void OnDiseaseHTChanged();
+    partial void OnDiseaseFatChanging(System.Nullable<bool> value);
+    partial void OnDiseaseFatChanged();
+    partial void OnDiseaseHeartChanging(System.Nullable<bool> value);
+    partial void OnDiseaseHeartChanged();
+    partial void OnDiseaseStrokeChanging(System.Nullable<bool> value);
+    partial void OnDiseaseStrokeChanged();
+    partial void OnDiseaseTBChanging(System.Nullable<bool> value);
+    partial void OnDiseaseTBChanged();
+    partial void OnDiseaseARVChanging(System.Nullable<bool> value);
+    partial void OnDiseaseARVChanged();
+    partial void OnDiseaseOtherChanging(System.Nullable<bool> value);
+    partial void OnDiseaseOtherChanged();
+    partial void OnDiseaseRejectChanging(System.Nullable<bool> value);
+    partial void OnDiseaseRejectChanged();
+    #endregion
+		
+		public Patient()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PatientID", AutoSync=AutoSync.Always, DbType="Int NOT NULL IDENTITY", IsDbGenerated=true)]
+		public int PatientID
+		{
+			get
+			{
+				return this._PatientID;
+			}
+			set
+			{
+				if ((this._PatientID != value))
+				{
+					this.OnPatientIDChanging(value);
+					this.SendPropertyChanging();
+					this._PatientID = value;
+					this.SendPropertyChanged("PatientID");
+					this.OnPatientIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HN", DbType="BigInt NOT NULL", IsPrimaryKey=true)]
+		public long HN
+		{
+			get
+			{
+				return this._HN;
+			}
+			set
+			{
+				if ((this._HN != value))
+				{
+					this.OnHNChanging(value);
+					this.SendPropertyChanging();
+					this._HN = value;
+					this.SendPropertyChanged("HN");
+					this.OnHNChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Number", DbType="Int")]
+		public System.Nullable<int> Number
+		{
+			get
+			{
+				return this._Number;
+			}
+			set
+			{
+				if ((this._Number != value))
+				{
+					this.OnNumberChanging(value);
+					this.SendPropertyChanging();
+					this._Number = value;
+					this.SendPropertyChanged("Number");
+					this.OnNumberChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Gender", DbType="NVarChar(1)")]
+		public string Gender
+		{
+			get
+			{
+				return this._Gender;
+			}
+			set
+			{
+				if ((this._Gender != value))
+				{
+					this.OnGenderChanging(value);
+					this.SendPropertyChanging();
+					this._Gender = value;
+					this.SendPropertyChanged("Gender");
+					this.OnGenderChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TitleID", DbType="Int")]
+		public System.Nullable<int> TitleID
+		{
+			get
+			{
+				return this._TitleID;
+			}
+			set
+			{
+				if ((this._TitleID != value))
+				{
+					this.OnTitleIDChanging(value);
+					this.SendPropertyChanging();
+					this._TitleID = value;
+					this.SendPropertyChanged("TitleID");
+					this.OnTitleIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Name", DbType="NVarChar(50)")]
+		public string Name
+		{
+			get
+			{
+				return this._Name;
+			}
+			set
+			{
+				if ((this._Name != value))
+				{
+					this.OnNameChanging(value);
+					this.SendPropertyChanging();
+					this._Name = value;
+					this.SendPropertyChanged("Name");
+					this.OnNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LastName", DbType="NVarChar(50)")]
+		public string LastName
+		{
+			get
+			{
+				return this._LastName;
+			}
+			set
+			{
+				if ((this._LastName != value))
+				{
+					this.OnLastNameChanging(value);
+					this.SendPropertyChanging();
+					this._LastName = value;
+					this.SendPropertyChanged("LastName");
+					this.OnLastNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BirthDate", DbType="Date")]
+		public System.Nullable<System.DateTime> BirthDate
+		{
+			get
+			{
+				return this._BirthDate;
+			}
+			set
+			{
+				if ((this._BirthDate != value))
+				{
+					this.OnBirthDateChanging(value);
+					this.SendPropertyChanging();
+					this._BirthDate = value;
+					this.SendPropertyChanged("BirthDate");
+					this.OnBirthDateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DistrictID", DbType="Int")]
+		public System.Nullable<int> DistrictID
+		{
+			get
+			{
+				return this._DistrictID;
+			}
+			set
+			{
+				if ((this._DistrictID != value))
+				{
+					this.OnDistrictIDChanging(value);
+					this.SendPropertyChanging();
+					this._DistrictID = value;
+					this.SendPropertyChanged("DistrictID");
+					this.OnDistrictIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StatusID", DbType="Int")]
+		public System.Nullable<int> StatusID
+		{
+			get
+			{
+				return this._StatusID;
+			}
+			set
+			{
+				if ((this._StatusID != value))
+				{
+					this.OnStatusIDChanging(value);
+					this.SendPropertyChanging();
+					this._StatusID = value;
+					this.SendPropertyChanged("StatusID");
+					this.OnStatusIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiseaseDM", DbType="Bit")]
+		public System.Nullable<bool> DiseaseDM
+		{
+			get
+			{
+				return this._DiseaseDM;
+			}
+			set
+			{
+				if ((this._DiseaseDM != value))
+				{
+					this.OnDiseaseDMChanging(value);
+					this.SendPropertyChanging();
+					this._DiseaseDM = value;
+					this.SendPropertyChanged("DiseaseDM");
+					this.OnDiseaseDMChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiseaseHT", DbType="Bit")]
+		public System.Nullable<bool> DiseaseHT
+		{
+			get
+			{
+				return this._DiseaseHT;
+			}
+			set
+			{
+				if ((this._DiseaseHT != value))
+				{
+					this.OnDiseaseHTChanging(value);
+					this.SendPropertyChanging();
+					this._DiseaseHT = value;
+					this.SendPropertyChanged("DiseaseHT");
+					this.OnDiseaseHTChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiseaseFat", DbType="Bit")]
+		public System.Nullable<bool> DiseaseFat
+		{
+			get
+			{
+				return this._DiseaseFat;
+			}
+			set
+			{
+				if ((this._DiseaseFat != value))
+				{
+					this.OnDiseaseFatChanging(value);
+					this.SendPropertyChanging();
+					this._DiseaseFat = value;
+					this.SendPropertyChanged("DiseaseFat");
+					this.OnDiseaseFatChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiseaseHeart", DbType="Bit")]
+		public System.Nullable<bool> DiseaseHeart
+		{
+			get
+			{
+				return this._DiseaseHeart;
+			}
+			set
+			{
+				if ((this._DiseaseHeart != value))
+				{
+					this.OnDiseaseHeartChanging(value);
+					this.SendPropertyChanging();
+					this._DiseaseHeart = value;
+					this.SendPropertyChanged("DiseaseHeart");
+					this.OnDiseaseHeartChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiseaseStroke", DbType="Bit")]
+		public System.Nullable<bool> DiseaseStroke
+		{
+			get
+			{
+				return this._DiseaseStroke;
+			}
+			set
+			{
+				if ((this._DiseaseStroke != value))
+				{
+					this.OnDiseaseStrokeChanging(value);
+					this.SendPropertyChanging();
+					this._DiseaseStroke = value;
+					this.SendPropertyChanged("DiseaseStroke");
+					this.OnDiseaseStrokeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiseaseTB", DbType="Bit")]
+		public System.Nullable<bool> DiseaseTB
+		{
+			get
+			{
+				return this._DiseaseTB;
+			}
+			set
+			{
+				if ((this._DiseaseTB != value))
+				{
+					this.OnDiseaseTBChanging(value);
+					this.SendPropertyChanging();
+					this._DiseaseTB = value;
+					this.SendPropertyChanged("DiseaseTB");
+					this.OnDiseaseTBChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiseaseARV", DbType="Bit")]
+		public System.Nullable<bool> DiseaseARV
+		{
+			get
+			{
+				return this._DiseaseARV;
+			}
+			set
+			{
+				if ((this._DiseaseARV != value))
+				{
+					this.OnDiseaseARVChanging(value);
+					this.SendPropertyChanging();
+					this._DiseaseARV = value;
+					this.SendPropertyChanged("DiseaseARV");
+					this.OnDiseaseARVChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiseaseOther", DbType="Bit")]
+		public System.Nullable<bool> DiseaseOther
+		{
+			get
+			{
+				return this._DiseaseOther;
+			}
+			set
+			{
+				if ((this._DiseaseOther != value))
+				{
+					this.OnDiseaseOtherChanging(value);
+					this.SendPropertyChanging();
+					this._DiseaseOther = value;
+					this.SendPropertyChanged("DiseaseOther");
+					this.OnDiseaseOtherChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiseaseReject", DbType="Bit")]
+		public System.Nullable<bool> DiseaseReject
+		{
+			get
+			{
+				return this._DiseaseReject;
+			}
+			set
+			{
+				if ((this._DiseaseReject != value))
+				{
+					this.OnDiseaseRejectChanging(value);
+					this.SendPropertyChanging();
+					this._DiseaseReject = value;
+					this.SendPropertyChanged("DiseaseReject");
+					this.OnDiseaseRejectChanged();
 				}
 			}
 		}
