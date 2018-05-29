@@ -47,6 +47,8 @@
             this.lbltitle = new System.Windows.Forms.Label();
             this.cbTitle = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbDARV = new System.Windows.Forms.CheckBox();
+            this.cbDTB = new System.Windows.Forms.CheckBox();
             this.cbDReject = new System.Windows.Forms.CheckBox();
             this.cbDOther = new System.Windows.Forms.CheckBox();
             this.cbDStroke = new System.Windows.Forms.CheckBox();
@@ -61,8 +63,6 @@
             this.clmBtnEdit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnAddrecordDetail = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.cbDTB = new System.Windows.Forms.CheckBox();
-            this.cbDARV = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvPatientRecord)).BeginInit();
             this.SuspendLayout();
@@ -72,7 +72,7 @@
             this.lblHN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblHN.AutoSize = true;
             this.lblHN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblHN.Location = new System.Drawing.Point(118, 69);
+            this.lblHN.Location = new System.Drawing.Point(148, 69);
             this.lblHN.Name = "lblHN";
             this.lblHN.Size = new System.Drawing.Size(40, 24);
             this.lblHN.TabIndex = 4;
@@ -82,7 +82,7 @@
             // 
             this.txtHN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtHN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtHN.Location = new System.Drawing.Point(164, 67);
+            this.txtHN.Location = new System.Drawing.Point(196, 67);
             this.txtHN.MaxLength = 100;
             this.txtHN.Name = "txtHN";
             this.txtHN.Size = new System.Drawing.Size(151, 26);
@@ -93,7 +93,7 @@
             this.lblNumber.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblNumber.AutoSize = true;
             this.lblNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblNumber.Location = new System.Drawing.Point(345, 69);
+            this.lblNumber.Location = new System.Drawing.Point(362, 69);
             this.lblNumber.Name = "lblNumber";
             this.lblNumber.Size = new System.Drawing.Size(43, 24);
             this.lblNumber.TabIndex = 6;
@@ -103,7 +103,7 @@
             // 
             this.txtNumber.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtNumber.Location = new System.Drawing.Point(394, 67);
+            this.txtNumber.Location = new System.Drawing.Point(408, 67);
             this.txtNumber.MaxLength = 100;
             this.txtNumber.Name = "txtNumber";
             this.txtNumber.Size = new System.Drawing.Size(87, 26);
@@ -135,7 +135,7 @@
             this.lblName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblName.Location = new System.Drawing.Point(813, 69);
+            this.lblName.Location = new System.Drawing.Point(815, 69);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(32, 24);
             this.lblName.TabIndex = 8;
@@ -156,7 +156,7 @@
             this.lblBirthDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblBirthDate.AutoSize = true;
             this.lblBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblBirthDate.Location = new System.Drawing.Point(118, 111);
+            this.lblBirthDate.Location = new System.Drawing.Point(148, 111);
             this.lblBirthDate.Name = "lblBirthDate";
             this.lblBirthDate.Size = new System.Drawing.Size(122, 24);
             this.lblBirthDate.TabIndex = 12;
@@ -167,7 +167,7 @@
             this.dateBirthDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.dateBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateBirthDate.Location = new System.Drawing.Point(246, 109);
+            this.dateBirthDate.Location = new System.Drawing.Point(273, 111);
             this.dateBirthDate.Name = "dateBirthDate";
             this.dateBirthDate.Size = new System.Drawing.Size(208, 26);
             this.dateBirthDate.TabIndex = 13;
@@ -178,7 +178,7 @@
             this.lblAge.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblAge.AutoSize = true;
             this.lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblAge.Location = new System.Drawing.Point(460, 111);
+            this.lblAge.Location = new System.Drawing.Point(503, 111);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(53, 24);
             this.lblAge.TabIndex = 14;
@@ -232,7 +232,7 @@
             this.btnSave.BackColor = System.Drawing.Color.HotPink;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.btnSave.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSave.Location = new System.Drawing.Point(1292, 93);
+            this.btnSave.Location = new System.Drawing.Point(1283, 93);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(105, 46);
             this.btnSave.TabIndex = 19;
@@ -245,7 +245,7 @@
             this.lbltitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbltitle.AutoSize = true;
             this.lbltitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbltitle.Location = new System.Drawing.Point(513, 69);
+            this.lbltitle.Location = new System.Drawing.Point(519, 69);
             this.lbltitle.Name = "lbltitle";
             this.lbltitle.Size = new System.Drawing.Size(90, 24);
             this.lbltitle.TabIndex = 20;
@@ -256,7 +256,7 @@
             this.cbTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.cbTitle.FormattingEnabled = true;
-            this.cbTitle.Location = new System.Drawing.Point(618, 67);
+            this.cbTitle.Location = new System.Drawing.Point(625, 67);
             this.cbTitle.Name = "cbTitle";
             this.cbTitle.Size = new System.Drawing.Size(158, 28);
             this.cbTitle.TabIndex = 21;
@@ -295,18 +295,40 @@
             this.groupBox1.Controls.Add(this.lblAge);
             this.groupBox1.Controls.Add(this.lblBirthDate);
             this.groupBox1.Controls.Add(this.dateBirthDate);
-            this.groupBox1.Location = new System.Drawing.Point(-92, -24);
+            this.groupBox1.Location = new System.Drawing.Point(-135, -48);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1482, 191);
             this.groupBox1.TabIndex = 22;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "รายละเอียดคนไข้";
             // 
+            // cbDARV
+            // 
+            this.cbDARV.AutoSize = true;
+            this.cbDARV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbDARV.Location = new System.Drawing.Point(745, 151);
+            this.cbDARV.Name = "cbDARV";
+            this.cbDARV.Size = new System.Drawing.Size(65, 24);
+            this.cbDARV.TabIndex = 35;
+            this.cbDARV.Text = "ARV";
+            this.cbDARV.UseVisualStyleBackColor = true;
+            // 
+            // cbDTB
+            // 
+            this.cbDTB.AutoSize = true;
+            this.cbDTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cbDTB.Location = new System.Drawing.Point(670, 151);
+            this.cbDTB.Name = "cbDTB";
+            this.cbDTB.Size = new System.Drawing.Size(50, 24);
+            this.cbDTB.TabIndex = 34;
+            this.cbDTB.Text = "TB";
+            this.cbDTB.UseVisualStyleBackColor = true;
+            // 
             // cbDReject
             // 
             this.cbDReject.AutoSize = true;
             this.cbDReject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbDReject.Location = new System.Drawing.Point(883, 150);
+            this.cbDReject.Location = new System.Drawing.Point(915, 150);
             this.cbDReject.Name = "cbDReject";
             this.cbDReject.Size = new System.Drawing.Size(73, 24);
             this.cbDReject.TabIndex = 33;
@@ -317,7 +339,7 @@
             // 
             this.cbDOther.AutoSize = true;
             this.cbDOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbDOther.Location = new System.Drawing.Point(800, 150);
+            this.cbDOther.Location = new System.Drawing.Point(837, 150);
             this.cbDOther.Name = "cbDOther";
             this.cbDOther.Size = new System.Drawing.Size(58, 24);
             this.cbDOther.TabIndex = 32;
@@ -328,7 +350,7 @@
             // 
             this.cbDStroke.AutoSize = true;
             this.cbDStroke.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbDStroke.Location = new System.Drawing.Point(557, 151);
+            this.cbDStroke.Location = new System.Drawing.Point(568, 151);
             this.cbDStroke.Name = "cbDStroke";
             this.cbDStroke.Size = new System.Drawing.Size(81, 24);
             this.cbDStroke.TabIndex = 31;
@@ -339,7 +361,7 @@
             // 
             this.cbDHeart.AutoSize = true;
             this.cbDHeart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbDHeart.Location = new System.Drawing.Point(473, 151);
+            this.cbDHeart.Location = new System.Drawing.Point(488, 151);
             this.cbDHeart.Name = "cbDHeart";
             this.cbDHeart.Size = new System.Drawing.Size(63, 24);
             this.cbDHeart.TabIndex = 30;
@@ -350,7 +372,7 @@
             // 
             this.cbDFat.AutoSize = true;
             this.cbDFat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbDFat.Location = new System.Drawing.Point(387, 151);
+            this.cbDFat.Location = new System.Drawing.Point(397, 151);
             this.cbDFat.Name = "cbDFat";
             this.cbDFat.Size = new System.Drawing.Size(67, 24);
             this.cbDFat.TabIndex = 29;
@@ -361,7 +383,7 @@
             // 
             this.cbDHT.AutoSize = true;
             this.cbDHT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbDHT.Location = new System.Drawing.Point(320, 151);
+            this.cbDHT.Location = new System.Drawing.Point(333, 151);
             this.cbDHT.Name = "cbDHT";
             this.cbDHT.Size = new System.Drawing.Size(51, 24);
             this.cbDHT.TabIndex = 28;
@@ -372,7 +394,7 @@
             // 
             this.cbDDM.AutoSize = true;
             this.cbDDM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbDDM.Location = new System.Drawing.Point(246, 152);
+            this.cbDDM.Location = new System.Drawing.Point(269, 152);
             this.cbDDM.Name = "cbDDM";
             this.cbDDM.Size = new System.Drawing.Size(55, 24);
             this.cbDDM.TabIndex = 27;
@@ -384,7 +406,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label1.Location = new System.Drawing.Point(118, 151);
+            this.label1.Location = new System.Drawing.Point(148, 151);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 24);
             this.label1.TabIndex = 26;
@@ -420,7 +442,7 @@
             this.gvPatientRecord.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvPatientRecord.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clmBtnEdit});
-            this.gvPatientRecord.Location = new System.Drawing.Point(12, 173);
+            this.gvPatientRecord.Location = new System.Drawing.Point(-31, 149);
             this.gvPatientRecord.Name = "gvPatientRecord";
             this.gvPatientRecord.ReadOnly = true;
             this.gvPatientRecord.Size = new System.Drawing.Size(1315, 469);
@@ -440,9 +462,9 @@
             this.btnAddrecordDetail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAddrecordDetail.BackColor = System.Drawing.Color.DarkTurquoise;
             this.btnAddrecordDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btnAddrecordDetail.Location = new System.Drawing.Point(1144, 657);
+            this.btnAddrecordDetail.Location = new System.Drawing.Point(1036, 620);
             this.btnAddrecordDetail.Name = "btnAddrecordDetail";
-            this.btnAddrecordDetail.Size = new System.Drawing.Size(161, 51);
+            this.btnAddrecordDetail.Size = new System.Drawing.Size(155, 49);
             this.btnAddrecordDetail.TabIndex = 22;
             this.btnAddrecordDetail.Text = "บันทึกข้อมูล";
             this.btnAddrecordDetail.UseVisualStyleBackColor = false;
@@ -453,35 +475,13 @@
             this.btnClose.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnClose.BackColor = System.Drawing.Color.Lime;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btnClose.Location = new System.Drawing.Point(1025, 657);
+            this.btnClose.Location = new System.Drawing.Point(946, 620);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(105, 51);
+            this.btnClose.Size = new System.Drawing.Size(83, 47);
             this.btnClose.TabIndex = 24;
             this.btnClose.Text = "ปิด";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // cbDTB
-            // 
-            this.cbDTB.AutoSize = true;
-            this.cbDTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbDTB.Location = new System.Drawing.Point(652, 151);
-            this.cbDTB.Name = "cbDTB";
-            this.cbDTB.Size = new System.Drawing.Size(50, 24);
-            this.cbDTB.TabIndex = 34;
-            this.cbDTB.Text = "TB";
-            this.cbDTB.UseVisualStyleBackColor = true;
-            // 
-            // cbDARV
-            // 
-            this.cbDARV.AutoSize = true;
-            this.cbDARV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.cbDARV.Location = new System.Drawing.Point(720, 151);
-            this.cbDARV.Name = "cbDARV";
-            this.cbDARV.Size = new System.Drawing.Size(65, 24);
-            this.cbDARV.TabIndex = 35;
-            this.cbDARV.Text = "ARV";
-            this.cbDARV.UseVisualStyleBackColor = true;
             // 
             // PatientDetail
             // 
@@ -489,7 +489,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnAddrecordDetail);
             this.Controls.Add(this.gvPatientRecord);

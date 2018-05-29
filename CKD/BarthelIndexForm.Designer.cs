@@ -96,11 +96,11 @@
             // btnSave
             // 
             this.btnSave.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSave.BackColor = System.Drawing.Color.Yellow;
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btnSave.Location = new System.Drawing.Point(372, 630);
+            this.btnSave.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnSave.Location = new System.Drawing.Point(978, 621);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(238, 51);
+            this.btnSave.Size = new System.Drawing.Size(115, 48);
             this.btnSave.TabIndex = 23;
             this.btnSave.Text = "บันทึก";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -173,7 +173,7 @@
             this.groupBox2.Controls.Add(this.rdb22);
             this.groupBox2.Controls.Add(this.rdb21);
             this.groupBox2.Controls.Add(this.rdb20);
-            this.groupBox2.Location = new System.Drawing.Point(650, 52);
+            this.groupBox2.Location = new System.Drawing.Point(647, 52);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(617, 92);
             this.groupBox2.TabIndex = 25;
@@ -295,7 +295,7 @@
             this.groupBox4.Controls.Add(this.rdb40);
             this.groupBox4.Controls.Add(this.rdb42);
             this.groupBox4.Controls.Add(this.rdb41);
-            this.groupBox4.Location = new System.Drawing.Point(650, 165);
+            this.groupBox4.Location = new System.Drawing.Point(647, 165);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(617, 92);
             this.groupBox4.TabIndex = 26;
@@ -408,7 +408,7 @@
             this.groupBox6.Controls.Add(this.rdb62);
             this.groupBox6.Controls.Add(this.rdb61);
             this.groupBox6.Controls.Add(this.rdb60);
-            this.groupBox6.Location = new System.Drawing.Point(650, 276);
+            this.groupBox6.Location = new System.Drawing.Point(646, 276);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(617, 92);
             this.groupBox6.TabIndex = 28;
@@ -541,7 +541,7 @@
             this.groupBox8.Controls.Add(this.rdb82);
             this.groupBox8.Controls.Add(this.rdb81);
             this.groupBox8.Controls.Add(this.rdb80);
-            this.groupBox8.Location = new System.Drawing.Point(650, 400);
+            this.groupBox8.Location = new System.Drawing.Point(645, 400);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(617, 92);
             this.groupBox8.TabIndex = 30;
@@ -664,7 +664,7 @@
             this.groupBox10.Controls.Add(this.rdb102);
             this.groupBox10.Controls.Add(this.rdb101);
             this.groupBox10.Controls.Add(this.rdb100);
-            this.groupBox10.Location = new System.Drawing.Point(650, 517);
+            this.groupBox10.Location = new System.Drawing.Point(644, 517);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(617, 92);
             this.groupBox10.TabIndex = 32;
@@ -723,10 +723,10 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lblTotal.BackColor = System.Drawing.Color.LightSteelBlue;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.lblTotal.ForeColor = System.Drawing.Color.Black;
-            this.lblTotal.Location = new System.Drawing.Point(654, 630);
+            this.lblTotal.Location = new System.Drawing.Point(447, 611);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(46, 51);
             this.lblTotal.TabIndex = 35;
@@ -737,7 +737,7 @@
             this.lblTotalDetail.AutoSize = true;
             this.lblTotalDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.lblTotalDetail.ForeColor = System.Drawing.Color.Red;
-            this.lblTotalDetail.Location = new System.Drawing.Point(740, 637);
+            this.lblTotalDetail.Location = new System.Drawing.Point(501, 621);
             this.lblTotalDetail.Name = "lblTotalDetail";
             this.lblTotalDetail.Size = new System.Drawing.Size(374, 31);
             this.lblTotalDetail.TabIndex = 36;
@@ -747,8 +747,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.lblTotalDetail);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.groupBox4);
