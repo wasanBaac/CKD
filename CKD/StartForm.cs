@@ -43,8 +43,8 @@ namespace CKD
         {
             if(gvPatient.Columns[e.ColumnIndex].Name == "btnView")
             {
-                string a = gvPatient.CurrentRow.Cells[1].Value.ToString();
-                PatientDetail pd = new PatientDetail(gvPatient.CurrentRow.Cells[1].Value.ToString());
+                string strHN = gvPatient.CurrentRow.Cells["HN"].Value.ToString();
+                PatientDetail pd = new PatientDetail(strHN);
                 pd.Show();
                 //Application.Run();
                 //this.Hide();

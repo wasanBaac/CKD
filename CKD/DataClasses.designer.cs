@@ -51,9 +51,6 @@ namespace CKD
     partial void InsertrefMMT(refMMT instance);
     partial void UpdaterefMMT(refMMT instance);
     partial void DeleterefMMT(refMMT instance);
-    partial void InsertPatientRecordDetail(PatientRecordDetail instance);
-    partial void UpdatePatientRecordDetail(PatientRecordDetail instance);
-    partial void DeletePatientRecordDetail(PatientRecordDetail instance);
     partial void InsertrefTransfer(refTransfer instance);
     partial void UpdaterefTransfer(refTransfer instance);
     partial void DeleterefTransfer(refTransfer instance);
@@ -72,6 +69,9 @@ namespace CKD
     partial void InsertPatient(Patient instance);
     partial void UpdatePatient(Patient instance);
     partial void DeletePatient(Patient instance);
+    partial void InsertPatientRecordDetail(PatientRecordDetail instance);
+    partial void UpdatePatientRecordDetail(PatientRecordDetail instance);
+    partial void DeletePatientRecordDetail(PatientRecordDetail instance);
     #endregion
 		
 		public DataClassesDataContext() : 
@@ -160,14 +160,6 @@ namespace CKD
 			}
 		}
 		
-		public System.Data.Linq.Table<PatientRecordDetail> PatientRecordDetails
-		{
-			get
-			{
-				return this.GetTable<PatientRecordDetail>();
-			}
-		}
-		
 		public System.Data.Linq.Table<refTransfer> refTransfers
 		{
 			get
@@ -213,6 +205,14 @@ namespace CKD
 			get
 			{
 				return this.GetTable<Patient>();
+			}
+		}
+		
+		public System.Data.Linq.Table<PatientRecordDetail> PatientRecordDetails
+		{
+			get
+			{
+				return this.GetTable<PatientRecordDetail>();
 			}
 		}
 	}
@@ -794,380 +794,6 @@ namespace CKD
 					this._Detail = value;
 					this.SendPropertyChanged("Detail");
 					this.OnDetailChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.PatientRecordDetail")]
-	public partial class PatientRecordDetail : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _recordDetailID;
-		
-		private System.Nullable<int> _recordID;
-		
-		private System.Nullable<int> _Feeding;
-		
-		private System.Nullable<int> _Transfer;
-		
-		private System.Nullable<int> _Grooming;
-		
-		private System.Nullable<int> _Toilet__;
-		
-		private System.Nullable<int> _Bathing;
-		
-		private System.Nullable<int> _Mobility;
-		
-		private System.Nullable<int> _Stair;
-		
-		private System.Nullable<int> _Dressing;
-		
-		private System.Nullable<int> _Bowels;
-		
-		private System.Nullable<int> _Bladder;
-		
-		private System.Nullable<System.DateTime> _CreateDate;
-		
-		private System.Nullable<System.DateTime> _ModifiedDate;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnrecordDetailIDChanging(int value);
-    partial void OnrecordDetailIDChanged();
-    partial void OnrecordIDChanging(System.Nullable<int> value);
-    partial void OnrecordIDChanged();
-    partial void OnFeedingChanging(System.Nullable<int> value);
-    partial void OnFeedingChanged();
-    partial void OnTransferChanging(System.Nullable<int> value);
-    partial void OnTransferChanged();
-    partial void OnGroomingChanging(System.Nullable<int> value);
-    partial void OnGroomingChanged();
-    partial void OnToilet__Changing(System.Nullable<int> value);
-    partial void OnToilet__Changed();
-    partial void OnBathingChanging(System.Nullable<int> value);
-    partial void OnBathingChanged();
-    partial void OnMobilityChanging(System.Nullable<int> value);
-    partial void OnMobilityChanged();
-    partial void OnStairChanging(System.Nullable<int> value);
-    partial void OnStairChanged();
-    partial void OnDressingChanging(System.Nullable<int> value);
-    partial void OnDressingChanged();
-    partial void OnBowelsChanging(System.Nullable<int> value);
-    partial void OnBowelsChanged();
-    partial void OnBladderChanging(System.Nullable<int> value);
-    partial void OnBladderChanged();
-    partial void OnCreateDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnCreateDateChanged();
-    partial void OnModifiedDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnModifiedDateChanged();
-    #endregion
-		
-		public PatientRecordDetail()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_recordDetailID", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int recordDetailID
-		{
-			get
-			{
-				return this._recordDetailID;
-			}
-			set
-			{
-				if ((this._recordDetailID != value))
-				{
-					this.OnrecordDetailIDChanging(value);
-					this.SendPropertyChanging();
-					this._recordDetailID = value;
-					this.SendPropertyChanged("recordDetailID");
-					this.OnrecordDetailIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_recordID", DbType="Int")]
-		public System.Nullable<int> recordID
-		{
-			get
-			{
-				return this._recordID;
-			}
-			set
-			{
-				if ((this._recordID != value))
-				{
-					this.OnrecordIDChanging(value);
-					this.SendPropertyChanging();
-					this._recordID = value;
-					this.SendPropertyChanged("recordID");
-					this.OnrecordIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Feeding", DbType="Int")]
-		public System.Nullable<int> Feeding
-		{
-			get
-			{
-				return this._Feeding;
-			}
-			set
-			{
-				if ((this._Feeding != value))
-				{
-					this.OnFeedingChanging(value);
-					this.SendPropertyChanging();
-					this._Feeding = value;
-					this.SendPropertyChanged("Feeding");
-					this.OnFeedingChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Transfer", DbType="Int")]
-		public System.Nullable<int> Transfer
-		{
-			get
-			{
-				return this._Transfer;
-			}
-			set
-			{
-				if ((this._Transfer != value))
-				{
-					this.OnTransferChanging(value);
-					this.SendPropertyChanging();
-					this._Transfer = value;
-					this.SendPropertyChanged("Transfer");
-					this.OnTransferChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Grooming", DbType="Int")]
-		public System.Nullable<int> Grooming
-		{
-			get
-			{
-				return this._Grooming;
-			}
-			set
-			{
-				if ((this._Grooming != value))
-				{
-					this.OnGroomingChanging(value);
-					this.SendPropertyChanging();
-					this._Grooming = value;
-					this.SendPropertyChanged("Grooming");
-					this.OnGroomingChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[Toilet  ]", Storage="_Toilet__", DbType="Int")]
-		public System.Nullable<int> Toilet__
-		{
-			get
-			{
-				return this._Toilet__;
-			}
-			set
-			{
-				if ((this._Toilet__ != value))
-				{
-					this.OnToilet__Changing(value);
-					this.SendPropertyChanging();
-					this._Toilet__ = value;
-					this.SendPropertyChanged("Toilet__");
-					this.OnToilet__Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Bathing", DbType="Int")]
-		public System.Nullable<int> Bathing
-		{
-			get
-			{
-				return this._Bathing;
-			}
-			set
-			{
-				if ((this._Bathing != value))
-				{
-					this.OnBathingChanging(value);
-					this.SendPropertyChanging();
-					this._Bathing = value;
-					this.SendPropertyChanged("Bathing");
-					this.OnBathingChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Mobility", DbType="Int")]
-		public System.Nullable<int> Mobility
-		{
-			get
-			{
-				return this._Mobility;
-			}
-			set
-			{
-				if ((this._Mobility != value))
-				{
-					this.OnMobilityChanging(value);
-					this.SendPropertyChanging();
-					this._Mobility = value;
-					this.SendPropertyChanged("Mobility");
-					this.OnMobilityChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Stair", DbType="Int")]
-		public System.Nullable<int> Stair
-		{
-			get
-			{
-				return this._Stair;
-			}
-			set
-			{
-				if ((this._Stair != value))
-				{
-					this.OnStairChanging(value);
-					this.SendPropertyChanging();
-					this._Stair = value;
-					this.SendPropertyChanged("Stair");
-					this.OnStairChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Dressing", DbType="Int")]
-		public System.Nullable<int> Dressing
-		{
-			get
-			{
-				return this._Dressing;
-			}
-			set
-			{
-				if ((this._Dressing != value))
-				{
-					this.OnDressingChanging(value);
-					this.SendPropertyChanging();
-					this._Dressing = value;
-					this.SendPropertyChanged("Dressing");
-					this.OnDressingChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Bowels", DbType="Int")]
-		public System.Nullable<int> Bowels
-		{
-			get
-			{
-				return this._Bowels;
-			}
-			set
-			{
-				if ((this._Bowels != value))
-				{
-					this.OnBowelsChanging(value);
-					this.SendPropertyChanging();
-					this._Bowels = value;
-					this.SendPropertyChanged("Bowels");
-					this.OnBowelsChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Bladder", DbType="Int")]
-		public System.Nullable<int> Bladder
-		{
-			get
-			{
-				return this._Bladder;
-			}
-			set
-			{
-				if ((this._Bladder != value))
-				{
-					this.OnBladderChanging(value);
-					this.SendPropertyChanging();
-					this._Bladder = value;
-					this.SendPropertyChanged("Bladder");
-					this.OnBladderChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreateDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> CreateDate
-		{
-			get
-			{
-				return this._CreateDate;
-			}
-			set
-			{
-				if ((this._CreateDate != value))
-				{
-					this.OnCreateDateChanging(value);
-					this.SendPropertyChanging();
-					this._CreateDate = value;
-					this.SendPropertyChanged("CreateDate");
-					this.OnCreateDateChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> ModifiedDate
-		{
-			get
-			{
-				return this._ModifiedDate;
-			}
-			set
-			{
-				if ((this._ModifiedDate != value))
-				{
-					this.OnModifiedDateChanging(value);
-					this.SendPropertyChanging();
-					this._ModifiedDate = value;
-					this.SendPropertyChanged("ModifiedDate");
-					this.OnModifiedDateChanged();
 				}
 			}
 		}
@@ -3172,6 +2798,380 @@ namespace CKD
 					this._DiseaseReject = value;
 					this.SendPropertyChanged("DiseaseReject");
 					this.OnDiseaseRejectChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.PatientRecordDetail")]
+	public partial class PatientRecordDetail : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _recordDetailID;
+		
+		private System.Nullable<int> _recordID;
+		
+		private System.Nullable<int> _Feeding;
+		
+		private System.Nullable<int> _Transfer;
+		
+		private System.Nullable<int> _Grooming;
+		
+		private System.Nullable<int> _Toilet__;
+		
+		private System.Nullable<int> _Bathing;
+		
+		private System.Nullable<int> _Mobility;
+		
+		private System.Nullable<int> _Stair;
+		
+		private System.Nullable<int> _Dressing;
+		
+		private System.Nullable<int> _Bowels;
+		
+		private System.Nullable<int> _Bladder;
+		
+		private System.Nullable<System.DateTime> _CreateDate;
+		
+		private System.Nullable<System.DateTime> _ModifiedDate;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnrecordDetailIDChanging(int value);
+    partial void OnrecordDetailIDChanged();
+    partial void OnrecordIDChanging(System.Nullable<int> value);
+    partial void OnrecordIDChanged();
+    partial void OnFeedingChanging(System.Nullable<int> value);
+    partial void OnFeedingChanged();
+    partial void OnTransferChanging(System.Nullable<int> value);
+    partial void OnTransferChanged();
+    partial void OnGroomingChanging(System.Nullable<int> value);
+    partial void OnGroomingChanged();
+    partial void OnToilet__Changing(System.Nullable<int> value);
+    partial void OnToilet__Changed();
+    partial void OnBathingChanging(System.Nullable<int> value);
+    partial void OnBathingChanged();
+    partial void OnMobilityChanging(System.Nullable<int> value);
+    partial void OnMobilityChanged();
+    partial void OnStairChanging(System.Nullable<int> value);
+    partial void OnStairChanged();
+    partial void OnDressingChanging(System.Nullable<int> value);
+    partial void OnDressingChanged();
+    partial void OnBowelsChanging(System.Nullable<int> value);
+    partial void OnBowelsChanged();
+    partial void OnBladderChanging(System.Nullable<int> value);
+    partial void OnBladderChanged();
+    partial void OnCreateDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnCreateDateChanged();
+    partial void OnModifiedDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnModifiedDateChanged();
+    #endregion
+		
+		public PatientRecordDetail()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_recordDetailID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int recordDetailID
+		{
+			get
+			{
+				return this._recordDetailID;
+			}
+			set
+			{
+				if ((this._recordDetailID != value))
+				{
+					this.OnrecordDetailIDChanging(value);
+					this.SendPropertyChanging();
+					this._recordDetailID = value;
+					this.SendPropertyChanged("recordDetailID");
+					this.OnrecordDetailIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_recordID", DbType="Int")]
+		public System.Nullable<int> recordID
+		{
+			get
+			{
+				return this._recordID;
+			}
+			set
+			{
+				if ((this._recordID != value))
+				{
+					this.OnrecordIDChanging(value);
+					this.SendPropertyChanging();
+					this._recordID = value;
+					this.SendPropertyChanged("recordID");
+					this.OnrecordIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Feeding", DbType="Int")]
+		public System.Nullable<int> Feeding
+		{
+			get
+			{
+				return this._Feeding;
+			}
+			set
+			{
+				if ((this._Feeding != value))
+				{
+					this.OnFeedingChanging(value);
+					this.SendPropertyChanging();
+					this._Feeding = value;
+					this.SendPropertyChanged("Feeding");
+					this.OnFeedingChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Transfer", DbType="Int")]
+		public System.Nullable<int> Transfer
+		{
+			get
+			{
+				return this._Transfer;
+			}
+			set
+			{
+				if ((this._Transfer != value))
+				{
+					this.OnTransferChanging(value);
+					this.SendPropertyChanging();
+					this._Transfer = value;
+					this.SendPropertyChanged("Transfer");
+					this.OnTransferChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Grooming", DbType="Int")]
+		public System.Nullable<int> Grooming
+		{
+			get
+			{
+				return this._Grooming;
+			}
+			set
+			{
+				if ((this._Grooming != value))
+				{
+					this.OnGroomingChanging(value);
+					this.SendPropertyChanging();
+					this._Grooming = value;
+					this.SendPropertyChanged("Grooming");
+					this.OnGroomingChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[Toilet  ]", Storage="_Toilet__", DbType="Int")]
+		public System.Nullable<int> Toilet__
+		{
+			get
+			{
+				return this._Toilet__;
+			}
+			set
+			{
+				if ((this._Toilet__ != value))
+				{
+					this.OnToilet__Changing(value);
+					this.SendPropertyChanging();
+					this._Toilet__ = value;
+					this.SendPropertyChanged("Toilet__");
+					this.OnToilet__Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Bathing", DbType="Int")]
+		public System.Nullable<int> Bathing
+		{
+			get
+			{
+				return this._Bathing;
+			}
+			set
+			{
+				if ((this._Bathing != value))
+				{
+					this.OnBathingChanging(value);
+					this.SendPropertyChanging();
+					this._Bathing = value;
+					this.SendPropertyChanged("Bathing");
+					this.OnBathingChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Mobility", DbType="Int")]
+		public System.Nullable<int> Mobility
+		{
+			get
+			{
+				return this._Mobility;
+			}
+			set
+			{
+				if ((this._Mobility != value))
+				{
+					this.OnMobilityChanging(value);
+					this.SendPropertyChanging();
+					this._Mobility = value;
+					this.SendPropertyChanged("Mobility");
+					this.OnMobilityChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Stair", DbType="Int")]
+		public System.Nullable<int> Stair
+		{
+			get
+			{
+				return this._Stair;
+			}
+			set
+			{
+				if ((this._Stair != value))
+				{
+					this.OnStairChanging(value);
+					this.SendPropertyChanging();
+					this._Stair = value;
+					this.SendPropertyChanged("Stair");
+					this.OnStairChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Dressing", DbType="Int")]
+		public System.Nullable<int> Dressing
+		{
+			get
+			{
+				return this._Dressing;
+			}
+			set
+			{
+				if ((this._Dressing != value))
+				{
+					this.OnDressingChanging(value);
+					this.SendPropertyChanging();
+					this._Dressing = value;
+					this.SendPropertyChanged("Dressing");
+					this.OnDressingChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Bowels", DbType="Int")]
+		public System.Nullable<int> Bowels
+		{
+			get
+			{
+				return this._Bowels;
+			}
+			set
+			{
+				if ((this._Bowels != value))
+				{
+					this.OnBowelsChanging(value);
+					this.SendPropertyChanging();
+					this._Bowels = value;
+					this.SendPropertyChanged("Bowels");
+					this.OnBowelsChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Bladder", DbType="Int")]
+		public System.Nullable<int> Bladder
+		{
+			get
+			{
+				return this._Bladder;
+			}
+			set
+			{
+				if ((this._Bladder != value))
+				{
+					this.OnBladderChanging(value);
+					this.SendPropertyChanging();
+					this._Bladder = value;
+					this.SendPropertyChanged("Bladder");
+					this.OnBladderChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreateDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> CreateDate
+		{
+			get
+			{
+				return this._CreateDate;
+			}
+			set
+			{
+				if ((this._CreateDate != value))
+				{
+					this.OnCreateDateChanging(value);
+					this.SendPropertyChanging();
+					this._CreateDate = value;
+					this.SendPropertyChanged("CreateDate");
+					this.OnCreateDateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> ModifiedDate
+		{
+			get
+			{
+				return this._ModifiedDate;
+			}
+			set
+			{
+				if ((this._ModifiedDate != value))
+				{
+					this.OnModifiedDateChanging(value);
+					this.SendPropertyChanging();
+					this._ModifiedDate = value;
+					this.SendPropertyChanged("ModifiedDate");
+					this.OnModifiedDateChanged();
 				}
 			}
 		}

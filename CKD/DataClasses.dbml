@@ -42,24 +42,6 @@
       <Column Name="Detail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.PatientRecordDetail" Member="PatientRecordDetails">
-    <Type Name="PatientRecordDetail">
-      <Column Name="recordDetailID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="recordID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Feeding" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Transfer" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Grooming" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="[Toilet  ]" Member="Toilet__" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Bathing" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Mobility" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Stair" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Dressing" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Bowels" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Bladder" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.refTransfer" Member="refTransfers">
     <Type Name="refTransfer">
       <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -156,6 +138,24 @@
       <Column Name="DiseaseARV" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Column Name="DiseaseOther" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Column Name="DiseaseReject" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PatientRecordDetail" Member="PatientRecordDetails">
+    <Type Name="PatientRecordDetail">
+      <Column Name="recordDetailID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="recordID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Feeding" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Transfer" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Grooming" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[Toilet  ]" Member="Toilet__" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bathing" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Mobility" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Stair" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Dressing" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bowels" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bladder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
     </Type>
   </Table>
 </Database>
