@@ -101,13 +101,13 @@
             this.cbbTransfer = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.lblKnowlege = new System.Windows.Forms.Label();
             this.txtKnowlege = new System.Windows.Forms.TextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.lblExercise = new System.Windows.Forms.Label();
             this.txtExcercise = new System.Windows.Forms.TextBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.lblBarthelIndex = new System.Windows.Forms.Label();
-            this.lblKnowlege = new System.Windows.Forms.Label();
-            this.lblExercise = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -131,7 +131,7 @@
             // 
             this.recordDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.recordDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.recordDate.Location = new System.Drawing.Point(53, 31);
+            this.recordDate.Location = new System.Drawing.Point(96, 31);
             this.recordDate.Name = "recordDate";
             this.recordDate.Size = new System.Drawing.Size(254, 32);
             this.recordDate.TabIndex = 14;
@@ -141,7 +141,7 @@
             this.lblDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblDate.Location = new System.Drawing.Point(6, 31);
+            this.lblDate.Location = new System.Drawing.Point(45, 34);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(50, 26);
             this.lblDate.TabIndex = 15;
@@ -152,7 +152,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label1.Location = new System.Drawing.Point(313, 34);
+            this.label1.Location = new System.Drawing.Point(356, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(145, 26);
             this.label1.TabIndex = 16;
@@ -162,7 +162,7 @@
             // 
             this.txteGFR.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txteGFR.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txteGFR.Location = new System.Drawing.Point(460, 31);
+            this.txteGFR.Location = new System.Drawing.Point(502, 31);
             this.txteGFR.MaxLength = 5;
             this.txteGFR.Name = "txteGFR";
             this.txteGFR.Size = new System.Drawing.Size(81, 32);
@@ -175,7 +175,7 @@
             this.lblStage.AutoSize = true;
             this.lblStage.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.lblStage.ForeColor = System.Drawing.Color.Red;
-            this.lblStage.Location = new System.Drawing.Point(547, 37);
+            this.lblStage.Location = new System.Drawing.Point(589, 35);
             this.lblStage.Name = "lblStage";
             this.lblStage.Size = new System.Drawing.Size(20, 26);
             this.lblStage.TabIndex = 18;
@@ -186,7 +186,7 @@
             this.lblWeight.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblWeight.AutoSize = true;
             this.lblWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblWeight.Location = new System.Drawing.Point(859, 34);
+            this.lblWeight.Location = new System.Drawing.Point(899, 34);
             this.lblWeight.Name = "lblWeight";
             this.lblWeight.Size = new System.Drawing.Size(74, 26);
             this.lblWeight.TabIndex = 19;
@@ -208,7 +208,7 @@
             this.lblHeight.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblHeight.AutoSize = true;
             this.lblHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblHeight.Location = new System.Drawing.Point(1108, 34);
+            this.lblHeight.Location = new System.Drawing.Point(1105, 34);
             this.lblHeight.Name = "lblHeight";
             this.lblHeight.Size = new System.Drawing.Size(70, 26);
             this.lblHeight.TabIndex = 21;
@@ -218,7 +218,7 @@
             // 
             this.txtHeight.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtHeight.Location = new System.Drawing.Point(1228, 31);
+            this.txtHeight.Location = new System.Drawing.Point(1179, 31);
             this.txtHeight.MaxLength = 5;
             this.txtHeight.Name = "txtHeight";
             this.txtHeight.Size = new System.Drawing.Size(95, 32);
@@ -240,7 +240,7 @@
             this.groupBox1.Controls.Add(this.txtWeight);
             this.groupBox1.Controls.Add(this.lblStage);
             this.groupBox1.Controls.Add(this.lblWeight);
-            this.groupBox1.Location = new System.Drawing.Point(0, 18);
+            this.groupBox1.Location = new System.Drawing.Point(-43, -6);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1338, 85);
             this.groupBox1.TabIndex = 23;
@@ -251,7 +251,7 @@
             this.lblCreatinineCal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCreatinineCal.AutoSize = true;
             this.lblCreatinineCal.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblCreatinineCal.Location = new System.Drawing.Point(798, 34);
+            this.lblCreatinineCal.Location = new System.Drawing.Point(838, 34);
             this.lblCreatinineCal.Name = "lblCreatinineCal";
             this.lblCreatinineCal.Size = new System.Drawing.Size(20, 26);
             this.lblCreatinineCal.TabIndex = 25;
@@ -261,7 +261,7 @@
             // 
             this.txtCreatinine.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCreatinine.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtCreatinine.Location = new System.Drawing.Point(706, 31);
+            this.txtCreatinine.Location = new System.Drawing.Point(751, 31);
             this.txtCreatinine.MaxLength = 5;
             this.txtCreatinine.Name = "txtCreatinine";
             this.txtCreatinine.Size = new System.Drawing.Size(70, 32);
@@ -273,7 +273,7 @@
             this.lblCreatinine.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCreatinine.AutoSize = true;
             this.lblCreatinine.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblCreatinine.Location = new System.Drawing.Point(589, 34);
+            this.lblCreatinine.Location = new System.Drawing.Point(636, 34);
             this.lblCreatinine.Name = "lblCreatinine";
             this.lblCreatinine.Size = new System.Drawing.Size(111, 26);
             this.lblCreatinine.TabIndex = 23;
@@ -288,7 +288,7 @@
             this.groupBox2.Controls.Add(this.cbTreatNone);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.groupBox2.Location = new System.Drawing.Point(21, 109);
+            this.groupBox2.Location = new System.Drawing.Point(12, 85);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(274, 138);
             this.groupBox2.TabIndex = 24;
@@ -348,7 +348,7 @@
             this.groupBox3.Controls.Add(this.cbExRun);
             this.groupBox3.Controls.Add(this.cbExwalk);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.groupBox3.Location = new System.Drawing.Point(21, 253);
+            this.groupBox3.Location = new System.Drawing.Point(14, 229);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(248, 157);
             this.groupBox3.TabIndex = 25;
@@ -416,7 +416,7 @@
             this.groupBox4.Controls.Add(this.cbHealBenefit);
             this.groupBox4.Controls.Add(this.cbHealtEducation);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.groupBox4.Location = new System.Drawing.Point(21, 416);
+            this.groupBox4.Location = new System.Drawing.Point(16, 392);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(248, 86);
             this.groupBox4.TabIndex = 26;
@@ -451,7 +451,7 @@
             this.groupBox5.Controls.Add(this.cbProgrameEx2);
             this.groupBox5.Controls.Add(this.cbProgrameEx1);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.groupBox5.Location = new System.Drawing.Point(21, 518);
+            this.groupBox5.Location = new System.Drawing.Point(17, 494);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(274, 82);
             this.groupBox5.TabIndex = 27;
@@ -499,7 +499,7 @@
             this.groupBox6.Controls.Add(this.label6);
             this.groupBox6.Controls.Add(this.txtEst1);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.groupBox6.Location = new System.Drawing.Point(460, 109);
+            this.groupBox6.Location = new System.Drawing.Point(417, 85);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(269, 254);
             this.groupBox6.TabIndex = 28;
@@ -659,7 +659,7 @@
             this.gbBed.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gbBed.Controls.Add(this.cbbBedMobility);
             this.gbBed.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.gbBed.Location = new System.Drawing.Point(460, 447);
+            this.gbBed.Location = new System.Drawing.Point(417, 419);
             this.gbBed.Name = "gbBed";
             this.gbBed.Size = new System.Drawing.Size(269, 91);
             this.gbBed.TabIndex = 29;
@@ -680,7 +680,7 @@
             this.gbAmbulate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gbAmbulate.Controls.Add(this.cbbAmbulateWith);
             this.gbAmbulate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.gbAmbulate.Location = new System.Drawing.Point(864, 109);
+            this.gbAmbulate.Location = new System.Drawing.Point(817, 85);
             this.gbAmbulate.Name = "gbAmbulate";
             this.gbAmbulate.Size = new System.Drawing.Size(269, 82);
             this.gbAmbulate.TabIndex = 30;
@@ -701,7 +701,7 @@
             this.gbBalance.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gbBalance.Controls.Add(this.cbbBalance);
             this.gbBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.gbBalance.Location = new System.Drawing.Point(460, 542);
+            this.gbBalance.Location = new System.Drawing.Point(417, 512);
             this.gbBalance.Name = "gbBalance";
             this.gbBalance.Size = new System.Drawing.Size(269, 83);
             this.gbBalance.TabIndex = 31;
@@ -729,7 +729,7 @@
             this.gbMMTLUE.Controls.Add(this.label2);
             this.gbMMTLUE.Controls.Add(this.cbbMMTLUE);
             this.gbMMTLUE.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.gbMMTLUE.Location = new System.Drawing.Point(864, 201);
+            this.gbMMTLUE.Location = new System.Drawing.Point(818, 177);
             this.gbMMTLUE.Name = "gbMMTLUE";
             this.gbMMTLUE.Size = new System.Drawing.Size(418, 123);
             this.gbMMTLUE.TabIndex = 32;
@@ -845,9 +845,9 @@
             // btnSave
             // 
             this.btnSave.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSave.BackColor = System.Drawing.Color.DarkOrange;
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btnSave.Location = new System.Drawing.Point(1092, 650);
+            this.btnSave.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnSave.Location = new System.Drawing.Point(1042, 600);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(190, 51);
             this.btnSave.TabIndex = 40;
@@ -860,7 +860,7 @@
             this.groupBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox9.Controls.Add(this.txtPain);
             this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.groupBox9.Location = new System.Drawing.Point(864, 333);
+            this.groupBox9.Location = new System.Drawing.Point(818, 307);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(418, 74);
             this.groupBox9.TabIndex = 32;
@@ -872,7 +872,7 @@
             this.groupBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox10.Controls.Add(this.txtEdema);
             this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.groupBox10.Location = new System.Drawing.Point(864, 413);
+            this.groupBox10.Location = new System.Drawing.Point(818, 386);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(418, 74);
             this.groupBox10.TabIndex = 36;
@@ -885,7 +885,7 @@
             this.groupBox11.Controls.Add(this.cbtired);
             this.groupBox11.Controls.Add(this.txtOther);
             this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.groupBox11.Location = new System.Drawing.Point(864, 493);
+            this.groupBox11.Location = new System.Drawing.Point(819, 464);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(418, 121);
             this.groupBox11.TabIndex = 38;
@@ -908,7 +908,7 @@
             this.gbTransfer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gbTransfer.Controls.Add(this.cbbTransfer);
             this.gbTransfer.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.gbTransfer.Location = new System.Drawing.Point(460, 363);
+            this.gbTransfer.Location = new System.Drawing.Point(417, 334);
             this.gbTransfer.Name = "gbTransfer";
             this.gbTransfer.Size = new System.Drawing.Size(269, 86);
             this.gbTransfer.TabIndex = 30;
@@ -919,7 +919,7 @@
             // 
             this.cbbTransfer.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.cbbTransfer.FormattingEnabled = true;
-            this.cbbTransfer.Location = new System.Drawing.Point(25, 37);
+            this.cbbTransfer.Location = new System.Drawing.Point(25, 36);
             this.cbbTransfer.Name = "cbbTransfer";
             this.cbbTransfer.Size = new System.Drawing.Size(237, 33);
             this.cbbTransfer.TabIndex = 10;
@@ -929,7 +929,7 @@
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label12.Location = new System.Drawing.Point(16, 651);
+            this.label12.Location = new System.Drawing.Point(20, 608);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(110, 26);
             this.label12.TabIndex = 41;
@@ -941,17 +941,28 @@
             this.groupBox7.Controls.Add(this.lblKnowlege);
             this.groupBox7.Controls.Add(this.txtKnowlege);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.groupBox7.Location = new System.Drawing.Point(162, 631);
+            this.groupBox7.Location = new System.Drawing.Point(140, 584);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(199, 86);
             this.groupBox7.TabIndex = 44;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "ความรู้";
             // 
+            // lblKnowlege
+            // 
+            this.lblKnowlege.AutoSize = true;
+            this.lblKnowlege.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblKnowlege.ForeColor = System.Drawing.Color.Red;
+            this.lblKnowlege.Location = new System.Drawing.Point(106, 46);
+            this.lblKnowlege.Name = "lblKnowlege";
+            this.lblKnowlege.Size = new System.Drawing.Size(17, 24);
+            this.lblKnowlege.TabIndex = 38;
+            this.lblKnowlege.Text = "-";
+            // 
             // txtKnowlege
             // 
             this.txtKnowlege.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtKnowlege.BackColor = System.Drawing.Color.Aqua;
+            this.txtKnowlege.BackColor = System.Drawing.Color.LightSteelBlue;
             this.txtKnowlege.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.txtKnowlege.Location = new System.Drawing.Point(17, 39);
             this.txtKnowlege.MaxLength = 250;
@@ -966,17 +977,28 @@
             this.groupBox8.Controls.Add(this.lblExercise);
             this.groupBox8.Controls.Add(this.txtExcercise);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.groupBox8.Location = new System.Drawing.Point(413, 631);
+            this.groupBox8.Location = new System.Drawing.Point(371, 585);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(316, 86);
             this.groupBox8.TabIndex = 45;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "การออกกำลังกาย";
             // 
+            // lblExercise
+            // 
+            this.lblExercise.AutoSize = true;
+            this.lblExercise.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblExercise.ForeColor = System.Drawing.Color.Red;
+            this.lblExercise.Location = new System.Drawing.Point(89, 43);
+            this.lblExercise.Name = "lblExercise";
+            this.lblExercise.Size = new System.Drawing.Size(17, 24);
+            this.lblExercise.TabIndex = 39;
+            this.lblExercise.Text = "-";
+            // 
             // txtExcercise
             // 
             this.txtExcercise.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtExcercise.BackColor = System.Drawing.Color.Aqua;
+            this.txtExcercise.BackColor = System.Drawing.Color.LightSteelBlue;
             this.txtExcercise.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.txtExcercise.Location = new System.Drawing.Point(22, 39);
             this.txtExcercise.MaxLength = 250;
@@ -990,7 +1012,7 @@
             this.groupBox12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox12.Controls.Add(this.lblBarthelIndex);
             this.groupBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.groupBox12.Location = new System.Drawing.Point(760, 631);
+            this.groupBox12.Location = new System.Drawing.Point(715, 584);
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.Size = new System.Drawing.Size(307, 86);
             this.groupBox12.TabIndex = 46;
@@ -1008,34 +1030,12 @@
             this.lblBarthelIndex.TabIndex = 18;
             this.lblBarthelIndex.Text = "-";
             // 
-            // lblKnowlege
-            // 
-            this.lblKnowlege.AutoSize = true;
-            this.lblKnowlege.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblKnowlege.ForeColor = System.Drawing.Color.Red;
-            this.lblKnowlege.Location = new System.Drawing.Point(106, 46);
-            this.lblKnowlege.Name = "lblKnowlege";
-            this.lblKnowlege.Size = new System.Drawing.Size(17, 24);
-            this.lblKnowlege.TabIndex = 38;
-            this.lblKnowlege.Text = "-";
-            // 
-            // lblExercise
-            // 
-            this.lblExercise.AutoSize = true;
-            this.lblExercise.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblExercise.ForeColor = System.Drawing.Color.Red;
-            this.lblExercise.Location = new System.Drawing.Point(89, 43);
-            this.lblExercise.Name = "lblExercise";
-            this.lblExercise.Size = new System.Drawing.Size(17, 24);
-            this.lblExercise.TabIndex = 39;
-            this.lblExercise.Text = "-";
-            // 
             // FormPatientRecord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.BackColor = System.Drawing.Color.PaleGreen;
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.groupBox12);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox7);

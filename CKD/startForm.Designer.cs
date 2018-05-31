@@ -42,7 +42,7 @@
             // 
             this.txtHN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtHN.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtHN.Location = new System.Drawing.Point(427, 181);
+            this.txtHN.Location = new System.Drawing.Point(384, 157);
             this.txtHN.MaxLength = 100;
             this.txtHN.Name = "txtHN";
             this.txtHN.Size = new System.Drawing.Size(350, 32);
@@ -54,7 +54,7 @@
             this.btnSearch.BackColor = System.Drawing.Color.Orange;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.btnSearch.ForeColor = System.Drawing.Color.Black;
-            this.btnSearch.Location = new System.Drawing.Point(851, 178);
+            this.btnSearch.Location = new System.Drawing.Point(808, 154);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(105, 39);
             this.btnSearch.TabIndex = 1;
@@ -68,7 +68,7 @@
             this.lblsearch.AutoSize = true;
             this.lblsearch.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.lblsearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblsearch.Location = new System.Drawing.Point(274, 183);
+            this.lblsearch.Location = new System.Drawing.Point(231, 159);
             this.lblsearch.Name = "lblsearch";
             this.lblsearch.Size = new System.Drawing.Size(147, 29);
             this.lblsearch.TabIndex = 2;
@@ -83,7 +83,7 @@
             this.gvPatient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvPatient.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnView});
-            this.gvPatient.Location = new System.Drawing.Point(216, 261);
+            this.gvPatient.Location = new System.Drawing.Point(173, 237);
             this.gvPatient.Name = "gvPatient";
             this.gvPatient.ReadOnly = true;
             this.gvPatient.Size = new System.Drawing.Size(935, 399);
@@ -104,7 +104,7 @@
             this.btnNewPatient.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnNewPatient.BackColor = System.Drawing.Color.Turquoise;
             this.btnNewPatient.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btnNewPatient.Location = new System.Drawing.Point(989, 178);
+            this.btnNewPatient.Location = new System.Drawing.Point(946, 154);
             this.btnNewPatient.Name = "btnNewPatient";
             this.btnNewPatient.Size = new System.Drawing.Size(101, 39);
             this.btnNewPatient.TabIndex = 5;
@@ -119,7 +119,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(270, 80);
+            this.label1.Location = new System.Drawing.Point(227, 56);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(827, 54);
             this.label1.TabIndex = 6;
@@ -130,7 +130,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1284, 701);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnNewPatient);
             this.Controls.Add(this.gvPatient);
