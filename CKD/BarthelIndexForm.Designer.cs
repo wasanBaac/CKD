@@ -726,7 +726,7 @@
             this.lblTotal.BackColor = System.Drawing.Color.LightSteelBlue;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.lblTotal.ForeColor = System.Drawing.Color.Black;
-            this.lblTotal.Location = new System.Drawing.Point(447, 611);
+            this.lblTotal.Location = new System.Drawing.Point(411, 613);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(46, 51);
             this.lblTotal.TabIndex = 35;

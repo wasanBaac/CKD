@@ -192,9 +192,9 @@ namespace CKD
                     txteGFR.Focus();
                     return true;
                 }
-                else if (Convert.ToDecimal(txteGFR.Text.Trim()) >= 100)
+                else if (Convert.ToDecimal(txteGFR.Text.Trim()) >= 1000)
                 {
-                    MessageBox.Show("eGFRต้องไม่เกิน 99.99");
+                    MessageBox.Show("eGFRต้องไม่เกิน 999.99");
                     txteGFR.Focus();
                     return true;
                 }
@@ -207,7 +207,7 @@ namespace CKD
                     txtWeight.Focus();
                     return true;
                 }
-                else if (Convert.ToDecimal(txtCreatinine.Text.Trim()) >= 1000)
+                else if (Convert.ToDecimal(txtCreatinine.Text.Trim()) >= 100)
                 {
                     MessageBox.Show("Creatinine ต้องไม่เกิน 99.99");
                     txtWeight.Focus();
